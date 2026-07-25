@@ -28,26 +28,87 @@ const store = {
   },
   set(key, val) { localStorage.setItem(key, JSON.stringify(val)) },
 }
-const wrongKey = (sid) => `quizapp:${sid}:wrong`
+const wrongKey = (sid) => `quizapp:${sid}:wrong`     // giữ để tương thích bản cũ
 const statsKey = (sid) => `quizapp:${sid}:stats`
 const knownKey = (sid) => `quizapp:${sid}:known`
+const srsKey = (sid) => `quizapp:${sid}:srs`
+const topicsKey = (sid) => `quizapp:${sid}:topics`
+const examsKey = (sid) => `quizapp:${sid}:exams`
+const sessionKey = (sid) => `quizapp:${sid}:session`
+const THEME = 'quizapp:ui:theme'                      // per-máy, không sync
 
-function recordResult(sid, qid, correct) {
+// ---------- Spaced repetition (Leitner 5 hộp) ----------
+const MIN = 60 * 1000, DAY = 24 * 60 * MIN
+const BOX_INTERVAL = [0, 10 * MIN, 1 * DAY, 3 * DAY, 7 * DAY, 21 * DAY] // index = box 1..5
+const MAX_BOX = 5
+const MASTER_STREAK = 3   // dùng cho chế độ luyện đề: đúng liên tiếp 3 lần = thuộc
+
+const getSrs = (sid) => store.get(srsKey(sid), {})
+const srsOf = (srs, qid) => srs[qid] || { box: 0, due: 0, seen: 0, correct: 0, lapses: 0, streak: 0 }
+const isDue = (e, now = Date.now()) => e.seen > 0 && e.due <= now
+const isNew = (e) => !e.seen
+const isMastered = (e) => e.box >= MAX_BOX
+const boxLabel = (b) => ['Chưa học', 'Mới gặp', 'Đang nhớ', 'Khá chắc', 'Vững', 'Thuộc'][b] || ''
+
+function recordResult(sid, qid, correct, topic) {
+  const now = Date.now()
+  // --- SRS ---
+  const srs = getSrs(sid)
+  const e = { ...srsOf(srs, qid) }
+  e.seen += 1
+  if (correct) {
+    e.correct += 1
+    e.streak = (e.streak || 0) + 1
+    e.box = Math.min(MAX_BOX, (e.box || 0) + 1)
+  } else {
+    e.streak = 0
+    e.lapses += 1
+    e.box = 1
+  }
+  e.due = now + BOX_INTERVAL[e.box]
+  e.at = now
+  srs[qid] = e
+  store.set(srsKey(sid), srs)
+
+  // --- danh sách câu sai (giữ cho chế độ Ôn câu sai) ---
   const wrong = store.get(wrongKey(sid), {})
   if (correct) {
     if (wrong[qid]) {
       wrong[qid].streak = (wrong[qid].streak || 0) + 1
-      if (wrong[qid].streak >= 2) delete wrong[qid] // đúng 2 lần liên tiếp -> thoát danh sách sai
+      if (wrong[qid].streak >= 2) delete wrong[qid]
     }
   } else {
-    wrong[qid] = { count: (wrong[qid]?.count || 0) + 1, streak: 0, at: Date.now() }
+    wrong[qid] = { count: (wrong[qid]?.count || 0) + 1, streak: 0, at: now }
   }
   store.set(wrongKey(sid), wrong)
+
+  // --- thống kê tổng + theo chủ đề ---
   const stats = store.get(statsKey(sid), { attempts: 0, correct: 0 })
   stats.attempts += 1
   if (correct) stats.correct += 1
   store.set(statsKey(sid), stats)
+
+  if (topic) {
+    const t = store.get(topicsKey(sid), {})
+    const cur = t[topic] || { a: 0, c: 0 }
+    cur.a += 1
+    if (correct) cur.c += 1
+    t[topic] = cur
+    store.set(topicsKey(sid), t)
+  }
   notifyProgressChange()
+}
+
+// sắp xếp ưu tiên: quá hạn lâu nhất > câu mới > câu yếu (box thấp)
+function prioritize(pool, sid) {
+  const srs = getSrs(sid), now = Date.now()
+  const score = (q) => {
+    const e = srsOf(srs, q.id)
+    if (isNew(e)) return 1_000_000                        // câu chưa gặp: ưu tiên cao
+    if (isDue(e, now)) return 2_000_000 + (now - e.due)   // quá hạn: ưu tiên cao nhất
+    return 100 - (e.box || 0) * 10                        // còn lại: box thấp trước
+  }
+  return [...pool].sort((a, b) => score(b) - score(a) || Math.random() - 0.5)
 }
 
 // ---------- remote data source (sửa nội dung không cần deploy) ----------
@@ -236,10 +297,15 @@ function tutorSystem(subject, q) {
 }
 
 // ---------- shared bits ----------
-function Badges({ q }) {
+function Badges({ q, srs }) {
   return (
     <span className="meta-row">
       <span className="badge badge-topic">{q.topic}</span>
+      {srs && srs.seen > 0 && (
+        <span className={`badge badge-box b${srs.box}`} title={`Đã gặp ${srs.seen} lần · đúng ${srs.correct} · sai ${srs.lapses}`}>
+          {isMastered(srs) ? '🏆' : '📦'} {boxLabel(srs.box)}
+        </span>
+      )}
       {q.source === 'theory'
         ? <span className="badge badge-multi">🧠 Câu tự luyện từ lý thuyết</span>
         : q.verified
@@ -395,32 +461,56 @@ function QuestionAI({ subject, q }) {
 }
 
 // ---------- Practice mode ----------
-function Practice({ subject, pool, onExit, title }) {
-  const [queue] = useState(() => shuffle(pool).map(shuffleOptions))
-  const [idx, setIdx] = useState(0)
+// order: 'shuffle' | 'priority' | 'keep'   drill: chế độ luyện đề (lặp lại tới khi thuộc)
+function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = false, resume = null, sessionId = null }) {
+  const [queue, setQueue] = useState(() => {
+    if (resume?.ids?.length) {
+      const byId = Object.fromEntries(pool.map((q) => [q.id, q]))
+      const restored = resume.ids.map((id) => byId[id]).filter(Boolean).map(shuffleOptions)
+      if (restored.length) return restored
+    }
+    const base = order === 'priority' ? prioritize(pool, subject.id)
+      : order === 'keep' ? pool : shuffle(pool)
+    return base.map(shuffleOptions)
+  })
+  const [idx, setIdx] = useState(resume?.idx || 0)
   const [selected, setSelected, toggle] = useToggleSelect()
   const [revealed, setRevealed] = useState(false)
   const [showHint, setShowHint] = useState(false)
-  const [session, setSession] = useState({ done: 0, ok: 0 })
+  const [session, setSession] = useState(resume?.session || { done: 0, ok: 0 })
+  const [requeued, setRequeued] = useState(0)
 
   const q = idx < queue.length ? queue[idx] : null
+
+  // lưu phiên để có thể tiếp tục sau
+  useEffect(() => {
+    if (!sessionId) return
+    if (idx >= queue.length) { localStorage.removeItem(sessionKey(subject.id)); return }
+    store.set(sessionKey(subject.id), {
+      mode: sessionId, title, at: Date.now(),
+      ids: queue.map((x) => x.id), idx, session,
+    })
+  }, [idx, queue, session]) // eslint-disable-line
   const multi = q ? q.answers.length > 1 : false
   const isCorrect = q ? sameSet(selected, q.answers) : false
 
-  const submit = () => {
-    setRevealed(true)
-    recordResult(subject.id, q.id, isCorrect)
-    setSession((s) => ({ done: s.done + 1, ok: s.ok + (isCorrect ? 1 : 0) }))
+  // chế độ luyện đề: sai thì nhét lại vào cuối hàng đợi để gặp lại
+  const afterAnswer = (ok) => {
+    recordResult(subject.id, q.id, ok, q.topic)
+    setSession((s) => ({ done: s.done + 1, ok: s.ok + (ok ? 1 : 0) }))
+    if (drill && !ok) {
+      setQueue((qq) => [...qq, shuffleOptions(q)])
+      setRequeued((n) => n + 1)
+    }
   }
+  const submit = () => { setRevealed(true); afterAnswer(isCorrect) }
   const next = () => { setIdx(idx + 1); setSelected([]); setRevealed(false); setShowHint(false) }
   const choose = (i) => {
     if (!q || revealed) return
     if (multi) { toggle(i, true); return }
     setSelected([i])
-    const ok = sameSet([i], q.answers)
     setRevealed(true)
-    recordResult(subject.id, q.id, ok)
-    setSession((s) => ({ done: s.done + 1, ok: s.ok + (ok ? 1 : 0) }))
+    afterAnswer(sameSet([i], q.answers))
   }
 
   useEffect(() => {
@@ -440,24 +530,28 @@ function Practice({ subject, pool, onExit, title }) {
 
   if (!queue.length) return <Empty onExit={onExit} />
   if (idx >= queue.length) {
+    const pct = session.done ? Math.round((session.ok / session.done) * 100) : 0
     return (
       <div className="card" style={{ textAlign: 'center' }}>
-        <h2>Hoàn thành!</h2>
+        <h2>{drill ? 'Đã luyện xong lượt này!' : 'Hoàn thành!'}</h2>
         <div className="score-big">{session.ok}/{session.done}</div>
-        <p>đúng {session.done ? Math.round((session.ok / session.done) * 100) : 0}%</p>
+        <p>đúng {pct}%{requeued > 0 && ` · ${requeued} câu phải làm lại`}</p>
+        {drill && pct === 100 && requeued === 0 && <p style={{ color: 'var(--green)', fontWeight: 700 }}>🎯 Đúng 100% ngay lượt đầu!</p>}
         <button className="btn btn-primary" onClick={onExit}>Về trang chính</button>
       </div>
     )
   }
 
+  const srsEntry = srsOf(getSrs(subject.id), q.id)
+
   return (
     <div className="card">
       <div className="meta-row" style={{ justifyContent: 'space-between' }}>
-        <span>{title} — Câu {idx + 1}/{queue.length}</span>
+        <span>{title} — Câu {idx + 1}/{queue.length}{requeued > 0 && ` (+${requeued} làm lại)`}</span>
         <span>Đúng: {session.ok}/{session.done}</span>
       </div>
       <div className="progress-track"><div className="progress-fill" style={{ width: `${(idx / queue.length) * 100}%` }} /></div>
-      <Badges q={q} />
+      <Badges q={q} srs={srsEntry} />
       <div className="question-text">{q.question}</div>
       {multi && !revealed && (
         <div className="multi-note">📌 Câu nhiều đáp án — chọn đúng <strong>{q.answers.length}</strong> ý (đã chọn {selected.length}/{q.answers.length}) rồi bấm <strong>Kiểm tra</strong>.</div>
@@ -525,7 +619,7 @@ function ExamSetup({ pool, onStart, onExit }) {
   )
 }
 
-function Exam({ subject, pool, onExit }) {
+function Exam({ subject, pool, onExit, examTopic }) {
   const [config, setConfig] = useState(null)
   const [questions, setQuestions] = useState([])
   const [idx, setIdx] = useState(0)
@@ -576,9 +670,17 @@ function Exam({ subject, pool, onExit }) {
   const doFinish = () => {
     setFinished(true)
     clearInterval(timerRef.current)
+    let score = 0
     questions.forEach((q, i) => {
-      recordResult(subject.id, q.id, sameSet(answers[i] || [], q.answers))
+      const ok = sameSet(answers[i] || [], q.answers)
+      if (ok) score += 1
+      recordResult(subject.id, q.id, ok, q.topic)
     })
+    // lưu lịch sử thi thử
+    const hist = store.get(examsKey(subject.id), [])
+    hist.push({ at: Date.now(), score, total: questions.length, mins: config.mins, topic: examTopic || 'Tất cả' })
+    store.set(examsKey(subject.id), hist.slice(-50))
+    notifyProgressChange()
   }
 
   if (!config) return <ExamSetup pool={pool} onStart={start} onExit={onExit} />
@@ -747,7 +849,7 @@ function inlineMd(s) {
     .replace(/`([^`]+)`/g, '<code>$1</code>')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
 }
-function mdToHtml(md) {
+function mdToHtml(md, headings = []) {
   let html = ''
   const lines = md.split('\n')
   let i = 0, inCode = false, listBuf = [], tableBuf = []
@@ -778,7 +880,15 @@ function mdToHtml(md) {
     if (/^\s*\|/.test(line)) { flushList(); tableBuf.push(line.trim()); continue }
     flushTable()
     const h = line.match(/^(#{1,4})\s+(.*)/)
-    if (h) { flushList(); const lv = h[1].length; html += `<h${lv}>${inlineMd(escapeHtml(h[2]))}</h${lv}>`; continue }
+    if (h) {
+      flushList()
+      const lv = h[1].length
+      const txt = inlineMd(escapeHtml(h[2]))
+      const id = 'h' + (headings.length)
+      if (lv <= 2) headings.push({ id, lv, text: h[2].replace(/[*`#]/g, '').trim() })
+      html += `<h${lv} id="${id}">${txt}</h${lv}>`
+      continue
+    }
     if (/^\s*([-*]|\d+\.)\s+/.test(line)) { listBuf.push(inlineMd(escapeHtml(line.replace(/^\s*([-*]|\d+\.)\s+/, '')))); continue }
     flushList()
     if (/^\s*>\s?/.test(line)) { html += `<blockquote>${inlineMd(escapeHtml(line.replace(/^\s*>\s?/, '')))}</blockquote>`; continue }
@@ -799,14 +909,35 @@ function Theory({ subject, onExit }) {
       .then(setMd)
       .catch(() => setErr('Không tải được tài liệu lý thuyết.'))
   }, [subject])
+  const [showToc, setShowToc] = useState(false)
+  const headings = []
+  const html = md ? mdToHtml(md, headings) : ''
+
   if (err) return <Empty onExit={onExit} msg={err} />
   if (md === null) return <div className="card empty">Đang tải…</div>
+
+  const jump = (id) => {
+    setShowToc(false)
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   return (
     <div>
       <div className="nav-row" style={{ marginTop: 0, marginBottom: 12 }}>
         <button className="btn btn-plain" onClick={onExit}>← Về trang chính</button>
+        <button className="btn btn-primary" onClick={() => setShowToc((s) => !s)}>
+          {showToc ? '✕ Đóng mục lục' : '☰ Mục lục'}
+        </button>
       </div>
-      <div className="card theory" dangerouslySetInnerHTML={{ __html: mdToHtml(md) }} />
+      {showToc && (
+        <div className="card toc">
+          {headings.map((h) => (
+            <button key={h.id} className={`toc-item lv${h.lv}`} onClick={() => jump(h.id)}>{h.text}</button>
+          ))}
+        </div>
+      )}
+      <div className="card theory" dangerouslySetInnerHTML={{ __html: html }} />
+      <button className="fab-top" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="Lên đầu trang">↑</button>
     </div>
   )
 }
@@ -938,7 +1069,7 @@ function Empty({ onExit, msg = 'Không có câu hỏi nào trong mục này.' })
 }
 
 // ---------- Home ----------
-function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics }) {
+function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, examPool, allPool }) {
   const [, force] = useState(0)
   const stats = store.get(statsKey(subject.id), { attempts: 0, correct: 0 })
   const wrong = store.get(wrongKey(subject.id), {})
@@ -946,25 +1077,55 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics }) {
   const wrongInPool = pool.filter((q) => wrongIds.includes(q.id)).length
   const known = store.get(knownKey(subject.id), {})
   const unverified = pool.filter((q) => !q.verified).length
+  const srs = getSrs(subject.id)
+  const topicStats = store.get(topicsKey(subject.id), {})
+  const exams = store.get(examsKey(subject.id), [])
+  const saved = store.get(sessionKey(subject.id), null)
+
+  // SRS: câu đến hạn + câu mới, tính trên toàn bộ (bank + theory quiz) theo bộ lọc chủ đề
+  const now = Date.now()
+  const dueList = allPool.filter((q) => isDue(srsOf(srs, q.id), now))
+  const newList = allPool.filter((q) => isNew(srsOf(srs, q.id)))
+  const todayPool = [...dueList, ...newList.slice(0, 20)]
+  const masteredCount = allPool.filter((q) => isMastered(srsOf(srs, q.id))).length
+
+  // luyện đề thật: các câu nguồn đề thi FE
+  const examDone = examPool.filter((q) => (srsOf(srs, q.id).streak || 0) >= MASTER_STREAK).length
 
   const modes = [
+    { id: 'today', icon: '🎯', name: 'Ôn hôm nay', desc: 'Lịch lặp lại ngắt quãng — ưu tiên câu đến hạn và câu chưa gặp. Học đúng thứ cần học.', count: `${todayPool.length} câu`, hot: todayPool.length > 0 },
+    ...(examPool.length ? [{ id: 'drill', icon: '📄', name: 'Luyện đề thi thật', desc: 'Bộ câu sát đề thi FE — sai là gặp lại ngay, luyện tới khi thuộc 100%.', count: `${examDone}/${examPool.length} thuộc`, hot: examDone < examPool.length }] : []),
     { id: 'practice', icon: '📝', name: 'Practice', desc: 'Làm từng câu, hiện đáp án + giải thích ngay.', count: `${pool.length} câu` },
     { id: 'exam', icon: '⏱️', name: 'Thi thử', desc: 'Chọn số câu & thời gian, nộp bài mới biết điểm.', count: `${pool.length} câu` },
-    { id: 'flash', icon: '🃏', name: 'Flashcard', desc: 'Lật thẻ học thuộc, đánh dấu thẻ đã thuộc.', count: `${pool.length} câu` },
     { id: 'wrong', icon: '🔁', name: 'Ôn câu sai', desc: 'Luyện lại các câu từng làm sai (đúng 2 lần liên tiếp sẽ thoát danh sách).', count: `${wrongInPool} câu` },
-    ...(subject.theory ? [{ id: 'theory', icon: '📖', name: 'Lý thuyết', desc: 'Tổng hợp lý thuyết theo chương + mẹo nhận diện bẫy đề, để xử lý câu không có trong ngân hàng.', count: 'Đọc tài liệu' }] : []),
-    ...(theoryPool.length ? [{ id: 'theoryquiz', icon: '🧠', name: 'Luyện lý thuyết', desc: 'Trắc nghiệm sinh từ tài liệu lý thuyết — câu MỚI, không có trong ngân hàng đề.', count: `${theoryPool.length} câu` }] : []),
+    { id: 'flash', icon: '🃏', name: 'Flashcard', desc: 'Lật thẻ học thuộc, đánh dấu thẻ đã thuộc.', count: `${pool.length} câu` },
+    ...(subject.theory ? [{ id: 'theory', icon: '📖', name: 'Lý thuyết', desc: 'Tổng hợp lý thuyết theo chương + mẹo nhận diện bẫy đề.', count: 'Đọc tài liệu' }] : []),
+    ...(theoryPool.length ? [{ id: 'theoryquiz', icon: '🧠', name: 'Luyện lý thuyết', desc: 'Trắc nghiệm sinh từ tài liệu lý thuyết — câu MỚI ngoài ngân hàng đề.', count: `${theoryPool.length} câu` }] : []),
+    { id: 'search', icon: '🔍', name: 'Tra cứu', desc: 'Tìm câu hỏi theo từ khoá, xem đáp án và giải thích.', count: `${allPool.length} câu` },
   ]
 
   const resetProgress = (what) => {
-    const labels = { all: 'TOÀN BỘ tiến độ (thống kê, câu sai, thẻ đã thuộc)', wrong: 'danh sách câu sai', known: 'danh sách thẻ đã thuộc', stats: 'thống kê lượt làm' }
+    const labels = {
+      all: 'TOÀN BỘ tiến độ (lịch ôn, thống kê, câu sai, thẻ đã thuộc, lịch sử thi)',
+      srs: 'lịch ôn tập (hộp Leitner)', wrong: 'danh sách câu sai',
+      known: 'danh sách thẻ đã thuộc', stats: 'thống kê lượt làm', exams: 'lịch sử thi thử',
+    }
     if (!confirm(`Xoá ${labels[what]} của môn này?`)) return
-    if (what === 'all' || what === 'wrong') localStorage.removeItem(wrongKey(subject.id))
-    if (what === 'all' || what === 'known') localStorage.removeItem(knownKey(subject.id))
-    if (what === 'all' || what === 'stats') localStorage.removeItem(statsKey(subject.id))
+    const rm = (k) => localStorage.removeItem(k)
+    if (what === 'all' || what === 'wrong') rm(wrongKey(subject.id))
+    if (what === 'all' || what === 'known') rm(knownKey(subject.id))
+    if (what === 'all' || what === 'srs') rm(srsKey(subject.id))
+    if (what === 'all' || what === 'exams') rm(examsKey(subject.id))
+    if (what === 'all' || what === 'stats') { rm(statsKey(subject.id)); rm(topicsKey(subject.id)) }
+    if (what === 'all') rm(sessionKey(subject.id))
     notifyProgressChange()
     force((x) => x + 1)
   }
+
+  // xếp hạng chủ đề yếu
+  const topicRows = Object.entries(topicStats)
+    .map(([t, v]) => ({ t, a: v.a, c: v.c, pct: v.a ? Math.round((v.c / v.a) * 100) : 0 }))
+    .sort((x, y) => x.pct - y.pct)
 
   return (
     <div>
@@ -981,22 +1142,35 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics }) {
           ))}
         </div>
         <div className="stat-grid">
-          <div className="stat-box"><div className="num">{stats.attempts}</div><div className="lbl">lượt trả lời</div></div>
+          <div className="stat-box"><div className="num">{todayPool.length}</div><div className="lbl">cần ôn hôm nay</div></div>
+          <div className="stat-box"><div className="num">{masteredCount}</div><div className="lbl">đã thuộc</div></div>
           <div className="stat-box"><div className="num">{stats.attempts ? Math.round((stats.correct / stats.attempts) * 100) : 0}%</div><div className="lbl">tỉ lệ đúng</div></div>
           <div className="stat-box"><div className="num">{wrongIds.length}</div><div className="lbl">câu đang sai</div></div>
-          <div className="stat-box"><div className="num">{Object.keys(known).length}</div><div className="lbl">thẻ đã thuộc</div></div>
         </div>
-        <div className="reset-row">
-          <span>🗑 Xoá tiến độ:</span>
-          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('wrong')}>Câu sai</button>
-          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('known')}>Thẻ đã thuộc</button>
-          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('stats')}>Thống kê</button>
-          <button className="btn btn-sm btn-danger" onClick={() => resetProgress('all')}>Tất cả</button>
+        <div className="mastery-bar" title={`${masteredCount}/${allPool.length} câu đã vào hộp "Thuộc"`}>
+          <div className="mastery-fill" style={{ width: `${allPool.length ? (masteredCount / allPool.length) * 100 : 0}%` }} />
+          <span>Tiến độ thuộc bài: {masteredCount}/{allPool.length}</span>
         </div>
       </div>
+
+      {saved && saved.ids?.length > (saved.idx || 0) && (
+        <div className="card resume-card">
+          <div>
+            <strong>⏸ Đang dở: {saved.title}</strong>
+            <div style={{ fontSize: 13, color: 'var(--muted)' }}>
+              Câu {(saved.idx || 0) + 1}/{saved.ids.length} · {new Date(saved.at).toLocaleString('vi-VN')}
+            </div>
+          </div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <button className="btn btn-sm btn-plain" onClick={() => { localStorage.removeItem(sessionKey(subject.id)); force((x) => x + 1) }}>Bỏ</button>
+            <button className="btn btn-sm btn-primary" onClick={() => onMode(saved.mode, { resume: saved })}>Tiếp tục</button>
+          </div>
+        </div>
+      )}
+
       <div className="mode-grid">
         {modes.map((m) => (
-          <button key={m.id} className="mode-card" onClick={() => onMode(m.id)}>
+          <button key={m.id} className={`mode-card ${m.hot ? 'hot' : ''}`} onClick={() => onMode(m.id)}>
             <div className="icon">{m.icon}</div>
             <h3>{m.name}</h3>
             <p>{m.desc}</p>
@@ -1004,6 +1178,103 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics }) {
           </button>
         ))}
       </div>
+
+      {topicRows.length > 0 && (
+        <div className="card">
+          <h3>📊 Điểm mạnh / yếu theo chủ đề</h3>
+          <p style={{ color: 'var(--muted)', fontSize: 13, marginTop: 0 }}>Xếp từ yếu nhất — bấm để lọc và luyện riêng chủ đề đó.</p>
+          {topicRows.map((r) => (
+            <button key={r.t} className="topic-row" onClick={() => { setTopic(r.t); window.scrollTo({ top: 0, behavior: 'smooth' }) }}>
+              <span className="topic-name">{r.t}</span>
+              <span className="topic-track">
+                <span className={`topic-fill ${r.pct < 60 ? 'weak' : r.pct < 80 ? 'mid' : 'good'}`} style={{ width: `${r.pct}%` }} />
+              </span>
+              <span className="topic-pct">{r.pct}% <small>({r.c}/{r.a})</small></span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {exams.length > 0 && (
+        <div className="card">
+          <h3>📈 Lịch sử thi thử</h3>
+          <div className="exam-hist">
+            {exams.slice(-12).map((e, i) => {
+              const pct = Math.round((e.score / e.total) * 100)
+              return (
+                <div key={i} className="exam-bar" title={`${new Date(e.at).toLocaleString('vi-VN')} · ${e.topic} · ${e.score}/${e.total}`}>
+                  <span className={`exam-fill ${pct >= 80 ? 'good' : pct >= 50 ? 'mid' : 'weak'}`} style={{ height: `${Math.max(6, pct)}%` }} />
+                  <small>{pct}%</small>
+                </div>
+              )
+            })}
+          </div>
+          <div style={{ fontSize: 12.5, color: 'var(--muted)' }}>
+            Gần nhất: {exams[exams.length - 1].score}/{exams[exams.length - 1].total} · Cao nhất: {Math.max(...exams.map((e) => Math.round((e.score / e.total) * 100)))}%
+          </div>
+        </div>
+      )}
+
+      <div className="card">
+        <div className="reset-row" style={{ borderTop: 'none', paddingTop: 0, marginTop: 0 }}>
+          <span>🗑 Xoá tiến độ:</span>
+          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('srs')}>Lịch ôn</button>
+          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('wrong')}>Câu sai</button>
+          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('known')}>Thẻ thuộc</button>
+          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('stats')}>Thống kê</button>
+          <button className="btn btn-sm btn-plain" onClick={() => resetProgress('exams')}>Lịch sử thi</button>
+          <button className="btn btn-sm btn-danger" onClick={() => resetProgress('all')}>Tất cả</button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ---------- Tra cứu / tìm kiếm ----------
+function SearchView({ subject, allPool, onExit }) {
+  const [kw, setKw] = useState('')
+  const [open, setOpen] = useState({})
+  const k = kw.trim().toLowerCase()
+  const results = useMemo(() => {
+    if (k.length < 2) return []
+    return allPool.filter((q) =>
+      q.question.toLowerCase().includes(k) ||
+      q.options.some((o) => o.toLowerCase().includes(k)) ||
+      (q.explanation || '').toLowerCase().includes(k)
+    ).slice(0, 80)
+  }, [k, allPool])
+
+  return (
+    <div>
+      <div className="nav-row" style={{ marginTop: 0, marginBottom: 12 }}>
+        <button className="btn btn-plain" onClick={onExit}>← Về trang chính</button>
+      </div>
+      <div className="card">
+        <h2>🔍 Tra cứu câu hỏi</h2>
+        <input autoFocus value={kw} onChange={(e) => setKw(e.target.value)}
+          placeholder="Nhập từ khoá: FP-tree, softmax, lift, DBSCAN…"
+          style={{ width: '100%', padding: 11, borderRadius: 10, border: '1px solid var(--border)', boxSizing: 'border-box' }} />
+        <div style={{ fontSize: 13, color: 'var(--muted)', marginTop: 8 }}>
+          {k.length < 2 ? `Gõ ít nhất 2 ký tự — đang có ${allPool.length} câu.` : `Tìm thấy ${results.length} câu${results.length === 80 ? ' (hiện 80 đầu)' : ''}.`}
+        </div>
+      </div>
+      {results.map((q) => (
+        <div key={q.id} className="card search-item">
+          <Badges q={q} srs={srsOf(getSrs(subject.id), q.id)} />
+          <div className="question-text" style={{ fontSize: 15 }}>{q.question}</div>
+          {open[q.id] ? (
+            <>
+              <Options q={q} selected={[]} revealed disabled onToggle={() => {}} />
+              <div className="explanation">{q.explanation}</div>
+              {q.hint && <div className="hint-box static">💡 {q.hint}</div>}
+              <QuestionAI subject={subject} q={q} />
+              <button className="btn btn-sm btn-plain" onClick={() => setOpen((o) => ({ ...o, [q.id]: false }))}>Ẩn đáp án</button>
+            </>
+          ) : (
+            <button className="btn btn-sm btn-primary" onClick={() => setOpen((o) => ({ ...o, [q.id]: true }))}>Xem đáp án</button>
+          )}
+        </div>
+      ))}
     </div>
   )
 }
@@ -1019,7 +1290,14 @@ export default function App() {
   const [error, setError] = useState(null)
   const [showSync, setShowSync] = useState(false)
   const [syncState, setSyncState] = useState(syncEnabled() ? 'idle' : 'off')
+  const [resumeData, setResumeData] = useState(null)
+  const [dark, setDark] = useState(() => localStorage.getItem(THEME) === 'dark')
   const [, forceApp] = useState(0)
+
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', dark)
+    localStorage.setItem(THEME, dark ? 'dark' : 'light')
+  }, [dark])
 
   useEffect(() => {
     fetchData('subjects.json')
@@ -1076,16 +1354,38 @@ export default function App() {
     topic === 'Tất cả' ? theoryQs : theoryQs.filter((q) => q.topic === topic)
   ), [theoryQs, topic])
 
+  // toàn bộ câu (bank + luyện lý thuyết) theo bộ lọc chủ đề — dùng cho SRS & tra cứu
+  const allPool = useMemo(() => [...pool, ...theoryPool], [pool, theoryPool])
+
   const wrongPool = useMemo(() => {
     if (!data || !subject) return []
     const wrong = store.get(wrongKey(subject.id), {})
-    return [...pool, ...theoryPool].filter((q) => wrong[q.id])
-  }, [data, subject, pool, theoryPool, mode])
+    return allPool.filter((q) => wrong[q.id])
+  }, [data, subject, allPool, mode])
+
+  // câu đến hạn ôn + câu chưa gặp (giới hạn 20 câu mới mỗi lượt cho dễ tiêu hoá)
+  const todayPool = useMemo(() => {
+    if (!data || !subject) return []
+    const srs = getSrs(subject.id), now = Date.now()
+    const due = allPool.filter((q) => isDue(srsOf(srs, q.id), now))
+      .sort((a, b) => srsOf(srs, a.id).due - srsOf(srs, b.id).due)
+    const fresh = allPool.filter((q) => isNew(srsOf(srs, q.id))).slice(0, 20)
+    return [...due, ...fresh]
+  }, [data, subject, allPool, mode])
+
+  // bộ câu sát đề thi thật (nguồn ảnh đề FE), ưu tiên câu chưa thuộc
+  const examDrillPool = useMemo(() => {
+    if (!data || !subject) return []
+    const srs = getSrs(subject.id)
+    const src = allPool.filter((q) => q.source === 'exam_img')
+    return [...src].sort((a, b) => (srsOf(srs, a.id).streak || 0) - (srsOf(srs, b.id).streak || 0))
+  }, [data, subject, allPool, mode])
 
   if (error) return <div className="card empty">{error}</div>
   if (!subjects) return <div className="card empty">Đang tải…</div>
 
-  const goHome = () => setMode('home')
+  const goHome = () => { setResumeData(null); setMode('home') }
+  const openMode = (m, opts) => { setResumeData(opts?.resume || null); setMode(m) }
 
   return (
     <div>
@@ -1102,6 +1402,9 @@ export default function App() {
               {subjects.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}
             </select>
           )}
+          <button className="btn btn-sm btn-plain sync-btn" title={dark ? 'Chuyển sáng' : 'Chuyển tối'} onClick={() => setDark((d) => !d)}>
+            {dark ? '☀️' : '🌙'}
+          </button>
           <button className="btn btn-sm btn-plain sync-btn" title="Cài đặt: đồng bộ & AI" onClick={() => setShowSync(true)}>
             {syncState === 'off' && '⚙ Cài đặt'}
             {syncState === 'syncing' && '⏳ Sync…'}
@@ -1127,15 +1430,32 @@ export default function App() {
 
       {subject && !data && !error && <div className="card empty">Đang tải câu hỏi…</div>}
 
-      {data && mode === 'home' && <Home subject={subject} onMode={setMode} topic={topic} setTopic={setTopic} pool={pool} theoryPool={theoryPool} topics={topics} />}
-      {data && mode === 'practice' && <Practice subject={subject} pool={pool} onExit={goHome} title="Practice" />}
-      {data && mode === 'exam' && <Exam subject={subject} pool={pool} onExit={goHome} />}
+      {data && mode === 'home' && (
+        <Home subject={subject} onMode={openMode} topic={topic} setTopic={setTopic}
+          pool={pool} theoryPool={theoryPool} topics={topics}
+          examPool={examDrillPool} allPool={allPool} />
+      )}
+      {data && mode === 'today' && (
+        todayPool.length
+          ? <Practice subject={subject} pool={todayPool} onExit={goHome} title="Ôn hôm nay"
+              order="priority" sessionId="today" resume={resumeData} />
+          : <Empty onExit={goHome} msg="🎉 Hôm nay không còn câu nào đến hạn! Quay lại sau, hoặc chọn Practice để học thêm câu mới." />
+      )}
+      {data && mode === 'drill' && (
+        examDrillPool.length
+          ? <Practice subject={subject} pool={examDrillPool} onExit={goHome} title="Luyện đề thi thật"
+              order="keep" drill sessionId="drill" resume={resumeData} />
+          : <Empty onExit={goHome} msg="Môn này chưa có câu từ đề thi thật." />
+      )}
+      {data && mode === 'practice' && <Practice subject={subject} pool={pool} onExit={goHome} title="Practice" order="priority" sessionId="practice" resume={resumeData} />}
+      {data && mode === 'exam' && <Exam subject={subject} pool={pool} onExit={goHome} examTopic={topic} />}
       {data && mode === 'flash' && <Flashcards subject={subject} pool={pool} onExit={goHome} />}
       {data && mode === 'theory' && <Theory subject={subject} onExit={goHome} />}
-      {data && mode === 'theoryquiz' && <Practice subject={subject} pool={theoryPool} onExit={goHome} title="Luyện lý thuyết" />}
+      {data && mode === 'theoryquiz' && <Practice subject={subject} pool={theoryPool} onExit={goHome} title="Luyện lý thuyết" order="priority" sessionId="theoryquiz" resume={resumeData} />}
+      {data && mode === 'search' && <SearchView subject={subject} allPool={allPool} onExit={goHome} />}
       {data && mode === 'wrong' && (
         wrongPool.length
-          ? <Practice subject={subject} pool={wrongPool} onExit={goHome} title="Ôn câu sai" />
+          ? <Practice subject={subject} pool={wrongPool} onExit={goHome} title="Ôn câu sai" drill />
           : <Empty onExit={goHome} msg="Chưa có câu sai nào — làm Practice hoặc Thi thử trước nhé!" />
       )}
     </div>

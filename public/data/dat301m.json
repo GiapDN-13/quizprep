@@ -2320,27 +2320,6 @@
   },
   {
    "source": "md2",
-   "origNum": 76,
-   "question": "What are the critical steps in preparing the input sequences for the prediction model?",
-   "options": [
-    "Generating subphrases from each line using n_gram_sequences.",
-    "Pre-padding the subphrases sequences.",
-    "Converting the seed text to a token sequence using texts_to_sequences.",
-    "Splitting the dataset into training and testing sentences."
-   ],
-   "explanation": "Training inputs for the text-generation model are built by generating n-gram subphrases from each line (each subphrase's last word becomes the label). Converting seed text with texts_to_sequences happens later at prediction time, and text generation training does not use a train/test sentence split.",
-   "verified": true,
-   "answers": [
-    0
-   ],
-   "topic": "NLP",
-   "id": "dat301m-118",
-   "confidence": "high",
-   "hint": "Chuẩn bị data cho text generation: sinh n-gram subphrases từ mỗi dòng (từ cuối làm label). texts_to_sequences cho seed chỉ dùng LÚC PREDICT — bẫy nằm ở thời điểm.",
-   "review": "Trùng đề với câu khác nhưng chỉ 1 đáp án; bản đầy đủ cần 2 bước (n-gram + pre-padding)."
-  },
-  {
-   "source": "md2",
    "origNum": 90,
    "question": "What's the correct line of code to split an n column window into n-1 columns for features and 1 column for a label",
    "options": [
@@ -2399,26 +2378,6 @@
    "id": "dat301m-121",
    "confidence": "high",
    "hint": "Bản 'chọn 2 đáp án' của câu n-gram: subphrases n-gram + PRE-PADDING cho cùng độ dài — cặp đôi chuẩn bị training. Vẫn loại seed text (predict-time) và train/test split."
-  },
-  {
-   "source": "md2",
-   "origNum": 28,
-   "question": "If my data is sized 150×150, and I use Pooling of size 2×2, what size will the resulting image be?",
-   "options": [
-    "300×300",
-    "148×148",
-    "75×75",
-    "149×149"
-   ],
-   "answers": [
-    2
-   ],
-   "explanation": "A 2x2 max pooling layer halves both spatial dimensions by keeping one value from each 2x2 block, so a 150x150 image becomes 75x75.",
-   "verified": true,
-   "topic": "Computer Vision",
-   "id": "dat301m-122",
-   "confidence": "high",
-   "hint": "Pooling 2x2 = chia ĐÔI mỗi chiều: 150/2 = 75 → 75×75. Pooling làm ảnh NHỎ đi — thấy 300×300 (to lên) là loại ngay."
   },
   {
    "source": "exam_img",

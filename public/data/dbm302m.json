@@ -2991,27 +2991,6 @@
    "confidence": "high"
   },
   {
-   "question": "Given the sequence database: S1 <af(e)(cdeh)cfg(abe)>, S2 <ad(bc)c(fg)(ch)>, S3 <bc(ad)ebf(cdfgh)>, S4 <ab(bd)de>, with min_sup = 1. Which of the following does NOT belong to the <a>-projected database?",
-   "options": [
-    "<f(e)(cdeh)cfg(abe)>",
-    "<d(bc)c(fg)(ch)>",
-    "<(_d)ebf(cdfgh)>",
-    "<b(bd)>",
-    "All of the above belong to the <a>-projected database."
-   ],
-   "answers": [
-    3
-   ],
-   "explanation": "Trong <a>-projected database, mỗi sequence chỉ giữ phần hậu tố sau lần xuất hiện đầu tiên của a. Hậu tố của S4 là <b(bd)de> (không phải <b(bd)>), nên <b(bd)> là phương án KHÔNG thuộc projected database.",
-   "hint": "Projected DB lấy đuôi sau 'a' đầu tiên; <b(bd)> không khớp sequence nào.",
-   "topic": "Advanced Mining",
-   "verified": true,
-   "source": "ai",
-   "origNum": 54,
-   "id": "dbm302m-152",
-   "confidence": "high"
-  },
-  {
    "question": "The dataset contains two flowers, Iris setosa and Iris versicolor, with (sepal length, sepal width, petal length, petal width): Iris setosa (4.9, 3.0, 1.4, 0.2), Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
    "options": [
     "2.8",

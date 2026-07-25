@@ -16,6 +16,30 @@
   --shadow: 0 1px 3px rgba(20, 28, 60, 0.07), 0 6px 18px rgba(20, 28, 60, 0.05);
 }
 
+html.dark {
+  --bg: #10141f;
+  --card: #171d2b;
+  --text: #e8ecf5;
+  --muted: #93a0b8;
+  --border: #2a3346;
+  --primary: #7c8cff;
+  --primary-soft: #232a45;
+  --green: #4ade80;
+  --green-soft: #16301f;
+  --red: #f87171;
+  --red-soft: #351a1c;
+  --amber: #fbbf24;
+  --amber-soft: #33280f;
+  --shadow: 0 1px 3px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.3);
+}
+html.dark .hint-box { color: #fbe6b4; }
+html.dark .multi-note { background: #2a1f45; color: #ddc9ff; }
+html.dark .review-note { background: var(--red-soft); color: #fecaca; }
+html.dark .theory pre { background: #0b0f18; }
+html.dark .qai-msg.user { color: #0b0f18; }
+html.dark .badge-review { background: #3a1620; color: #fca5a5; }
+html.dark .badge-multi { background: #2a1f45; color: #c4b5fd; }
+
 * { box-sizing: border-box; }
 
 body {
@@ -236,6 +260,65 @@ kbd {
   font-family: inherit; box-sizing: border-box;
 }
 .hint-box.static { cursor: default; }
+
+/* ----- SRS / thống kê / chế độ mới ----- */
+.badge-box { background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
+.badge-box.b1, .badge-box.b2 { background: var(--red-soft); color: var(--red); border-color: transparent; }
+.badge-box.b3 { background: var(--amber-soft); color: var(--amber); border-color: transparent; }
+.badge-box.b4, .badge-box.b5 { background: var(--green-soft); color: var(--green); border-color: transparent; }
+
+.mode-card.hot { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+
+.mastery-bar {
+  position: relative; height: 26px; background: var(--bg); border-radius: 999px;
+  overflow: hidden; margin-top: 12px; border: 1px solid var(--border);
+}
+.mastery-fill { position: absolute; inset: 0 auto 0 0; background: linear-gradient(90deg, var(--primary), var(--green)); transition: width .4s; }
+.mastery-bar span {
+  position: relative; z-index: 1; display: block; text-align: center;
+  font-size: 12.5px; font-weight: 700; line-height: 26px; color: var(--text);
+}
+
+.resume-card { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-left: 4px solid var(--primary); }
+
+.topic-row {
+  display: flex; align-items: center; gap: 10px; width: 100%; background: none;
+  border: none; border-top: 1px solid var(--border); padding: 10px 0; text-align: left; color: var(--text);
+}
+.topic-row:first-of-type { border-top: none; }
+.topic-name { flex: 0 0 34%; font-size: 13.5px; font-weight: 600; }
+.topic-track { flex: 1; height: 9px; background: var(--bg); border-radius: 99px; overflow: hidden; }
+.topic-fill { display: block; height: 100%; border-radius: 99px; }
+.topic-fill.weak { background: var(--red); }
+.topic-fill.mid { background: var(--amber); }
+.topic-fill.good { background: var(--green); }
+.topic-pct { flex: 0 0 auto; font-size: 12.5px; font-weight: 700; min-width: 78px; text-align: right; }
+.topic-pct small { color: var(--muted); font-weight: 500; }
+
+.exam-hist { display: flex; align-items: flex-end; gap: 6px; height: 110px; margin: 10px 0; }
+.exam-bar { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; height: 100%; gap: 4px; }
+.exam-fill { width: 100%; border-radius: 5px 5px 0 0; }
+.exam-fill.good { background: var(--green); }
+.exam-fill.mid { background: var(--amber); }
+.exam-fill.weak { background: var(--red); }
+.exam-bar small { font-size: 10px; color: var(--muted); }
+
+.search-item { padding: 14px; }
+
+.toc { padding: 10px; max-height: 60vh; overflow-y: auto; }
+.toc-item {
+  display: block; width: 100%; text-align: left; background: none; border: none;
+  padding: 8px 10px; border-radius: 8px; font-size: 14px; color: var(--text);
+}
+.toc-item:hover { background: var(--primary-soft); color: var(--primary); }
+.toc-item.lv1 { font-weight: 800; }
+.toc-item.lv2 { padding-left: 22px; font-size: 13.5px; }
+
+.fab-top {
+  position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom));
+  width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--border);
+  background: var(--card); color: var(--text); font-size: 18px; box-shadow: var(--shadow); z-index: 50;
+}
 .modal-backdrop {
   position: fixed; inset: 0; background: rgba(15, 20, 40, 0.5);
   display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 100;
