@@ -306,6 +306,7 @@ function Badges({ q, srs }) {
           {isMastered(srs) ? '🏆' : '📦'} {boxLabel(srs.box)}
         </span>
       )}
+      {q.drill && <span className="badge badge-drill">📄 Đề gốc · câu {q.drillNo}</span>}
       {q.source === 'theory'
         ? <span className="badge badge-multi">🧠 Câu tự luyện từ lý thuyết</span>
         : q.verified
@@ -1094,7 +1095,7 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, exam
 
   const modes = [
     { id: 'today', icon: '🎯', name: 'Ôn hôm nay', desc: 'Lịch lặp lại ngắt quãng — ưu tiên câu đến hạn và câu chưa gặp. Học đúng thứ cần học.', count: `${todayPool.length} câu`, hot: todayPool.length > 0 },
-    ...(examPool.length ? [{ id: 'drill', icon: '📄', name: 'Luyện đề thi thật', desc: 'Bộ câu sát đề thi FE — sai là gặp lại ngay, luyện tới khi thuộc 100%.', count: `${examDone}/${examPool.length} thuộc`, hot: examDone < examPool.length }] : []),
+    ...(examPool.length ? [{ id: 'drill', icon: '📄', name: 'Luyện đề thi thật', desc: 'Đúng bộ đề gốc, không lọc chủ đề — sai là gặp lại ngay, luyện tới khi thuộc 100%.', count: `${examDone}/${examPool.length} thuộc`, hot: examDone < examPool.length }] : []),
     { id: 'practice', icon: '📝', name: 'Practice', desc: 'Làm từng câu, hiện đáp án + giải thích ngay.', count: `${pool.length} câu` },
     { id: 'exam', icon: '⏱️', name: 'Thi thử', desc: 'Chọn số câu & thời gian, nộp bài mới biết điểm.', count: `${pool.length} câu` },
     { id: 'wrong', icon: '🔁', name: 'Ôn câu sai', desc: 'Luyện lại các câu từng làm sai (đúng 2 lần liên tiếp sẽ thoát danh sách).', count: `${wrongInPool} câu` },
@@ -1373,13 +1374,19 @@ export default function App() {
     return [...due, ...fresh]
   }, [data, subject, allPool, mode])
 
-  // bộ câu sát đề thi thật (nguồn ảnh đề FE), ưu tiên câu chưa thuộc
+  // bộ câu sát đề thi thật — KHÔNG lọc theo chủ đề, luôn đủ bộ đề
+  // ưu tiên: câu có cờ drill (đề gốc do bạn cung cấp), nếu môn chưa có thì dùng ảnh đề FE
   const examDrillPool = useMemo(() => {
     if (!data || !subject) return []
+    const all = [...data.questions, ...theoryQs]
+    const flagged = all.filter((q) => q.drill)
+    const src = flagged.length ? flagged : all.filter((q) => q.source === 'exam_img')
     const srs = getSrs(subject.id)
-    const src = allPool.filter((q) => q.source === 'exam_img')
-    return [...src].sort((a, b) => (srsOf(srs, a.id).streak || 0) - (srsOf(srs, b.id).streak || 0))
-  }, [data, subject, allPool, mode])
+    // câu chưa thuộc lên trước; cùng mức thì giữ đúng thứ tự đề gốc
+    return [...src].sort((a, b) =>
+      (srsOf(srs, a.id).streak || 0) - (srsOf(srs, b.id).streak || 0) ||
+      (a.drillNo || 0) - (b.drillNo || 0))
+  }, [data, theoryQs, subject, mode])
 
   if (error) return <div className="card empty">{error}</div>
   if (!subjects) return <div className="card empty">Đang tải…</div>

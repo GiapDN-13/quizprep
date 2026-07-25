@@ -19,7 +19,9 @@
    "topic": "ML Basics",
    "id": "dat301m-1",
    "confidence": "high",
-   "hint": "Truyền thống: NGƯỜI viết rules. ML: đưa Data + Answers vào, MÁY tự suy ra rules. Nhớ chiều đảo ngược của mũi tên."
+   "hint": "Truyền thống: NGƯỜI viết rules. ML: đưa Data + Answers vào, MÁY tự suy ra rules. Nhớ chiều đảo ngược của mũi tên.",
+   "drill": true,
+   "drillNo": 1
   },
   {
    "source": "md1",
@@ -39,7 +41,9 @@
    "topic": "ML Basics",
    "id": "dat301m-2",
    "confidence": "high",
-   "hint": "Gắn tên cho data = dán 'label' (nhãn) → Labelling the Data. Liên tưởng: dán nhãn lên lọ gia vị để biết bên trong là gì."
+   "hint": "Gắn tên cho data = dán 'label' (nhãn) → Labelling the Data. Liên tưởng: dán nhãn lên lọ gia vị để biết bên trong là gì.",
+   "drill": true,
+   "drillNo": 2
   },
   {
    "source": "md1",
@@ -58,7 +62,9 @@
    "topic": "ML Basics",
    "id": "dat301m-3",
    "confidence": "high",
-   "hint": "Loss = 'thua lỗ' → thứ ĐO độ tệ của guess hiện tại. Muốn biết guess tốt hay xấu, hỏi Loss function."
+   "hint": "Loss = 'thua lỗ' → thứ ĐO độ tệ của guess hiện tại. Muốn biết guess tốt hay xấu, hỏi Loss function.",
+   "drill": true,
+   "drillNo": 4
   },
   {
    "source": "md1",
@@ -78,7 +84,9 @@
    "topic": "ML Basics",
    "id": "dat301m-4",
    "confidence": "high",
-   "hint": "Optimizer = 'người tối ưu' → sinh ra guess MỚI tốt hơn. Loss mới là thứ ĐO độ tệ — đừng nhầm vai trò."
+   "hint": "Optimizer = 'người tối ưu' → sinh ra guess MỚI tốt hơn. Loss mới là thứ ĐO độ tệ — đừng nhầm vai trò.",
+   "drill": true,
+   "drillNo": 5
   },
   {
    "source": "md1",
@@ -98,7 +106,9 @@
    "topic": "ML Basics",
    "id": "dat301m-5",
    "confidence": "high",
-   "hint": "Converge = 'hội tụ' → guess tiến dần SÁT đáp án đúng. Bẫy: 'khớp quá sát một tập data' là định nghĩa của overfitting!"
+   "hint": "Converge = 'hội tụ' → guess tiến dần SÁT đáp án đúng. Bẫy: 'khớp quá sát một tập data' là định nghĩa của overfitting!",
+   "drill": true,
+   "drillNo": 6
   },
   {
    "source": "md1",
@@ -118,7 +128,9 @@
    "topic": "ML Basics",
    "id": "dat301m-6",
    "confidence": "high",
-   "hint": "Tên hàm tự khai: fit = 'khớp' → train mạng để KHỚP tập giá trị này với tập kia. Cứ 'fit' là training."
+   "hint": "Tên hàm tự khai: fit = 'khớp' → train mạng để KHỚP tập giá trị này với tập kia. Cứ 'fit' là training.",
+   "drill": true,
+   "drillNo": 7
   },
   {
    "source": "md1",
@@ -138,7 +150,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-7",
    "confidence": "high",
-   "hint": "Nhớ '28 xám': Fashion MNIST = 28×28 GREYscale (1 kênh). Dataset học tập nên nhỏ và không màu."
+   "hint": "Nhớ '28 xám': Fashion MNIST = 28×28 GREYscale (1 kênh). Dataset học tập nên nhỏ và không màu.",
+   "drill": true,
+   "drillNo": 8
   },
   {
    "source": "md1",
@@ -158,7 +172,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-8",
    "confidence": "high",
-   "hint": "Quy tắc vàng: số output neurons = số labels. 10 loại quần áo → 10 neurons. Không dính gì đến tốc độ."
+   "hint": "Quy tắc vàng: số output neurons = số labels. 10 loại quần áo → 10 neurons. Không dính gì đến tốc độ.",
+   "drill": true,
+   "drillNo": 9
   },
   {
    "source": "md1",
@@ -178,7 +194,9 @@
    "topic": "ML Basics",
    "id": "dat301m-9",
    "confidence": "high",
-   "hint": "ReLU = 'chặn âm': x > 0 thì giữ nguyên x, còn lại về 0. Nhớ khẩu hiệu 'positive mới được pass'."
+   "hint": "ReLU = 'chặn âm': x > 0 thì giữ nguyên x, còn lại về 0. Nhớ khẩu hiệu 'positive mới được pass'.",
+   "drill": true,
+   "drillNo": 10
   },
   {
    "source": "md1",
@@ -198,7 +216,9 @@
    "topic": "ML Basics",
    "id": "dat301m-10",
    "confidence": "high",
-   "hint": "Test set = đề thi CHƯA từng học → TEST với unseen data để đo generalization. Bẫy đảo chữ: không phải 'train với unseen'."
+   "hint": "Test set = đề thi CHƯA từng học → TEST với unseen data để đo generalization. Bẫy đảo chữ: không phải 'train với unseen'.",
+   "drill": true,
+   "drillNo": 11
   },
   {
    "source": "md1",
@@ -216,7 +236,9 @@
    "topic": "ML Basics",
    "id": "dat301m-11",
    "confidence": "high",
-   "hint": "Tên hàm tự tố cáo: on_epoch_END = CUỐI epoch. Câu hỏi nói 'at the start' → False."
+   "hint": "Tên hàm tự tố cáo: on_epoch_END = CUỐI epoch. Câu hỏi nói 'at the start' → False.",
+   "drill": true,
+   "drillNo": 12
   },
   {
    "source": "md1",
@@ -235,7 +257,9 @@
    "topic": "ML Basics",
    "id": "dat301m-12",
    "confidence": "high",
-   "hint": "callback = 'gọi ngược' → mỗi epoch máy gọi ngược về hàm code của bạn (vd: tự dừng khi đủ accuracy). Không phải để tăng tốc."
+   "hint": "callback = 'gọi ngược' → mỗi epoch máy gọi ngược về hàm code của bạn (vd: tự dừng khi đủ accuracy). Không phải để tăng tốc.",
+   "drill": true,
+   "drillNo": 13
   },
   {
    "source": "md1",
@@ -255,7 +279,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-13",
    "confidence": "high",
-   "hint": "Convolution = kính lọc → CÔ LẬP (isolate) features như cạnh, hình khối. 'Làm ảnh rõ/nhỏ hơn' đều là distractor."
+   "hint": "Convolution = kính lọc → CÔ LẬP (isolate) features như cạnh, hình khối. 'Làm ảnh rõ/nhỏ hơn' đều là distractor.",
+   "drill": true,
+   "drillNo": 14
   },
   {
    "source": "md1",
@@ -275,7 +301,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-14",
    "confidence": "high",
-   "hint": "Pooling = máy nén: GIẢM thông tin nhưng GIỮ feature nổi bật. Còn 'isolate features' là việc của convolution — đừng tráo vai."
+   "hint": "Pooling = máy nén: GIẢM thông tin nhưng GIỮ feature nổi bật. Còn 'isolate features' là việc của convolution — đừng tráo vai.",
+   "drill": true,
+   "drillNo": 15
   },
   {
    "source": "md1",
@@ -293,7 +321,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-15",
    "confidence": "high",
-   "hint": "Quy tắc conv 3×3: mất viền 1 pixel mỗi cạnh → trừ 2. 28−2=26 → True."
+   "hint": "Quy tắc conv 3×3: mất viền 1 pixel mỗi cạnh → trừ 2. 28−2=26 → True.",
+   "drill": true,
+   "drillNo": 16
   },
   {
    "source": "md1",
@@ -311,7 +341,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-16",
    "confidence": "high",
-   "hint": "Pooling 2×2 = CHIA ĐÔI, không phóng to: 26→13 chứ không phải 56 → False. Thấy số to hơn sau pooling là sai ngay."
+   "hint": "Pooling 2×2 = CHIA ĐÔI, không phóng to: 26→13 chứ không phải 56 → False. Thấy số to hơn sau pooling là sai ngay.",
+   "drill": true,
+   "drillNo": 17
   },
   {
    "source": "md1",
@@ -331,7 +363,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-17",
    "confidence": "high",
-   "hint": "Câu hỏi 'conv ảnh hưởng training thế nào' → đáp án khiêm tốn: 'tùy nhiều yếu tố'. Conv thiết kế tồi có thể còn tệ hơn DNN thường."
+   "hint": "Câu hỏi 'conv ảnh hưởng training thế nào' → đáp án khiêm tốn: 'tùy nhiều yếu tố'. Conv thiết kế tồi có thể còn tệ hơn DNN thường.",
+   "drill": true,
+   "drillNo": 18
   },
   {
    "source": "md1",
@@ -351,7 +385,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-18",
    "confidence": "high",
-   "hint": "ImageGenerator: 'folder = label' — nhãn lấy theo TÊN THƯ MỤC chứa ảnh, không phải tên file, không cần gắn tay."
+   "hint": "ImageGenerator: 'folder = label' — nhãn lấy theo TÊN THƯ MỤC chứa ảnh, không phải tên file, không cần gắn tay.",
+   "drill": true,
+   "drillNo": 19
   },
   {
    "source": "md1",
@@ -371,7 +407,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-19",
    "confidence": "high",
-   "hint": "Không có hàm 'normalize' — chỉ có RESCALE (vd rescale=1./255). Nhớ: đổi thang đo = re-scale."
+   "hint": "Không có hàm 'normalize' — chỉ có RESCALE (vd rescale=1./255). Nhớ: đổi thang đo = re-scale.",
+   "drill": true,
+   "drillNo": 20
   },
   {
    "source": "md1",
@@ -391,7 +429,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-20",
    "confidence": "high",
-   "hint": "target_size trên TRAINING generator. Mẹo loại trừ: 'training_size' là tham số bịa, và câu hỏi về training chứ không phải validation."
+   "hint": "target_size trên TRAINING generator. Mẹo loại trừ: 'training_size' là tham số bịa, và câu hỏi về training chứ không phải validation.",
+   "drill": true,
+   "drillNo": 21
   },
   {
    "source": "md1",
@@ -411,7 +451,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-21",
    "confidence": "high",
-   "hint": "(300, 300, 3): hai số đầu = pixel, số 3 cuối = 3 kênh màu RGB (3 bytes/pixel). KHÔNG phải 3 layer hay batch 3."
+   "hint": "(300, 300, 3): hai số đầu = pixel, số 3 cuối = 3 kênh màu RGB (3 bytes/pixel). KHÔNG phải 3 layer hay batch 3.",
+   "drill": true,
+   "drillNo": 22
   },
   {
    "source": "md1",
@@ -431,7 +473,9 @@
    "topic": "ML Basics",
    "id": "dat301m-22",
    "confidence": "high",
-   "hint": "Train ≈ 1.0 mà validation thấp = học thuộc lòng đề → overfit trên TRAINING data. Nhớ: người ta chỉ overfit cái mình HỌC."
+   "hint": "Train ≈ 1.0 mà validation thấp = học thuộc lòng đề → overfit trên TRAINING data. Nhớ: người ta chỉ overfit cái mình HỌC.",
+   "drill": true,
+   "drillNo": 23
   },
   {
    "source": "md1",
@@ -452,7 +496,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-23",
    "confidence": "high",
-   "hint": "Câu multi-answer: chọn CẢ 3! Đa dạng người + đa dạng ngựa + feature nằm bất kỳ đâu trong frame — CNN cân hết nhờ translation invariance."
+   "hint": "Câu multi-answer: chọn CẢ 3! Đa dạng người + đa dạng ngựa + feature nằm bất kỳ đâu trong frame — CNN cân hết nhờ translation invariance.",
+   "drill": true,
+   "drillNo": 24
   },
   {
    "source": "md1",
@@ -472,7 +518,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-24",
    "confidence": "high",
-   "hint": "Ảnh nhỏ đi → phải BỎ bớt convolutions → KIẾN TRÚC đổi → kết quả đổi. Nhớ: nguyên nhân là đổi kiến trúc, không phải 'ít thông tin'."
+   "hint": "Ảnh nhỏ đi → phải BỎ bớt convolutions → KIẾN TRÚC đổi → kết quả đổi. Nhớ: nguyên nhân là đổi kiến trúc, không phải 'ít thông tin'.",
+   "drill": true,
+   "drillNo": 25
   },
   {
    "source": "md1",
@@ -492,7 +540,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-25",
    "confidence": "high",
-   "hint": "flow_from_directory = combo 3-trong-1: load ảnh + chỉnh size + auto label theo folder → 'All of the above'."
+   "hint": "flow_from_directory = combo 3-trong-1: load ảnh + chỉnh size + auto label theo folder → 'All of the above'.",
+   "drill": true,
+   "drillNo": 26
   },
   {
    "source": "md1",
@@ -512,7 +562,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-26",
    "confidence": "high",
-   "hint": "Công thức conv 3×3: trừ 2 mỗi chiều. 150−2=148. Thấy 153 hay 450 là bẫy cộng/nhân bậy."
+   "hint": "Công thức conv 3×3: trừ 2 mỗi chiều. 150−2=148. Thấy 153 hay 450 là bẫy cộng/nhân bậy.",
+   "drill": true,
+   "drillNo": 27
   },
   {
    "source": "md1",
@@ -532,7 +584,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-27",
    "confidence": "high",
-   "hint": "Nhớ công thức: pooling 2×2 → chia đôi kích thước. 150→75."
+   "hint": "Nhớ công thức: pooling 2×2 → chia đôi kích thước. 150→75.",
+   "drill": true,
+   "drillNo": 28
   },
   {
    "source": "md1",
@@ -552,7 +606,9 @@
    "topic": "ML Basics",
    "id": "dat301m-28",
    "confidence": "high",
-   "hint": "model.fit TRẢ VỀ History object → hứng vào biến: history = model.fit(...). Không tồn tại tham số 'history=true'."
+   "hint": "model.fit TRẢ VỀ History object → hứng vào biến: history = model.fit(...). Không tồn tại tham số 'history=true'.",
+   "drill": true,
+   "drillNo": 29
   },
   {
    "source": "md1",
@@ -572,7 +628,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-29",
    "confidence": "high",
-   "hint": "Soi tác động conv qua model.LAYERS — layer là khái niệm thật duy nhất; model.pools/images/convolutions đều là API ma."
+   "hint": "Soi tác động conv qua model.LAYERS — layer là khái niệm thật duy nhất; model.pools/images/convolutions đều là API ma.",
+   "drill": true,
+   "drillNo": 30
   },
   {
    "source": "md1",
@@ -592,7 +650,9 @@
    "topic": "ML Basics",
    "id": "dat301m-30",
    "confidence": "high",
-   "hint": "Loss đứng im sau 2 epochs mà accuracy vẫn leo lên 1.0 → 13 epochs sau chỉ là học thuộc = overfit TRAINING data, train thêm vô ích."
+   "hint": "Loss đứng im sau 2 epochs mà accuracy vẫn leo lên 1.0 → 13 epochs sau chỉ là học thuộc = overfit TRAINING data, train thêm vô ích.",
+   "drill": true,
+   "drillNo": 31
   },
   {
    "source": "md1",
@@ -612,7 +672,9 @@
    "topic": "ML Basics",
    "id": "dat301m-31",
    "confidence": "high",
-   "hint": "Validation accuracy đáng tin vì đo trên ảnh model CHƯA TỪNG thấy → dự báo hiệu năng thật; training accuracy có thể chỉ là trí nhớ tốt."
+   "hint": "Validation accuracy đáng tin vì đo trên ảnh model CHƯA TỪNG thấy → dự báo hiệu năng thật; training accuracy có thể chỉ là trí nhớ tốt.",
+   "drill": true,
+   "drillNo": 32
   },
   {
    "source": "md1",
@@ -632,7 +694,9 @@
    "topic": "ML Basics",
    "id": "dat301m-32",
    "confidence": "high",
-   "hint": "Dataset nhỏ = 'ít trải đời': khó gặp đủ mọi feature có thể có → model học phiến diện → overfit."
+   "hint": "Dataset nhỏ = 'ít trải đời': khó gặp đủ mọi feature có thể có → model học phiến diện → overfit.",
+   "drill": true,
+   "drillNo": 33
   },
   {
    "source": "md1",
@@ -652,7 +716,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-33",
    "confidence": "high",
-   "hint": "Augmentation không có API riêng — chỉ là THAM SỐ của ImageDataGenerator (rotation_range, flip...). tf.augment/keras.augment đều bịa."
+   "hint": "Augmentation không có API riêng — chỉ là THAM SỐ của ImageDataGenerator (rotation_range, flip...). tf.augment/keras.augment đều bịa.",
+   "drill": true,
+   "drillNo": 34
   },
   {
    "source": "md1",
@@ -672,7 +738,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-34",
    "confidence": "high",
-   "hint": "Quay trái → muốn có quay phải thì LẬT GƯƠNG NGANG: 'horizontal_flip'. Phải nhớ tên đầy đủ — không có tham số 'flip' trống trơn."
+   "hint": "Quay trái → muốn có quay phải thì LẬT GƯƠNG NGANG: 'horizontal_flip'. Phải nhớ tên đầy đủ — không có tham số 'flip' trống trơn.",
+   "drill": true,
+   "drillNo": 35
   },
   {
    "source": "md1",
@@ -692,7 +760,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-35",
    "confidence": "high",
-   "hint": "Augmentation chạy on-the-fly trên CPU → chậm vì XỬ LÝ ẢNH tốn cycles. Bẫy: lượng data mỗi epoch KHÔNG đổi."
+   "hint": "Augmentation chạy on-the-fly trên CPU → chậm vì XỬ LÝ ẢNH tốn cycles. Bẫy: lượng data mỗi epoch KHÔNG đổi.",
+   "drill": true,
+   "drillNo": 36
   },
   {
    "source": "md1",
@@ -712,7 +782,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-36",
    "confidence": "high",
-   "hint": "fill_mode = 'trét vữa': lấp lại pixel bị mất sau shear/rotate. Fill = lấp đầy chỗ trống."
+   "hint": "fill_mode = 'trét vữa': lấp lại pixel bị mất sau shear/rotate. Fill = lấp đầy chỗ trống.",
+   "drill": true,
+   "drillNo": 37
   },
   {
    "source": "md1",
@@ -732,7 +804,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-37",
    "confidence": "high",
-   "hint": "Augmentation làm hết TRONG RAM (in-memory) — ảnh gốc trên disk bình an vô sự, không copy, không ghi đè, không xóa."
+   "hint": "Augmentation làm hết TRONG RAM (in-memory) — ảnh gốc trên disk bình an vô sự, không copy, không ghi đè, không xóa.",
+   "drill": true,
+   "drillNo": 38
   },
   {
    "source": "md1",
@@ -752,7 +826,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-38",
    "confidence": "high",
-   "hint": "Augmentation biến hóa tập TRAINING để tạo thêm kịch bản cho features. Bẫy kinh điển: KHÔNG BAO GIỜ augment validation set."
+   "hint": "Augmentation biến hóa tập TRAINING để tạo thêm kịch bản cho features. Bẫy kinh điển: KHÔNG BAO GIỜ augment validation set.",
+   "drill": true,
+   "drillNo": 39
   },
   {
    "source": "md1",
@@ -772,7 +848,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-39",
    "confidence": "high",
-   "hint": "Thêm việc = thêm giờ: augmentation xử lý ảnh on-the-fly → training CHẬM hơn (Slower)."
+   "hint": "Thêm việc = thêm giờ: augmentation xử lý ảnh on-the-fly → training CHẬM hơn (Slower).",
+   "drill": true,
+   "drillNo": 40
   },
   {
    "source": "md1",
@@ -790,7 +868,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-40",
    "confidence": "high",
-   "hint": "True — augmentation = 'nhân bản ảo' dataset: cùng ảnh nhưng vô số biến thể, giả lập tập data lớn hơn miễn phí."
+   "hint": "True — augmentation = 'nhân bản ảo' dataset: cùng ảnh nhưng vô số biến thể, giả lập tập data lớn hơn miễn phí.",
+   "drill": true,
+   "drillNo": 41
   },
   {
    "source": "md1",
@@ -810,7 +890,9 @@
    "topic": "ML Basics",
    "id": "dat301m-41",
    "confidence": "high",
-   "hint": "Dropout nhận PHÂN SỐ: 0.2 = 20% neurons bị tắt ngẫu nhiên — mọi neuron bình đẳng, không có chuyện chỉ tắt 'untrained'."
+   "hint": "Dropout nhận PHÂN SỐ: 0.2 = 20% neurons bị tắt ngẫu nhiên — mọi neuron bình đẳng, không có chuyện chỉ tắt 'untrained'.",
+   "drill": true,
+   "drillNo": 42
   },
   {
    "source": "md1",
@@ -830,7 +912,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-42",
    "confidence": "high",
-   "hint": "Transfer learning = mượn FEATURES đã học từ dataset khổng lồ mình không có (ImageNet). Nhớ: mượn features, không mượn data."
+   "hint": "Transfer learning = mượn FEATURES đã học từ dataset khổng lồ mình không có (ImageNet). Nhớ: mượn features, không mượn data.",
+   "drill": true,
+   "drillNo": 43
   },
   {
    "source": "md1",
@@ -850,7 +934,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-43",
    "confidence": "high",
-   "hint": "Đóng băng layer = layer.trainable = False. Chỉ 'trainable' là thuộc tính thật; freeze/frozen/locked đều là API tưởng tượng."
+   "hint": "Đóng băng layer = layer.trainable = False. Chỉ 'trainable' là thuộc tính thật; freeze/frozen/locked đều là API tưởng tượng.",
+   "drill": true,
+   "drillNo": 44
   },
   {
    "source": "md1",
@@ -870,7 +956,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-44",
    "confidence": "high",
-   "hint": "Đổi 1000 class thành 2: giữ phần pre-trained, GẮN DNN mới ở cuối với output layer đúng số class của bạn. Thay đuôi, không vá đầu."
+   "hint": "Đổi 1000 class thành 2: giữ phần pre-trained, GẮN DNN mới ở cuối với output layer đúng số class của bạn. Thay đuôi, không vá đầu.",
+   "drill": true,
+   "drillNo": 45
   },
   {
    "source": "md1",
@@ -888,7 +976,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-45",
    "confidence": "high",
-   "hint": "Yes! Chỉ LAYER pre-trained bị đóng băng — còn ẢNH đầu vào vẫn augment thoải mái khi train các layer mới."
+   "hint": "Yes! Chỉ LAYER pre-trained bị đóng băng — còn ẢNH đầu vào vẫn augment thoải mái khi train các layer mới.",
+   "drill": true,
+   "drillNo": 46
   },
   {
    "source": "md1",
@@ -906,7 +996,9 @@
    "topic": "ML Basics",
    "id": "dat301m-46",
    "confidence": "high",
-   "hint": "Neurons hàng xóm hay 'copy bài nhau' (weights giống nhau) làm lệch training → dropout tắt ngẫu nhiên để ép học độc lập. Không phải để nhanh hơn."
+   "hint": "Neurons hàng xóm hay 'copy bài nhau' (weights giống nhau) làm lệch training → dropout tắt ngẫu nhiên để ép học độc lập. Không phải để nhanh hơn.",
+   "drill": true,
+   "drillNo": 47
   },
   {
    "source": "md1",
@@ -924,7 +1016,9 @@
    "topic": "ML Basics",
    "id": "dat301m-47",
    "confidence": "high",
-   "hint": "Dropout quá cao = đuổi quá nhiều nhân viên: mạng mất khả năng chuyên môn hóa → accuracy TỤT. Không hề tốn thêm tính toán."
+   "hint": "Dropout quá cao = đuổi quá nhiều nhân viên: mạng mất khả năng chuyên môn hóa → accuracy TỤT. Không hề tốn thêm tính toán.",
+   "drill": true,
+   "drillNo": 48
   },
   {
    "source": "md1",
@@ -944,7 +1038,9 @@
    "topic": "ML Basics",
    "id": "dat301m-48",
    "confidence": "high",
-   "hint": "20% viết dạng phân số: tf.keras.layers.Dropout(0.2). Hai bẫy: không truyền số 20, và không tồn tại 'DropoutNeurons'."
+   "hint": "20% viết dạng phân số: tf.keras.layers.Dropout(0.2). Hai bẫy: không truyền số 20, và không tồn tại 'DropoutNeurons'.",
+   "drill": true,
+   "drillNo": 49
   },
   {
    "source": "md1",
@@ -964,7 +1060,9 @@
    "topic": "ML Basics",
    "id": "dat301m-49",
    "confidence": "high",
-   "hint": "Sơ đồ truyền thống: Rules + Data → ANSWERS. ML đảo lại: Answers + Data → Rules. Nhớ cặp hoán vị Rules ↔ Answers."
+   "hint": "Sơ đồ truyền thống: Rules + Data → ANSWERS. ML đảo lại: Answers + Data → Rules. Nhớ cặp hoán vị Rules ↔ Answers.",
+   "drill": true,
+   "drillNo": 50
   },
   {
    "source": "md1",
@@ -984,7 +1082,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-50",
    "confidence": "high",
-   "hint": "Lại quy tắc vàng: output neurons = số class. Fashion MNIST có 10 class → 10 neurons."
+   "hint": "Lại quy tắc vàng: output neurons = số class. Fashion MNIST có 10 class → 10 neurons.",
+   "drill": true,
+   "drillNo": 51
   },
   {
    "source": "md1",
@@ -1004,7 +1104,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-51",
    "confidence": "high",
-   "hint": "Convolution = kỹ thuật TRÍCH XUẤT (extract) features bằng filter quét qua ảnh. Không phải phóng to/thu nhỏ hay lọc bỏ ảnh."
+   "hint": "Convolution = kỹ thuật TRÍCH XUẤT (extract) features bằng filter quét qua ảnh. Không phải phóng to/thu nhỏ hay lọc bỏ ảnh.",
+   "drill": true,
+   "drillNo": 52
   },
   {
    "source": "md1",
@@ -1024,7 +1126,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-52",
    "confidence": "high",
-   "hint": "Sinh đôi với câu 'impact on training': đáp án luôn là 'It depends' — có thể nhanh, chậm, thậm chí tệ hơn DNN nếu thiết kế kém."
+   "hint": "Sinh đôi với câu 'impact on training': đáp án luôn là 'It depends' — có thể nhanh, chậm, thậm chí tệ hơn DNN nếu thiết kế kém.",
+   "drill": true,
+   "drillNo": 53
   },
   {
    "source": "md1",
@@ -1044,7 +1148,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-53",
    "confidence": "high",
-   "hint": "Vẫn là RESCALE — câu hỏi lặp lại để khắc sâu: normalize ảnh = rescale, không có method tên 'normalize'."
+   "hint": "Vẫn là RESCALE — câu hỏi lặp lại để khắc sâu: normalize ảnh = rescale, không có method tên 'normalize'.",
+   "drill": true,
+   "drillNo": 54
   },
   {
    "source": "md1",
@@ -1062,7 +1168,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-54",
    "confidence": "high",
-   "hint": "Yes — câu sinh đôi: pre-trained layers bị freeze chứ ảnh thì không; cứ augment khi train các layer mới ở cuối."
+   "hint": "Yes — câu sinh đôi: pre-trained layers bị freeze chứ ảnh thì không; cứ augment khi train các layer mới ở cuối.",
+   "drill": true,
+   "drillNo": 56
   },
   {
    "source": "md1",
@@ -1082,7 +1190,9 @@
    "topic": "Computer Vision",
    "id": "dat301m-55",
    "confidence": "high",
-   "hint": "Nhiều class → class_mode='categorical' — cùng họ với categorical crossentropy. 2 class mới dùng 'binary'; 'multiple' là đồ giả."
+   "hint": "Nhiều class → class_mode='categorical' — cùng họ với categorical crossentropy. 2 class mới dùng 'binary'; 'multiple' là đồ giả.",
+   "drill": true,
+   "drillNo": 57
   },
   {
    "source": "md1",
@@ -1102,7 +1212,9 @@
    "topic": "NLP",
    "id": "dat301m-56",
    "confidence": "high",
-   "hint": "Keras thích tên trơn: class là Tokenizer, không prefix Word/Text/Character. Tên ngắn nhất thắng."
+   "hint": "Keras thích tên trơn: class là Tokenizer, không prefix Word/Text/Character. Tên ngắn nhất thắng.",
+   "drill": true,
+   "drillNo": 58
   },
   {
    "source": "md1",
@@ -1122,7 +1234,9 @@
    "topic": "NLP",
    "id": "dat301m-57",
    "confidence": "high",
-   "hint": "Học từ vựng = fit_on_texts. Nhớ: cứ 'fit' là học (giống model.fit), và 'texts' số nhiều."
+   "hint": "Học từ vựng = fit_on_texts. Nhớ: cứ 'fit' là học (giống model.fit), và 'texts' số nhiều.",
+   "drill": true,
+   "drillNo": 59
   },
   {
    "source": "md1",
@@ -1142,7 +1256,9 @@
    "topic": "NLP",
    "id": "dat301m-58",
    "confidence": "high",
-   "hint": "texts_to_sequences: cả hai đầu đều SỐ NHIỀU (textS, sequenceS) và ra 'sequences' chứ không phải 'tokens'."
+   "hint": "texts_to_sequences: cả hai đầu đều SỐ NHIỀU (textS, sequenceS) và ra 'sequences' chứ không phải 'tokens'.",
+   "drill": true,
+   "drillNo": 60
   },
   {
    "source": "md1",
@@ -1162,7 +1278,9 @@
    "topic": "NLP",
    "id": "dat301m-59",
    "confidence": "high",
-   "hint": "Từ lạ = OOV (Out Of Vocabulary) → tham số oov_token. Nhớ cụm viết tắt 3 chữ cái, đừng chọn tên dài dòng."
+   "hint": "Từ lạ = OOV (Out Of Vocabulary) → tham số oov_token. Nhớ cụm viết tắt 3 chữ cái, đừng chọn tên dài dòng.",
+   "drill": true,
+   "drillNo": 61
   },
   {
    "source": "md1",
@@ -1182,7 +1300,9 @@
    "topic": "NLP",
    "id": "dat301m-60",
    "confidence": "high",
-   "hint": "Không có OOV token → từ lạ bị SKIP luôn, câu bị ngắn đi. Không thay bằng 0, không dừng cả sequence."
+   "hint": "Không có OOV token → từ lạ bị SKIP luôn, câu bị ngắn đi. Không thay bằng 0, không dừng cả sequence.",
+   "drill": true,
+   "drillNo": 62
   },
   {
    "source": "md1",
@@ -1202,7 +1322,9 @@
    "topic": "NLP",
    "id": "dat301m-61",
    "confidence": "high",
-   "hint": "Bẫy nằm ở 'của ai': pad_sequences là HÀM ĐỘC LẬP trong tensorflow.keras.preprocessing.sequence — KHÔNG phải method của tokenizer."
+   "hint": "Bẫy nằm ở 'của ai': pad_sequences là HÀM ĐỘC LẬP trong tensorflow.keras.preprocessing.sequence — KHÔNG phải method của tokenizer.",
+   "drill": true,
+   "drillNo": 63
   },
   {
    "source": "md1",
@@ -1222,7 +1344,9 @@
    "topic": "NLP",
    "id": "dat301m-62",
    "confidence": "high",
-   "hint": "Mặc định pad_sequences: pad theo câu DÀI NHẤT và thêm số 0 vào ĐẦU. Nhớ khẩu quyết: 'default = PRE' (0 đứng trước)."
+   "hint": "Mặc định pad_sequences: pad theo câu DÀI NHẤT và thêm số 0 vào ĐẦU. Nhớ khẩu quyết: 'default = PRE' (0 đứng trước).",
+   "drill": true,
+   "drillNo": 64
   },
   {
    "source": "md1",
@@ -1242,7 +1366,9 @@
    "topic": "NLP",
    "id": "dat301m-63",
    "confidence": "high",
-   "hint": "Muốn 0 ở cuối → padding='post' (post = sau). Là THAM SỐ truyền vào pad_sequences, không phải method; 'after' không tồn tại."
+   "hint": "Muốn 0 ở cuối → padding='post' (post = sau). Là THAM SỐ truyền vào pad_sequences, không phải method; 'after' không tồn tại.",
+   "drill": true,
+   "drillNo": 65
   },
   {
    "source": "md1",
@@ -1262,7 +1388,9 @@
    "topic": "NLP",
    "id": "dat301m-64",
    "confidence": "high",
-   "hint": "Tên chính chủ có chữ 'sets': TensorFlow DataSETS (tfds). 'TensorFlow Data' cụt lủn là bẫy."
+   "hint": "Tên chính chủ có chữ 'sets': TensorFlow DataSETS (tfds). 'TensorFlow Data' cụt lủn là bẫy.",
+   "drill": true,
+   "drillNo": 66
   },
   {
    "source": "md1",
@@ -1282,7 +1410,9 @@
    "topic": "NLP",
    "id": "dat301m-65",
    "confidence": "high",
-   "hint": "IMDB toàn số 50: 50.000 reviews, chia 50/50 (25k train + 25k test). Nhớ 'IMDB = 50-50-50'."
+   "hint": "IMDB toàn số 50: 50.000 reviews, chia 50/50 (25k train + 25k test). Nhớ 'IMDB = 50-50-50'.",
+   "drill": true,
+   "drillNo": 67
   },
   {
    "source": "md1",
@@ -1302,7 +1432,9 @@
    "topic": "NLP",
    "id": "dat301m-66",
    "confidence": "high",
-   "hint": "Label IMDB = 0 hoặc 1 (negative/positive) — binary. Bẫy: thang sao 1-10 là của trang web IMDB, không phải dataset!"
+   "hint": "Label IMDB = 0 hoặc 1 (negative/positive) — binary. Bẫy: thang sao 1-10 là của trang web IMDB, không phải dataset!",
+   "drill": true,
+   "drillNo": 68
   },
   {
    "source": "md1",
@@ -1322,7 +1454,9 @@
    "topic": "NLP",
    "id": "dat301m-67",
    "confidence": "high",
-   "hint": "Embedding dimension = số CHIỀU của vector đại diện MỖI TỪ (vd 16 chiều/từ). Không phải số từ hay số chữ cái."
+   "hint": "Embedding dimension = số CHIỀU của vector đại diện MỖI TỪ (vd 16 chiều/từ). Không phải số từ hay số chữ cái.",
+   "drill": true,
+   "drillNo": 69
   },
   {
    "source": "md1",
@@ -1342,7 +1476,9 @@
    "topic": "NLP",
    "id": "dat301m-68",
    "confidence": "high",
-   "hint": "Chi tiết lắt léo: num_words=n giữ n−1 từ PHỔ BIẾN nhất (theo tần suất). Hai điểm nhớ: 'n TRỪ 1' và 'most common', không phải 'n từ đầu tiên'."
+   "hint": "Chi tiết lắt léo: num_words=n giữ n−1 từ PHỔ BIẾN nhất (theo tần suất). Hai điểm nhớ: 'n TRỪ 1' và 'most common', không phải 'n từ đầu tiên'.",
+   "drill": true,
+   "drillNo": 70
   },
   {
    "source": "md1",
@@ -1362,7 +1498,9 @@
    "topic": "NLP",
    "id": "dat301m-69",
    "confidence": "high",
-   "hint": "Lại luật tên trơn: tf.keras.layers.Embedding. Không Word-, không Embed cụt, không Word2Vector."
+   "hint": "Lại luật tên trơn: tf.keras.layers.Embedding. Không Word-, không Embed cụt, không Word2Vector.",
+   "drill": true,
+   "drillNo": 71
   },
   {
    "source": "md1",
@@ -1382,7 +1520,9 @@
    "topic": "NLP",
    "id": "dat301m-70",
    "confidence": "high",
-   "hint": "2 class → BINARY crossentropy. Loại nhanh: Adam là optimizer (khác vở kịch), categorical dành cho nhiều class."
+   "hint": "2 class → BINARY crossentropy. Loại nhanh: Adam là optimizer (khác vở kịch), categorical dành cho nhiều class.",
+   "drill": true,
+   "drillNo": 72
   },
   {
    "source": "md1",
@@ -1402,7 +1542,9 @@
    "topic": "NLP",
    "id": "dat301m-71",
    "confidence": "high",
-   "hint": "Subword đứng riêng thì vô nghĩa — THỨ TỰ mới tạo nghĩa, mà model lại bỏ qua vị trí → kết quả tệ. Nhớ: 'sub-word cần sequence'."
+   "hint": "Subword đứng riêng thì vô nghĩa — THỨ TỰ mới tạo nghĩa, mà model lại bỏ qua vị trí → kết quả tệ. Nhớ: 'sub-word cần sequence'.",
+   "drill": true,
+   "drillNo": 73
   },
   {
    "source": "md1",
@@ -1582,7 +1724,9 @@
    "topic": "NLP",
    "id": "dat301m-80",
    "confidence": "high",
-   "hint": "Như photocopy của photocopy: mỗi từ mới sinh từ từ đoán trước đó → xác suất cụm từ còn khớp phrase đã học GIẢM dần → gibberish."
+   "hint": "Như photocopy của photocopy: mỗi từ mới sinh từ từ đoán trước đó → xác suất cụm từ còn khớp phrase đã học GIẢM dần → gibberish.",
+   "drill": true,
+   "drillNo": 74
   },
   {
    "source": "md1",
@@ -1602,7 +1746,9 @@
    "topic": "NLP",
    "id": "dat301m-81",
    "confidence": "high",
-   "hint": "Từ nhiều hơn ký tự gấp bội → word-based cần output layer khổng lồ → ngốn MEMORY. Drawback = bộ nhớ, không phải độ chính xác."
+   "hint": "Từ nhiều hơn ký tự gấp bội → word-based cần output layer khổng lồ → ngốn MEMORY. Drawback = bộ nhớ, không phải độ chính xác.",
+   "drill": true,
+   "drillNo": 75
   },
   {
    "source": "md1",
@@ -1622,7 +1768,9 @@
    "topic": "NLP",
    "id": "dat301m-82",
    "confidence": "high",
-   "hint": "One-hot labels = to_categorical — cùng họ 'categorical' với crossentropy nhiều class. img_to_array là dân bên ảnh, loại ngay."
+   "hint": "One-hot labels = to_categorical — cùng họ 'categorical' với crossentropy nhiều class. img_to_array là dân bên ảnh, loại ngay.",
+   "drill": true,
+   "drillNo": 77
   },
   {
    "source": "md1",
@@ -1640,7 +1788,9 @@
    "topic": "NLP",
    "id": "dat301m-83",
    "confidence": "high",
-   "hint": "False! Đoán từ kế tiếp = MULTI-class → phải dùng SOFTMAX (phân phối xác suất trên cả vocab). Thấy 'sigmoid + mỗi neuron một từ' là sai."
+   "hint": "False! Đoán từ kế tiếp = MULTI-class → phải dùng SOFTMAX (phân phối xác suất trên cả vocab). Thấy 'sigmoid + mỗi neuron một từ' là sai.",
+   "drill": true,
+   "drillNo": 78
   },
   {
    "source": "md1",
@@ -1660,7 +1810,9 @@
    "topic": "Time Series",
    "id": "dat301m-84",
    "confidence": "high",
-   "hint": "UNI-variate = 1 biến duy nhất → nhiệt độ theo giờ. Bẫy: 'weather' nghe giống nhưng gồm nhiều biến (nhiệt, ẩm, gió) = multivariate."
+   "hint": "UNI-variate = 1 biến duy nhất → nhiệt độ theo giờ. Bẫy: 'weather' nghe giống nhưng gồm nhiều biến (nhiệt, ẩm, gió) = multivariate.",
+   "drill": true,
+   "drillNo": 79
   },
   {
    "source": "md1",
@@ -1680,7 +1832,9 @@
    "topic": "Time Series",
    "id": "dat301m-85",
    "confidence": "high",
-   "hint": "MULTI-variate = nhiều biến → 'weather' theo giờ (nhiệt độ + độ ẩm + gió...). Cặp bài trùng: temperature = uni, weather = multi."
+   "hint": "MULTI-variate = nhiều biến → 'weather' theo giờ (nhiệt độ + độ ẩm + gió...). Cặp bài trùng: temperature = uni, weather = multi.",
+   "drill": true,
+   "drillNo": 80
   },
   {
    "source": "md1",
@@ -1700,7 +1854,9 @@
    "topic": "Time Series",
    "id": "dat301m-86",
    "confidence": "high",
-   "hint": "Impute = 'điền khuyết': ước lượng dữ liệu THIẾU hoặc quá khứ chưa biết. Không phải dự đoán tương lai, càng không phân tốt/xấu."
+   "hint": "Impute = 'điền khuyết': ước lượng dữ liệu THIẾU hoặc quá khứ chưa biết. Không phải dự đoán tương lai, càng không phân tốt/xấu.",
+   "drill": true,
+   "drillNo": 81
   },
   {
    "source": "md1",
@@ -1718,7 +1874,9 @@
    "topic": "Time Series",
    "id": "dat301m-87",
    "confidence": "high",
-   "hint": "Sóng âm = biên độ đo đều đặn theo thời gian → chính là time series, chọn True. Cứ hình dung waveform trong app thu âm: trục ngang luôn là time."
+   "hint": "Sóng âm = biên độ đo đều đặn theo thời gian → chính là time series, chọn True. Cứ hình dung waveform trong app thu âm: trục ngang luôn là time.",
+   "drill": true,
+   "drillNo": 82
   },
   {
    "source": "md1",
@@ -1738,7 +1896,9 @@
    "topic": "Time Series",
    "id": "dat301m-88",
    "confidence": "high",
-   "hint": "Seasonality KHÔNG dính gì đến 4 mùa hay thời tiết — đó là bẫy. Nhớ: seasonality = 'regular change in shape', pattern lặp lại đều đặn."
+   "hint": "Seasonality KHÔNG dính gì đến 4 mùa hay thời tiết — đó là bẫy. Nhớ: seasonality = 'regular change in shape', pattern lặp lại đều đặn.",
+   "drill": true,
+   "drillNo": 83
   },
   {
    "source": "md1",
@@ -1758,7 +1918,9 @@
    "topic": "Time Series",
    "id": "dat301m-89",
    "confidence": "high",
-   "hint": "Trend chỉ cần MỘT hướng tổng thể, lên hay xuống đều được → chọn 'regardless of direction'. Đừng dính bẫy 'upward' — trend giảm vẫn là trend."
+   "hint": "Trend chỉ cần MỘT hướng tổng thể, lên hay xuống đều được → chọn 'regardless of direction'. Đừng dính bẫy 'upward' — trend giảm vẫn là trend.",
+   "drill": true,
+   "drillNo": 84
   },
   {
    "source": "md1",
@@ -1778,7 +1940,9 @@
    "topic": "Time Series",
    "id": "dat301m-90",
    "confidence": "high",
-   "hint": "Noise = 'nhiễu' như tiếng rè radio: thay đổi random, unpredictable — không dự đoán được. Không liên quan đến việc có/không có trend hay seasonality."
+   "hint": "Noise = 'nhiễu' như tiếng rè radio: thay đổi random, unpredictable — không dự đoán được. Không liên quan đến việc có/không có trend hay seasonality.",
+   "drill": true,
+   "drillNo": 85
   },
   {
    "source": "md1",
@@ -1798,7 +1962,9 @@
    "topic": "Time Series",
    "id": "dat301m-91",
    "confidence": "high",
-   "hint": "AUTO-correlation = tự tương quan với bản trễ (lag) của chính mình: shape lặp lại dù scale khác. Nhớ khẩu quyết 'same shape, different size'."
+   "hint": "AUTO-correlation = tự tương quan với bản trễ (lag) của chính mình: shape lặp lại dù scale khác. Nhớ khẩu quyết 'same shape, different size'.",
+   "drill": true,
+   "drillNo": 86
   },
   {
    "source": "md1",
@@ -1818,7 +1984,9 @@
    "topic": "Time Series",
    "id": "dat301m-92",
    "confidence": "high",
-   "hint": "Non-stationary = 'không đứng yên': một big/DISRUPTIVE event phá vỡ trend và seasonality. Nhớ chữ D: Disruptive → Đổi hành vi chuỗi."
+   "hint": "Non-stationary = 'không đứng yên': một big/DISRUPTIVE event phá vỡ trend và seasonality. Nhớ chữ D: Disruptive → Đổi hành vi chuỗi.",
+   "drill": true,
+   "drillNo": 87
   },
   {
    "source": "md1",
@@ -1838,7 +2006,9 @@
    "topic": "Time Series",
    "id": "dat301m-93",
    "confidence": "high",
-   "hint": "Window = khung cửa sổ kích thước CỐ ĐỊNH trượt trên chuỗi → 'fixed-size subset of a time series'. Cửa sổ nhà bạn đâu tự đổi kích thước."
+   "hint": "Window = khung cửa sổ kích thước CỐ ĐỊNH trượt trên chuỗi → 'fixed-size subset of a time series'. Cửa sổ nhà bạn đâu tự đổi kích thước.",
+   "drill": true,
+   "drillNo": 88
   },
   {
    "source": "md1",
@@ -1858,7 +2028,9 @@
    "topic": "Time Series",
    "id": "dat301m-94",
    "confidence": "high",
-   "hint": "drop = BỎ ĐI chứ không thêm vào: drop_remainder=True crop các window cuối bị thiếu để mọi row cùng độ dài. Nhớ 'drop ≠ pad'."
+   "hint": "drop = BỎ ĐI chứ không thêm vào: drop_remainder=True crop các window cuối bị thiếu để mọi row cùng độ dài. Nhớ 'drop ≠ pad'.",
+   "drill": true,
+   "drillNo": 89
   },
   {
    "source": "md1",
@@ -1878,7 +2050,9 @@
    "topic": "Time Series",
    "id": "dat301m-95",
    "confidence": "high",
-   "hint": "S trong MSE = Squared (bình phương): Mean Squared Error — sai số bị 'vuông hóa'. Không phải Slight/Series/Second."
+   "hint": "S trong MSE = Squared (bình phương): Mean Squared Error — sai số bị 'vuông hóa'. Không phải Slight/Series/Second.",
+   "drill": true,
+   "drillNo": 91
   },
   {
    "source": "md1",
@@ -1898,7 +2072,9 @@
    "topic": "Time Series",
    "id": "dat301m-96",
    "confidence": "high",
-   "hint": "A trong MAE = Absolute (trị tuyệt đối |error|), KHÔNG phải Average — bẫy kinh điển vì 'Mean' đã là average rồi."
+   "hint": "A trong MAE = Absolute (trị tuyệt đối |error|), KHÔNG phải Average — bẫy kinh điển vì 'Mean' đã là average rồi.",
+   "drill": true,
+   "drillNo": 92
   },
   {
    "source": "md1",
@@ -1918,7 +2094,9 @@
    "topic": "Time Series",
    "id": "dat301m-97",
    "confidence": "high",
-   "hint": "Quy tắc dấu hai chấm: [:split_time] = trước mốc → train, [split_time:] = từ mốc trở đi → valid. Thiếu ':' là chỉ lấy 1 phần tử — sai ngay."
+   "hint": "Quy tắc dấu hai chấm: [:split_time] = trước mốc → train, [split_time:] = từ mốc trở đi → valid. Thiếu ':' là chỉ lấy 1 phần tử — sai ngay.",
+   "drill": true,
+   "drillNo": 93
   },
   {
    "source": "md1",
@@ -1938,7 +2116,9 @@
    "topic": "Time Series",
    "id": "dat301m-98",
    "confidence": "high",
-   "hint": "Muốn soi weights sau training: GÁN layer vào biến trước khi add vào model, sau đó gọi get_weights() trên biến đó. Nhớ 'đặt tên trước, hỏi thăm sau'."
+   "hint": "Muốn soi weights sau training: GÁN layer vào biến trước khi add vào model, sau đó gọi get_weights() trên biến đó. Nhớ 'đặt tên trước, hỏi thăm sau'.",
+   "drill": true,
+   "drillNo": 94
   },
   {
    "source": "md1",
@@ -1958,7 +2138,9 @@
    "topic": "Time Series",
    "id": "dat301m-99",
    "confidence": "high",
-   "hint": "Tên tham số đúng y như tên khái niệm, viết snake_case: SGD(learning_rate=...). Không tồn tại 'Rate' hay 'RateOfLearning'."
+   "hint": "Tên tham số đúng y như tên khái niệm, viết snake_case: SGD(learning_rate=...). Không tồn tại 'Rate' hay 'RateOfLearning'.",
+   "drill": true,
+   "drillNo": 95
   },
   {
    "source": "md1",
@@ -1978,7 +2160,9 @@
    "topic": "Time Series",
    "id": "dat301m-100",
    "confidence": "high",
-   "hint": "LearningRateScheduler là một OBJECT trong tf.keras.callbacks — bản thân nó là callback, gán thẳng vào callbacks=[...]. Chọn đáp án 'object in the callbacks namespace'."
+   "hint": "LearningRateScheduler là một OBJECT trong tf.keras.callbacks — bản thân nó là callback, gán thẳng vào callbacks=[...]. Chọn đáp án 'object in the callbacks namespace'.",
+   "drill": true,
+   "drillNo": 96
   },
   {
    "source": "md1",
@@ -1998,7 +2182,9 @@
    "topic": "Time Series",
    "id": "dat301m-101",
    "confidence": "high",
-   "hint": "RNN mỗi bước 'nhả' 2 thứ: Ŷ (output dự đoán) và H (hidden state chuyền cho cell sau). Nhớ cặp đôi 'Y(hat) + H'."
+   "hint": "RNN mỗi bước 'nhả' 2 thứ: Ŷ (output dự đoán) và H (hidden state chuyền cho cell sau). Nhớ cặp đôi 'Y(hat) + H'.",
+   "drill": true,
+   "drillNo": 97
   },
   {
    "source": "md1",
@@ -2018,7 +2204,9 @@
    "topic": "Time Series",
    "id": "dat301m-102",
    "confidence": "high",
-   "hint": "Sequence-to-vector: cả chuỗi cô đọng thành 1 vector = Ŷ của cell CUỐI CÙNG (cell 29). Nhớ 'chỉ giữ lời nói cuối'."
+   "hint": "Sequence-to-vector: cả chuỗi cô đọng thành 1 vector = Ŷ của cell CUỐI CÙNG (cell 29). Nhớ 'chỉ giữ lời nói cuối'.",
+   "drill": true,
+   "drillNo": 98
   },
   {
    "source": "md1",
@@ -2038,7 +2226,9 @@
    "topic": "Time Series",
    "id": "dat301m-103",
    "confidence": "high",
-   "hint": "Lambda layer = như lambda trong Python: nhét hàm tùy ý (arbitrary code) vào giữa model. Lambda = 'hàm tự do', không phải chỉ để reshape."
+   "hint": "Lambda layer = như lambda trong Python: nhét hàm tùy ý (arbitrary code) vào giữa model. Lambda = 'hàm tự do', không phải chỉ để reshape.",
+   "drill": true,
+   "drillNo": 99
   },
   {
    "source": "md1",
@@ -2058,7 +2248,9 @@
    "topic": "Time Series",
    "id": "dat301m-104",
    "confidence": "high",
-   "hint": "axis trong tf.expand_dims = VỊ TRÍ (dimension index) chèn thêm chiều mới size 1. Nhớ ví dụ axis=-1 → chèn chiều vào cuối shape."
+   "hint": "axis trong tf.expand_dims = VỊ TRÍ (dimension index) chèn thêm chiều mới size 1. Nhớ ví dụ axis=-1 → chèn chiều vào cuối shape.",
+   "drill": true,
+   "drillNo": 100
   },
   {
    "source": "md1",
@@ -2078,7 +2270,9 @@
    "topic": "Time Series",
    "id": "dat301m-105",
    "confidence": "high",
-   "hint": "LSTM hơn simple RNN ở CELL STATE — 'băng chuyền' chạy xuyên các cell mang trí nhớ dài hạn. Coi chừng bẫy đảo chủ ngữ: LSTM có cell state, không phải RNN."
+   "hint": "LSTM hơn simple RNN ở CELL STATE — 'băng chuyền' chạy xuyên các cell mang trí nhớ dài hạn. Coi chừng bẫy đảo chủ ngữ: LSTM có cell state, không phải RNN.",
+   "drill": true,
+   "drillNo": 102
   },
   {
    "source": "md1",
@@ -2098,7 +2292,9 @@
    "topic": "Time Series",
    "id": "dat301m-106",
    "confidence": "high",
-   "hint": "Đường dẫn đúng phải có 'backend' và cặp ngoặc: tf.keras.backend.clear_session(). Không hề tồn tại tf.cache — thấy 'cache' là loại."
+   "hint": "Đường dẫn đúng phải có 'backend' và cặp ngoặc: tf.keras.backend.clear_session(). Không hề tồn tại tf.cache — thấy 'cache' là loại.",
+   "drill": true,
+   "drillNo": 103
   },
   {
    "source": "md1",
@@ -2118,7 +2314,9 @@
    "topic": "Time Series",
    "id": "dat301m-107",
    "confidence": "high",
-   "hint": "Quy tắc chồng LSTM: tầng TRƯỚC phải return_sequences=True để trả sequence cho tầng sau; tầng cuối trước Dense thì không cần. Vậy lỗi chỉ ở LSTM đầu, không phải 'mọi tầng'."
+   "hint": "Quy tắc chồng LSTM: tầng TRƯỚC phải return_sequences=True để trả sequence cho tầng sau; tầng cuối trước Dense thì không cần. Vậy lỗi chỉ ở LSTM đầu, không phải 'mọi tầng'.",
+   "drill": true,
+   "drillNo": 104
   },
   {
    "source": "md1",
@@ -2138,7 +2336,9 @@
    "topic": "Time Series",
    "id": "dat301m-108",
    "confidence": "high",
-   "hint": "Keras đặt tên: Conv + số chiều + D → Conv1D (giống Conv2D quen thuộc). Chữ 'Conv' luôn đứng TRƯỚC con số."
+   "hint": "Keras đặt tên: Conv + số chiều + D → Conv1D (giống Conv2D quen thuộc). Chữ 'Conv' luôn đứng TRƯỚC con số.",
+   "drill": true,
+   "drillNo": 105
   },
   {
    "source": "md1",
@@ -2158,7 +2358,9 @@
    "topic": "Time Series",
    "id": "dat301m-109",
    "confidence": "high",
-   "hint": "Input Conv1D cho univariate series: [None, 1] — None = độ dài window tùy ý, 1 = một feature/channel. Nhớ thứ tự 'thời gian trước, kênh sau'."
+   "hint": "Input Conv1D cho univariate series: [None, 1] — None = độ dài window tùy ý, 1 = một feature/channel. Nhớ thứ tự 'thời gian trước, kênh sau'.",
+   "drill": true,
+   "drillNo": 106
   },
   {
    "source": "md1",
@@ -2178,7 +2380,9 @@
    "topic": "Time Series",
    "id": "dat301m-110",
    "confidence": "high",
-   "hint": "Thư viện đọc CSV chính là... csv (import csv) — tên đơn giản nhất chính là đáp án. PyCSV, PyFiles đều là tên bịa."
+   "hint": "Thư viện đọc CSV chính là... csv (import csv) — tên đơn giản nhất chính là đáp án. PyCSV, PyFiles đều là tên bịa.",
+   "drill": true,
+   "drillNo": 107
   },
   {
    "source": "md1",
@@ -2198,7 +2402,9 @@
    "topic": "Time Series",
    "id": "dat301m-111",
    "confidence": "high",
-   "hint": "Bỏ header: gọi hàm built-in next(reader) — next là HÀM bao ngoài, không phải method reader.next. Nhớ 'next() nuốt dòng đầu tiên'."
+   "hint": "Bỏ header: gọi hàm built-in next(reader) — next là HÀM bao ngoài, không phải method reader.next. Nhớ 'next() nuốt dòng đầu tiên'.",
+   "drill": true,
+   "drillNo": 108
   },
   {
    "source": "md1",
@@ -2218,7 +2424,9 @@
    "topic": "Time Series",
    "id": "dat301m-112",
    "confidence": "high",
-   "hint": "Cast kiểu Python chuẩn: bao giá trị trong hàm — float(row[2]). Thấy Convert.toFloat là C#, loại ngay."
+   "hint": "Cast kiểu Python chuẩn: bao giá trị trong hàm — float(row[2]). Thấy Convert.toFloat là C#, loại ngay.",
+   "drill": true,
+   "drillNo": 109
   },
   {
    "source": "md1",
@@ -2238,7 +2446,9 @@
    "topic": "Time Series",
    "id": "dat301m-113",
    "confidence": "high",
-   "hint": "Sunspot: chu kỳ ~11 năm, nhưng vì đảo cực từ nên có người tính 22 năm. Đáp án 'nước đôi' — '11 or 22 depending on who you ask' — mới là đáp án đúng."
+   "hint": "Sunspot: chu kỳ ~11 năm, nhưng vì đảo cực từ nên có người tính 22 năm. Đáp án 'nước đôi' — '11 or 22 depending on who you ask' — mới là đáp án đúng.",
+   "drill": true,
+   "drillNo": 110
   },
   {
    "source": "md1",
@@ -2258,7 +2468,9 @@
    "topic": "Time Series",
    "id": "dat301m-114",
    "confidence": "high",
-   "hint": "Kết quả tốt nhất cho sunspots = COMBO Conv + LSTM + DNN. Câu hỏi kiểu 'sau cả khóa học, cái nào tốt nhất' → thường là 'kết hợp tất cả'."
+   "hint": "Kết quả tốt nhất cho sunspots = COMBO Conv + LSTM + DNN. Câu hỏi kiểu 'sau cả khóa học, cái nào tốt nhất' → thường là 'kết hợp tất cả'.",
+   "drill": true,
+   "drillNo": 111
   },
   {
    "source": "md1",
@@ -2278,7 +2490,9 @@
    "topic": "Time Series",
    "id": "dat301m-115",
    "confidence": "high",
-   "hint": "MAE không bình phương nên KHÔNG trừng phạt nặng lỗi lớn như MSE. Nhớ: Squared = 'phóng đại' lỗi to, Absolute thì hiền hòa hơn."
+   "hint": "MAE không bình phương nên KHÔNG trừng phạt nặng lỗi lớn như MSE. Nhớ: Squared = 'phóng đại' lỗi to, Absolute thì hiền hòa hơn.",
+   "drill": true,
+   "drillNo": 112
   },
   {
    "source": "md2",
@@ -2298,7 +2512,9 @@
    "topic": "ML Basics",
    "id": "dat301m-116",
    "confidence": "high",
-   "hint": "Dense = 'dày đặc' kết nối: mọi neuron nối với mọi neuron lớp kề = fully connected. Hai tên, một khái niệm."
+   "hint": "Dense = 'dày đặc' kết nối: mọi neuron nối với mọi neuron lớp kề = fully connected. Hai tên, một khái niệm.",
+   "drill": true,
+   "drillNo": 3
   },
   {
    "source": "md2",
@@ -2336,7 +2552,9 @@
    "topic": "Time Series",
    "id": "dat301m-119",
    "confidence": "high",
-   "hint": "Nhớ: window[:-1] = features (bỏ phần tử cuối), window[-1:] = label (phần tử cuối). Thứ tự tuple luôn là (features, label) — đảo ngược là distractor."
+   "hint": "Nhớ: window[:-1] = features (bỏ phần tử cuối), window[-1:] = label (phần tử cuối). Thứ tự tuple luôn là (features, label) — đảo ngược là distractor.",
+   "drill": true,
+   "drillNo": 90
   },
   {
    "source": "md2",
@@ -2356,7 +2574,9 @@
    "topic": "Time Series",
    "id": "dat301m-120",
    "confidence": "high",
-   "hint": "Huber loss = tên nhà thống kê Peter Huber — nhớ 'Hu-BER' chứ không phải Hubble (kính thiên văn), Hawking (vật lý) hay Hyatt (khách sạn)."
+   "hint": "Huber loss = tên nhà thống kê Peter Huber — nhớ 'Hu-BER' chứ không phải Hubble (kính thiên văn), Hawking (vật lý) hay Hyatt (khách sạn).",
+   "drill": true,
+   "drillNo": 101
   },
   {
    "source": "md2",
@@ -2377,7 +2597,9 @@
    "topic": "NLP",
    "id": "dat301m-121",
    "confidence": "high",
-   "hint": "Bản 'chọn 2 đáp án' của câu n-gram: subphrases n-gram + PRE-PADDING cho cùng độ dài — cặp đôi chuẩn bị training. Vẫn loại seed text (predict-time) và train/test split."
+   "hint": "Bản 'chọn 2 đáp án' của câu n-gram: subphrases n-gram + PRE-PADDING cho cùng độ dài — cặp đôi chuẩn bị training. Vẫn loại seed text (predict-time) và train/test split.",
+   "drill": true,
+   "drillNo": 76
   },
   {
    "source": "exam_img",

@@ -106,6 +106,8 @@ button { font-family: inherit; cursor: pointer; }
 .badge-topic { background: var(--primary-soft); color: var(--primary); }
 .badge-multi { background: #f3e8ff; color: #7c3aed; }
 .badge-review { background: #ffe4e6; color: #be123c; cursor: help; }
+.badge-drill { background: #e0f2fe; color: #0369a1; }
+html.dark .badge-drill { background: #10304a; color: #7dd3fc; }
 .review-note {
   margin-top: 10px; padding: 9px 13px; border-left: 4px solid var(--red);
   background: var(--red-soft); color: #7f1d1d; border-radius: 0 10px 10px 0; font-size: 13.5px;
