@@ -1965,9 +1965,9 @@
    "origNum": 107,
    "question": "If you want to amend the learning rate of the optimizer on the fly, after each epoch. What do you do?",
    "options": [
-    "Use a Learning RateScheduler and pass it as a parameter to a callback",
+    "Use a LearningRateScheduler and pass it as a parameter to a callback",
     "Callback to a custom function and change the SGD property",
-    "Use a Learning RateScheduler object in the callbacks namespace and assign that to the callback",
+    "Use a LearningRateScheduler object in the callbacks namespace and assign that to the callback",
     "You can't set it"
    ],
    "explanation": "tf.keras.callbacks.LearningRateScheduler is a callback object that adjusts the learning rate at the start of each epoch based on a function you provide; you pass it in the callbacks list of model.fit.",
