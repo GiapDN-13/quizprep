@@ -1,0 +1,3425 @@
+{
+ "id": "dat301m",
+ "name": "DAT301m — Deep Learning (TensorFlow)",
+ "description": "ML Basics · Computer Vision · NLP · Time Series",
+ "questions": [
+  {
+   "source": "md1",
+   "origNum": 1,
+   "question": "What is the difference between traditional programming and Machine Learning?",
+   "options": [
+    "In traditional programming, a programmer has to formulate or code rules manually, whereas, in Machine Learning, the algorithm automatically formulates the rules from the data.",
+    "Machine learning identifies complex activities such as golf, while traditional programming is better suited to simpler activities such as walking."
+   ],
+   "explanation": "In traditional programming a programmer must hand-code the rules explicitly, whereas in Machine Learning the algorithm is fed data and answers and it infers (formulates) the rules from that data automatically.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-1",
+   "confidence": "high",
+   "hint": "Truyền thống: NGƯỜI viết rules. ML: đưa Data + Answers vào, MÁY tự suy ra rules. Nhớ chiều đảo ngược của mũi tên."
+  },
+  {
+   "source": "md1",
+   "origNum": 2,
+   "question": "What do we call the process of telling the computer what the data represents (i.e. this data is for walking, this data is for running)?",
+   "options": [
+    "Learning the Data",
+    "Categorizing the Data",
+    "Programming the Data",
+    "Labelling the Data"
+   ],
+   "explanation": "Attaching a name or category to each data sample (e.g. 'this is walking', 'this is running') is called labelling the data; these labels are what a supervised learning algorithm uses to learn the mapping from data to answers.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-2",
+   "confidence": "high",
+   "hint": "Gắn tên cho data = dán 'label' (nhãn) → Labelling the Data. Liên tưởng: dán nhãn lên lọ gia vị để biết bên trong là gì."
+  },
+  {
+   "source": "md1",
+   "origNum": 4,
+   "question": "How do you measure how good the current 'guess' is?",
+   "options": [
+    "Training a neural network",
+    "Figuring out if you win or lose",
+    "Using the Loss function"
+   ],
+   "explanation": "The loss function measures how far the model's current guess is from the known correct answers, giving a numeric score of how good (or bad) the guess is. Training the network is the overall process, not the measurement itself.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-3",
+   "confidence": "high",
+   "hint": "Loss = 'thua lỗ' → thứ ĐO độ tệ của guess hiện tại. Muốn biết guess tốt hay xấu, hỏi Loss function."
+  },
+  {
+   "source": "md1",
+   "origNum": 5,
+   "question": "What does the optimizer do?",
+   "options": [
+    "Figures out how to efficiently compile your code",
+    "Generates a new and improved guess",
+    "Measures how good the current guess is",
+    "Decides to stop training a neural network"
+   ],
+   "explanation": "The optimizer uses the value reported by the loss function to adjust the model's internal parameters so that the next guess is better; measuring how good the guess is remains the job of the loss function.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-4",
+   "confidence": "high",
+   "hint": "Optimizer = 'người tối ưu' → sinh ra guess MỚI tốt hơn. Loss mới là thứ ĐO độ tệ — đừng nhầm vai trò."
+  },
+  {
+   "source": "md1",
+   "origNum": 6,
+   "question": "What is Convergence?",
+   "options": [
+    "An analysis that corresponds too closely or exactly to a particular set of data.",
+    "The process of getting very close to the correct answer",
+    "A programming API for AI",
+    "A dramatic increase in loss"
+   ],
+   "explanation": "Convergence is the process of the repeated guess-measure-optimize loop getting the predictions very close to the correct answers. The first option instead describes overfitting.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-5",
+   "confidence": "high",
+   "hint": "Converge = 'hội tụ' → guess tiến dần SÁT đáp án đúng. Bẫy: 'khớp quá sát một tập data' là định nghĩa của overfitting!"
+  },
+  {
+   "source": "md1",
+   "origNum": 7,
+   "question": "What does model.fit do?",
+   "options": [
+    "It trains the neural network to fit one set of values to another",
+    "It optimizes an existing model",
+    "It makes a model fit available memory",
+    "It determines if your activity is good for your body"
+   ],
+   "explanation": "model.fit starts the training loop: it repeatedly makes guesses, measures the loss, and optimizes, so the network learns (fits) the relationship between one set of values (inputs) and another (outputs).",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-6",
+   "confidence": "high",
+   "hint": "Tên hàm tự khai: fit = 'khớp' → train mạng để KHỚP tập giá trị này với tập kia. Cứ 'fit' là training."
+  },
+  {
+   "source": "md1",
+   "origNum": 8,
+   "question": "What is the resolution of o the 70,000 images from the Fashion MNIST dataset?",
+   "options": [
+    "28×28 Greyscale",
+    "28×28 Color",
+    "82×82 Greyscale",
+    "100×100 Color"
+   ],
+   "explanation": "Fashion MNIST contains 70,000 images that are each 28x28 pixels in greyscale (a single channel), which keeps the data small and simple for learning purposes.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-7",
+   "confidence": "high",
+   "hint": "Nhớ '28 xám': Fashion MNIST = 28×28 GREYscale (1 kênh). Dataset học tập nên nhỏ và không màu."
+  },
+  {
+   "source": "md1",
+   "origNum": 9,
+   "question": "Why are there 10 output neurons in the Neural Network used as an example for the Computer Vision Problem?",
+   "options": [
+    "To make it classify 10x faster",
+    "There are 10 different labels",
+    "To make it train 10x faster",
+    "Purely arbitrary"
+   ],
+   "explanation": "The network has one output neuron per class; since Fashion MNIST has 10 different labels (classes of clothing), the output layer needs 10 neurons, each producing the probability for one class.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-8",
+   "confidence": "high",
+   "hint": "Quy tắc vàng: số output neurons = số labels. 10 loại quần áo → 10 neurons. Không dính gì đến tốc độ."
+  },
+  {
+   "source": "md1",
+   "origNum": 10,
+   "question": "What does Relu do?",
+   "options": [
+    "It returns the negative of x",
+    "For a value x, it returns 1/x",
+    "It only returns x if x is less than zero",
+    "It only returns x if x is greater than zero"
+   ],
+   "explanation": "ReLU (Rectified Linear Unit) outputs x only when x is greater than zero and outputs 0 otherwise, which filters out negative values and adds non-linearity to the network.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-9",
+   "confidence": "high",
+   "hint": "ReLU = 'chặn âm': x > 0 thì giữ nguyên x, còn lại về 0. Nhớ khẩu hiệu 'positive mới được pass'."
+  },
+  {
+   "source": "md1",
+   "origNum": 11,
+   "question": "Why do you split data into training and test sets?",
+   "options": [
+    "To make testing quicker",
+    "To make training quicker",
+    "To train a network with previously unseen data",
+    "To test a network with previously unseen data"
+   ],
+   "explanation": "Holding back a test set lets you evaluate the network on data it has never seen during training, which shows how well it generalizes rather than how well it memorized the training data.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-10",
+   "confidence": "high",
+   "hint": "Test set = đề thi CHƯA từng học → TEST với unseen data để đo generalization. Bẫy đảo chữ: không phải 'train với unseen'."
+  },
+  {
+   "source": "md1",
+   "origNum": 12,
+   "question": "True or False: The on_epoch_end function sends a logs object with lots of great information about the current state of training at the start of every epoch",
+   "options": [
+    "True",
+    "False"
+   ],
+   "explanation": "False. As its name indicates, on_epoch_end is called at the end of every epoch (not the start), and it receives a logs object describing the current state of training such as the loss and accuracy.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-11",
+   "confidence": "high",
+   "hint": "Tên hàm tự tố cáo: on_epoch_END = CUỐI epoch. Câu hỏi nói 'at the start' → False."
+  },
+  {
+   "source": "md1",
+   "origNum": 13,
+   "question": "Why do you set the callbacks= parameter in your fit function?",
+   "options": [
+    "So that the training loops performs all epochs",
+    "Because it accelerates the training",
+    "So, on every epoch you can call back to a code function"
+   ],
+   "explanation": "Setting callbacks= registers callback objects whose methods are invoked during training (e.g. at the end of every epoch), letting you run your own code, for example to stop training once a desired accuracy is reached.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-12",
+   "confidence": "high",
+   "hint": "callback = 'gọi ngược' → mỗi epoch máy gọi ngược về hàm code của bạn (vd: tự dừng khi đủ accuracy). Không phải để tăng tốc."
+  },
+  {
+   "source": "md1",
+   "origNum": 14,
+   "question": "How do Convolutions improve image recognition?",
+   "options": [
+    "They make the image clearer",
+    "They make processing of images faster",
+    "They isolate features in images",
+    "They make the image smaller"
+   ],
+   "explanation": "A convolution passes filters over the image that emphasize and isolate features such as edges and shapes, so the network can learn from meaningful features instead of raw pixel values. They don't inherently make images clearer, smaller, or faster to process.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-13",
+   "confidence": "high",
+   "hint": "Convolution = kính lọc → CÔ LẬP (isolate) features như cạnh, hình khối. 'Làm ảnh rõ/nhỏ hơn' đều là distractor."
+  },
+  {
+   "source": "md1",
+   "origNum": 15,
+   "question": "What does the Pooling technique do to the images?",
+   "options": [
+    "Combines them",
+    "Makes them sharper",
+    "Reduces information in them while maintaining some features",
+    "Isolates features in them"
+   ],
+   "explanation": "Pooling downsamples the image (e.g. max pooling keeps only the largest value in each 2x2 block), reducing the amount of information while preserving the salient features that the convolutions detected.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-14",
+   "confidence": "high",
+   "hint": "Pooling = máy nén: GIẢM thông tin nhưng GIỮ feature nổi bật. Còn 'isolate features' là việc của convolution — đừng tráo vai."
+  },
+  {
+   "source": "md1",
+   "origNum": 16,
+   "question": "True or False. If you pass a 28×28 image through a 3×3 filter the output will be 26×26",
+   "options": [
+    "False",
+    "True"
+   ],
+   "explanation": "A 3×3 valid convolution removes 1 pixel from each side: 28−3+1 = 26, so the output is 26×26 → True. (Bản đề gốc bị lỗi OCR thành \"2×3\".)",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-15",
+   "confidence": "high",
+   "hint": "Quy tắc conv 3×3: mất viền 1 pixel mỗi cạnh → trừ 2. 28−2=26 → True."
+  },
+  {
+   "source": "md1",
+   "origNum": 17,
+   "question": "After max pooling a 26×26 image with a 2×2 filter, the output will be 56×56",
+   "options": [
+    "True",
+    "False"
+   ],
+   "explanation": "False. Max pooling with a 2x2 filter halves each dimension, so a 26x26 image becomes 13x13, not 56x56.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-16",
+   "confidence": "high",
+   "hint": "Pooling 2×2 = CHIA ĐÔI, không phóng to: 26→13 chứ không phải 56 → False. Thấy số to hơn sau pooling là sai ngay."
+  },
+  {
+   "source": "md1",
+   "origNum": 18,
+   "question": "How does using Convolutions in our Deep neural network impact training?",
+   "options": [
+    "It makes it slower",
+    "Its impact will depend on other factors.",
+    "It makes it faster",
+    "It does not affect training"
+   ],
+   "explanation": "The impact depends on many factors such as the architecture and the data: convolutions can make training faster or slower, and a poorly designed convolutional layer can even be less efficient than a plain DNN.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-17",
+   "confidence": "high",
+   "hint": "Câu hỏi 'conv ảnh hưởng training thế nào' → đáp án khiêm tốn: 'tùy nhiều yếu tố'. Conv thiết kế tồi có thể còn tệ hơn DNN thường."
+  },
+  {
+   "source": "md1",
+   "origNum": 19,
+   "question": "Using Image Generator, how do you label images?",
+   "options": [
+    "TensorFlow figures it out from the contents",
+    "You have to manually do it",
+    "It's based on the file name",
+    "It's based on the directory the image is contained in"
+   ],
+   "explanation": "With the ImageDataGenerator, images are labelled automatically based on the name of the directory (subfolder) they are stored in, so no manual labelling is needed.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-18",
+   "confidence": "high",
+   "hint": "ImageGenerator: 'folder = label' — nhãn lấy theo TÊN THƯ MỤC chứa ảnh, không phải tên file, không cần gắn tay."
+  },
+  {
+   "source": "md1",
+   "origNum": 20,
+   "question": "What method on the Image Generator is used to normalize the image?",
+   "options": [
+    "Rescale_image",
+    "normalize_image",
+    "normalize",
+    "rescale"
+   ],
+   "explanation": "The rescale parameter of the ImageDataGenerator (e.g. rescale=1./255) is used to normalize pixel values from the 0-255 range into the 0-1 range.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-19",
+   "confidence": "high",
+   "hint": "Không có hàm 'normalize' — chỉ có RESCALE (vd rescale=1./255). Nhớ: đổi thang đo = re-scale."
+  },
+  {
+   "source": "md1",
+   "origNum": 21,
+   "question": "How did we specify the training size for the images?",
+   "options": [
+    "The training_size parameter on the validation generator",
+    "The target_size parameter on the validation generator",
+    "The target_size parameter on the training generator",
+    "The training_size parameter on the training generator"
+   ],
+   "explanation": "The target_size parameter on the training generator's flow_from_directory call specifies the size that training images are resized to as they are loaded.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-20",
+   "confidence": "high",
+   "hint": "target_size trên TRAINING generator. Mẹo loại trừ: 'training_size' là tham số bịa, và câu hỏi về training chứ không phải validation."
+  },
+  {
+   "source": "md1",
+   "origNum": 22,
+   "question": "When we specify the input_shape to be (300, 300, 3), what does that mean?",
+   "options": [
+    "There will be 300 images, each size 300, loaded in batches of 3",
+    "There will be 300 horses and 300 humans, loaded in batches of 3",
+    "Every Image will be 300×300 pixels, and there should be 3 Convolutional Layers",
+    "Every Image will be 300×300 pixels, with 3 bytes to define color"
+   ],
+   "explanation": "An input_shape of (300, 300, 3) means every input image is 300x300 pixels with 3 color channels (3 bytes per pixel for red, green and blue).",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-21",
+   "confidence": "high",
+   "hint": "(300, 300, 3): hai số đầu = pixel, số 3 cuối = 3 kênh màu RGB (3 bytes/pixel). KHÔNG phải 3 layer hay batch 3."
+  },
+  {
+   "source": "md1",
+   "origNum": 23,
+   "question": "If your training data is close to 1.000 accuracy, but your validation data isn't, what's the risk here?",
+   "options": [
+    "No risk, that's a great result",
+    "You're underfitting on your validation data",
+    "You're overfitting on your validation data",
+    "You're overfitting on your training data"
+   ],
+   "explanation": "Near-perfect training accuracy combined with clearly lower validation accuracy means the model is overfitting on the training data: it has effectively memorized the training set and does not generalize to unseen data.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-22",
+   "confidence": "high",
+   "hint": "Train ≈ 1.0 mà validation thấp = học thuộc lòng đề → overfit trên TRAINING data. Nhớ: người ta chỉ overfit cái mình HỌC."
+  },
+  {
+   "source": "md1",
+   "origNum": 24,
+   "question": "Convolutional Neural Networks are better for classifying images like horses and humans because:",
+   "options": [
+    "There's a wide variety of humans",
+    "In these images, the features may be in different parts of the frame",
+    "There's a wide variety of horses"
+   ],
+   "explanation": "All three are correct: CNNs handle the wide variety of appearances of humans and horses, and convolution + pooling give translation invariance, so features can be detected anywhere in the frame. CNNs learn features automatically without manual feature engineering.",
+   "verified": true,
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-23",
+   "confidence": "high",
+   "hint": "Câu multi-answer: chọn CẢ 3! Đa dạng người + đa dạng ngựa + feature nằm bất kỳ đâu trong frame — CNN cân hết nhờ translation invariance."
+  },
+  {
+   "source": "md1",
+   "origNum": 25,
+   "question": "After reducing the size of the images, the training results were different. Why?",
+   "options": [
+    "There was more condensed information in the images",
+    "We removed some convolutions to handle the smaller images",
+    "There was less information in the images",
+    "The training was faster"
+   ],
+   "explanation": "When the input images were made smaller, some convolution/pooling layers were removed to suit the reduced size; changing the architecture in this way changes what the network learns, and therefore the training results.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-24",
+   "confidence": "high",
+   "hint": "Ảnh nhỏ đi → phải BỎ bớt convolutions → KIẾN TRÚC đổi → kết quả đổi. Nhớ: nguyên nhân là đổi kiến trúc, không phải 'ít thông tin'."
+  },
+  {
+   "source": "md1",
+   "origNum": 26,
+   "question": "What does flow_from_directory give you on the ImageDataGenerator?",
+   "options": [
+    "The ability to easily load images for training",
+    "The ability to pick the size of training images",
+    "The ability to automatically label images based on their directory name",
+    "All of the above"
+   ],
+   "explanation": "flow_from_directory provides all of these: it loads images from disk for training, resizes them via target_size, and labels them automatically based on the directory each image is stored in.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-25",
+   "confidence": "high",
+   "hint": "flow_from_directory = combo 3-trong-1: load ảnh + chỉnh size + auto label theo folder → 'All of the above'."
+  },
+  {
+   "source": "md1",
+   "origNum": 27,
+   "question": "If my Image is sized 150×150, and I pass a 3x3 Convolution over it, what size is the resulting image?",
+   "options": [
+    "153×153",
+    "150×150",
+    "148×148",
+    "450×450"
+   ],
+   "explanation": "A 3x3 convolution cannot be applied to the 1-pixel border, so the output loses 2 pixels in each dimension: 150x150 becomes 148x148.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-26",
+   "confidence": "high",
+   "hint": "Công thức conv 3×3: trừ 2 mỗi chiều. 150−2=148. Thấy 153 hay 450 là bẫy cộng/nhân bậy."
+  },
+  {
+   "source": "md1",
+   "origNum": 28,
+   "question": "If my data is sized 150×150, and I use Pooling of size 2×2, what size will the resulting image be?",
+   "options": [
+    "75×75",
+    "149×149",
+    "148×148",
+    "300×300"
+   ],
+   "explanation": "A 2x2 pooling filter reduces each dimension by half, so a 150x150 image becomes 75x75.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-27",
+   "confidence": "high",
+   "hint": "Nhớ công thức: pooling 2×2 → chia đôi kích thước. 150→75."
+  },
+  {
+   "source": "md1",
+   "origNum": 29,
+   "question": "If I want to view the history of my training, how can I access it?",
+   "options": [
+    "Download the model and inspect it",
+    "Pass the parameter 'history=true' to the model.fit",
+    "Create a variable 'history' and assign it to the return of model.fit or model.fit_generator",
+    "Use a model.fit_generator"
+   ],
+   "explanation": "model.fit (and model.fit_generator) return a History object containing the per-epoch metrics such as loss and accuracy; assigning the return value to a variable like 'history' lets you inspect and plot it afterwards.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-28",
+   "confidence": "high",
+   "hint": "model.fit TRẢ VỀ History object → hứng vào biến: history = model.fit(...). Không tồn tại tham số 'history=true'."
+  },
+  {
+   "source": "md1",
+   "origNum": 30,
+   "question": "What's the name of the API that allows you to inspect the impact of convolutions on the images?",
+   "options": [
+    "The model.layers API",
+    "The model.pools API",
+    "The model.images API",
+    "The model.convolutions API"
+   ],
+   "explanation": "The model.layers API lets you access each layer and its outputs, so you can build a model that exposes the intermediate activations and visualize the effect of the convolutions and pooling on an image.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-29",
+   "confidence": "high",
+   "hint": "Soi tác động conv qua model.LAYERS — layer là khái niệm thật duy nhất; model.pools/images/convolutions đều là API ma."
+  },
+  {
+   "source": "md1",
+   "origNum": 31,
+   "question": "When exploring the graphs, the loss levelled out at about.75 after 2 epochs, but the accuracy climbed close to 1.0 after 15 epochs. What's the significance of this?",
+   "options": [
+    "There was no point training after 2 epochs, as we overfit to the validation data",
+    "There was no point training after 2 epochs, as we overfit to the training data",
+    "A bigger training set would give us better validation accuracy",
+    "A bigger validation set would give us better training accuracy"
+   ],
+   "explanation": "The loss stopped improving after about 2 epochs while training accuracy kept climbing toward 1.0, which means the extra epochs were just memorizing the training set; training beyond 2 epochs only overfit the model to the training data.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-30",
+   "confidence": "high",
+   "hint": "Loss đứng im sau 2 epochs mà accuracy vẫn leo lên 1.0 → 13 epochs sau chỉ là học thuộc = overfit TRAINING data, train thêm vô ích."
+  },
+  {
+   "source": "md1",
+   "origNum": 32,
+   "question": "Why is the validation accuracy a better indicator of model performance than training accuracy?",
+   "options": [
+    "It isn't, they're equally valuable",
+    "There's no relationship between them",
+    "The validation accuracy is based on images that the model hasn't been trained with, and thus a better indicator of how the model will perform with new images.",
+    "The validation dataset is smaller, and thus less accurate at measuring accuracy, so its performance isn't as important"
+   ],
+   "explanation": "Validation accuracy is computed on images the model was never trained on, so it indicates how the model will perform on new, unseen images; training accuracy can be inflated by memorization of the training set.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-31",
+   "confidence": "high",
+   "hint": "Validation accuracy đáng tin vì đo trên ảnh model CHƯA TỪNG thấy → dự báo hiệu năng thật; training accuracy có thể chỉ là trí nhớ tốt."
+  },
+  {
+   "source": "md1",
+   "origNum": 33,
+   "question": "Why is overfitting more likely to occur on smaller datasets?",
+   "options": [
+    "Because in a smaller dataset, your validation data is more likely to look like your training data",
+    "Because there isn't enough data to activate all the convolutions or neurons",
+    "Because with less data, the training will take place more quickly, and some features may be missed",
+    "Because there's less likelihood of all possible features being encountered in the training process."
+   ],
+   "explanation": "A small dataset is less likely to contain examples of all the possible features and variations, so the model learns only the limited patterns present in it and fails to generalize - i.e. it overfits.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-32",
+   "confidence": "high",
+   "hint": "Dataset nhỏ = 'ít trải đời': khó gặp đủ mọi feature có thể có → model học phiến diện → overfit."
+  },
+  {
+   "source": "md1",
+   "origNum": 34,
+   "question": "How do you use Image Augmentation in TensorFLow",
+   "options": [
+    "You have to write a plugin to extend tf.layers",
+    "Using parameters to the ImageDataGenerator",
+    "With the tf.augment API",
+    "With the keras.augment API"
+   ],
+   "explanation": "Image augmentation is enabled simply by passing parameters (such as rotation_range, zoom_range, horizontal_flip) to the ImageDataGenerator constructor; there is no separate tf.augment or keras.augment API.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-33",
+   "confidence": "high",
+   "hint": "Augmentation không có API riêng — chỉ là THAM SỐ của ImageDataGenerator (rotation_range, flip...). tf.augment/keras.augment đều bịa."
+  },
+  {
+   "source": "md1",
+   "origNum": 35,
+   "question": "If my training data only has people facing left, but I want to classify people facing right, how would I avoid overfitting?",
+   "options": [
+    "Use the 'flip' parameter",
+    "Use the 'flip_vertical' parameter around the Y axis",
+    "Use the 'horizontal_flip' parameter",
+    "Use the 'flip' parameter and set 'horizontal'"
+   ],
+   "explanation": "Setting the horizontal_flip parameter to True makes the generator randomly mirror images horizontally during training, so the model also sees people facing right even though the raw data only has people facing left.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-34",
+   "confidence": "high",
+   "hint": "Quay trái → muốn có quay phải thì LẬT GƯƠNG NGANG: 'horizontal_flip'. Phải nhớ tên đầy đủ — không có tham số 'flip' trống trơn."
+  },
+  {
+   "source": "md1",
+   "origNum": 36,
+   "question": "After adding data augmentation and using the same batch size and steps per epoch, you noticed that each training epoch became a little slower than when you trained without it. Why?",
+   "options": [
+    "Because the training is making more mistakes",
+    "Because there is more data to train on",
+    "Because the augmented data is bigger",
+    "Because the image preprocessing takes cycles"
+   ],
+   "explanation": "The augmentation transforms are computed on the fly on the CPU as each batch is loaded, and this extra image preprocessing takes compute cycles, making every epoch slightly slower. The amount of data per epoch is unchanged.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-35",
+   "confidence": "high",
+   "hint": "Augmentation chạy on-the-fly trên CPU → chậm vì XỬ LÝ ẢNH tốn cycles. Bẫy: lượng data mỗi epoch KHÔNG đổi."
+  },
+  {
+   "source": "md1",
+   "origNum": 37,
+   "question": "What does the fill_mode parameter do?",
+   "options": [
+    "There is no fill_mode parameter",
+    "It creates random noise in the image",
+    "It attempts to recreate lost information after a transformation like a shear",
+    "It masks the background of an image"
+   ],
+   "explanation": "fill_mode tells the generator how to fill in the pixels that are 'lost' after a transformation such as a shear or rotation, attempting to recreate that missing information (e.g. by repeating the nearest pixels).",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-36",
+   "confidence": "high",
+   "hint": "fill_mode = 'trét vữa': lấp lại pixel bị mất sau shear/rotate. Fill = lấp đầy chỗ trống."
+  },
+  {
+   "source": "md1",
+   "origNum": 38,
+   "question": "When using Image Augmentation with the ImageDataGenerator, what happens to your raw image data on-disk.",
+   "options": [
+    "It gets overwritten, so be sure to make a backup",
+    "A copy is made and the augmentation is done on the copy",
+    "Nothing, all augmentation is done in-memory",
+    "It gets deleted"
+   ],
+   "explanation": "All augmentation is performed in memory on the fly as images are loaded for training; the raw image files on disk are never modified, copied, or deleted.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-37",
+   "confidence": "high",
+   "hint": "Augmentation làm hết TRONG RAM (in-memory) — ảnh gốc trên disk bình an vô sự, không copy, không ghi đè, không xóa."
+  },
+  {
+   "source": "md1",
+   "origNum": 39,
+   "question": "How does Image Augmentation help solve overfitting?",
+   "options": [
+    "It slows down the training process",
+    "It manipulates the training set to generate more scenarios for features in the images",
+    "It manipulates the validation set to generate more scenarios for features in the images",
+    "It automatically fits features to images by finding them through image processing techniques"
+   ],
+   "explanation": "Augmentation transforms the training set (rotating, flipping, zooming, etc.) so the same images present features in many more scenarios, which broadens the effective training data and helps the model generalize. The validation set is never augmented.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-38",
+   "confidence": "high",
+   "hint": "Augmentation biến hóa tập TRAINING để tạo thêm kịch bản cho features. Bẫy kinh điển: KHÔNG BAO GIỜ augment validation set."
+  },
+  {
+   "source": "md1",
+   "origNum": 40,
+   "question": "When using Image Augmentation my training gets...",
+   "options": [
+    "Slower",
+    "Faster",
+    "Stays the Same",
+    "Much Faster"
+   ],
+   "explanation": "Training gets slower, because the augmentation transformations are applied on the fly to every image as it is loaded, adding preprocessing time to each epoch.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-39",
+   "confidence": "high",
+   "hint": "Thêm việc = thêm giờ: augmentation xử lý ảnh on-the-fly → training CHẬM hơn (Slower)."
+  },
+  {
+   "source": "md1",
+   "origNum": 41,
+   "question": "Using Image Augmentation effectively simulates having a larger data set for training.",
+   "options": [
+    "False",
+    "True"
+   ],
+   "explanation": "True. By generating transformed variants of the training images (flips, rotations, zooms, shifts), augmentation effectively simulates a larger and more varied training dataset without collecting new data.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-40",
+   "confidence": "high",
+   "hint": "True — augmentation = 'nhân bản ảo' dataset: cùng ảnh nhưng vô số biến thể, giả lập tập data lớn hơn miễn phí."
+  },
+  {
+   "source": "md1",
+   "origNum": 42,
+   "question": "If I put a dropout parameter of 0.2, how many nodes will I lose?",
+   "options": [
+    "20% of them",
+    "2% of them",
+    "20% of the untrained ones",
+    "2% of the untrained ones"
+   ],
+   "explanation": "The dropout parameter is a fraction: 0.2 means 20% of the neurons in that layer are randomly ignored (dropped) during each training update, regardless of how trained they are.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-41",
+   "confidence": "high",
+   "hint": "Dropout nhận PHÂN SỐ: 0.2 = 20% neurons bị tắt ngẫu nhiên — mọi neuron bình đẳng, không có chuyện chỉ tắt 'untrained'."
+  },
+  {
+   "source": "md1",
+   "origNum": 43,
+   "question": "Why is transfer learning useful?",
+   "options": [
+    "Because I can use all of the data from the original training set",
+    "Because I can use all of the data from the original validation set",
+    "Because I can use the features that were learned from large datasets that I may not have access to",
+    "Because I can use the validation metadata from large datasets that I may not have access to"
+   ],
+   "explanation": "Transfer learning lets you reuse the features a model already learned from huge datasets (like ImageNet) that you may not have access to or the resources to train on, and apply them to your own smaller problem.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-42",
+   "confidence": "high",
+   "hint": "Transfer learning = mượn FEATURES đã học từ dataset khổng lồ mình không có (ImageNet). Nhớ: mượn features, không mượn data."
+  },
+  {
+   "source": "md1",
+   "origNum": 44,
+   "question": "How did you lock or freeze a layer from retraining?",
+   "options": [
+    "tf.freeze(layer)",
+    "tf.layer.frozen = true",
+    "tf.layer.locked = true",
+    "layer.trainable = false"
+   ],
+   "explanation": "Setting layer.trainable = False freezes a layer so its pre-learned weights are not updated (retrained) when you train the rest of the model; the other options are not real APIs.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-43",
+   "confidence": "high",
+   "hint": "Đóng băng layer = layer.trainable = False. Chỉ 'trainable' là thuộc tính thật; freeze/frozen/locked đều là API tưởng tượng."
+  },
+  {
+   "source": "md1",
+   "origNum": 45,
+   "question": "How do you change the number of classes the model can classify when using transfer learning? (i.e. the original model handled 1000 classes, but yours handles just 2)",
+   "options": [
+    "Ignore all the classes above yours (i.e. Numbers 2 onwards if I'm just classing 2)",
+    "Use all classes but set their weights to 0",
+    "When you add your DNN at the bottom of the network, you specify your output layer with the number of classes you want",
+    "Use dropouts to eliminate the unwanted classes"
+   ],
+   "explanation": "You keep the pre-trained layers and add your own DNN at the bottom (end) of the network, specifying a new output layer with exactly the number of classes your problem needs (e.g. 2 instead of 1000).",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-44",
+   "confidence": "high",
+   "hint": "Đổi 1000 class thành 2: giữ phần pre-trained, GẮN DNN mới ở cuối với output layer đúng số class của bạn. Thay đuôi, không vá đầu."
+  },
+  {
+   "source": "md1",
+   "origNum": 46,
+   "question": "Can you use Image Augmentation with Transfer Learning Models?",
+   "options": [
+    "No, because you are using pre-set features",
+    "Yes, because you are adding new layers at the bottom of the network, and you can use image augmentation when training these"
+   ],
+   "explanation": "Yes. Only the pre-trained layers are frozen; the images themselves can still be augmented as they are fed in while you train the new layers you added, which helps avoid overfitting.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-45",
+   "confidence": "high",
+   "hint": "Yes! Chỉ LAYER pre-trained bị đóng băng — còn ẢNH đầu vào vẫn augment thoải mái khi train các layer mới."
+  },
+  {
+   "source": "md1",
+   "origNum": 47,
+   "question": "Why do dropouts help avoid overfitting?",
+   "options": [
+    "Because neighbor neurons can have similar weights, and thus can skew the final training",
+    "Having less neurons speeds up training"
+   ],
+   "explanation": "Neighboring neurons can end up with similar weights and co-adapt, which skews training toward those redundant patterns; randomly dropping neurons forces the network to learn more robust, independent features. Speeding up training is not the purpose of dropout.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-46",
+   "confidence": "high",
+   "hint": "Neurons hàng xóm hay 'copy bài nhau' (weights giống nhau) làm lệch training → dropout tắt ngẫu nhiên để ép học độc lập. Không phải để nhanh hơn."
+  },
+  {
+   "source": "md1",
+   "origNum": 48,
+   "question": "What would the symptom of a Dropout rate being set too high?",
+   "options": [
+    "The network would lose specialization to the effect that it would be inefficient or ineffective at learning, driving accuracy down",
+    "Training time would increase due to the extra calculations being required for higher dropout"
+   ],
+   "explanation": "If the dropout rate is too high, too many neurons are removed each step and the network loses its ability to specialize, becoming inefficient or ineffective at learning, which drives accuracy down. Dropout does not add extra calculations.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-47",
+   "confidence": "high",
+   "hint": "Dropout quá cao = đuổi quá nhiều nhân viên: mạng mất khả năng chuyên môn hóa → accuracy TỤT. Không hề tốn thêm tính toán."
+  },
+  {
+   "source": "md1",
+   "origNum": 49,
+   "question": "Which is the correct line of code for adding Dropout of 20% of neurons using TensorFlow",
+   "options": [
+    "tf.keras.layers.Dropout(20)",
+    "tf.keras.layers. DropoutNeurons(20),",
+    "tf.keras.layers. Dropout(0.2),",
+    "tf.keras.layers. DropoutNeurons(0.2),"
+   ],
+   "explanation": "The Dropout layer takes a fraction between 0 and 1, so 20% is written as tf.keras.layers.Dropout(0.2); passing 20 would be invalid and there is no DropoutNeurons layer.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-48",
+   "confidence": "high",
+   "hint": "20% viết dạng phân số: tf.keras.layers.Dropout(0.2). Hai bẫy: không truyền số 20, và không tồn tại 'DropoutNeurons'."
+  },
+  {
+   "source": "md1",
+   "origNum": 50,
+   "question": "The diagram for traditional programming had Rules and Data In, but what came out?",
+   "options": [
+    "Answers",
+    "Binary",
+    "Machine Learning",
+    "Bugs"
+   ],
+   "explanation": "In the traditional programming diagram, Rules and Data go in and Answers come out; Machine Learning flips this around, with Answers (labels) and Data going in and Rules coming out.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-49",
+   "confidence": "high",
+   "hint": "Sơ đồ truyền thống: Rules + Data → ANSWERS. ML đảo lại: Answers + Data → Rules. Nhớ cặp hoán vị Rules ↔ Answers."
+  },
+  {
+   "source": "md1",
+   "origNum": 51,
+   "question": "Why does the DNN for Fashion MNIST have 10 output neurons?",
+   "options": [
+    "To make it train 10x faster",
+    "To make it classify 10x faster",
+    "Purely Arbitrary",
+    "The dataset has 10 classes"
+   ],
+   "explanation": "Fashion MNIST has 10 classes of clothing items, and a classification network needs one output neuron per class, so the output layer has 10 neurons.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-50",
+   "confidence": "high",
+   "hint": "Lại quy tắc vàng: output neurons = số class. Fashion MNIST có 10 class → 10 neurons."
+  },
+  {
+   "source": "md1",
+   "origNum": 52,
+   "question": "What is a Convolution?",
+   "options": [
+    "A technique to make images smaller",
+    "A technique to make images larger",
+    "A technique to extract features from an image",
+    "A technique to remove unwanted images"
+   ],
+   "explanation": "A convolution is a technique that passes a filter over an image to extract (emphasize) features such as edges and shapes; it is not primarily about resizing or removing images.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-51",
+   "confidence": "high",
+   "hint": "Convolution = kỹ thuật TRÍCH XUẤT (extract) features bằng filter quét qua ảnh. Không phải phóng to/thu nhỏ hay lọc bỏ ảnh."
+  },
+  {
+   "source": "md1",
+   "origNum": 53,
+   "question": "Applying Convolutions on top of a DNN will have what impact on training?",
+   "options": [
+    "It will be slower",
+    "It will be faster",
+    "There will be no impact",
+    "It depends on many factors. It might make your training faster or slower, and a poorly designed Convolutional layer may even be less efficient than a plain DNN!"
+   ],
+   "explanation": "The impact depends on many factors: convolutions might make training faster or slower, and a poorly designed convolutional layer may even be less efficient than a plain DNN.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-52",
+   "confidence": "high",
+   "hint": "Sinh đôi với câu 'impact on training': đáp án luôn là 'It depends' — có thể nhanh, chậm, thậm chí tệ hơn DNN nếu thiết kế kém."
+  },
+  {
+   "source": "md1",
+   "origNum": 54,
+   "question": "What method on an ImageGenerator is used to normalize the image?",
+   "options": [
+    "normalize",
+    "flatten",
+    "rezize()",
+    "rescale"
+   ],
+   "explanation": "The rescale parameter of the ImageDataGenerator normalizes pixel values (e.g. rescale=1./255 maps 0-255 values into the 0-1 range).",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-53",
+   "confidence": "high",
+   "hint": "Vẫn là RESCALE — câu hỏi lặp lại để khắc sâu: normalize ảnh = rescale, không có method tên 'normalize'."
+  },
+  {
+   "source": "md1",
+   "origNum": 56,
+   "question": "Can you use Image augmentation with Transfer Learning?",
+   "options": [
+    "No - because the layers are frozen so they can't be augmented",
+    "Yes. It's pre-trained layers that are frozen. So you can augment your images as you train the bottom layers of the DNN with them"
+   ],
+   "explanation": "Yes. It is only the pre-trained layers that are frozen, so you can still augment your images as you train the new bottom layers of the DNN that you added.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-54",
+   "confidence": "high",
+   "hint": "Yes — câu sinh đôi: pre-trained layers bị freeze chứ ảnh thì không; cứ augment khi train các layer mới ở cuối."
+  },
+  {
+   "source": "md1",
+   "origNum": 57,
+   "question": "When training for multiple classes what is the Class Mode for Image Augmentation?",
+   "options": [
+    "class_mode='multiple'",
+    "class_mode='non_binary'",
+    "class_mode='categorical'",
+    "class_mode='all'"
+   ],
+   "explanation": "For more than two classes you set class_mode='categorical' on the generator so labels are one-hot encoded for multi-class classification ('binary' is used for two classes).",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-55",
+   "confidence": "high",
+   "hint": "Nhiều class → class_mode='categorical' — cùng họ với categorical crossentropy. 2 class mới dùng 'binary'; 'multiple' là đồ giả."
+  },
+  {
+   "source": "md1",
+   "origNum": 58,
+   "question": "What is the name of the object used to tokenize sentences?",
+   "options": [
+    "Character Tokenizer",
+    "WordTokenizer",
+    "TextTokenizer",
+    "Tokenizer"
+   ],
+   "explanation": "The Tokenizer class (from tensorflow.keras.preprocessing.text) is the object used to tokenize sentences, building a word index from the corpus.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-56",
+   "confidence": "high",
+   "hint": "Keras thích tên trơn: class là Tokenizer, không prefix Word/Text/Character. Tên ngắn nhất thắng."
+  },
+  {
+   "source": "md1",
+   "origNum": 59,
+   "question": "What is the name of the method used to tokenize a list of sentences?",
+   "options": [
+    "fit_on_texts(sentences)",
+    "tokenize(sentences)",
+    "fit_to_text(sentences)",
+    "tokenize_on_text(sentences)"
+   ],
+   "explanation": "You call the tokenizer's fit_on_texts(sentences) method on a list of sentences; it builds the word index (vocabulary) from all the words it finds.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-57",
+   "confidence": "high",
+   "hint": "Học từ vựng = fit_on_texts. Nhớ: cứ 'fit' là học (giống model.fit), và 'texts' số nhiều."
+  },
+  {
+   "source": "md1",
+   "origNum": 60,
+   "question": "Once you have the corpus tokenized, what's the method used to encode a list of sentences to use those tokens?",
+   "options": [
+    "text_to_tokens(sentences)",
+    "texts_to_tokens(sentences)",
+    "texts_to_sequences(sentences)",
+    "text_to_sequences(sentences)"
+   ],
+   "explanation": "After fitting, texts_to_sequences(sentences) converts each sentence into a list of the token numbers from the learned word index. Note it is 'texts' (plural) and 'sequences', not 'tokens'.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "NLP",
+   "id": "dat301m-58",
+   "confidence": "high",
+   "hint": "texts_to_sequences: cả hai đầu đều SỐ NHIỀU (textS, sequenceS) và ra 'sequences' chứ không phải 'tokens'."
+  },
+  {
+   "source": "md1",
+   "origNum": 61,
+   "question": "When initializing the tokenizer, how do you specify a token to use for unknown words?",
+   "options": [
+    "out_of_vocab=<Token>",
+    "unknown_word=<Token>",
+    "oov_token=<Token>",
+    "unknown_token=<Token>"
+   ],
+   "explanation": "You pass oov_token=<Token> (e.g. oov_token='<OOV>') to the Tokenizer constructor; that token is then used in place of any word not present in the learned word index.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "NLP",
+   "id": "dat301m-59",
+   "confidence": "high",
+   "hint": "Từ lạ = OOV (Out Of Vocabulary) → tham số oov_token. Nhớ cụm viết tắt 3 chữ cái, đừng chọn tên dài dòng."
+  },
+  {
+   "source": "md1",
+   "origNum": 62,
+   "question": "If you don't use a token for out of vocabulary words, what happens at encoding?",
+   "options": [
+    "The word isn't encoded, and is skipped in the sequence",
+    "The word is replaced by the most common token",
+    "The word isn't encoded, and the sequencing ends",
+    "The word isn't encoded, and is replaced by a zero in the sequence"
+   ],
+   "explanation": "Without an OOV token, a word that is not in the word index simply is not encoded and is skipped, so the resulting sequence is shorter than the original sentence.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-60",
+   "confidence": "high",
+   "hint": "Không có OOV token → từ lạ bị SKIP luôn, câu bị ngắn đi. Không thay bằng 0, không dừng cả sequence."
+  },
+  {
+   "source": "md1",
+   "origNum": 63,
+   "question": "If you have a number of sequences of different lengths, how do you ensure that they are understood when fed into a neural network?",
+   "options": [
+    "Make sure that they are all the same length using the pad_sequences method of the tokenizer",
+    "Use the pad_sequences function from the tensorflow.keras.preprocessing.sequence namespace",
+    "Process them on the input layer of the Neural Network using the pad_sequences property",
+    "Specify the input layer of the Neural Network to expect different sizes with dynamic_length"
+   ],
+   "explanation": "pad_sequences is a standalone function from the tensorflow.keras.preprocessing.sequence namespace (not a method of the tokenizer) that pads/truncates all sequences to a uniform length so they can be fed into the network.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-61",
+   "confidence": "high",
+   "hint": "Bẫy nằm ở 'của ai': pad_sequences là HÀM ĐỘC LẬP trong tensorflow.keras.preprocessing.sequence — KHÔNG phải method của tokenizer."
+  },
+  {
+   "source": "md1",
+   "origNum": 64,
+   "question": "If you have a number of sequences of different length, and call pad_sequences on them, what's the default result?",
+   "options": [
+    "They'll get cropped to the length of the shortest sequence",
+    "They'll get padded to the length of the longest sequence by adding zeros to the end of shorter ones",
+    "Nothing, they'll remain unchanged",
+    "They'll get padded to the length of the longest sequence by adding zeros to the beginning of shorter ones"
+   ],
+   "explanation": "By default, pad_sequences pads every sequence to the length of the longest one and uses padding='pre', meaning zeros are added to the beginning of shorter sequences. Cropping to the shortest length or post-padding only happens if you explicitly request it.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-62",
+   "confidence": "high",
+   "hint": "Mặc định pad_sequences: pad theo câu DÀI NHẤT và thêm số 0 vào ĐẦU. Nhớ khẩu quyết: 'default = PRE' (0 đứng trước)."
+  },
+  {
+   "source": "md1",
+   "origNum": 65,
+   "question": "When padding sequences, if you want the padding to be at the end of the sequence, how do you do it?",
+   "options": [
+    "Call the padding method of the pad_sequences object, passing it 'post'",
+    "Call the padding method of the pad_sequences object, passing it 'after'",
+    "Pass padding='post' to pad_sequences when initializing it",
+    "Pass padding='after' to pad_sequences when initializing it"
+   ],
+   "explanation": "You pass the keyword argument padding='post' to pad_sequences, which places the zeros after the sequence values instead of before them. There is no 'padding method' to call and 'after' is not a valid value.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "NLP",
+   "id": "dat301m-63",
+   "confidence": "high",
+   "hint": "Muốn 0 ở cuối → padding='post' (post = sau). Là THAM SỐ truyền vào pad_sequences, không phải method; 'after' không tồn tại."
+  },
+  {
+   "source": "md1",
+   "origNum": 66,
+   "question": "What is the name of the TensorFlow library containing common data that you can use to train and test neural networks?",
+   "options": [
+    "TensorFlow Datasets",
+    "TensorFlow Data Libraries",
+    "There is no library of common data sets, you have to use your own",
+    "TensorFlow Data"
+   ],
+   "explanation": "TensorFlow Datasets (imported as tensorflow_datasets or tfds) is the official library that provides ready-to-use datasets such as IMDB reviews, MNIST, and many others for training and testing models.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-64",
+   "confidence": "high",
+   "hint": "Tên chính chủ có chữ 'sets': TensorFlow DataSETS (tfds). 'TensorFlow Data' cụt lủn là bẫy."
+  },
+  {
+   "source": "md1",
+   "origNum": 67,
+   "question": "How many reviews are there in the IMDB dataset and how are they split?",
+   "options": [
+    "60,000 records, 80/20 train/test split",
+    "50,000 records, 50/50 train/test split",
+    "50,000 records, 80/20 train/test split",
+    "60,000 records, 50/50 train/test split"
+   ],
+   "explanation": "The IMDB reviews dataset contains 50,000 movie reviews split evenly: 25,000 for training and 25,000 for testing, i.e., a 50/50 split.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-65",
+   "confidence": "high",
+   "hint": "IMDB toàn số 50: 50.000 reviews, chia 50/50 (25k train + 25k test). Nhớ 'IMDB = 50-50-50'."
+  },
+  {
+   "source": "md1",
+   "origNum": 68,
+   "question": "How are the labels for the IMDB dataset encoded?",
+   "options": [
+    "Reviews encoded as a number 0-1",
+    "Reviews encoded as a number 1-10",
+    "Reviews encoded as a boolean true/false",
+    "Reviews encoded as a number 1-5"
+   ],
+   "explanation": "Each IMDB review label is encoded as a number 0 or 1, where 0 means a negative review and 1 means a positive review, which makes it a binary classification problem.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-66",
+   "confidence": "high",
+   "hint": "Label IMDB = 0 hoặc 1 (negative/positive) — binary. Bẫy: thang sao 1-10 là của trang web IMDB, không phải dataset!"
+  },
+  {
+   "source": "md1",
+   "origNum": 69,
+   "question": "What is the purpose of the embedding dimension?",
+   "options": [
+    "It is the number of letters in the word, denoting the size of the encoding",
+    "It is the number of words to encode in the embedding",
+    "It is the number of dimensions required to encode every word in the corpus",
+    "It is the number of dimensions for the vector representing the word encoding"
+   ],
+   "explanation": "The embedding dimension is the number of dimensions of the dense vector that represents each word; for example, an embedding dimension of 16 maps every word to a 16-dimensional vector whose values are learned during training. It is not related to word length or vocabulary size.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-67",
+   "confidence": "high",
+   "hint": "Embedding dimension = số CHIỀU của vector đại diện MỖI TỪ (vd 16 chiều/từ). Không phải số từ hay số chữ cái."
+  },
+  {
+   "source": "md1",
+   "origNum": 70,
+   "question": "When tokenizing a corpus, what does the num_words=n parameter do?",
+   "options": [
+    "It specifies the maximum number of words to be tokenized, and picks the first 'n' words that were tokenized",
+    "It specifies the maximum number of words to be tokenized, and stops tokenizing when it reaches n",
+    "It errors out if there are more than n distinct words in the corpus",
+    "It specifies the maximum number of words to be tokenized, and picks the most common 'n-1' words"
+   ],
+   "explanation": "num_words=n tells the tokenizer to keep only the most frequent n-1 words in the corpus when converting texts to sequences; less common words are dropped (or replaced by the OOV token). It does not simply take the first words seen, and it never raises an error.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-68",
+   "confidence": "high",
+   "hint": "Chi tiết lắt léo: num_words=n giữ n−1 từ PHỔ BIẾN nhất (theo tần suất). Hai điểm nhớ: 'n TRỪ 1' và 'most common', không phải 'n từ đầu tiên'."
+  },
+  {
+   "source": "md1",
+   "origNum": 71,
+   "question": "To use word embeddings in TensorFlow, in a sequential layer, what is the name of the class?",
+   "options": [
+    "tf.keras.layers.Embedding",
+    "tf.keras.layers.WordEmbedding",
+    "tf.keras.layers.Embed",
+    "tf.keras.layers.Word2Vector"
+   ],
+   "explanation": "Word embeddings are added with the tf.keras.layers.Embedding layer, which maps integer word indices to trainable dense vectors. The other class names do not exist in Keras.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-69",
+   "confidence": "high",
+   "hint": "Lại luật tên trơn: tf.keras.layers.Embedding. Không Word-, không Embed cụt, không Word2Vector."
+  },
+  {
+   "source": "md1",
+   "origNum": 72,
+   "question": "IMDB Reviews are either positive or negative. What type of loss function should be used in this scenario?",
+   "options": [
+    "Categorical crossentropy",
+    "Binary Gradient descent",
+    "Adam",
+    "Binary crossentropy"
+   ],
+   "explanation": "With exactly two classes (positive/negative), binary crossentropy is the appropriate loss function. Categorical crossentropy is for multi-class problems, and Adam is an optimizer, not a loss function.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-70",
+   "confidence": "high",
+   "hint": "2 class → BINARY crossentropy. Loại nhanh: Adam là optimizer (khác vở kịch), categorical dành cho nhiều class."
+  },
+  {
+   "source": "md1",
+   "origNum": 73,
+   "question": "When using IMDB Sub Words dataset, our results in classification were poor. Why?",
+   "options": [
+    "Sequence becomes much more important when dealing with subwords, but we're ignoring word positions",
+    "We didn't train long enough",
+    "Our neural network didn't have enough layers",
+    "The sub words make no sense, so can't be classified"
+   ],
+   "explanation": "Individual subwords often carry little meaning on their own; their meaning depends heavily on the order in which they appear. Since the simple pooled model ignored word/subword positions, classification results were poor - which motivates sequence models like RNNs.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-71",
+   "confidence": "high",
+   "hint": "Subword đứng riêng thì vô nghĩa — THỨ TỰ mới tạo nghĩa, mà model lại bỏ qua vị trí → kết quả tệ. Nhớ: 'sub-word cần sequence'."
+  },
+  {
+   "source": "md1",
+   "origNum": 74,
+   "question": "Why does sequence make a large difference when determining semantics of language?",
+   "options": [
+    "It doesn't",
+    "Because the order in which words appear dictate their meaning",
+    "Because the order of words doesn't matter",
+    "Because the order in which words appear dictate their impact on the meaning of the sentence"
+   ],
+   "explanation": "The order in which words appear determines how each word affects the overall meaning of the sentence (e.g., 'not good' vs 'good, not...'), so ignoring sequence loses important semantic information.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-72",
+   "confidence": "high",
+   "hint": "Đáp án tinh tế: thứ tự từ quyết định 'impact on the meaning of the SENTENCE' (nghĩa cả câu) — phiên bản nói 'meaning của từ' là mồi nhử."
+  },
+  {
+   "source": "md1",
+   "origNum": 75,
+   "question": "How do Recurrent Neural Networks help you understand the impact of sequence on meaning?",
+   "options": [
+    "They don't",
+    "They look at the whole sentence at a time",
+    "They carry meaning from one cell to the next",
+    "They shuffle the words evenly"
+   ],
+   "explanation": "RNNs process tokens one at a time and pass a hidden state from each cell to the next, so information (meaning) learned from earlier words is carried forward and influences the interpretation of later words.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "NLP",
+   "id": "dat301m-73",
+   "confidence": "high",
+   "hint": "RNN = dây chuyền chuyền tay: mang meaning từ cell này sang cell KẾ TIẾP. Không nhìn cả câu một lúc — đó là mồi nhử."
+  },
+  {
+   "source": "md1",
+   "origNum": 76,
+   "question": "How does an LSTM help understand meaning when words that qualify each other aren't necessarily beside each other in a sentence?",
+   "options": [
+    "They load all words into a cell state",
+    "Values from earlier words can be carried to later ones via a cell state",
+    "They don't",
+    "They shuffle the words randomly"
+   ],
+   "explanation": "An LSTM maintains a cell state that runs through the whole sequence, so values derived from earlier words can be preserved and carried to much later time steps, letting distant words still qualify each other.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-74",
+   "confidence": "high",
+   "hint": "LSTM có CELL STATE = băng chuyền xuyên câu: giá trị từ từ đứng RẤT XA phía trước vẫn được chở tới sau. Nhớ chữ 'carried via cell state'."
+  },
+  {
+   "source": "md1",
+   "origNum": 77,
+   "question": "What keras layer type allows LSTMs to look forward and backward in a sentence?",
+   "options": [
+    "Bothdirection",
+    "Bidirectional",
+    "Bilateral",
+    "Unilateral"
+   ],
+   "explanation": "Wrapping an LSTM in tf.keras.layers.Bidirectional runs the sequence both forwards and backwards, letting the model use context from both earlier and later words. The other names are not real Keras layers.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-75",
+   "confidence": "high",
+   "hint": "Nhìn 2 chiều = BI-directional (bi = hai). Bilateral/Bothdirection/Unilateral đều là tên chế."
+  },
+  {
+   "source": "md1",
+   "origNum": 78,
+   "question": "What's the output shape of a bidirectional LSTM layer with 64 units?",
+   "options": [
+    "(None, 64)",
+    "(128,1)",
+    "(128, None)",
+    "(None, 128)"
+   ],
+   "explanation": "A Bidirectional wrapper concatenates the forward and backward LSTM outputs, doubling the 64 units to 128, so the output shape is (None, 128) where None is the batch dimension.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-76",
+   "confidence": "high",
+   "hint": "Bidirectional = nhân đôi: 64 units × 2 chiều = 128. Shape Keras mở đầu bằng None (batch) → (None, 128)."
+  },
+  {
+   "source": "md1",
+   "origNum": 79,
+   "question": "When stacking LSTMs, how do you instruct an LSTM to feed the next one in the sequence?",
+   "options": [
+    "Ensure that return_sequences is set to True on all units",
+    "Ensure that return_sequences is set to True only on units that feed to another LSTM",
+    "Do nothing, TensorFlow handles this automatically",
+    "Ensure that they have the same number of units"
+   ],
+   "explanation": "An LSTM that feeds another LSTM must output the full sequence of hidden states, so you set return_sequences=True on it; the final LSTM in the stack usually returns only the last output, so it does not need the flag.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-77",
+   "confidence": "high",
+   "hint": "return_sequences=True CHỈ ở LSTM đứng trước LSTM khác — tầng cuối không cần. Bẫy chữ 'all units': không phải tất cả!"
+  },
+  {
+   "source": "md1",
+   "origNum": 80,
+   "question": "If a sentence has 120 tokens in it, and a Conv1D with 128 filters with a Kernal size of 5 is passed over it, what's the output shape?",
+   "options": [
+    "(None, 120, 128)",
+    "(None, 116, 124)",
+    "(None, 120, 124)",
+    "(None, 116, 128)"
+   ],
+   "explanation": "A Conv1D with kernel size 5 and default 'valid' padding loses kernel_size-1 = 4 time steps (120 - 4 = 116), and the number of filters (128) becomes the last dimension, giving output shape (None, 116, 128).",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-78",
+   "confidence": "high",
+   "hint": "Conv1D công thức 2 bước: mất kernel−1 = 4 bước thời gian (120−4=116), chiều cuối = số filters (128) → (None, 116, 128)."
+  },
+  {
+   "source": "md1",
+   "origNum": 81,
+   "question": "What's the best way to avoid overfitting in NLP datasets?",
+   "options": [
+    "Use LSTMS",
+    "Use GRUS",
+    "Use Conv1D",
+    "None of the above"
+   ],
+   "explanation": "There is no single architecture (LSTM, GRU, or Conv1D) that guarantees avoiding overfitting in NLP; validation data usually contains many words never seen in training, so overfitting must be managed with techniques like regularization, dropout, and more data rather than one layer type.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-79",
+   "confidence": "high",
+   "hint": "Câu bẫy: KHÔNG kiến trúc nào (LSTM/GRU/Conv1D) tự chống được overfit NLP — validation luôn đầy từ chưa gặp → 'None of the above'."
+  },
+  {
+   "source": "md1",
+   "origNum": 82,
+   "question": "When predicting words to generate poetry, the more words predicted the more likely it will end up gibberish. Why?",
+   "options": [
+    "It doesn't, the likelihood of gibberish doesn't change",
+    "Because the probability of prediction compounds, and thus increases overall",
+    "Because you are more likely to hit words not in the training set",
+    "Because the probability that each word matches an existing phrase goes down the more words you create"
+   ],
+   "explanation": "Each new word is predicted from previously generated (uncertain) words, so the probability that the growing phrase still matches patterns seen in training keeps decreasing with every word, and the output drifts toward gibberish.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-80",
+   "confidence": "high",
+   "hint": "Như photocopy của photocopy: mỗi từ mới sinh từ từ đoán trước đó → xác suất cụm từ còn khớp phrase đã học GIẢM dần → gibberish."
+  },
+  {
+   "source": "md1",
+   "origNum": 83,
+   "question": "What is a major drawback of word-based training for text generation instead of character-based generation?",
+   "options": [
+    "Word based generation is more accurate because there is a larger body of words to draw from",
+    "Character based generation is more accurate because there are less characters to predict",
+    "There is no major drawback, it's always better to do word-based training",
+    "Because there are far more words in a typical corpus than characters, it is much more memory intensive"
+   ],
+   "explanation": "A typical corpus has vastly more distinct words than characters, so the output layer and one-hot encoded labels become huge, making word-based generation much more memory intensive than character-based generation.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "NLP",
+   "id": "dat301m-81",
+   "confidence": "high",
+   "hint": "Từ nhiều hơn ký tự gấp bội → word-based cần output layer khổng lồ → ngốn MEMORY. Drawback = bộ nhớ, không phải độ chính xác."
+  },
+  {
+   "source": "md1",
+   "origNum": 85,
+   "question": "In natural language processing, predicting the next item in a sequence is a classification problem. Therefore, after creating inputs and labels from the subphrases, we one-hot encode the labels. What function do we use to create one-hot encoded arrays of the labels?",
+   "options": [
+    "tf.keras.utils.img_to_array",
+    "tf.keras.utils.to_categorical",
+    "tf.keras.utils.SequenceEnqueuer",
+    "tf.keras.preprocessing.text.one_hot"
+   ],
+   "explanation": "tf.keras.utils.to_categorical converts integer class labels into one-hot encoded arrays, which is exactly what is needed when treating next-word prediction as a multi-class classification problem. img_to_array is for images and the other options do not perform one-hot encoding of labels.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "NLP",
+   "id": "dat301m-82",
+   "confidence": "high",
+   "hint": "One-hot labels = to_categorical — cùng họ 'categorical' với crossentropy nhiều class. img_to_array là dân bên ảnh, loại ngay."
+  },
+  {
+   "source": "md1",
+   "origNum": 86,
+   "question": "True or False: When building the model, we use a sigmoid activated Dense output layer with one neuron per word that lights up when we predict a given word.",
+   "options": [
+    "False",
+    "True"
+   ],
+   "explanation": "False: because next-word prediction is a multi-class problem (one class per word in the vocabulary), the Dense output layer uses a softmax activation so the outputs form a probability distribution over all words, not independent sigmoid neurons.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-83",
+   "confidence": "high",
+   "hint": "False! Đoán từ kế tiếp = MULTI-class → phải dùng SOFTMAX (phân phối xác suất trên cả vocab). Thấy 'sigmoid + mỗi neuron một từ' là sai."
+  },
+  {
+   "source": "md1",
+   "origNum": 89,
+   "question": "What is an example of a Univariate time series?",
+   "options": [
+    "Hour by hour temperature",
+    "Hour by hour weather",
+    "Fashion items",
+    "Baseball scores"
+   ],
+   "explanation": "A univariate time series tracks a single value over time, such as the temperature measured hour by hour. 'Weather' would include multiple variables (temperature, humidity, wind, etc.), making it multivariate.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-84",
+   "confidence": "high",
+   "hint": "UNI-variate = 1 biến duy nhất → nhiệt độ theo giờ. Bẫy: 'weather' nghe giống nhưng gồm nhiều biến (nhiệt, ẩm, gió) = multivariate."
+  },
+  {
+   "source": "md1",
+   "origNum": 90,
+   "question": "What is an example of a Multivariate time series?",
+   "options": [
+    "Fashion items",
+    "Baseball scores",
+    "Hour by hour weather",
+    "Hour by hour temperature"
+   ],
+   "explanation": "Hour-by-hour weather involves multiple values per time step (temperature, humidity, pressure, wind speed), which makes it a multivariate time series; hour-by-hour temperature alone would be univariate.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-85",
+   "confidence": "high",
+   "hint": "MULTI-variate = nhiều biến → 'weather' theo giờ (nhiệt độ + độ ẩm + gió...). Cặp bài trùng: temperature = uni, weather = multi."
+  },
+  {
+   "source": "md1",
+   "origNum": 91,
+   "question": "What is imputed data?",
+   "options": [
+    "A projection of unknown (usually past or missing) data",
+    "Data that has been withheld for various reasons",
+    "A bad prediction of future data",
+    "A good prediction of future data"
+   ],
+   "explanation": "Imputed data is data that is projected or estimated to fill in unknown values, typically missing or past values in a series; it is not withheld data or a judgment about prediction quality.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-86",
+   "confidence": "high",
+   "hint": "Impute = 'điền khuyết': ước lượng dữ liệu THIẾU hoặc quá khứ chưa biết. Không phải dự đoán tương lai, càng không phân tốt/xấu."
+  },
+  {
+   "source": "md1",
+   "origNum": 92,
+   "question": "A sound wave is a good example of time series data",
+   "options": [
+    "True",
+    "False"
+   ],
+   "explanation": "True: a sound wave is amplitude values measured over time at a regular sampling rate, which is exactly what a time series is.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-87",
+   "confidence": "high",
+   "hint": "Sóng âm = biên độ đo đều đặn theo thời gian → chính là time series, chọn True. Cứ hình dung waveform trong app thu âm: trục ngang luôn là time."
+  },
+  {
+   "source": "md1",
+   "origNum": 93,
+   "question": "What is Seasonality?",
+   "options": [
+    "Weather data",
+    "A regular change in shape of the data",
+    "Data aligning to the 4 seasons of the calendar",
+    "Data that is only available at certain t× of the year"
+   ],
+   "explanation": "Seasonality is a regular, repeating pattern (change in shape) in the data at predictable intervals; it is not limited to the four calendar seasons and does not have to relate to weather.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-88",
+   "confidence": "high",
+   "hint": "Seasonality KHÔNG dính gì đến 4 mùa hay thời tiết — đó là bẫy. Nhớ: seasonality = 'regular change in shape', pattern lặp lại đều đặn."
+  },
+  {
+   "source": "md1",
+   "origNum": 94,
+   "question": "What is a trend?",
+   "options": [
+    "An overall consistent flat direction for data",
+    "An overall consistent upward direction for data",
+    "An overall direction for data regardless of direction",
+    "An overall consistent downward direction for data"
+   ],
+   "explanation": "A trend is the overall direction the data moves in over time, whether upward or downward; the definition covers any consistent direction, not just up or just down.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-89",
+   "confidence": "high",
+   "hint": "Trend chỉ cần MỘT hướng tổng thể, lên hay xuống đều được → chọn 'regardless of direction'. Đừng dính bẫy 'upward' — trend giảm vẫn là trend."
+  },
+  {
+   "source": "md1",
+   "origNum": 95,
+   "question": "In the context of time series, what is noise?",
+   "options": [
+    "Data that doesn't have a trend",
+    "Unpredictable changes in time series data",
+    "Sound waves forming a time series",
+    "Data that doesn't have seasonality"
+   ],
+   "explanation": "Noise refers to random, unpredictable fluctuations in a time series that cannot be attributed to trend or seasonality and therefore cannot be forecast.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-90",
+   "confidence": "high",
+   "hint": "Noise = 'nhiễu' như tiếng rè radio: thay đổi random, unpredictable — không dự đoán được. Không liên quan đến việc có/không có trend hay seasonality."
+  },
+  {
+   "source": "md1",
+   "origNum": 96,
+   "question": "What is autocorrelation?",
+   "options": [
+    "Data that automatically lines up in trends",
+    "Data that automatically lines up seasonally",
+    "Data that follows a predictable shape, even if the scale is different",
+    "Data that doesn't have noise"
+   ],
+   "explanation": "Autocorrelation means the series correlates with a delayed copy of itself, so it follows a predictable shape or pattern even when the amplitude/scale differs between occurrences.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-91",
+   "confidence": "high",
+   "hint": "AUTO-correlation = tự tương quan với bản trễ (lag) của chính mình: shape lặp lại dù scale khác. Nhớ khẩu quyết 'same shape, different size'."
+  },
+  {
+   "source": "md1",
+   "origNum": 97,
+   "question": "What is a non-stationary time series?",
+   "options": [
+    "One that moves seasonally.",
+    "One that has a disruptive event breaking trend and seasonality.",
+    "One that is consistent across all seasons.",
+    "One that has a constructive event forming trend and seasonality."
+   ],
+   "explanation": "A non-stationary time series is one whose behavior changes over time, for example after a disruptive event ('big event') that breaks the established trend and seasonality, so past patterns no longer predict the future well.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-92",
+   "confidence": "high",
+   "hint": "Non-stationary = 'không đứng yên': một big/DISRUPTIVE event phá vỡ trend và seasonality. Nhớ chữ D: Disruptive → Đổi hành vi chuỗi."
+  },
+  {
+   "source": "md1",
+   "origNum": 99,
+   "question": "What is a windowed dataset?",
+   "options": [
+    "A consistent set of subsets of a time series",
+    "The time series aligned to a fixed shape",
+    "A fixed-size subset of a time series",
+    "There's no such thing"
+   ],
+   "explanation": "A windowed dataset is created by slicing a time series into fixed-size subsets (windows), where each window's earlier values serve as features and the following value serves as the label for training.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-93",
+   "confidence": "high",
+   "hint": "Window = khung cửa sổ kích thước CỐ ĐỊNH trượt trên chuỗi → 'fixed-size subset of a time series'. Cửa sổ nhà bạn đâu tự đổi kích thước."
+  },
+  {
+   "source": "md1",
+   "origNum": 100,
+   "question": "What does 'drop_remainder=True' do?",
+   "options": [
+    "It ensures that all rows in the data window are the same length by cropping data",
+    "It ensures that the data is all the same shape",
+    "It ensures that all rows in the data window are the same length by adding data",
+    "It ensures that all data is used"
+   ],
+   "explanation": "drop_remainder=True discards the final windows that are shorter than the specified window size, so every row in the dataset has exactly the same length; it crops (drops) data rather than padding it.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-94",
+   "confidence": "high",
+   "hint": "drop = BỎ ĐI chứ không thêm vào: drop_remainder=True crop các window cuối bị thiếu để mọi row cùng độ dài. Nhớ 'drop ≠ pad'."
+  },
+  {
+   "source": "md1",
+   "origNum": 102,
+   "question": "What does MSE stand for?",
+   "options": [
+    "Mean Slight error",
+    "Mean Series error",
+    "Mean Squared error",
+    "Mean Second error"
+   ],
+   "explanation": "MSE stands for Mean Squared Error: the average of the squared differences between predictions and true values, a common regression/forecasting loss.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-95",
+   "confidence": "high",
+   "hint": "S trong MSE = Squared (bình phương): Mean Squared Error — sai số bị 'vuông hóa'. Không phải Slight/Series/Second."
+  },
+  {
+   "source": "md1",
+   "origNum": 103,
+   "question": "What does MAE stand for?",
+   "options": [
+    "Mean Average Error",
+    "Mean Advanced Error",
+    "Mean Absolute Error",
+    "Mean Active Error"
+   ],
+   "explanation": "MAE stands for Mean Absolute Error: the average of the absolute differences between predictions and true values.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-96",
+   "confidence": "high",
+   "hint": "A trong MAE = Absolute (trị tuyệt đối |error|), KHÔNG phải Average — bẫy kinh điển vì 'Mean' đã là average rồi."
+  },
+  {
+   "source": "md1",
+   "origNum": 104,
+   "question": "If time values are in time[], series values are in series[] and we want to split the series into training and validation at time split_time, what is the correct code?",
+   "options": [
+    "time_train = time[:split_time] x_train = series[:split_time] time_valid = time[split_time] x_valid = series[split_time]",
+    "time_train = time[split_time] x_train = series[split_time] time_valid = time[split_time:] x_valid = series[split_time:]",
+    "time_train = time[split_time] x_train = series[split_time] time_valid = time[split_time] x_valid = series[split_time]",
+    "time_train = time[:split_time] x_train = series[:split_time] time_valid = time[split_time:] x_valid = series[split_time:]"
+   ],
+   "explanation": "Python slice notation [:split_time] takes everything before the split point for training, and [split_time:] takes everything from the split point onward for validation; the options without colons would select single elements instead of ranges.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-97",
+   "confidence": "high",
+   "hint": "Quy tắc dấu hai chấm: [:split_time] = trước mốc → train, [split_time:] = từ mốc trở đi → valid. Thiếu ':' là chỉ lấy 1 phần tử — sai ngay."
+  },
+  {
+   "source": "md1",
+   "origNum": 105,
+   "question": "If you want to inspect the learned parameters in a layer after training, what's a good technique to use?",
+   "options": [
+    "Iterate through the layers dataset of the model to find the layer you want.",
+    "Run the model with unit data and inspect the output for that layer.",
+    "Decompile the model and inspect the parameter set for that layer.",
+    "Assign a variable to the layer and add it to the model using that variable. Inspect its properties after training."
+   ],
+   "explanation": "If you assign the layer to a Python variable before adding it to the model, you can access that variable after training and call methods like get_weights() to inspect the learned parameters directly.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-98",
+   "confidence": "high",
+   "hint": "Muốn soi weights sau training: GÁN layer vào biến trước khi add vào model, sau đó gọi get_weights() trên biến đó. Nhớ 'đặt tên trước, hỏi thăm sau'."
+  },
+  {
+   "source": "md1",
+   "origNum": 106,
+   "question": "How do you set the learning rate of the SGD optimizer?",
+   "options": [
+    "Use the RateOfLearning property",
+    "Use the Rate property",
+    "You can't set it",
+    "Use the learning_rate property"
+   ],
+   "explanation": "The learning rate is set via the learning_rate parameter when constructing the optimizer, e.g., tf.keras.optimizers.SGD(learning_rate=1e-6, momentum=0.9).",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-99",
+   "confidence": "high",
+   "hint": "Tên tham số đúng y như tên khái niệm, viết snake_case: SGD(learning_rate=...). Không tồn tại 'Rate' hay 'RateOfLearning'."
+  },
+  {
+   "source": "md1",
+   "origNum": 107,
+   "question": "If you want to amend the learning rate of the optimizer on the fly, after each epoch. What do you do?",
+   "options": [
+    "Use a Learning RateScheduler and pass it as a parameter to a callback",
+    "Callback to a custom function and change the SGD property",
+    "Use a Learning RateScheduler object in the callbacks namespace and assign that to the callback",
+    "You can't set it"
+   ],
+   "explanation": "tf.keras.callbacks.LearningRateScheduler is a callback object that adjusts the learning rate at the start of each epoch based on a function you provide; you pass it in the callbacks list of model.fit.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-100",
+   "confidence": "high",
+   "hint": "LearningRateScheduler là một OBJECT trong tf.keras.callbacks — bản thân nó là callback, gán thẳng vào callbacks=[...]. Chọn đáp án 'object in the callbacks namespace'."
+  },
+  {
+   "source": "md1",
+   "origNum": 109,
+   "question": "If X is the standard notation for the input to an RNN, what are the standard notations for the outputs?",
+   "options": [
+    "Y",
+    "H",
+    "Y(hat) and H",
+    "H(hat) and Y"
+   ],
+   "explanation": "At each time step an RNN cell produces an output, denoted Y(hat), and a hidden state, denoted H, which is passed to the next cell; both are standard output notations.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-101",
+   "confidence": "high",
+   "hint": "RNN mỗi bước 'nhả' 2 thứ: Ŷ (output dự đoán) và H (hidden state chuyền cho cell sau). Nhớ cặp đôi 'Y(hat) + H'."
+  },
+  {
+   "source": "md1",
+   "origNum": 110,
+   "question": "What is a sequence to vector if an RNN has 30 cells numbered 0 to 29",
+   "options": [
+    "The total Y(hat) for all cells",
+    "The average Y(hat) for all 30 cells",
+    "The Y(hat) for the last cell",
+    "The Y(hat) for the second cell"
+   ],
+   "explanation": "In a sequence-to-vector RNN, the outputs of all intermediate cells are ignored and only the Y(hat) of the last cell (cell 29) is used as the single output vector summarizing the sequence.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-102",
+   "confidence": "high",
+   "hint": "Sequence-to-vector: cả chuỗi cô đọng thành 1 vector = Ŷ của cell CUỐI CÙNG (cell 29). Nhớ 'chỉ giữ lời nói cuối'."
+  },
+  {
+   "source": "md1",
+   "origNum": 111,
+   "question": "What does a Lambda layer in a neural network do?",
+   "options": [
+    "There are no Lambda layers in a neural network",
+    "Pauses training without a callback",
+    "Changes the shape of the input or output data",
+    "Allows you to execute arbitrary code while training"
+   ],
+   "explanation": "A Lambda layer lets you execute arbitrary code (any function) as a step inside the model, e.g., expanding dimensions of the input or scaling outputs, without writing a custom layer class.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-103",
+   "confidence": "high",
+   "hint": "Lambda layer = như lambda trong Python: nhét hàm tùy ý (arbitrary code) vào giữa model. Lambda = 'hàm tự do', không phải chỉ để reshape."
+  },
+  {
+   "source": "md1",
+   "origNum": 112,
+   "question": "What does the axis parameter of tf.expand_dims do?",
+   "options": [
+    "Defines the dimension index at which you will expand the shape of the tensor",
+    "Defines the axis around which to expand the dimensions",
+    "Defines if the tensor is X or Y",
+    "Defines the dimension index to remove when you expand the tensor"
+   ],
+   "explanation": "The axis parameter of tf.expand_dims specifies the dimension index at which a new axis of size 1 is inserted into the tensor's shape, e.g., axis=-1 adds a trailing dimension.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-104",
+   "confidence": "high",
+   "hint": "axis trong tf.expand_dims = VỊ TRÍ (dimension index) chèn thêm chiều mới size 1. Nhớ ví dụ axis=-1 → chèn chiều vào cuối shape."
+  },
+  {
+   "source": "md1",
+   "origNum": 114,
+   "question": "What's the primary difference between a simple RNN and an LSTM",
+   "options": [
+    "LSTMs have multiple outputs, RNNs have a single one",
+    "LSTMs have a single output, RNNs have multiple",
+    "In addition to the H output, RNNs have a cell state that runs across all cells",
+    "In addition to the H output, LSTMs have a cell state that runs across all cells"
+   ],
+   "explanation": "The key difference is that an LSTM has, in addition to the hidden output H, a cell state that runs through all cells and can carry information across long distances in the sequence; a simple RNN only passes the hidden state.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-105",
+   "confidence": "high",
+   "hint": "LSTM hơn simple RNN ở CELL STATE — 'băng chuyền' chạy xuyên các cell mang trí nhớ dài hạn. Coi chừng bẫy đảo chủ ngữ: LSTM có cell state, không phải RNN."
+  },
+  {
+   "source": "md1",
+   "origNum": 115,
+   "question": "If you want to clear out all temporary variables that tensorflow might have from previous sessions, what code do you run?",
+   "options": [
+    "tf.cache.clear_session()",
+    "tf.keras.clear_session",
+    "tf.keras.backend.clear_session()",
+    "tf.cache.backend.clear_session()"
+   ],
+   "explanation": "tf.keras.backend.clear_session() resets the Keras backend state, clearing temporary variables and models left over from previous sessions; the other function paths do not exist.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-106",
+   "confidence": "high",
+   "hint": "Đường dẫn đúng phải có 'backend' và cặp ngoặc: tf.keras.backend.clear_session(). Không hề tồn tại tf.cache — thấy 'cache' là loại."
+  },
+  {
+   "source": "md1",
+   "origNum": 116,
+   "question": "What happens if you define a neural network with these two layers? tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(32)), tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(32)), tf.keras.layers.Dense(1),",
+   "options": [
+    "Your model will fail because you need return_sequences=True after the first LSTM layer",
+    "Your model will fail because you have the same number of cells in each LSTM",
+    "Your model will compile and run correctly",
+    "Your model will fail because you need return_sequences=True after each LSTM layer"
+   ],
+   "explanation": "The second LSTM expects a sequence as input, but the first Bidirectional LSTM returns only its final output by default; the model fails unless return_sequences=True is set on the first LSTM layer. The last LSTM does not need it because the Dense layer takes a single vector.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-107",
+   "confidence": "high",
+   "hint": "Quy tắc chồng LSTM: tầng TRƯỚC phải return_sequences=True để trả sequence cho tầng sau; tầng cuối trước Dense thì không cần. Vậy lỗi chỉ ở LSTM đầu, không phải 'mọi tầng'."
+  },
+  {
+   "source": "md1",
+   "origNum": 118,
+   "question": "How do you add a 1 dimensional convolution to your model for predicting time series data?",
+   "options": [
+    "Use a Conv1D layer type",
+    "Use a 1DConv layer type",
+    "Use a ConvolutionD1 layer type",
+    "Use a 1DConvolution layer type"
+   ],
+   "explanation": "One-dimensional convolutions are added with the tf.keras.layers.Conv1D layer type; the other names are not valid Keras layers.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-108",
+   "confidence": "high",
+   "hint": "Keras đặt tên: Conv + số chiều + D → Conv1D (giống Conv2D quen thuộc). Chữ 'Conv' luôn đứng TRƯỚC con số."
+  },
+  {
+   "source": "md1",
+   "origNum": 119,
+   "question": "What's the input shape for a univariate time series to a Conv1D?",
+   "options": [
+    "[None, 1]",
+    "[]",
+    "[1]",
+    "[1, None]"
+   ],
+   "explanation": "A univariate series feeding a Conv1D is shaped [None, 1]: None allows a variable sequence (window) length and 1 is the single feature (channel) per time step.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-109",
+   "confidence": "high",
+   "hint": "Input Conv1D cho univariate series: [None, 1] — None = độ dài window tùy ý, 1 = một feature/channel. Nhớ thứ tự 'thời gian trước, kênh sau'."
+  },
+  {
+   "source": "md1",
+   "origNum": 120,
+   "question": "You used a sunspots dataset that was stored in CSV. What's the name of the Python library used to read CSVs?",
+   "options": [
+    "PyFiles",
+    "PyCSV",
+    "CSV",
+    "CommaSeparatedValues"
+   ],
+   "explanation": "Python's built-in csv library (import csv) was used to read the sunspots CSV file, e.g., with csv.reader.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-110",
+   "confidence": "high",
+   "hint": "Thư viện đọc CSV chính là... csv (import csv) — tên đơn giản nhất chính là đáp án. PyCSV, PyFiles đều là tên bịa."
+  },
+  {
+   "source": "md1",
+   "origNum": 121,
+   "question": "If your CSV file has a header that you don't want to read into your dataset, what do you execute before iterating through the file using a 'reader' object?",
+   "options": [
+    "reader.next",
+    "reader.ignore_header()",
+    "next(reader)",
+    "reader.read(next)"
+   ],
+   "explanation": "Calling next(reader) advances the reader past the first row (the header) so that the subsequent iteration starts with the actual data rows.",
+   "verified": true,
+   "answers": [
+    2
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-111",
+   "confidence": "high",
+   "hint": "Bỏ header: gọi hàm built-in next(reader) — next là HÀM bao ngoài, không phải method reader.next. Nhớ 'next() nuốt dòng đầu tiên'."
+  },
+  {
+   "source": "md1",
+   "origNum": 122,
+   "question": "When you read a row from a reader and want to cast column 2 to another data type, for example, a float, what's the correct syntax?",
+   "options": [
+    "float(row[2])",
+    "You can't. It needs to be read into a buffer and a new float instantiated from the buffer",
+    "float f= row[2].read()",
+    "Convert.toFloat(row[2])"
+   ],
+   "explanation": "float(row[2]) uses Python's standard type-casting to convert the string in column index 2 into a float; the other syntaxes are not valid Python.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-112",
+   "confidence": "high",
+   "hint": "Cast kiểu Python chuẩn: bao giá trị trong hàm — float(row[2]). Thấy Convert.toFloat là C#, loại ngay."
+  },
+  {
+   "source": "md1",
+   "origNum": 123,
+   "question": "What was the sunspot seasonality?",
+   "options": [
+    "4 t× a year",
+    "11 or 22 years depending on who you ask",
+    "22 years",
+    "11 years"
+   ],
+   "explanation": "Sunspot activity follows a cycle of roughly 11 years, but since the magnetic polarity reverses each cycle, some scientists describe it as a 22-year cycle - hence '11 or 22 years depending on who you ask'.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-113",
+   "confidence": "high",
+   "hint": "Sunspot: chu kỳ ~11 năm, nhưng vì đảo cực từ nên có người tính 22 năm. Đáp án 'nước đôi' — '11 or 22 depending on who you ask' — mới là đáp án đúng."
+  },
+  {
+   "source": "md1",
+   "origNum": 124,
+   "question": "After studying this course, what neural network type do you think is best for predicting time series like our sunspots dataset?",
+   "options": [
+    "DNN",
+    "A combination of all other answers",
+    "Convolutions",
+    "RNN / LSTM"
+   ],
+   "explanation": "The best results on the sunspots dataset came from combining approaches - convolutional layers to extract local patterns, LSTMs to capture sequence dependencies, and dense layers for the final prediction - rather than any single architecture alone.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-114",
+   "confidence": "high",
+   "hint": "Kết quả tốt nhất cho sunspots = COMBO Conv + LSTM + DNN. Câu hỏi kiểu 'sau cả khóa học, cái nào tốt nhất' → thường là 'kết hợp tất cả'."
+  },
+  {
+   "source": "md1",
+   "origNum": 125,
+   "question": "Why is MAE a good analytic for measuring accuracy of predictions for time series?",
+   "options": [
+    "It punishes larger errors",
+    "It biases towards small errors",
+    "It only counts positive errors",
+    "It doesn't heavily punish larger errors like square errors do"
+   ],
+   "explanation": "MAE measures the average absolute deviation, so it does not heavily punish large errors the way squared-error metrics (MSE) do, making it a robust and easily interpretable accuracy measure for forecasts where occasional large deviations should not dominate.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-115",
+   "confidence": "high",
+   "hint": "MAE không bình phương nên KHÔNG trừng phạt nặng lỗi lớn như MSE. Nhớ: Squared = 'phóng đại' lỗi to, Absolute thì hiền hòa hơn."
+  },
+  {
+   "source": "md2",
+   "origNum": 3,
+   "question": "What is a Dense layer?",
+   "options": [
+    "A layer of neurons fully connected to its adjacent layers",
+    "An amount of mass occupying a volume",
+    "A single neuron",
+    "A layer of disconnected neurons"
+   ],
+   "explanation": "A Dense layer is a fully connected layer: every neuron in it is connected to every neuron in the adjacent layers, which is the standard building block of feed-forward networks.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "ML Basics",
+   "id": "dat301m-116",
+   "confidence": "high",
+   "hint": "Dense = 'dày đặc' kết nối: mọi neuron nối với mọi neuron lớp kề = fully connected. Hai tên, một khái niệm."
+  },
+  {
+   "source": "md2",
+   "origNum": 16,
+   "question": "True or False. If you pass a 28×28 image through a 3x3 filter the output will be 26×26",
+   "options": [
+    "True",
+    "False"
+   ],
+   "explanation": "True: a 3x3 filter with no padding cannot be centered on the 1-pixel border of the image, so one pixel is lost on each side, reducing a 28x28 image to 26x26 (in general, output = input - kernel + 1).",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "Computer Vision",
+   "id": "dat301m-117",
+   "confidence": "high",
+   "hint": "Công thức thần chú: output = input − kernel + 1 → 28 − 3 + 1 = 26, nên True. Filter 3x3 'gặm' mất 1 pixel mỗi cạnh."
+  },
+  {
+   "source": "md2",
+   "origNum": 76,
+   "question": "What are the critical steps in preparing the input sequences for the prediction model?",
+   "options": [
+    "Generating subphrases from each line using n_gram_sequences.",
+    "Pre-padding the subphrases sequences.",
+    "Converting the seed text to a token sequence using texts_to_sequences.",
+    "Splitting the dataset into training and testing sentences."
+   ],
+   "explanation": "Training inputs for the text-generation model are built by generating n-gram subphrases from each line (each subphrase's last word becomes the label). Converting seed text with texts_to_sequences happens later at prediction time, and text generation training does not use a train/test sentence split.",
+   "verified": true,
+   "answers": [
+    0
+   ],
+   "topic": "NLP",
+   "id": "dat301m-118",
+   "confidence": "high",
+   "hint": "Chuẩn bị data cho text generation: sinh n-gram subphrases từ mỗi dòng (từ cuối làm label). texts_to_sequences cho seed chỉ dùng LÚC PREDICT — bẫy nằm ở thời điểm.",
+   "review": "Trùng đề với câu khác nhưng chỉ 1 đáp án; bản đầy đủ cần 2 bước (n-gram + pre-padding)."
+  },
+  {
+   "source": "md2",
+   "origNum": 90,
+   "question": "What's the correct line of code to split an n column window into n-1 columns for features and 1 column for a label",
+   "options": [
+    "dataset = dataset.map(lambda window: (window[n-1], window[1]))",
+    "dataset = dataset.map(lambda window: (window[:-1], window[-1:]))",
+    "dataset = dataset.map(lambda window: (window[-1:], window[:-1]))",
+    "dataset = dataset.map(lambda window: (window[n], window[1]))"
+   ],
+   "explanation": "window[:-1] selects all elements except the last as the features, and window[-1:] selects the last element as the label, which is exactly how a window of n values becomes n-1 inputs and 1 target. The other options index single fixed positions rather than slicing.",
+   "verified": true,
+   "answers": [
+    1
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-119",
+   "confidence": "high",
+   "hint": "Nhớ: window[:-1] = features (bỏ phần tử cuối), window[-1:] = label (phần tử cuối). Thứ tự tuple luôn là (features, label) — đảo ngược là distractor."
+  },
+  {
+   "source": "md2",
+   "origNum": 101,
+   "question": "A new loss function was introduced in this module, named after a famous statistician. What is it called?",
+   "options": [
+    "Hubble loss",
+    "Hawking loss",
+    "Hyatt loss",
+    "Huber loss"
+   ],
+   "explanation": "Huber loss, named after statistician Peter Huber, behaves like MSE for small errors and like MAE for large ones, making it less sensitive to outliers; the other names are not loss functions.",
+   "verified": true,
+   "answers": [
+    3
+   ],
+   "topic": "Time Series",
+   "id": "dat301m-120",
+   "confidence": "high",
+   "hint": "Huber loss = tên nhà thống kê Peter Huber — nhớ 'Hu-BER' chứ không phải Hubble (kính thiên văn), Hawking (vật lý) hay Hyatt (khách sạn)."
+  },
+  {
+   "source": "md2",
+   "origNum": 76,
+   "question": "What are the critical steps in preparing the input sequences for the prediction model?",
+   "options": [
+    "Generating subphrases from each line using n_gram_sequences.",
+    "Pre-padding the subphrases sequences.",
+    "Converting the seed text to a token sequence using texts_to_sequences.",
+    "Splitting the dataset into training and testing sentences."
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "explanation": "Both steps are critical for preparing the training data: generating n-gram subphrases from each line creates the input/label pairs, and pre-padding those subphrases makes them a uniform length for the model. Converting seed text is only done at inference time, and no train/test split is used in text generation.",
+   "verified": true,
+   "topic": "NLP",
+   "id": "dat301m-121",
+   "confidence": "high",
+   "hint": "Bản 'chọn 2 đáp án' của câu n-gram: subphrases n-gram + PRE-PADDING cho cùng độ dài — cặp đôi chuẩn bị training. Vẫn loại seed text (predict-time) và train/test split."
+  },
+  {
+   "source": "md2",
+   "origNum": 28,
+   "question": "If my data is sized 150×150, and I use Pooling of size 2×2, what size will the resulting image be?",
+   "options": [
+    "300×300",
+    "148×148",
+    "75×75",
+    "149×149"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A 2x2 max pooling layer halves both spatial dimensions by keeping one value from each 2x2 block, so a 150x150 image becomes 75x75.",
+   "verified": true,
+   "topic": "Computer Vision",
+   "id": "dat301m-122",
+   "confidence": "high",
+   "hint": "Pooling 2x2 = chia ĐÔI mỗi chiều: 150/2 = 75 → 75×75. Pooling làm ảnh NHỎ đi — thấy 300×300 (to lên) là loại ngay."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 1,
+   "question": "How is the softmax activation function typically used in next-word prediction models? (Choose 1 answer)",
+   "options": [
+    "To normalize the output probabilities over multiple words",
+    "To apply non-linearity to the input sequences",
+    "To control the learning rate during training",
+    "To calculate the loss function"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Softmax converts the raw output logits into a probability distribution over the vocabulary, so each candidate next word gets a probability and all probabilities sum to 1.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-123",
+   "hint": "Softmax = 'chia phần trăm' cho cả vocabulary: mỗi từ một xác suất, tổng = 1 → normalize output probabilities. Không liên quan learning rate hay loss."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 2,
+   "question": "Which activation has range [0, ∞)? (Choose 1 answer)",
+   "options": [
+    "Tanh",
+    "Sigmoid",
+    "ReLU",
+    "Softsign"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "ReLU outputs max(0, x), so its range is [0, ∞). Tanh is (-1, 1), sigmoid is (0, 1), and softsign is (-1, 1).",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-124",
+   "hint": "ReLU = max(0, x): chặn dưới tại 0, trên vô cực → [0, ∞). Tanh và Softsign kẹt trong (-1,1), Sigmoid trong (0,1) — chỉ ReLU 'lên trời'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 3,
+   "question": "How can seasonality be addressed in time series analysis? (Choose 1 answer)",
+   "options": [
+    "By removing all time-dependent features",
+    "By using a rolling mean to smooth the data",
+    "By incorporating dummy variables for each season",
+    "By applying dimensionality reduction techniques"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A standard way to model seasonality is to add seasonal dummy (indicator) variables for each season, letting the model capture the recurring seasonal effect explicitly.",
+   "verified": false,
+   "confidence": "medium",
+   "topic": "Time Series",
+   "id": "dat301m-125",
+   "hint": "Xử lý seasonality: thêm DUMMY variables cho từng mùa — 'mỗi mùa một lá cờ hiệu'. Rolling mean là để làm mượt, không phải model hóa mùa vụ."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 4,
+   "question": "In the context of creating a new model with a pre-trained model in TensorFlow, what is the benefit of transfer learning? (Choose 1 answer)",
+   "options": [
+    "It avoids using pre-trained models altogether.",
+    "It allows the model to ignore the knowledge from the pre-trained model.",
+    "It transfers knowledge from the pre-trained model to improve performance on a new task.",
+    "Transfer learning has no impact on model performance."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Transfer learning reuses features learned by a model trained on a large dataset and applies them to a new, related task, improving performance and reducing training time and data requirements.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-126",
+   "hint": "Transfer learning = đúng nghĩa đen: TRANSFER knowledge từ model pre-trained sang task mới. Đáp án chứa cụm 'transfers knowledge' chính là nó."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 5,
+   "question": "What is the purpose of stemming in text processing? (Choose 1 answer)",
+   "options": [
+    "Expanding words to their full forms",
+    "Reducing words to their root or base form",
+    "Analyzing sentence structure",
+    "Identifying entities in text"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Stemming strips affixes to reduce words to their root/base form (e.g., 'running' -> 'run'), which normalizes variants of the same word.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-127",
+   "hint": "Stem = 'gốc cây': stemming cắt hậu tố đưa từ về GỐC (running → run). Reduce về root, ngược hẳn với 'expanding'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 6,
+   "question": "What is a typical representation of training and validation accuracies on a plot? (Choose 1 answer)",
+   "options": [
+    "A single line indicating both training and validation accuracies",
+    "Two separate lines for training and validation accuracies",
+    "A bar chart comparing training and validation accuracies",
+    "A scatter plot showing individual data points"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Training curves are conventionally drawn as two separate lines over epochs, one for training accuracy and one for validation accuracy, so divergence (overfitting) is easy to spot.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-128",
+   "hint": "Plot accuracy chuẩn: HAI đường riêng — train và validation — để thấy chỗ chúng tách nhau (overfitting). Nhớ 'hai đường kể một câu chuyện'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 7,
+   "question": "Typical input size for ImageNet-pretrained InceptionV3 is: (Choose 1 answer)",
+   "options": [
+    "224×224",
+    "256×256",
+    "299×299",
+    "331×331"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "InceptionV3 was trained on ImageNet with 299×299 input images, which is its default input size in Keras. 224×224 is typical for VGG/ResNet, and 331×331 for NASNet-Large.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-129",
+   "hint": "InceptionV3 = 299×299 — con số 'lệch chuẩn' y như kiến trúc Inception. 224 là của VGG/ResNet, 331 của NASNet-Large."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 8,
+   "question": "What does the repeat method do when applied to a TensorFlow dataset? (Choose 1 answer)",
+   "options": [
+    "It repeats the dataset multiple t× during training.",
+    "It adds noise to the dataset.",
+    "It repeats the feature-label pairs within each batch.",
+    "It reshapes the dataset."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "tf.data.Dataset.repeat() makes the dataset iterate over its elements again (a given count or indefinitely), so the data can be consumed for multiple epochs during training.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-130",
+   "hint": "dataset.repeat() = bật 'repeat playlist': phát lại cả dataset nhiều vòng cho nhiều epoch. Không thêm noise, không reshape."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 9,
+   "question": "What is a potential use case for the SplitMergeTokenizer? (Choose 1 answer)",
+   "options": [
+    "Tokenizing text into subword units for language modeling",
+    "Tokenizing multilingual text with different scripts",
+    "Tokenizing text into individual words based on whitespaces",
+    "Tokenizing text based on learned subword units for WordPiece models"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "SplitMergeTokenizer segments text using per-character split/merge labels rather than whitespace, which makes it useful for scripts and languages (e.g., Chinese) where words are not delimited by spaces.",
+   "verified": false,
+   "confidence": "medium",
+   "topic": "NLP",
+   "id": "dat301m-131",
+   "hint": "SplitMergeTokenizer tách theo nhãn từng KÝ TỰ, không cần khoảng trắng → use case: chữ viết không có space (tiếng Trung...) / multilingual scripts."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 10,
+   "question": "What does the term \"sequence length\" refer to in the context of text-to-sequence conversion? (Choose 1 answer)",
+   "options": [
+    "The length of each word in a document",
+    "The number of words in a sentence or document",
+    "The size of the vocabulary",
+    "The embedding dimension of the vectors"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "After converting text to sequences of token indices, the sequence length is the number of tokens (words) in the sentence or document, which is why sequences are padded/truncated to a common length.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-132",
+   "hint": "Sequence length = ĐẾM số token/từ trong câu — không phải độ dài từ, vocab size hay embedding dim. Vì mỗi câu dài khác nhau nên mới cần padding."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 11,
+   "question": "How does increasing the size of the training dataset contribute to preventing overfitting? (Choose 1 answer)",
+   "options": [
+    "It has no impact on overfitting.",
+    "It increases the risk of overfitting.",
+    "It helps the model generalize better to new data.",
+    "It makes the model more prone to memorizing noise."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "More training data exposes the model to greater variety, making it harder to memorize individual examples and helping it learn patterns that generalize to unseen data.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-133",
+   "hint": "Nhiều data hơn → khó học thuộc lòng → GENERALIZE tốt hơn. Khẩu quyết: 'đông mẫu thì hết học vẹt'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 12,
+   "question": "Which machine learning task is sentiment analysis often categorized as? (Choose 1 answer)",
+   "options": [
+    "Image classification",
+    "Named entity recognition",
+    "Text categorization",
+    "Speech synthesis"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Sentiment analysis assigns a class label (e.g., positive/negative) to a piece of text, so it is a text categorization (text classification) task.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-134",
+   "hint": "Sentiment analysis = gán nhãn pos/neg cho văn bản → TEXT CATEGORIZATION. 'Phân tích cảm xúc' bản chất là bài toán phân LOẠI văn bản."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 13,
+   "question": "In a multiclass classification problem, how are categorical labels typically represented in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "As strings",
+    "As integer values",
+    "Using one-hot encoding",
+    "Using floating-point numbers"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Categorical labels for multiclass problems are typically one-hot encoded (e.g., via to_categorical) so they match the softmax output and categorical_crossentropy loss.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-135",
+   "hint": "Multiclass label trong TF: ONE-HOT encoding — mỗi lớp một vector chỉ có đúng một số 1. Ghép bộ ba: one-hot + softmax + categorical_crossentropy."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 14,
+   "question": "Given a training dataset with exclusively left-facing individuals, what strategies can prevent overfitting when classifying right-facing individuals? (Choose 1 answer)",
+   "options": [
+    "Use the 'horizontal_flip' parameter",
+    "Use the 'flip' parameter and set 'horizontal'",
+    "Use the 'flip_vertical' parameter around the Y axis",
+    "Use the 'flip' parameter"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Keras ImageDataGenerator provides a horizontal_flip=True augmentation parameter that randomly mirrors images left-right, generating right-facing examples from left-facing ones.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-136",
+   "hint": "Người quay trái → lật gương ngang thành quay phải: tham số đúng là horizontal_flip (tên ĐẦY ĐỦ). Không có tham số 'flip' suông trong ImageDataGenerator."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 15,
+   "question": "When creating a windowed dataset for time series prediction, what does the target window represent? (Choose 1 answer)",
+   "options": [
+    "The window before the input window",
+    "The window after the input window",
+    "The window at the same time as the input window",
+    "The entire time series without windowing"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In windowed time series datasets the model uses a window of past values as input and predicts the values that immediately follow it, so the target window is the window after the input window.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Time Series",
+   "id": "dat301m-137",
+   "hint": "Time series là đoán TƯƠNG LAI: target window nằm SAU input window. Khẩu quyết 'past in, future out'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 16,
+   "question": "What is Transfer Learning in the context of Computer Vision and TensorFlow? (Choose 1 answer)",
+   "options": [
+    "Copying and pasting code from one project to another",
+    "Training a model on a specific task and then using it as a starting point for a different but related task",
+    "Moving data from one storage location to another",
+    "Adjusting the brightness and contrast of images during preprocessing"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Transfer learning means taking a model trained on one task (e.g., ImageNet classification) and reusing its learned weights as a starting point for a different but related task.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-138",
+   "hint": "Transfer learning = 'thuê người có kinh nghiệm': model đã train task này làm ĐIỂM KHỞI ĐẦU cho task liên quan. Không phải copy code hay move data."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 17,
+   "question": "What is the purpose of the SplitMergeTokenizer in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "Tokenizing based on whitespace",
+    "Tokenizing using pre-trained models from TensorFlow Hub",
+    "Tokenizing using Sentencepiece",
+    "Tokenizing by splitting and merging text"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "SplitMergeTokenizer in TensorFlow Text tokenizes a string according to provided split/merge labels for each character, i.e., it forms tokens by splitting and merging characters rather than using whitespace or a learned model.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-139",
+   "hint": "Câu hỏi purpose của SplitMergeTokenizer: đáp án nằm ngay trong TÊN — Split (tách) + Merge (gộp) text. Đọc tên là ra đáp án."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 18,
+   "question": "What is the benefit of using Google Colab for collaborative projects? (Choose 1 answer)",
+   "options": [
+    "It restricts access to only one user at a time.",
+    "It allows real-time collaboration with multiple users on the same notebook.",
+    "It requires users to download and upload notebooks for sharing.",
+    "It only supports offline collaboration."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Google Colab is a cloud-hosted notebook environment that can be shared like a Google Doc, letting multiple users view and edit the same notebook collaboratively.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-140",
+   "hint": "Colab = COLLABORATION: share notebook như Google Doc, nhiều người cùng chỉnh REAL-TIME. Tên sản phẩm nói lên tất cả."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 19,
+   "question": "Which type of padding preserves the spatial dimensions of the input in a convolutional layer? (Choose 1 answer)",
+   "options": [
+    "Zero padding",
+    "Same padding",
+    "Valid padding",
+    "Symmetric padding"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "With padding='same', the input is padded so that the output feature map has the same spatial height and width as the input (for stride 1), whereas 'valid' padding shrinks the output.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-141",
+   "hint": "'Same' padding = output CÙNG (same) kích thước với input; 'valid' thì co lại. Bẫy: zero padding là cách độn số 0, không phải tên chế độ giữ kích thước."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 20,
+   "question": "What is the purpose of the Dropout layer in a ConvNet? (Choose 1 answer)",
+   "options": [
+    "It drops neurons during training to prevent overfitting.",
+    "It adjusts the learning rate dynamically.",
+    "It adds random noise to the input data.",
+    "It reduces the spatial dimensions of the input."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Dropout randomly deactivates a fraction of neurons at each training step, which prevents co-adaptation of units and acts as regularization against overfitting.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-142",
+   "hint": "Dropout = cho neuron 'nghỉ phép' ngẫu nhiên lúc train → chống overfitting. Drop = rụng neuron, không phải giảm kích thước hay thêm noise vào input."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 21,
+   "question": "To reshape a vector v with length 12 into a 3x4 matrix in TensorFlow, which function should be used? (Choose 1 answer)",
+   "options": [
+    "tf.reshape(v, (3, 4))",
+    "tf.resize(v, (3, 4))",
+    "tf.transform(v, (3, 4))",
+    "tf.matrixize(v, (3, 4))"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "tf.reshape changes the shape of a tensor while keeping the same number of elements, so tf.reshape(v, (3, 4)) turns a length-12 vector into a 3x4 matrix. The other functions do not exist for this purpose.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-143",
+   "hint": "Đổi shape giữ nguyên số phần tử → tf.reshape(v, (3, 4)). Chỉ 'reshape' là hàm thật; resize/transform/matrixize đều là tên bịa."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 22,
+   "question": "What is the purpose of the \"ImageDataGenerator\" in TensorFlow's Computer Vision applications? (Choose 1 answer)",
+   "options": [
+    "Generating random numbers for image pixel values",
+    "Preprocessing image data for model training",
+    "Creating animated GIFs from image sequences",
+    "Designing custom image filters"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "ImageDataGenerator loads images in batches, rescales/normalizes them, and applies real-time data augmentation, i.e., it preprocesses image data to feed model training.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-144",
+   "hint": "ImageDataGenerator không 'generate' ảnh từ hư không — nó TIỀN XỬ LÝ ảnh để feed vào training. 'Generator' ở đây = generator Python cấp batch."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 23,
+   "question": "When exploring the impact of image compression in TensorFlow, what metric is commonly used to measure the trade-off between compression and image quality? (Choose 1 answer)",
+   "options": [
+    "Accuracy Score",
+    "Compression Ratio",
+    "Signal-to-Noise Ratio (SNR)",
+    "Learning Rate"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Signal-to-Noise Ratio (and its variant PSNR) quantifies how much a compressed image deviates from the original, so it is the standard metric for the compression-versus-quality trade-off. Compression ratio alone measures size reduction, not quality.",
+   "verified": false,
+   "confidence": "medium",
+   "topic": "Computer Vision",
+   "id": "dat301m-145",
+   "hint": "Nén ảnh vs chất lượng → đo bằng Signal-to-Noise Ratio (SNR/PSNR). Bẫy chính: compression ratio chỉ đo độ nén, KHÔNG đo chất lượng."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 24,
+   "question": "Which method within the Image Generator performs image normalization? (Choose 1 answer)",
+   "options": [
+    "rescale",
+    "normalize_image",
+    "normalize",
+    "rescale_image"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "ImageDataGenerator uses the rescale argument (e.g., rescale=1./255) to multiply pixel values and normalize them to the [0, 1] range; there is no normalize or rescale_image method.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-146",
+   "hint": "Muốn normalize trong ImageDataGenerator phải gọi... rescale (rescale=1./255). Không tồn tại method 'normalize' — nhớ nghịch lý 'normalize tên là rescale'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 25,
+   "question": "What is stationarity in the context of time series data? (Choose 1 answer)",
+   "options": [
+    "The absence of temporal patterns",
+    "The presence of seasonality in the data",
+    "The constancy of statistical properties over time",
+    "The rapid changes in the time series"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A time series is stationary when its statistical properties (mean, variance, autocorrelation) remain constant over time.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Time Series",
+   "id": "dat301m-147",
+   "hint": "Stationary = 'đứng yên' về mặt THỐNG KÊ: mean, variance, autocorrelation không đổi theo thời gian. Liên tưởng: station = trạm cố định."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 26,
+   "question": "What is padding in the context of machine learning and TensorFlow? (Choose 1 answer)",
+   "options": [
+    "A technique to remove unnecessary zeros from a dataset",
+    "Adding extra data to the input to ensure consistent dimensions",
+    "The process of smoothing out noisy data",
+    "Resizing images to a fixed size during preprocessing"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Padding adds extra values (typically zeros) to inputs, such as sequences or image borders, so that all inputs have consistent dimensions for batch processing or convolution operations.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-148",
+   "hint": "Padding = 'độn thêm' (thường là số 0) để mọi input CÙNG kích thước. Pad = miếng đệm — THÊM vào, không bao giờ bớt đi."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 27,
+   "question": "How can you visualize time series data effectively? (Choose 1 answer)",
+   "options": [
+    "Scatter plots",
+    "Bar charts",
+    "Line charts",
+    "Pie charts"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Line charts plot values against time in order, making trends, seasonality, and patterns over time easy to see, which is why they are the standard choice for time series visualization.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Time Series",
+   "id": "dat301m-149",
+   "hint": "Time series → LINE chart: nối các điểm theo thời gian mới thấy trend/seasonality. Khẩu quyết 'thời gian là một đường (line)'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 28,
+   "question": "How can you compile a sequential model with LSTM layers for classification in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "tf.keras.Sequential.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])",
+    "tf.keras.compile(model, optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])",
+    "tf.keras.Sequential().compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])",
+    "tf.keras.model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "compile() is an instance method called on a model object, so you must first create the Sequential instance (tf.keras.Sequential()) and then call .compile() on it. The other options call compile on the class or on nonexistent functions.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-150",
+   "hint": "compile() là method của INSTANCE: phải có cặp ngoặc tạo object trước — tf.keras.Sequential().compile(...). Nhớ 'ngoặc () trước, compile sau'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 29,
+   "question": "Which Python library is commonly used for plotting training and validation accuracies in the context of evaluating model performance? (Choose 1 answer)",
+   "options": [
+    "NumPy",
+    "Matplotlib",
+    "Scikit-learn",
+    "TensorFlow"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Matplotlib is the standard Python plotting library used to graph training and validation accuracy/loss curves from a model's history object.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-151",
+   "hint": "Vẽ accuracy curve → Matplotlib — chữ 'plot' nằm ngay trong tên thư viện. Phân vai: NumPy tính, TensorFlow train, Matplotlib vẽ."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 30,
+   "question": "How can increasing the amount of training data help prevent overfitting? (Choose 1 answer)",
+   "options": [
+    "By making the training process slower",
+    "By introducing more noise into the model",
+    "By improving the model's generalization to new data",
+    "Increasing data size has no effect on overfitting"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "More training data exposes the model to a broader range of examples, making it harder to memorize individual samples and improving its ability to generalize to unseen data.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-152",
+   "hint": "Câu sinh đôi với câu 'tăng data chống overfit': đáp án luôn là improving GENERALIZATION. Đông mẫu → hết học vẹt."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 31,
+   "question": "Which statistical measure is commonly used to decompose a time series into trend, seasonality, and residual components? (Choose 1 answer)",
+   "options": [
+    "Mean Absolute Deviation (MAD)",
+    "Mean Squared Error (MSE)",
+    "Autocorrelation Function (ACF)",
+    "Moving Average (MA)"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Classical time series decomposition estimates the trend component using moving averages, which is then removed to isolate the seasonal and residual components. MAD and MSE are error metrics, and ACF measures lag correlations rather than performing decomposition.",
+   "verified": false,
+   "confidence": "medium",
+   "topic": "Time Series",
+   "id": "dat301m-153",
+   "hint": "Decomposition cổ điển dùng MOVING AVERAGE để ước lượng trend rồi bóc tách phần còn lại. MAD/MSE là error metric, ACF chỉ đo lag correlation — loại cả ba."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 32,
+   "question": "What is the purpose of using one-hot encoding for the target variable in a multi-class classification task? (Choose 1 answer)",
+   "options": [
+    "To increase model complexity",
+    "To speed up training",
+    "To represent categorical labels as numerical vectors",
+    "One-hot encoding is not applicable for multi-class classification"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "One-hot encoding converts each categorical class label into a binary vector with a 1 at the class index, giving the model a numerical representation compatible with losses like categorical crossentropy.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-154",
+   "hint": "Mục đích one-hot: biến nhãn categorical thành VECTOR SỐ (một số 1 tại đúng lớp). Không phải để tăng complexity hay tăng tốc."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 33,
+   "question": "What does the tokenize method of the BertTokenizer return? (Choose 1 answer)",
+   "options": [
+    "The original text without tokenization",
+    "A list of tokens obtained from the text",
+    "Token indices representing the text",
+    "A tokenized sequence in a matrix form"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "BertTokenizer.tokenize() splits the input text into WordPiece subword tokens and returns them as a list of strings; converting tokens to numeric indices requires a separate call such as convert_tokens_to_ids().",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-155",
+   "hint": "BertTokenizer.tokenize() trả LIST TOKEN dạng chuỗi; muốn ra SỐ phải gọi thêm convert_tokens_to_ids. Nhớ 'tokenize cho chữ, convert cho số'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 34,
+   "question": "What is the role of hyperparameter tuning in time series forecasting using machine learning? (Choose 1 answer)",
+   "options": [
+    "To select the appropriate lag values",
+    "To optimize the learning rate of the model",
+    "To find the best model architecture",
+    "To identify the optimal time period for analysis"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Hyperparameter tuning searches over training settings such as the learning rate to find values that give the best model performance; the learning rate is the classic example of a hyperparameter tuned in ML-based forecasting.",
+   "verified": false,
+   "confidence": "medium",
+   "topic": "Time Series",
+   "id": "dat301m-156",
+   "hint": "Hyperparameter tuning trong forecasting: ví dụ kinh điển là chỉnh LEARNING RATE. Nhớ 'learning rate = hyperparameter số 1 trong sách giáo khoa'.",
+   "review": "Đề thi FE, không có đáp án chính thức; \"lag values\" cũng là lựa chọn hợp lý."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 35,
+   "question": "What is the primary challenge in analyzing time series data? (Choose 1 answer)",
+   "options": [
+    "Dealing with spatial variations",
+    "Managing high-dimensional features",
+    "Accounting for temporal dependencies",
+    "Handling categorical variables"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Time series observations are ordered and correlated over time, so models must capture these temporal dependencies (trend, seasonality, autocorrelation), which is the defining challenge of time series analysis.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Time Series",
+   "id": "dat301m-157",
+   "hint": "Thách thức đặc trưng của time series nằm ngay trong chữ TIME: TEMPORAL dependencies. Thấy đáp án có chữ 'temporal' là chọn."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 36,
+   "question": "What is the significance of convergence? (Choose 1 answer)",
+   "options": [
+    "The process of getting very close to the correct answer.",
+    "A dramatic increase in loss.",
+    "A programming API for AI.",
+    "An analysis that corresponds too closely or exactly to a particular set of data."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Convergence in training means the optimization process approaches a stable solution where the loss stops decreasing significantly, i.e., the model gets very close to the correct answer. Option D describes overfitting instead.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-158",
+   "hint": "Convergence = 'hội tụ' dần về đáp án đúng, loss ổn định. Bẫy: 'corresponds too closely to a particular set of data' là định nghĩa của OVERFITTING, đừng chọn."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 37,
+   "question": "Which of the following is a common transformation applied during image data augmentation? (Choose 1 answer)",
+   "options": [
+    "Random rotation",
+    "Image compression",
+    "Grayscale conversion",
+    "Pixel normalization"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Data augmentation creates varied training samples through random transformations such as rotation, flipping, and zooming; random rotation is a standard augmentation, whereas normalization and compression are preprocessing steps, not augmentations.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-159",
+   "hint": "Augmentation = biến đổi NGẪU NHIÊN tạo mẫu mới: random rotation, flip, zoom. Normalization/compression/grayscale là preprocessing — không phải augmentation."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 38,
+   "question": "What happens if the num_words parameter is set in the Tokenizer class? (Choose 1 answer)",
+   "options": [
+    "It defines the out-of-vocabulary token.",
+    "It determines the sequence length.",
+    "It controls the learning rate during training.",
+    "It limits the vocabulary size to a specified number of words."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "In Keras' Tokenizer, num_words caps the vocabulary at the most frequent num_words-1 words; less frequent words are ignored when converting texts to sequences.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-160",
+   "hint": "Tên tham số tự giải nghĩa: NUM_WORDS = số từ tối đa được giữ → giới hạn vocabulary theo tần suất. OOV token là tham số oov_token riêng."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 39,
+   "question": "What is the result of adding two vectors of the same dimension in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "A scalar value",
+    "A matrix",
+    "Another vector",
+    "A higher-dimensional tensor"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Element-wise addition of two vectors with the same shape produces another vector of that same shape; the rank of the tensor does not change.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-161",
+   "hint": "Vector + vector cùng chiều = VECTOR cùng chiều (cộng element-wise). Phép cộng không 'thăng cấp' rank tensor — không thành matrix hay scalar."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 40,
+   "question": "What role does the base model play when creating a new model with a pre-trained base in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "It serves as the output layer of the new model",
+    "It replaces the need for custom layers in the new model",
+    "It initializes the weights of the entire new model",
+    "It acts as a feature extractor for the new model"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "In transfer learning, the pre-trained base model (often frozen) extracts general features from the input, and new task-specific layers are added on top to perform the final classification.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-162",
+   "hint": "Base model pre-trained = FEATURE EXTRACTOR: tầng dưới (đóng băng) rút đặc trưng, tầng mới phía trên lo phân loại. Nhớ 'base = thợ rút đặc trưng'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 41,
+   "question": "How does autocorrelation play a role in time series analysis? (Choose 1 answer)",
+   "options": [
+    "It measures the correlation between different time series.",
+    "It helps identify patterns within a single time series at different lags.",
+    "It calculates the average correlation across multiple time series.",
+    "It assesses the correlation between time series and external factors."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Autocorrelation measures the correlation of a time series with lagged copies of itself, revealing patterns such as seasonality and persistence within a single series at different lags.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Time Series",
+   "id": "dat301m-163",
+   "hint": "AUTO-correlation = tự soi CHÍNH MÌNH ở các lag khác nhau — chỉ MỘT chuỗi duy nhất. Mọi đáp án nói 'giữa nhiều chuỗi/yếu tố ngoài' đều sai vì thiếu chữ 'auto'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 42,
+   "question": "What is the primary purpose of the ImageDataGenerator in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "Generating synthetic images for training",
+    "Resizing images to a fixed dimension",
+    "Preprocessing and augmenting image data for model training",
+    "Loading images from external URLs"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "ImageDataGenerator preprocesses image batches (e.g., rescaling) and applies real-time data augmentation such as rotations, shifts, and flips while feeding data to the model during training.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-164",
+   "hint": "ImageDataGenerator = preprocess + AUGMENT — chọn đáp án đầy đủ cả hai vế. Không sinh ảnh synthetic, không load ảnh từ URL."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 43,
+   "question": "Which deep learning architecture is commonly used for predicting the next word in a sequence? (Choose 1 answer)",
+   "options": [
+    "Convolutional Neural Network (CNN)",
+    "Recurrent Neural Network (RNN)",
+    "Support Vector Machine (SVM)",
+    "Decision Tree"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "RNNs (including LSTM/GRU variants) process sequences step by step while maintaining a hidden state, making them the classic architecture for next-word prediction and language modeling.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-165",
+   "hint": "Next-word prediction = bài toán CHUỖI → RNN (LSTM/GRU). Nhớ 'R = Recurrent = lặp theo thời gian, y như câu chữ nối tiếp nhau'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 44,
+   "question": "What does the rescale parameter in ImageDataGenerator do? (Choose 1 answer)",
+   "options": [
+    "It resizes images to a specified shape.",
+    "It normalizes pixel values to a specified range.",
+    "It rotates images randomly during training.",
+    "It converts images to grayscale."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "rescale multiplies every pixel value by the given factor (e.g., 1/255), normalizing pixel intensities from 0-255 to the 0-1 range; it does not change image dimensions.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "Computer Vision",
+   "id": "dat301m-166",
+   "hint": "rescale = NHÂN pixel với hệ số (1/255) để chuẩn hóa về [0,1] — đổi GIÁ TRỊ, không đổi KÍCH THƯỚC. Đừng nhầm reSCALE (giá trị) với reSIZE (kích thước)."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 45,
+   "question": "How does the lack of regularization contribute to overfitting in machine learning models? (Choose 1 answer)",
+   "options": [
+    "Regularization has no impact on overfitting.",
+    "Lack of regularization allows the model to fit the training data too closely.",
+    "Regularization leads to underfitting rather than overfitting.",
+    "Lack of regularization increases the learning rate."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Regularization penalizes model complexity; without it, the model is free to fit the training data too closely, including its noise, which is precisely what overfitting means.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-167",
+   "hint": "Không có regularization = không ai 'ghì cương' → model bám training data quá sát, học cả noise. Regularization = dây cương chống overfit."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 46,
+   "question": "How can you identify overfitting by examining a model's performance metrics? (Choose 1 answer)",
+   "options": [
+    "If the training accuracy is high but the validation accuracy is low.",
+    "If both training and validation accuracies are high.",
+    "If the model has a low learning rate.",
+    "If the number of epochs is too small."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A large gap where training accuracy is high but validation accuracy is low indicates the model has memorized the training data and fails to generalize, the hallmark of overfitting.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-168",
+   "hint": "Dấu hiệu overfitting kinh điển: train accuracy CAO nhưng validation THẤP — 'giỏi lúc ôn ở nhà, dở khi đi thi'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 47,
+   "question": "What is the goal of sentiment analysis in text understanding? (Choose 1 answer)",
+   "options": [
+    "Identifying grammatical errors",
+    "Extracting meaning from text",
+    "Determining the emotional tone of the text",
+    "Summarizing the text content"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Sentiment analysis classifies the emotional tone or polarity of text (e.g., positive, negative, neutral), not its grammar, general meaning, or summary.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "NLP",
+   "id": "dat301m-169",
+   "hint": "Sentiment = cảm xúc: xác định EMOTIONAL TONE (tích cực/tiêu cực). Bẫy 'extracting meaning' nghe hay nhưng quá chung chung — đừng chọn."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 48,
+   "question": "What does the F1 Score metric consider when evaluating the performance of a forecasting model? (Choose 1 answer)",
+   "options": [
+    "The balance between precision and recall",
+    "The ratio of true positive predictions to total predicted positives",
+    "The overall accuracy of the model",
+    "The correlation between predicted and actual values"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The F1 Score is the harmonic mean of precision and recall, balancing the two; option B describes precision alone.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-170",
+   "hint": "F1 = harmonic mean của Precision và Recall — cán cân BALANCE giữa hai. Bẫy: 'true positives / predicted positives' là định nghĩa của riêng Precision."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 49,
+   "question": "How does reducing the complexity of a model contribute to preventing overfitting? (Choose 1 answer)",
+   "options": [
+    "It increases the risk of overfitting.",
+    "It has no impact on overfitting.",
+    "It makes the model more prone to memorizing noise.",
+    "It encourages the model to capture general patterns rather than noise."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "A simpler model has less capacity to memorize noise in the training data, so it is forced to learn the general underlying patterns, which reduces overfitting.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-171",
+   "hint": "Model đơn giản hơn = ít 'dung lượng' để học thuộc noise → buộc phải học GENERAL patterns. Khẩu quyết 'bớt phức tạp, bớt học vẹt'."
+  },
+  {
+   "source": "exam_img",
+   "origNum": 50,
+   "question": "How can you implement a learning rate schedule using callbacks in TensorFlow? (Choose 1 answer)",
+   "options": [
+    "By using the ModelCheckpoint callback",
+    "By using the EarlyStopping callback",
+    "By using the ReduceLROnPlateau callback",
+    "Learning rate schedules cannot be implemented with callbacks"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "ReduceLROnPlateau is a Keras callback that adjusts (reduces) the learning rate during training when a monitored metric stops improving, effectively implementing a learning rate schedule. ModelCheckpoint saves weights and EarlyStopping halts training.",
+   "verified": false,
+   "confidence": "high",
+   "topic": "ML Basics",
+   "id": "dat301m-172",
+   "hint": "Callback chỉnh learning rate: ReduceLROnPlateau — 'giảm LR khi metric chững lại (plateau)'. Phân vai theo tên: ModelCheckpoint lưu weights, EarlyStopping dừng train."
+  }
+ ]
+}

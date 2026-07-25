@@ -1,0 +1,18 @@
+[
+  {
+    "id": "dat301m",
+    "name": "DAT301m — Deep Learning (TensorFlow)",
+    "description": "ML Basics · Computer Vision · NLP · Time Series",
+    "file": "data/dat301m.json",
+    "theory": "data/dat301m_theory.md",
+    "theoryQuiz": "data/dat301m_theory_quiz.json"
+  },
+  {
+    "id": "dbm302m",
+    "name": "DBM302m — Data Mining",
+    "description": "Visualization · Preprocessing · Association Rules · Classification · Clustering · Advanced",
+    "file": "data/dbm302m.json",
+    "theory": "data/dbm302m_theory.md",
+    "theoryQuiz": "data/dbm302m_theory_quiz.json"
+  }
+]

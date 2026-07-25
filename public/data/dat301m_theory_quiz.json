@@ -1,0 +1,1525 @@
+{
+ "id": "dat301m-theory",
+ "questions": [
+  {
+   "id": "dat301m-t1",
+   "source": "theory",
+   "origNum": 1,
+   "question": "In the Machine Learning paradigm (as opposed to traditional programming), what are the INPUTS fed into the system?",
+   "options": [
+    "Rules and Data",
+    "Data and Answers (labels)",
+    "Rules and Answers",
+    "Data and Predictions"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In Machine Learning you feed in Data together with the Answers (labels), and the algorithm infers the Rules. Traditional programming is the reverse: Rules and Data go in, Answers come out.",
+   "hint": "ML đảo ngược sơ đồ truyền thống: đưa Data + Answers vào, máy trả ra Rules. 'Rules + Data' là input của traditional programming.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t2",
+   "source": "theory",
+   "origNum": 2,
+   "question": "Which of the following is NOT a loss function?",
+   "options": [
+    "mean_squared_error",
+    "binary_crossentropy",
+    "Adam",
+    "categorical_crossentropy"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Adam is an optimizer, not a loss function. The other three are all loss functions used to measure how far predictions are from the correct answers.",
+   "hint": "Bẫy kinh điển: Adam là OPTIMIZER (giống SGD, RMSprop). Thấy Adam trong danh sách loss function → loại ngay.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t3",
+   "source": "theory",
+   "origNum": 3,
+   "question": "In model.fit(xs, ys, epochs=500), what does a single epoch represent?",
+   "options": [
+    "One update of the model's weights",
+    "One complete pass through the entire training dataset",
+    "One batch of training samples processed",
+    "One evaluation run on the test dataset"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "An epoch is one full pass through all of the training data. Weight updates typically happen many times per epoch (once per batch), and the test set is not involved in training.",
+   "hint": "Epoch = đi hết MỘT VÒNG toàn bộ training data. Cập nhật weights từng batch chỉ là 'step', không phải epoch.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t4",
+   "source": "theory",
+   "origNum": 4,
+   "question": "A single-neuron network was trained on six points following y = 2x - 1. Calling model.predict([10.0]) returns 18.98 rather than exactly 19. Why?",
+   "options": [
+    "There is a rounding bug in the predict method",
+    "The network works with probabilities and was trained on very little data, so it outputs a value very close to, but not exactly, 19",
+    "The learning rate was too high, so the model diverged",
+    "A Flatten layer is missing from the model"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Neural networks deal in probabilities and learn from limited data, so with only six training points the model converges to a relationship that is extremely close to y = 2x - 1 but not exact. 18.98 is the expected, correct behavior.",
+   "hint": "Neural network trả về xấp xỉ, không phải công thức chính xác: ít data + xác suất → 18.98 thay vì 19 là BÌNH THƯỜNG, không phải bug.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t5",
+   "source": "theory",
+   "origNum": 5,
+   "question": "Given that compile() is an instance method, which line correctly compiles a Keras model?",
+   "options": [
+    "tf.keras.Sequential([tf.keras.layers.Dense(1)]).compile(optimizer='sgd', loss='mean_squared_error')",
+    "tf.keras.Sequential.compile(optimizer='sgd', loss='mean_squared_error')",
+    "tf.keras.compile(model, optimizer='sgd', loss='mean_squared_error')",
+    "compile(tf.keras.Sequential, optimizer='sgd', loss='mean_squared_error')"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "compile() must be called on a model instance, so you first create the Sequential model (with its layers) and then call .compile() on it. Calling compile on the class itself or as a free function is invalid.",
+   "hint": "compile() là INSTANCE method: phải tạo model (có dấu ngoặc khởi tạo Sequential([...])) rồi mới .compile(). Gọi trên class trần là sai.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t6",
+   "source": "theory",
+   "origNum": 6,
+   "question": "Which built-in Keras callback REDUCES the learning rate when a monitored metric has stopped improving?",
+   "options": [
+    "EarlyStopping",
+    "ModelCheckpoint",
+    "ReduceLROnPlateau",
+    "LearningRateScheduler"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "ReduceLROnPlateau lowers the learning rate when the monitored metric plateaus. EarlyStopping stops training, ModelCheckpoint saves weights, and LearningRateScheduler changes the learning rate per epoch according to a function you supply, regardless of the metric.",
+   "hint": "Đọc tên là ra: Reduce-LR-On-Plateau = GIẢM learning rate khi metric 'đi ngang' (plateau). LearningRateScheduler đổi LR theo lịch, không nhìn metric.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t7",
+   "source": "theory",
+   "origNum": 7,
+   "question": "Consider this callback:\nclass MyCallback(tf.keras.callbacks.Callback):\n    def on_epoch_end(self, epoch, logs={}):\n        if logs.get('accuracy') > 0.95:\n            self.model.stop_training = True\nWhat does it do?",
+   "options": [
+    "Stops training once accuracy exceeds 95%, checked at the end of each epoch",
+    "Stops training once accuracy exceeds 95%, checked at the start of each epoch",
+    "Stops training after exactly 95 epochs",
+    "Saves the model whenever accuracy exceeds 95%"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "on_epoch_end runs at the END of every epoch and receives a logs object with the current metrics; when training accuracy exceeds 0.95 it sets stop_training to True, halting training. It does not save anything.",
+   "hint": "Hai điểm chấm: on_epoch_END = CUỐI epoch, và stop_training = True là DỪNG train (không save). Đề hay tráo 'start/end' và 'stop/save'.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t8",
+   "source": "theory",
+   "origNum": 8,
+   "question": "Which activation function squashes its input into the range (-1, 1), symmetric around zero?",
+   "options": [
+    "ReLU",
+    "Sigmoid",
+    "Tanh",
+    "Softmax"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Tanh outputs values in (-1, 1) centered on zero. Sigmoid outputs (0, 1), ReLU outputs [0, infinity), and softmax outputs a probability distribution over multiple values.",
+   "hint": "Bảng range phải thuộc: ReLU [0, ∞), Sigmoid (0, 1), Tanh (−1, 1) đối xứng quanh 0. Hỏi 'symmetric around zero' → Tanh.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t9",
+   "source": "theory",
+   "origNum": 9,
+   "question": "What is a defining property of the outputs of a softmax layer?",
+   "options": [
+    "Each output is either exactly 0 or exactly 1",
+    "The outputs form a probability distribution that sums to 1",
+    "Each output is independent and the outputs can sum to more than 1",
+    "The outputs can take any value in [0, infinity)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Softmax normalizes the raw outputs into a probability distribution: every value is between 0 and 1 and they all sum to exactly 1. Independent per-neuron probabilities describe sigmoid outputs, not softmax.",
+   "hint": "Softmax = chia lại 'miếng bánh' xác suất: mọi output trong (0,1) và TỔNG = 1. 'Mỗi output độc lập' là tính chất của sigmoid.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t10",
+   "source": "theory",
+   "origNum": 10,
+   "question": "What is the output of the ReLU activation function for the input x = -5?",
+   "options": [
+    "-5",
+    "0",
+    "5",
+    "0.5"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "ReLU returns x only when x is greater than zero and returns 0 otherwise, so ReLU(-5) = 0. It does not flip the sign or take an absolute value.",
+   "hint": "ReLU = max(0, x): số âm bị 'chặn' về 0, không đổi dấu thành dương. ReLU(−5) = 0, không phải 5.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t11",
+   "source": "theory",
+   "origNum": 11,
+   "question": "Your multi-class model ends with Dense(10, activation='softmax') and your labels are plain integers 0-9 (NOT one-hot encoded). Which loss function should you use?",
+   "options": [
+    "categorical_crossentropy",
+    "sparse_categorical_crossentropy",
+    "binary_crossentropy",
+    "mean_squared_error"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "sparse_categorical_crossentropy works directly with integer labels, while categorical_crossentropy requires one-hot encoded labels. Binary crossentropy is for two-class problems and MSE is for regression.",
+   "hint": "Label là SỐ NGUYÊN 'trần trụi' (chưa one-hot) → thêm chữ SPARSE: sparse_categorical_crossentropy. One-hot rồi mới dùng categorical_crossentropy.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t12",
+   "source": "theory",
+   "origNum": 12,
+   "question": "Why do we divide image pixel values by 255 before training (e.g. images / 255.0)?",
+   "options": [
+    "To reduce the width and height of the images",
+    "To scale the values into the 0-1 range, which makes training more stable and converge faster",
+    "To convert color images into grayscale",
+    "To augment the dataset with darker copies of each image"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Dividing by 255 normalizes pixel intensities from 0-255 into 0-1, which stabilizes and speeds up training. It changes the values, not the image dimensions, colors, or dataset size.",
+   "hint": "Chia 255 = NORMALIZATION: đưa pixel 0–255 về 0–1 cho training ổn định, hội tụ nhanh. Không hề resize hay đổi màu ảnh.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t13",
+   "source": "theory",
+   "origNum": 13,
+   "question": "If the learning rate is set far too HIGH, what is the most likely symptom during training?",
+   "options": [
+    "The loss decreases very slowly but steadily",
+    "The loss oscillates wildly or diverges instead of decreasing",
+    "Each epoch takes much longer to compute",
+    "Nothing changes, since the learning rate only affects inference"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A learning rate that is too large makes the weight updates overshoot the minimum, so the loss bounces around or even grows (diverges). Slow-but-steady decrease is the symptom of a learning rate that is too small.",
+   "hint": "LR quá LỚN = bước chân quá dài → loss nhảy loạn xạ/phân kỳ. LR quá NHỎ mới là 'giảm chậm mà chắc'. LR không đổi tốc độ tính toán mỗi epoch.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t14",
+   "source": "theory",
+   "origNum": 14,
+   "question": "Which of the following is a HYPERPARAMETER (chosen by you) rather than a parameter learned by the model?",
+   "options": [
+    "The weights of a Dense layer",
+    "The biases of the output layer",
+    "The learning rate",
+    "The values inside a trained convolution filter"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "The learning rate is set by the developer before/around training, making it a hyperparameter. Weights, biases, and filter values are parameters that the model learns from data during training.",
+   "hint": "Hyperparameter = do NGƯỜI chọn (learning rate, batch size, số epochs); parameter = do MODEL học (weights, biases, filter values).",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t15",
+   "source": "theory",
+   "origNum": 15,
+   "question": "Which classification metric is computed as TP / (TP + FN)?",
+   "options": [
+    "Precision",
+    "Recall",
+    "Accuracy",
+    "F1 Score"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Recall = TP / (TP + FN): out of all actual positives, how many were found. Precision is TP / (TP + FP), and F1 is the harmonic mean of precision and recall.",
+   "hint": "Mẹo phân biệt theo mẫu số: Recall có FN (bỏ SÓT), Precision có FP (bắt NHẦM). TP/(TP+FN) → Recall.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t16",
+   "source": "theory",
+   "origNum": 16,
+   "question": "What does the built-in EarlyStopping callback do?",
+   "options": [
+    "It saves the best version of the model to disk during training",
+    "It stops training when the monitored metric has stopped improving",
+    "It lowers the learning rate when the loss plateaus",
+    "It skips the first few epochs to warm up the optimizer"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "EarlyStopping halts training once the monitored metric (e.g. val_loss) stops improving, which helps prevent overfitting. Saving the best model is ModelCheckpoint's job, and lowering the learning rate is ReduceLROnPlateau's.",
+   "hint": "Bộ ba callback chia việc rõ ràng: EarlyStopping = DỪNG sớm, ModelCheckpoint = LƯU model, ReduceLROnPlateau = GIẢM LR. Đừng để đề tráo việc.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t17",
+   "source": "theory",
+   "origNum": 17,
+   "question": "After many epochs, your model reaches only 55% training accuracy and 54% validation accuracy. What is this situation called?",
+   "options": [
+    "Overfitting, because the two accuracies are nearly equal",
+    "Underfitting, because the model performs poorly on both training and validation data",
+    "Convergence, because the accuracies have stabilized",
+    "A great result, because the generalization gap is small"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "When both training and validation performance are poor, the model is underfitting: it is too simple (or undertrained) to capture the patterns in the data. Overfitting would show high training accuracy with much lower validation accuracy.",
+   "hint": "Cả train lẫn validation đều TỆ = UNDERfitting (model quá đơn giản). Overfitting là train CAO, val THẤP — nhìn cả hai con số, đừng chỉ nhìn khoảng cách.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t18",
+   "source": "theory",
+   "origNum": 18,
+   "question": "After running history = model.fit(x, y, epochs=20), what does history.history['loss'] contain?",
+   "options": [
+    "Only the final loss value after the last epoch",
+    "A list of training loss values, one per epoch (20 values)",
+    "The loss of every individual batch in the final epoch",
+    "The validation loss values for each epoch"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The History object records each metric once per epoch, so history.history['loss'] is a list of 20 per-epoch training loss values. Validation loss would be under the 'val_loss' key.",
+   "hint": "history.history là dict các list THEO EPOCH: 'loss' = train loss mỗi epoch, 'val_loss' = validation. 20 epochs → list 20 giá trị, dùng để vẽ Matplotlib.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t19",
+   "source": "theory",
+   "origNum": 19,
+   "question": "When you add tf.keras.layers.Dropout(0.2) to a model, during which phase are neurons actually dropped?",
+   "options": [
+    "During both training and prediction",
+    "Only during training; at prediction time all neurons are active",
+    "Only during prediction, to make inference faster",
+    "Only during the first epoch of training"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Dropout randomly disables neurons only during training to force the network to learn robust, independent features. At inference time dropout is switched off and the full network is used.",
+   "hint": "Dropout chỉ 'tắt đèn' lúc TRAINING để ép mạng học độc lập; lúc predict/inference toàn bộ neurons đều bật lại.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t20",
+   "source": "theory",
+   "origNum": 20,
+   "question": "Your model reaches 99% training accuracy but only 65% validation accuracy. Which action is LEAST likely to help fix this problem?",
+   "options": [
+    "Adding data augmentation",
+    "Adding Dropout layers",
+    "Increasing the model's complexity with more layers",
+    "Collecting more training data"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "The gap between training and validation accuracy indicates overfitting. Augmentation, dropout, and more data all improve generalization, whereas making the model even more complex typically makes overfitting worse.",
+   "hint": "Overfitting = model đã 'quá khỏe' so với data → thêm layers chỉ làm tệ hơn. Các cách chữa đều xoay quanh chữ GENERALIZE: more data, dropout, augmentation.",
+   "topic": "ML Basics",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t21",
+   "source": "theory",
+   "origNum": 21,
+   "question": "How is the Fashion MNIST dataset split between training and testing?",
+   "options": [
+    "35,000 training / 35,000 test",
+    "60,000 training / 10,000 test",
+    "70,000 training with no test set",
+    "10,000 training / 60,000 test"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Fashion MNIST's 70,000 images come pre-split into 60,000 training images and 10,000 test images. This lets you evaluate the trained model on data it has never seen.",
+   "hint": "Fashion MNIST: 70k tổng = 60k train + 10k test (chia sẵn). Nhớ tỉ lệ 6:1, không phải 50/50 (50/50 là của IMDB reviews).",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t22",
+   "source": "theory",
+   "origNum": 22,
+   "question": "Why are the Fashion MNIST labels numbers 0-9 instead of text strings like 'ankle boot'?",
+   "options": [
+    "Because text labels would make the images larger",
+    "Because numbers avoid language bias and are easier for computers to process",
+    "Because Keras is unable to display strings",
+    "Because the classes must be sorted alphabetically"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Using numeric labels avoids bias toward any particular language and computers process numbers more efficiently than text. The label is just a class index that can be mapped to any language's class name.",
+   "hint": "Số thay chữ vì 2 lý do: tránh LANGUAGE BIAS (không thiên vị tiếng Anh) và máy xử lý số tốt hơn. Không liên quan kích thước ảnh.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t23",
+   "source": "theory",
+   "origNum": 23,
+   "question": "What does tf.keras.layers.Flatten(input_shape=(28, 28)) do in an image classification model?",
+   "options": [
+    "It compresses the image, losing some visual quality",
+    "It reshapes the 28x28 2D matrix into a 1D vector of 784 values, learning nothing itself",
+    "It learns which spatial features of the image are important",
+    "It downsamples the image to 14x14"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Flatten only changes the shape of the data: the 28x28 grid becomes a flat vector of 784 values so a Dense layer can consume it. It has no weights and learns nothing.",
+   "hint": "Flatten = 'cán mỏng' ma trận 2D thành vector 1D (28×28 → 784). Không học gì, không mất thông tin, chỉ đổi shape cho Dense layer ăn được.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t24",
+   "source": "theory",
+   "origNum": 24,
+   "question": "A 28x28 image passes through: Conv2D 3x3 -> MaxPooling 2x2 -> Conv2D 3x3 -> MaxPooling 2x2 (valid padding, stride 1). What is the final spatial size?",
+   "options": [
+    "7x7",
+    "6x6",
+    "5x5",
+    "13x13"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "28 -> 26 after the first 3x3 conv, -> 13 after pooling, -> 11 after the second conv, -> 5 after the final pooling (11/2 rounds down). The chain is 28 -> 26 -> 13 -> 11 -> 5.",
+   "hint": "Áp 2 công thức luân phiên: conv 3×3 trừ 2, pool 2×2 chia đôi (làm tròn XUỐNG): 28→26→13→11→5. Chú ý 11/2 = 5 chứ không phải 5.5.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t25",
+   "source": "theory",
+   "origNum": 25,
+   "question": "If a 150x150 image is passed through a 5x5 convolution (valid padding, stride 1), what is the output size?",
+   "options": [
+    "148x148",
+    "146x146",
+    "145x145",
+    "150x150"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "With valid padding, the output loses (kernel - 1) pixels per dimension: 150 - 4 = 146. The 148x148 answer is the trap for people who assume a 3x3 kernel.",
+   "hint": "Công thức tổng quát: output = input − (kernel − 1). Kernel 5×5 → trừ 4: 150−4=146. Đừng quen tay trừ 2 (đó là của kernel 3×3).",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t26",
+   "source": "theory",
+   "origNum": 26,
+   "question": "In tf.keras.layers.Conv2D(64, (3, 3), activation='relu'), what does the number 64 determine?",
+   "options": [
+    "The width and height of the output feature map",
+    "The number of filters, which becomes the depth (number of channels) of the output",
+    "The batch size used during training",
+    "The size of each convolution kernel (64x64)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "64 is the number of filters the layer learns; each filter produces one output channel, so the output depth is 64. The spatial width/height are determined by the input size, kernel size, stride, and padding — not by the filter count.",
+   "hint": "Trong Conv2D(64, (3,3)): 64 = SỐ FILTERS → thành DEPTH/số channels của output; (3,3) mới là kích thước kernel. Filters không đụng đến chiều rộng/cao.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t27",
+   "source": "theory",
+   "origNum": 27,
+   "question": "When MaxPooling2D(2, 2) processes each 2x2 block of pixels, which value is kept?",
+   "options": [
+    "The average of the four values",
+    "The sum of the four values",
+    "The largest of the four values",
+    "The top-left value of the block"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "MAX pooling keeps the maximum value in each 2x2 block, preserving the strongest feature activation while discarding the rest. Averaging is what AveragePooling does, a different layer.",
+   "hint": "MAX pooling = giữ giá trị LỚN NHẤT mỗi khối 2×2 (feature mạnh nhất sống sót). Lấy trung bình là AveragePooling — layer khác.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t28",
+   "source": "theory",
+   "origNum": 28,
+   "question": "model.summary() shows a layer's output shape as (None, 26, 26, 64). What does 'None' represent?",
+   "options": [
+    "An undefined error in the model definition",
+    "The batch size, which is flexible and not fixed in advance",
+    "The grayscale channel of the image",
+    "That the layer produces no output until trained"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The first dimension is the batch dimension; Keras shows it as None because the model can accept any batch size. 26x26 is the spatial size and 64 is the number of channels/filters.",
+   "hint": "'None' đứng đầu shape = BATCH dimension linh hoạt (bao nhiêu ảnh một lần cũng được). Đọc shape: (batch, cao, rộng, channels).",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t29",
+   "source": "theory",
+   "origNum": 29,
+   "question": "You are training a horses-vs-humans classifier (exactly 2 classes) with flow_from_directory. Which class_mode should you use?",
+   "options": [
+    "class_mode='categorical'",
+    "class_mode='binary'",
+    "class_mode='multiple'",
+    "class_mode='dual'"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "For a two-class problem you use class_mode='binary', which pairs with a single sigmoid output neuron and binary_crossentropy loss. 'categorical' is for more than two classes; 'multiple' and 'dual' do not exist.",
+   "hint": "2 lớp → 'binary'; từ 3 lớp trở lên → 'categorical'. Bộ ba đồng bộ: binary class_mode + Dense(1, sigmoid) + binary_crossentropy.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t30",
+   "source": "theory",
+   "origNum": 30,
+   "question": "Your images on disk come in many different sizes, but you call flow_from_directory(..., target_size=(300, 300)). What happens?",
+   "options": [
+    "An error is raised because all images must already be 300x300",
+    "Every image is automatically resized to 300x300 as it is loaded",
+    "Only the images that are already 300x300 are loaded; the rest are skipped",
+    "The images are cropped to 300x300 and the cropped files are saved to disk"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "target_size tells the generator to resize each image to 300x300 on the fly as it is loaded, so the images on disk do not need to share a size and are never modified.",
+   "hint": "target_size = resize ON THE FLY lúc load: ảnh trên disk kích thước nào cũng được, không bị sửa/xóa/skip. Tiện cho data thực tế đủ mọi cỡ.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t31",
+   "source": "theory",
+   "origNum": 31,
+   "question": "Which ImageDataGenerator configuration is appropriate for the VALIDATION generator when the training generator uses augmentation?",
+   "options": [
+    "Exactly the same augmentation parameters as the training generator",
+    "ImageDataGenerator(rescale=1./255) with no augmentation parameters",
+    "Rotation and flips only, so validation is also robust",
+    "No rescale at all, since validation images are not used for training"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The validation set should reflect real, unmodified data, so it is only rescaled (normalized) and never augmented. Rescaling must still match training preprocessing so the pixel ranges are consistent.",
+   "hint": "Validation = 'đề thi thật': KHÔNG augment, chỉ rescale=1./255 cho cùng thang đo với training. Augment validation là bẫy kinh điển.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t32",
+   "source": "theory",
+   "origNum": 32,
+   "question": "Which of the following is a PREPROCESSING step rather than a data augmentation technique?",
+   "options": [
+    "Random rotation of the image",
+    "Horizontal flipping of the image",
+    "Normalizing pixel values into the 0-1 range",
+    "Random zooming into the image"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Normalization is preprocessing applied identically to every image; it creates no new training scenarios. Random rotations, flips, and zooms are augmentation because they generate varied versions of the training images.",
+   "hint": "Augmentation = biến đổi NGẪU NHIÊN tạo kịch bản mới (rotate, flip, zoom, shift). Normalization/grayscale/compression áp dụng đều cho mọi ảnh → chỉ là preprocessing.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t33",
+   "source": "theory",
+   "origNum": 33,
+   "question": "What does width_shift_range=0.2 do in ImageDataGenerator?",
+   "options": [
+    "It crops 20% off the width of every image",
+    "It randomly shifts each image horizontally by up to 20% of its width during training",
+    "It resizes the image width to 20% of the original",
+    "It applies shifting to a random 20% of the images and leaves the rest untouched"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "width_shift_range=0.2 randomly translates each image left or right by up to 20% of its width, so the model learns that features can appear in different horizontal positions. It does not crop or resize.",
+   "hint": "shift_range = DỊCH CHUYỂN ảnh ngẫu nhiên tối đa 20% chiều tương ứng (mỗi ảnh, mỗi lần load một kiểu). Không phải crop, không phải chọn 20% số ảnh.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t34",
+   "source": "theory",
+   "origNum": 34,
+   "question": "When loading a pre-trained model with InceptionV3(input_shape=(150,150,3), include_top=False, weights='imagenet'), what does include_top=False mean?",
+   "options": [
+    "The first (topmost) convolutional layer is removed",
+    "The original fully-connected classification layers at the end are excluded, so you can add your own",
+    "The pre-trained weights are not downloaded",
+    "All layers are automatically frozen"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "include_top=False strips off the original dense classification head (built for ImageNet's 1000 classes), leaving the convolutional base as a feature extractor onto which you attach your own layers. Freezing is a separate step done via layer.trainable = False.",
+   "hint": "'Top' ở đây = phần ĐẦU RA classification (Dense 1000 lớp của ImageNet). include_top=False = bỏ cái đầu cũ để gắn DNN của bạn. Freeze là bước riêng.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t35",
+   "source": "theory",
+   "origNum": 35,
+   "question": "What does the weights='imagenet' argument do when instantiating a pre-trained model like InceptionV3?",
+   "options": [
+    "It trains the model on the ImageNet dataset during your model.fit call",
+    "It initializes the model with weights already learned from the ImageNet dataset",
+    "It downloads the ImageNet images to your machine for training",
+    "It restricts the model to classifying only ImageNet classes"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "weights='imagenet' loads the parameter values learned from pre-training on ImageNet, giving you a ready-made feature extractor. No ImageNet images are downloaded and no training happens at load time.",
+   "hint": "weights='imagenet' = tải WEIGHTS đã học sẵn (không tải ảnh, không train lại). Đây chính là tinh thần transfer learning: mượn features từ dataset khổng lồ.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t36",
+   "source": "theory",
+   "origNum": 36,
+   "question": "You freeze every layer of a pre-trained base model (layer.trainable = False) and add new Dense layers on top. During training, which weights are updated?",
+   "options": [
+    "All weights in the combined model",
+    "Only the weights of the newly added Dense layers",
+    "Only the weights of the frozen base model",
+    "No weights at all, since part of the model is frozen"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Frozen layers keep their pre-trained weights fixed, so gradient updates only apply to the new layers you added. The base model acts purely as a feature extractor.",
+   "hint": "Freeze = khóa weights phần base; chỉ các layer MỚI bạn gắn thêm được học. Base model đóng vai feature extractor 'chỉ cho mượn, không sửa'.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t37",
+   "source": "theory",
+   "origNum": 37,
+   "question": "A model takes input_shape=(300, 300, 3), applies Conv2D(16, (3,3)) and then MaxPooling2D(2,2). What is the spatial size of the output?",
+   "options": [
+    "150x150",
+    "149x149",
+    "148x148",
+    "74x74"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The 3x3 convolution reduces 300 to 298 (losing 1 pixel per edge), and the 2x2 pooling halves it to 149. Choosing 150 forgets the convolution; 148 subtracts 2 after pooling instead of before.",
+   "hint": "Làm đúng THỨ TỰ: conv trước (300−2=298) rồi pool chia đôi (298/2=149). Bẫy 150 là quên conv, bẫy 148 là trừ sai chỗ.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t38",
+   "source": "theory",
+   "origNum": 38,
+   "question": "What two capabilities does a ConvLSTM2D layer combine, and for what kind of data?",
+   "options": [
+    "Convolution for temporal patterns and LSTM for spatial features, used for audio",
+    "Convolution for spatial features and LSTM for temporal relationships, used for spatio-temporal data like video",
+    "Two convolution passes for higher accuracy on static images",
+    "An LSTM that merely speeds up convolution on large images"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "ConvLSTM2D applies convolutions to extract spatial features within each frame while the LSTM mechanism models how those features evolve over time, making it suited to spatio-temporal data such as video. The reversed pairing is the classic trap.",
+   "hint": "Chia vai chuẩn: Convolution lo SPATIAL (không gian trong 1 frame), LSTM lo TEMPORAL (biến đổi theo thời gian) → hợp thể cho video. Đề hay tráo ngược hai vai.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t39",
+   "source": "theory",
+   "origNum": 39,
+   "question": "Your cats-vs-dogs CNN ends with Dense(1, activation='sigmoid'). Which loss function should you pass to model.compile?",
+   "options": [
+    "categorical_crossentropy",
+    "binary_crossentropy",
+    "sparse_categorical_crossentropy",
+    "Adam"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A single sigmoid output neuron for two classes pairs with binary_crossentropy. The categorical losses are for multi-class softmax outputs, and Adam is an optimizer, not a loss.",
+   "hint": "Combo cố định: Dense(1, sigmoid) ↔ binary_crossentropy. Và cảnh giác bẫy quen thuộc: Adam nằm nhầm chỗ — nó là optimizer!",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t40",
+   "source": "theory",
+   "origNum": 40,
+   "question": "Which statement correctly pairs the roles of convolution and pooling in a CNN?",
+   "options": [
+    "Convolution reduces information while keeping salient features; pooling extracts features",
+    "Convolution extracts/isolates features; pooling reduces information while maintaining the salient features",
+    "Both convolution and pooling exist only to shrink the image for faster training",
+    "Convolution normalizes pixel values; pooling augments the training data"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Convolutions pass filters over the image to extract and emphasize features such as edges, while pooling downsamples the result, reducing information but keeping the strongest activations. Exams frequently swap these two descriptions.",
+   "hint": "Khẩu quyết: Convolution TRÍCH XUẤT features, Pooling GIẢM thông tin (giữ phần nổi bật). Đề rất hay hoán đổi hai mô tả này — đọc kỹ từng vế.",
+   "topic": "Computer Vision",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t41",
+   "source": "theory",
+   "origNum": 41,
+   "question": "A Tokenizer was created with oov_token=\"<OOV>\" and fit on \"I love my dog\" and \"I love my cat\", producing word_index {'<OOV>': 1, 'i': 2, 'love': 3, 'my': 4, 'dog': 5, 'cat': 6}. What does texts_to_sequences([\"I love my hamster\"]) return?",
+   "options": [
+    "[[2, 3, 4]]",
+    "[[2, 3, 4, 1]]",
+    "[[2, 3, 4, 0]]",
+    "[[2, 3, 4, 7]]"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "\"hamster\" was never seen during fit, so it is replaced by the OOV token's index (1), keeping the sequence the same length as the sentence. Zero is reserved for padding, and no new index is created at encoding time.",
+   "hint": "Có oov_token thì từ lạ thành index của OOV (thường là 1), không có thì bị skip; số 0 luôn dành riêng cho padding.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t42",
+   "source": "theory",
+   "origNum": 42,
+   "question": "A Tokenizer is created with num_words=5 (no oov_token) and fit on a corpus containing 20 distinct words. When texts_to_sequences is called, which words actually get encoded?",
+   "options": [
+    "The 5 most common words in the corpus",
+    "The first 5 distinct words that appeared in the corpus",
+    "The 4 most common words in the corpus",
+    "All 20 words — num_words only affects the Embedding layer"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "num_words=n keeps only the n-1 most common words (indices 1 to n-1) when encoding sequences. Selection is by frequency, not by order of appearance.",
+   "hint": "num_words=n → giữ n−1 từ MOST COMMON. Nhớ hai chữ khóa: 'trừ 1' và 'phổ biến nhất', không phải 'gặp đầu tiên'.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t43",
+   "source": "theory",
+   "origNum": 43,
+   "question": "You call pad_sequences([[1, 2, 3, 4, 5, 6]], maxlen=4) leaving every other argument at its default. What is the resulting sequence?",
+   "options": [
+    "[1, 2, 3, 4]",
+    "[3, 4, 5, 6]",
+    "An error is raised because the sequence is longer than maxlen",
+    "The sequence is left unchanged at length 6"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The default truncating='pre' removes values from the BEGINNING of sequences longer than maxlen, so the last 4 tokens are kept. Sequences longer than maxlen are truncated, never an error.",
+   "hint": "pad_sequences mặc định 'pre' cho cả hai: thêm 0 vào ĐẦU câu ngắn và CẮT từ ĐẦU câu dài.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t44",
+   "source": "theory",
+   "origNum": 44,
+   "question": "You want short sentences padded with zeros at the END and long sentences cut from the END. Which call is correct?",
+   "options": [
+    "pad_sequences(seqs, maxlen=16, padding='post') — truncation always follows the padding setting",
+    "pad_sequences(seqs, maxlen=16, padding='after', truncating='after')",
+    "tokenizer.pad_sequences(seqs, maxlen=16, mode='post')",
+    "pad_sequences(seqs, maxlen=16, padding='post', truncating='post')"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "padding and truncating are independent arguments that each accept 'pre' or 'post'; setting one does not change the other. There is no 'after' value, and pad_sequences is a standalone function, not a Tokenizer method.",
+   "hint": "Hai tham số ĐỘC LẬP: padding= chỗ thêm 0, truncating= chỗ cắt; chỉ nhận 'pre'/'post'. pad_sequences KHÔNG phải method của tokenizer.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t45",
+   "source": "theory",
+   "origNum": 45,
+   "question": "A Tokenizer is created with num_words=100 and fit on a corpus with 3,000 distinct words. How many entries does tokenizer.word_index contain after fit_on_texts?",
+   "options": [
+    "99",
+    "100",
+    "101",
+    "3,000"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "word_index always stores the FULL vocabulary discovered by fit_on_texts. The num_words limit is only applied later, when texts_to_sequences encodes sentences.",
+   "hint": "Bẫy kinh điển: word_index chứa TẤT CẢ từ; num_words chỉ có tác dụng lúc texts_to_sequences, không cắt word_index.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t46",
+   "source": "theory",
+   "origNum": 46,
+   "question": "With default settings, a Keras Tokenizer is fit on the sentence \"My Dog!\". Which statement is true?",
+   "options": [
+    "The word_index contains 'my' and 'dog' — text is lowercased and punctuation is filtered out",
+    "'My' and 'my' map to different tokens because case is preserved",
+    "The exclamation mark becomes its own token",
+    "Fitting fails unless you strip punctuation yourself first"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "By default the Tokenizer lowercases all text and removes punctuation through its filters, so \"My Dog!\" produces exactly the tokens 'my' and 'dog'.",
+   "hint": "Tokenizer mặc định lowercase + bỏ dấu câu: \"Dog!\" và \"dog\" là CÙNG một token.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t47",
+   "source": "theory",
+   "origNum": 47,
+   "question": "What is the output shape of tf.keras.layers.Embedding(10000, 16, input_length=120) when applied to a batch of padded sequences?",
+   "options": [
+    "(None, 16)",
+    "(None, 10000, 16)",
+    "(None, 120, 16)",
+    "(None, 120, 10000)"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Each of the 120 tokens in a sequence is mapped to a 16-dimensional vector, giving (batch, sequence_length, embedding_dim). The vocabulary size only sets how many rows the lookup table has.",
+   "hint": "Output của Embedding = (batch, input_length, embedding_dim); vocab_size chỉ là số hàng của bảng tra, KHÔNG xuất hiện trong shape output.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t48",
+   "source": "theory",
+   "origNum": 48,
+   "question": "In a text classifier, the Embedding layer outputs shape (None, 120, 16). Why might you choose GlobalAveragePooling1D instead of Flatten as the next layer?",
+   "options": [
+    "It keeps all 1,920 values so the following Dense layer can learn more detail",
+    "It outputs (None, 16) by averaging across the 120 time steps, giving a much smaller and faster model",
+    "It sorts the word vectors by importance before pooling",
+    "Flatten cannot be used after an Embedding layer"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "GlobalAveragePooling1D averages over the sequence dimension to produce a single 16-dim vector, so the next Dense layer needs far fewer parameters than after Flatten's 120x16=1,920 outputs. Flatten works too, but is heavier.",
+   "hint": "GAP1D = lấy TRUNG BÌNH theo chiều thời gian → vector nhỏ, model nhẹ; Flatten giữ hết 1,920 giá trị → Dense sau phình to.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t49",
+   "source": "theory",
+   "origNum": 49,
+   "question": "How many trainable parameters does tf.keras.layers.Embedding(1000, 16) contain?",
+   "options": [
+    "1,016",
+    "16,000",
+    "16,016",
+    "It depends on input_length"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The embedding matrix has vocab_size x embedding_dim = 1000 x 16 = 16,000 weights and no bias. input_length changes the output shape, not the parameter count.",
+   "hint": "Param của Embedding = vocab_size × embedding_dim, không có bias, không liên quan input_length.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t50",
+   "source": "theory",
+   "origNum": 50,
+   "question": "In the sarcasm headlines dataset (JSON), which field is used as the training label?",
+   "options": [
+    "headline",
+    "article_link",
+    "is_sarcastic",
+    "sentiment"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Each record has three fields: headline (the input text), is_sarcastic (the 0/1 label), and article_link (unused metadata). It is a binary classification task.",
+   "hint": "Sarcasm JSON = bộ ba headline / is_sarcastic / article_link; label là is_sarcastic (0 hoặc 1) → binary classification.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t51",
+   "source": "theory",
+   "origNum": 51,
+   "question": "An LSTM(64, return_sequences=True) layer receives input of shape (None, 120, 16). What is its output shape?",
+   "options": [
+    "(None, 64)",
+    "(None, 120, 16)",
+    "(None, 116, 64)",
+    "(None, 120, 64)"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "With return_sequences=True the layer returns the hidden state at every time step, so the time dimension (120) is preserved and the last dimension becomes the number of units (64). Without it, the output would be just (None, 64).",
+   "hint": "return_sequences=True → GIỮ chiều timesteps, đổi chiều cuối thành số units. Không có nó → chỉ còn (None, units).",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t52",
+   "source": "theory",
+   "origNum": 52,
+   "question": "What does the Bidirectional wrapper actually do to the LSTM layer it wraps?",
+   "options": [
+    "It makes a single LSTM read the sentence twice to double-check its predictions",
+    "It runs two copies of the layer — one over the input in order, one over it reversed — and concatenates their outputs",
+    "It shares one set of weights between the forward and backward passes to save memory",
+    "It converts the LSTM into an attention layer"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Bidirectional creates a forward copy and a backward copy of the wrapped layer, each with its own weights, and merges (by default concatenates) their outputs. That concatenation is exactly why a 64-unit Bidirectional LSTM outputs (None, 128).",
+   "hint": "Bidirectional = 2 bản copy (đọc xuôi + đọc ngược) rồi CONCAT output → đó là lý do units bị nhân đôi trong shape.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t53",
+   "source": "theory",
+   "origNum": 53,
+   "question": "A Conv1D layer with 128 filters is applied to sentences of 120 tokens and produces output shape (None, 116, 128). What kernel size was used?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "With 'valid' padding the time dimension shrinks by kernel_size - 1. Since 120 - 116 = 4, the kernel size must be 5.",
+   "hint": "Conv1D 'valid': output = L − (k−1). Mất 4 time steps → kernel 5. Học công thức theo cả hai chiều để khỏi bị hỏi ngược.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t54",
+   "source": "theory",
+   "origNum": 54,
+   "question": "What is one key advantage of subword tokenization over word-level tokenization?",
+   "options": [
+    "Unseen or rare words can still be encoded by breaking them into known pieces, avoiding OOV losses",
+    "Each subword carries more meaning than a whole word",
+    "It removes the need for sequence models entirely",
+    "It guarantees shorter sequences than word-level tokenization"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Subword tokenizers decompose rare words into known pieces (e.g., \"TensorFlow\" into \"Tensor\" + \"Flow\"), so almost any word can be represented from a limited vocabulary. The trade-off is that individual pieces carry LESS meaning, which makes word order and sequence models more important.",
+   "hint": "Subword: không sợ OOV (từ lạ = ghép mảnh), nhưng từng mảnh ÍT nghĩa hơn → càng cần sequence model (RNN/LSTM).",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t55",
+   "source": "theory",
+   "origNum": 55,
+   "question": "In text generation training, after stacking pre-padded n-gram subphrases into a matrix called sequences, how do you create the inputs (xs) and labels?",
+   "options": [
+    "xs = sequences[:, 1:], labels = sequences[:, 0]",
+    "xs = sequences[:, :-1], labels = sequences[:, -1]",
+    "xs = sequences[:, :-1], labels = sequences[:, 0]",
+    "xs = sequences, labels = a copy of sequences shifted by one"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Every token except the last forms the input, and the FINAL token of each subphrase is the label the model learns to predict as the next word.",
+   "hint": "Text generation: input = cả chuỗi TRỪ từ cuối ([:, :-1]), label = từ CUỐI ([:, -1]).",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t56",
+   "source": "theory",
+   "origNum": 56,
+   "question": "During inference in a word-based text generator, how is each new word typically produced from the model output?",
+   "options": [
+    "Take the argmax of the softmax output, map that index back to a word, append it to the seed text, and repeat",
+    "Sample a random word from the vocabulary weighted by its frequency in the corpus",
+    "Take the sigmoid output of every neuron above 0.5 as generated words",
+    "Feed the seed text once and read all future words from a single output sequence"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The model outputs a probability distribution over the vocabulary; the highest-probability word is chosen, appended to the seed, and the loop repeats. Because each step builds on uncertain predictions, long generations drift into gibberish.",
+   "hint": "Vòng lặp sinh chữ: predict → argmax → nối vào seed → predict tiếp. Lỗi chồng lỗi nên sinh càng dài càng dễ gibberish.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t57",
+   "source": "theory",
+   "origNum": 57,
+   "question": "In a next-word prediction model, if you keep the labels as integer word indices instead of one-hot encoding them with to_categorical, which loss function should you compile with?",
+   "options": [
+    "binary_crossentropy",
+    "categorical_crossentropy",
+    "sparse_categorical_crossentropy",
+    "mean_squared_error"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "sparse_categorical_crossentropy accepts integer class labels directly, whereas categorical_crossentropy requires one-hot encoded labels. Both fit the same softmax classification setup.",
+   "hint": "Label one-hot → categorical_crossentropy; label để nguyên số nguyên → SPARSE_categorical_crossentropy.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t58",
+   "source": "theory",
+   "origNum": 58,
+   "question": "Why does the Keras Tokenizer start assigning word indices from 1 instead of 0?",
+   "options": [
+    "Index 0 is reserved for the OOV token",
+    "Python dictionaries cannot store 0 as a value",
+    "Index 0 is reserved for the padding value added by pad_sequences",
+    "It leaves index 0 free for the most common word"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "pad_sequences fills with zeros, so 0 must never correspond to a real word. When an oov_token is configured, it typically receives index 1, and real words start after that.",
+   "hint": "Quy ước: 0 = padding, 1 = OOV (nếu khai báo), từ thật xếp từ đó trở đi. Đừng nhầm 0 với OOV.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t59",
+   "source": "theory",
+   "origNum": 59,
+   "question": "How does a GRU compare with an LSTM?",
+   "options": [
+    "It adds an extra cell state on top of the LSTM's, making it more expressive",
+    "It has fewer gates and parameters, trains faster, and often performs comparably",
+    "It can only be used for time series, not text",
+    "It processes the whole sentence at once instead of step by step"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The GRU is a simplified recurrent cell with fewer gates than the LSTM and no separate cell state, so it is lighter and faster while achieving similar results on many tasks.",
+   "hint": "GRU = LSTM 'rút gọn': ít gates hơn, không có cell state riêng, nhanh hơn, hiệu quả thường tương đương.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t60",
+   "source": "theory",
+   "origNum": 60,
+   "question": "To visualize learned word embeddings in the TensorFlow Embedding Projector, what do you export from your trained model?",
+   "options": [
+    "The full saved model in .h5 format",
+    "A PNG rendering of the embedding matrix",
+    "The history object returned by model.fit",
+    "Two TSV files: one with the embedding vectors (vecs.tsv) and one with the corresponding words (meta.tsv)"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "You write the Embedding layer's weight vectors to vecs.tsv and the matching words to meta.tsv, then upload both files to the online Embedding Projector to explore the vector space.",
+   "hint": "Nhớ cặp file vecs.tsv (vector) + meta.tsv (từ) để nạp vào Embedding Projector.",
+   "topic": "NLP",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t61",
+   "source": "theory",
+   "origNum": 61,
+   "question": "In time series forecasting, what does a naive forecast predict?",
+   "options": [
+    "The average of the entire series so far",
+    "The next value will equal the last observed value",
+    "The value at the same time in the previous season",
+    "Zero, until proven otherwise"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The naive forecast simply repeats the most recent value (forecast[t] = series[t-1]). It is the baseline that any real model must beat to be worth using.",
+   "hint": "Naive forecast = 'ngày mai giống hôm nay' (lặp lại giá trị cuối). Đây là BASELINE mọi model phải vượt qua.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t62",
+   "source": "theory",
+   "origNum": 62,
+   "question": "To forecast a series with strong yearly seasonality, you compute series(t) - series(t - 365) and model that instead. What is this technique and why use it?",
+   "options": [
+    "Normalization — it rescales the values into the range 0-1",
+    "Windowing — it creates fixed-size training examples",
+    "Differencing — it removes trend and seasonality so the remaining series is easier to forecast",
+    "Smoothing — it removes noise with an average"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Subtracting the value from one full season earlier (differencing) strips out trend and seasonality. You forecast the differenced series and then add the past value back to get the final prediction.",
+   "hint": "Differencing = trừ giá trị của 1 chu kỳ trước → khử trend + seasonality; dự báo xong nhớ CỘNG NGƯỢC giá trị quá khứ.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t63",
+   "source": "theory",
+   "origNum": 63,
+   "question": "A 30-day moving average gives a beautifully smooth curve over a trending, seasonal series, yet its forecast error is WORSE than the naive forecast. Why can this happen?",
+   "options": [
+    "It amplifies noise instead of removing it",
+    "It eliminates noise but does not anticipate trend or seasonality, so it lags behind the series",
+    "The averaging window must exactly match the seasonality period or the result is invalid",
+    "Moving averages cannot be computed on data with a trend"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A moving average smooths out noise but has no notion of trend or seasonality, so while the series keeps rising or cycling it systematically lags behind — which can make it worse than simply repeating the last value.",
+   "hint": "Moving average chỉ KHỬ NOISE, không đoán được trend/seasonality → đường mượt nhưng có thể thua cả naive forecast.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t64",
+   "source": "theory",
+   "origNum": 64,
+   "question": "What distinguishes roll-forward partitioning from fixed partitioning when validating a forecasting model?",
+   "options": [
+    "It shuffles the data before each split",
+    "It uses the future for training and the past for validation",
+    "It repeatedly extends the training period and validates on the following period, mimicking production retraining",
+    "It splits the series into random contiguous chunks"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Roll-forward partitioning starts with a short training window and keeps growing it, forecasting the next period at each step — much closer to how a deployed model is retrained as new data arrives. Fixed partitioning makes a single train/validation cut.",
+   "hint": "Roll-forward = training set 'lăn' dài dần theo thời gian, giống production; fixed partitioning = cắt một lần rồi thôi.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t65",
+   "source": "theory",
+   "origNum": 65,
+   "question": "Why must you NOT shuffle a time series before splitting it into training and validation sets?",
+   "options": [
+    "Shuffling would let future values leak into the training set, so validation no longer measures real forecasting ability",
+    "Shuffling breaks the tf.data windowing API",
+    "Shuffling changes the statistical properties of the series values",
+    "Nothing — shuffling before the split is actually recommended to reduce bias"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The validation period must lie strictly after the training period: past data trains, future data validates. Shuffling first mixes future information into training and makes the evaluation meaningless. (Shuffling WINDOWS after windowing is fine — the split itself must be chronological.)",
+   "hint": "Chia time series theo THỜI GIAN: quá khứ train, tương lai validate. Shuffle trước khi chia = cho model 'nhìn trộm' tương lai.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t66",
+   "source": "theory",
+   "origNum": 66,
+   "question": "In the windowed_dataset function, why is the window created with dataset.window(window_size + 1, shift=1, drop_remainder=True) instead of just window_size?",
+   "options": [
+    "The +1 compensates for the element removed by drop_remainder",
+    "The extra element becomes the label: the first window_size values are the features and the final value is the target",
+    "tf.data windows are zero-indexed, so one must be added",
+    "It adds one padding value to the end of each window"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Each window must contain both the model inputs and the next value to be predicted. The later map(lambda w: (w[:-1], w[-1:])) splits that extra element off as the label.",
+   "hint": "window_size + 1 = features (window_size giá trị) + label (1 giá trị cuối). Luôn đi cặp với map((w[:-1], w[-1:])).",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t67",
+   "source": "theory",
+   "origNum": 67,
+   "question": "In the windowed_dataset function, what does dataset.shuffle(shuffle_buffer) actually shuffle?",
+   "options": [
+    "The individual values inside each window, destroying temporal order",
+    "The labels independently of the features",
+    "Nothing — shuffle has no effect on a windowed dataset",
+    "The order of the complete windows, reducing sequence bias while keeping each window's internal order intact"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Shuffling happens after the windows are formed, so entire (features, label) examples are reordered relative to each other. The chronological order inside every window is untouched.",
+   "hint": "Shuffle chỉ xáo thứ tự CÁC WINDOW (chống sequence bias); bên trong mỗi window, thứ tự thời gian giữ nguyên.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t68",
+   "source": "theory",
+   "origNum": 68,
+   "question": "If you set drop_remainder=False when windowing a time series, what problem do you create for training?",
+   "options": [
+    "Some values are cropped away and never used for training",
+    "The dataset silently duplicates its last window",
+    "The trailing windows near the end of the series come out shorter, so examples no longer share a consistent shape",
+    "The labels get shifted by one time step"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Without drop_remainder=True, windows near the end that cannot be filled to window_size + 1 elements are kept at shorter lengths, breaking the uniform shape the model and batching expect. drop_remainder=True crops those incomplete windows.",
+   "hint": "drop_remainder=True = CROP các window cuối bị thiếu để mọi hàng dài bằng nhau; tắt nó → shape lệch, batch lỗi.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t69",
+   "source": "theory",
+   "origNum": 69,
+   "question": "How does Huber loss behave as prediction errors grow?",
+   "options": [
+    "Quadratic for small errors and linear for large errors, making it less sensitive to outliers",
+    "Linear for small errors and quadratic for large errors, punishing outliers harder",
+    "Always quadratic, exactly like MSE",
+    "It ignores any error above a fixed threshold entirely"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Huber loss acts like MSE near zero and switches to MAE-like linear growth for large errors, so outliers do not dominate training — which is why it is popular for noisy time series forecasting.",
+   "hint": "Huber = MSE khi sai số NHỎ, MAE khi sai số LỚN → 'hiền' với outliers. Nhớ tên Peter Huber (không phải Hubble).",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t70",
+   "source": "theory",
+   "origNum": 70,
+   "question": "Why is RMSE often reported instead of raw MSE?",
+   "options": [
+    "RMSE punishes large errors less than MAE does",
+    "Taking the square root brings the error back to the same units as the data, making it easier to interpret",
+    "RMSE is always smaller than MAE",
+    "The square root removes the influence of outliers"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "MSE is expressed in squared units because errors are squared before averaging; RMSE = sqrt(MSE) restores the original scale of the series. It still penalizes large errors heavily, just like MSE.",
+   "hint": "RMSE = căn bậc hai của MSE → đưa sai số về CÙNG ĐƠN VỊ với dữ liệu; vẫn phạt nặng sai số lớn như MSE.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t71",
+   "source": "theory",
+   "origNum": 71,
+   "question": "A forecasting model ends with Dense(1) followed by Lambda(lambda x: x * 100.0). What is the purpose of this final Lambda layer?",
+   "options": [
+    "To multiply the learning rate by 100",
+    "To convert probabilities into class labels",
+    "To clip the predictions at a maximum of 100",
+    "To scale the output up to the real range of the series, since LSTM tanh activations produce values near (-1, 1)"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "LSTM outputs tend to be small because tanh squashes values into (-1, 1); multiplying by 100 maps predictions onto the actual scale of the data, which can also help training converge.",
+   "hint": "Lambda ×100 để 'phóng' output nhỏ của LSTM (tanh ra (−1,1)) lên đúng thang giá trị thật của chuỗi.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t72",
+   "source": "theory",
+   "origNum": 72,
+   "question": "Why does a univariate time series model need a Lambda layer applying tf.expand_dims(x, axis=-1) before its first LSTM layer?",
+   "options": [
+    "The LSTM expects 3D input [batch, timesteps, features], and the univariate window is missing the size-1 features dimension",
+    "expand_dims adds an extra time step so the LSTM can predict further ahead",
+    "It converts the series values into one-hot vectors",
+    "It doubles the batch size for more stable gradients"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Windowed univariate data arrives shaped [batch, timesteps]; expand_dims appends a final dimension so each time step becomes a 1-element feature vector, matching the RNN input contract of [batch, timesteps, features].",
+   "hint": "RNN/LSTM cần 3 chiều [batch, timesteps, features]; chuỗi univariate thiếu chiều features=1 → expand_dims(axis=-1) trong Lambda.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t73",
+   "source": "theory",
+   "origNum": 73,
+   "question": "You train for 100 epochs with LearningRateScheduler(lambda epoch: 1e-8 * 10**(epoch/20)). What do you plot afterwards to pick a good learning rate?",
+   "options": [
+    "Accuracy against epochs, choosing the epoch with peak accuracy",
+    "The learning rate against epochs, choosing the steepest section",
+    "The loss against the learning rate, choosing a rate from the stable low-loss region",
+    "MAE against batch size"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Because the schedule increases the learning rate every epoch, plotting loss versus learning rate (usually on a log x-axis) shows which rates keep the loss low and stable before it blows up — you pick a value from that region.",
+   "hint": "Trick tìm LR: cho LR TĂNG DẦN mỗi epoch rồi plot LOSS theo LEARNING RATE (không phải theo epoch), chọn vùng loss thấp và ổn định.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t74",
+   "source": "theory",
+   "origNum": 74,
+   "question": "Your RNN forecasting model must output a prediction at EVERY time step of the input window (sequence-to-sequence). What do you change compared with a sequence-to-vector model?",
+   "options": [
+    "Wrap the recurrent layer in Bidirectional",
+    "Set return_sequences=True on the recurrent layer so it emits Y(hat) at every cell instead of only the last one",
+    "Add a second Dense layer after the LSTM",
+    "Increase the window size by one"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A sequence-to-vector RNN keeps only the last cell's Y(hat) and discards the rest; return_sequences=True makes the layer return the output of every time step, turning it into sequence-to-sequence.",
+   "hint": "Seq-to-vector = chỉ lấy Y(hat) của cell CUỐI; muốn mọi cell đều ra output (seq-to-seq) → return_sequences=True.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t75",
+   "source": "theory",
+   "origNum": 75,
+   "question": "Why is padding=\"causal\" recommended for a Conv1D layer used in time series forecasting?",
+   "options": [
+    "It keeps the output exactly half the input length",
+    "It removes the need for drop_remainder in the pipeline",
+    "The output at time t depends only on inputs at time t and earlier, so the convolution cannot peek at future values",
+    "It makes the kernel symmetric around each time step"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Causal padding pads only on the left side of the sequence, guaranteeing each output uses current and past inputs only — essential when the future is exactly what you are trying to predict.",
+   "hint": "padding='causal' = chỉ pad BÊN TRÁI → không 'nhìn trộm' tương lai; chuẩn cho Conv1D trong forecasting.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t76",
+   "source": "theory",
+   "origNum": 76,
+   "question": "In the final sunspots model (Conv1D, then LSTMs, then Dense layers), what is the specific role of the Conv1D layer?",
+   "options": [
+    "Remembering values from much earlier in the series",
+    "Extracting local patterns from short spans of the input window before the LSTM models longer-term dependencies",
+    "Producing the final numeric prediction",
+    "Reducing the size of the dataset on disk"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The 1D convolution learns local feature detectors over nearby time steps, the LSTM captures longer-range sequential structure, and the Dense layers map to the forecast — which is why the combination beats any single layer type on sunspots.",
+   "hint": "Phân vai để nhớ: Conv1D = pattern CỤC BỘ, LSTM = phụ thuộc DÀI HẠN, Dense = chốt dự đoán → best = COMBINATION.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t77",
+   "source": "theory",
+   "origNum": 77,
+   "question": "What does MAPE measure when evaluating a forecast?",
+   "options": [
+    "The maximum absolute prediction error over the validation set",
+    "The mean of squared percentage errors",
+    "The proportion of predictions that are exactly correct",
+    "The mean of absolute errors expressed as a percentage of the true values, making it scale-independent"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "MAPE (Mean Absolute Percentage Error) averages |error / actual value|, so the result is a percentage that can be compared across series with completely different scales.",
+   "hint": "MAPE = sai số tuyệt đối tính theo PHẦN TRĂM giá trị thật → so sánh được giữa các chuỗi khác thang đo.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t78",
+   "source": "theory",
+   "origNum": 78,
+   "question": "A time series suffered a major disruptive event two years ago that permanently changed its behavior (it became non-stationary). What should you consider when choosing training data?",
+   "options": [
+    "Always use all available history; more data is always better for time series",
+    "Train mainly on data since the event — older data reflects behavior that no longer predicts the future well",
+    "Shuffle pre-event and post-event data together to balance them",
+    "Discard the series entirely; non-stationary data cannot be forecast"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In a non-stationary series the statistical properties changed at the break, so a window of recent post-event data often generalizes better than the full history. \"More data is always better\" does not hold when the old regime no longer applies.",
+   "hint": "Non-stationary: dữ liệu quá khứ xa có thể 'hết hạn' — cân nhắc chỉ train trên đoạn SAU disruptive event, đừng máy móc 'càng nhiều data càng tốt'.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t79",
+   "source": "theory",
+   "origNum": 79,
+   "question": "What is the purpose of calling .prefetch(1) at the end of a tf.data input pipeline for time series training?",
+   "options": [
+    "It loads the entire dataset into GPU memory",
+    "It prepares the next batch in the background while the current batch is training, reducing idle time",
+    "It skips the first batch of every epoch",
+    "It caches one batch to disk for reproducibility"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "prefetch overlaps data preparation with model execution: while the model trains on the current batch, the pipeline is already building the next one, so the training step never waits on input.",
+   "hint": "prefetch(1) = 'chuẩn bị sẵn batch kế tiếp' song song lúc đang train → pipeline không bị nghẽn chờ data.",
+   "topic": "Time Series",
+   "verified": true
+  },
+  {
+   "id": "dat301m-t80",
+   "source": "theory",
+   "origNum": 80,
+   "question": "A website's traffic reliably spikes every Saturday and Sunday and dips on weekdays. In time series terms, this weekly pattern is an example of:",
+   "options": [
+    "Trend — an overall direction of the data",
+    "Noise — unpredictable variation in the data",
+    "Seasonality — a regular, predictable change in the shape of the data",
+    "Autocorrelation — correlation of the series with itself at zero lag"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A pattern that repeats at a fixed, predictable interval — weekly here — is seasonality. It does not need to follow the four calendar seasons; any regular cycle qualifies.",
+   "hint": "Cứ LẶP LẠI theo chu kỳ dự đoán được (ngày/tuần/năm) = seasonality — không nhất thiết là 4 mùa. Trend là hướng chung, noise là ngẫu nhiên.",
+   "topic": "Time Series",
+   "verified": true
+  }
+ ]
+}

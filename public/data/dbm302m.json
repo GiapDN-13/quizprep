@@ -1,0 +1,4961 @@
+{
+ "id": "dbm302m",
+ "name": "DBM302m — Data Mining",
+ "description": "Visualization · Preprocessing · Association Rules · Classification · Clustering · Advanced",
+ "questions": [
+  {
+   "question": "Which kind of visualization would you use to try to answer a personal question about your data?",
+   "options": [
+    "Interactive storytelling",
+    "Presentation visualization",
+    "Interactive visualization"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Answering your own personal question means you explore the data yourself, which is exactly what interactive visualization is for.",
+   "hint": "Câu hỏi cá nhân về data của mình -> tự khám phá bằng Interactive visualization.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 1,
+   "id": "dbm302m-1",
+   "confidence": "high"
+  },
+  {
+   "question": "Which kind of visualization would you use to share a discovery about your data with your colleagues in a slide show?",
+   "options": [
+    "Interactive visualization",
+    "Presentation visualization",
+    "Interactive storytelling"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A slide show that presents a finished discovery is one-way and static, i.e. a presentation visualization.",
+   "hint": "Trình chiếu slide chia sẻ kết quả -> Presentation visualization.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 2,
+   "id": "dbm302m-2",
+   "confidence": "high"
+  },
+  {
+   "question": "Which kind of visualization would you use to create a web page that shows viewers a visualization you prepared, but also allows the viewer to further investigate the data?",
+   "options": [
+    "Presentation visualization",
+    "Interactive visualization",
+    "Interactive storytelling"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A prepared, curated view that also lets the viewer explore further combines presentation with exploration, which is interactive storytelling. (_conflict resolved: input said Interactive visualization, but the described mix of a prepared narrative plus viewer exploration is the definition of interactive storytelling.)",
+   "hint": "Vừa kể chuyện đã chuẩn bị vừa cho người xem tự đào sâu -> Interactive storytelling.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 3,
+   "id": "dbm302m-3",
+   "confidence": "high"
+  },
+  {
+   "question": "In what order does a data visualization graphics pipeline process information?",
+   "options": [
+    "Vertex processing, then pixel processing, then rasterization",
+    "Pixel processing, then rasterization, then vertex processing",
+    "Rasterization, then vertex processing, then pixel processing",
+    "Pixel processing, then vertex processing, then rasterization",
+    "Vertex processing, then rasterization, then pixel processing",
+    "Rasterization, then pixel processing, then vertex processing"
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "The graphics pipeline processes geometry first (vertex processing), converts it to fragments (rasterization), then colors them (pixel processing).",
+   "hint": "Pipeline: Vertex -> Rasterization -> Pixel.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 4,
+   "id": "dbm302m-4",
+   "confidence": "high"
+  },
+  {
+   "question": "How many items can human working memory (short-term memory) typically hold?",
+   "options": [
+    "3-7 items",
+    "30-70 items",
+    "300-700 items"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Human working memory holds only about 3-7 items (Miller's 7 plus or minus 2).",
+   "hint": "Working memory ~ 3-7 items (luật Miller 7±2).",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 5,
+   "id": "dbm302m-5",
+   "confidence": "high"
+  },
+  {
+   "question": "A light gray box drawn on top of a dark gray background will make the light gray box appear:",
+   "options": [
+    "The same as it appears on a white background",
+    "Brighter",
+    "Darker"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "By simultaneous contrast, the same light gray looks brighter against a darker background.",
+   "hint": "Nền tối làm ô xám trông Brighter (simultaneous contrast).",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 6,
+   "id": "dbm302m-6",
+   "confidence": "high"
+  },
+  {
+   "question": "When visualizing data, you should keep your eyes focused on one point for the entire duration of the visualization.",
+   "options": [
+    "True, because your visual system will better detect any changes to datapoints during the visualization.",
+    "False, because your visual system will play tricks on your perception of the data."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Fixating on one point causes perceptual tricks (fading, afterimages); you should let your eyes move.",
+   "hint": "Đừng nhìn cố định một điểm - mắt sẽ bị đánh lừa.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 7,
+   "id": "dbm302m-7",
+   "confidence": "high"
+  },
+  {
+   "question": "On which of these colors does the human eye have the most difficulty focusing?",
+   "options": [
+    "Yellow",
+    "Red",
+    "Green",
+    "Blue"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The eye has few blue cones and blue focuses differently (chromatic aberration), making blue the hardest to focus on.",
+   "hint": "Blue khó lấy nét nhất (ít blue cones).",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 8,
+   "id": "dbm302m-8",
+   "confidence": "high"
+  },
+  {
+   "question": "Which one of the 3-D depth cues below is the strongest?",
+   "options": [
+    "Occlusion",
+    "Shadowing",
+    "Lighting",
+    "Stereopsis"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Occlusion (one object blocking another) is the strongest and most reliable depth cue.",
+   "hint": "Occlusion là depth cue mạnh nhất.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 9,
+   "id": "dbm302m-9",
+   "confidence": "high"
+  },
+  {
+   "question": "Which one of the 3-D depth cues below indicates surface orientation?",
+   "options": [
+    "Occlusion",
+    "Stereopsis",
+    "Shadowing",
+    "Illumination"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Shading/illumination reveals how a surface is oriented relative to the light source.",
+   "hint": "Illumination/shading cho biết hướng bề mặt (surface orientation).",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 10,
+   "id": "dbm302m-10",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a plot of life expectancy based on country and birth year, you look up your country and birth year, find the displayed life expectancy, and conclude you will probably live that long. This is an example of:",
+   "options": [
+    "Abductive reasoning",
+    "Subductive reasoning",
+    "Inductive reasoning",
+    "Deductive reasoning"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Applying a general rule (the plotted relationship) to your specific case is deductive reasoning.",
+   "hint": "Từ quy luật chung suy ra trường hợp của mình -> Deductive.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 11,
+   "id": "dbm302m-11",
+   "confidence": "high"
+  },
+  {
+   "question": "When creating an overview visualization of a large dataset, it is most important to:",
+   "options": [
+    "Display all of the data using a simple representation and axes that spread the data out as much as possible",
+    "Pack as many details as possible into the display to be as efficient and informative as possible",
+    "Display only an important subset of the datapoints so as to not overwhelm the user"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "An overview should show all the data with a simple representation and axes that spread it out to reveal overall structure.",
+   "hint": "Overview: hiện tất cả data đơn giản, trải rộng trục.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 12,
+   "id": "dbm302m-12",
+   "confidence": "high"
+  },
+  {
+   "question": "The process of zooming on the data plotted in a visualization, where the zoomed region then fills the entire display:",
+   "options": [
+    "Is an important part of Shneiderman's information visualization mantra",
+    "Provides focus on the zoomed portion of the data",
+    "Is actually a filtering operation on the display coordinates of the plotted data",
+    "All of the above",
+    "None of the above"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Zoom-to-fill is part of Shneiderman's mantra, provides focus, and is effectively a filter on display coordinates, so all statements are true.",
+   "hint": "Zoom lấp đầy màn hình = All of the above.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 13,
+   "id": "dbm302m-13",
+   "confidence": "high"
+  },
+  {
+   "question": "The goal of the filtering step of the information visualization mantra is to:",
+   "options": [
+    "Smooth noisy data",
+    "Display a subset",
+    "Remove outliers"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In the visualization mantra (overview, zoom, filter, details-on-demand), filtering means showing only a subset of the data.",
+   "hint": "Filter = hiển thị subset.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 14,
+   "id": "dbm302m-14",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following benefits of a fisheye lens is LEAST important for data visualization?",
+   "options": [
+    "It makes the data appear more interesting.",
+    "It supports focus on detail along with the context of that detail amid the rest of the dataset.",
+    "It allows zooming without obscuring the unzoomed data."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Making data look interesting is merely aesthetic; the analytically valuable benefits are focus-plus-context and non-obscuring zoom.",
+   "hint": "Fisheye: 'trông thú vị hơn' là lợi ích ít quan trọng nhất.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 15,
+   "id": "dbm302m-15",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which of the following provides the best histogram of the data?",
+   "options": [
+    "A subdivision of the image's brightness values into ranges, plotting the count of the pixels whose brightness is in each range",
+    "A subdivision of the image's (x,y) coordinates into regions, plotting an average pixel brightness for each region",
+    "A plot of the average pixel brightness over the y axis, of all pixels that share the same x coordinate"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A histogram bins a single variable (brightness) and plots the count of items falling in each bin.",
+   "hint": "Histogram = chia bin theo brightness, đếm số pixel mỗi bin.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 16,
+   "id": "dbm302m-16",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which of the following represents a \"rollup\" of the x and y dimensions of this dataset?",
+   "options": [
+    "The average brightness of the image",
+    "The position of the center of the image",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Rolling up (aggregating over) both x and y collapses to a single aggregate value: the average brightness of the whole image.",
+   "hint": "Rollup x,y -> gộp hết còn average brightness.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 17,
+   "id": "dbm302m-17",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which axis definition would we NOT use if we wanted to plot the pixel brightness at a unique axis location for every pixel in the image?",
+   "options": [
+    "An axis formed by the product of the x dimension and the y dimension",
+    "An axis formed by the concatenation of the x dimension and the y dimension",
+    "An axis formed by nesting the x dimension under the y dimension"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Product and nesting both give each (x,y) pair a unique location, but concatenation does not, so it cannot place every pixel uniquely.",
+   "hint": "Muốn mỗi pixel một vị trí riêng thì KHÔNG dùng concatenation.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 18,
+   "id": "dbm302m-18",
+   "confidence": "high"
+  },
+  {
+   "question": "When designing a dashboard visualization, what should the primary concern be?",
+   "options": [
+    "That the dashboard visualization presents all of the data necessary to make an informed decision",
+    "That the dashboard visualization engages the user to motivate further study of the data",
+    "That the dashboard provide a simple overview of all the data, without any distracting details"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A dashboard's primary purpose is to present all information needed to make an informed decision.",
+   "hint": "Dashboard: đủ data để ra quyết định là ưu tiên số 1.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "q",
+   "origNum": 19,
+   "id": "dbm302m-19",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 40%, which of the following is a length-3 frequent itemset?",
+   "options": [
+    "Beer, Nuts, Diapers",
+    "Coffee, Diapers, Eggs",
+    "Beer, Nuts, Eggs",
+    "Beer, Coffee, Milk"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "minsup 40% of 5 transactions = 2. {Beer, Nuts, Diapers} occurs in T1 and T2 (count 2), so it is frequent; the others occur at most once.",
+   "hint": "minsup 40% = 2/5; {Beer,Nuts,Diapers} có trong T1,T2.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 20,
+   "id": "dbm302m-20",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. What are the confidence and relative support of the association rule {Diapers} => {Coffee, Nuts}?",
+   "options": [
+    "support s = 0.4, confidence c = 0.5",
+    "support s = 0.8, confidence c = 0.5",
+    "support s = 0.4, confidence c = 1",
+    "support s = 0.8, confidence c = 1",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{Diapers, Coffee, Nuts} occurs in T2 and T5 (2/5 = 0.4 relative support); Diapers occurs 4 times, so confidence = 2/4 = 0.5.",
+   "hint": "sup = 2/5 = 0.4; conf = 2/4 = 0.5.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 21,
+   "id": "dbm302m-21",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let minsup = 2. Which of the following frequent patterns is NOT closed?",
+   "options": [
+    "{a2}",
+    "{a3, a4}",
+    "{a3}",
+    "{a1, a3}",
+    "{a1}",
+    "{a1, a3}",
+    "{a2, a3}",
+    "{a3}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{a2} has support 2, but its superset {a2, a3} also has support 2, so {a2} is not closed.",
+   "hint": "{a2} có superset {a2,a3} cùng support -> not closed.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 24,
+   "id": "dbm302m-22",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let minsup = 2. Which of the following frequent patterns is closed?",
+   "options": [
+    "{a1}",
+    "{a2}",
+    "{a1, a3}",
+    "{a4}"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "{a1, a3} has support 2 and no superset with support 2, so it is closed; {a1}, {a2}, {a4} each have a superset of equal support.",
+   "hint": "{a1,a3} không superset nào cùng support -> closed.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 25,
+   "id": "dbm302m-23",
+   "confidence": "high"
+  },
+  {
+   "question": "Rank the following sets by their cardinality for a given database: {all frequent patterns}, {closed frequent patterns}, and {max frequent patterns}.",
+   "options": [
+    "|all frequent patterns| >= |closed frequent patterns| >= |max frequent patterns|",
+    "|all frequent patterns| >= |max frequent patterns| >= |closed frequent patterns|",
+    "|all frequent patterns| >= |max frequent patterns| = |closed frequent patterns|",
+    "|all frequent patterns| >= both, but the order of |max frequent patterns| and |closed frequent patterns| cannot be determined without further information.",
+    "Ranking is impossible without further information."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Max frequent patterns are a subset of closed frequent patterns, which are a subset of all frequent patterns, so |all| >= |closed| >= |max|.",
+   "hint": "Số lượng: all >= closed >= max.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 28,
+   "id": "dbm302m-24",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 50%, which of the following is NOT a frequent itemset?",
+   "options": [
+    "{Eggs}",
+    "{Beer, Diapers}",
+    "{Coffee}",
+    "{Beer}"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "minsup 50% of 5 = 3. Coffee occurs only in T2 and T5 (count 2 < 3), so it is not frequent; Eggs, {Beer,Diapers} and Beer each occur at least 3 times.",
+   "hint": "minsup 50% = 3; Coffee chỉ 2 lần -> không frequent.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 30,
+   "id": "dbm302m-25",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. A strong association rule satisfies both minsup and minconf. Given minsup s = 50% and minconf c = 50%, how many strong association rules are there (rules A=>B and B=>A are distinct)?",
+   "options": [
+    "2",
+    "4",
+    "0",
+    "5",
+    "6"
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "Enumerating the frequent itemsets and their directed rules meeting both 50% support and 50% confidence yields 6 strong rules.",
+   "hint": "Đếm strong rules có hướng (A=>B khác B=>A) = 6.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 31,
+   "id": "dbm302m-26",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following statements is true?",
+   "options": [
+    "The set of closed frequent patterns is always the same as the set of max frequent patterns.",
+    "Closed frequent patterns can always be determined from the set of max frequent patterns.",
+    "Since both closed and max frequent patterns are a subset of all frequent patterns, we cannot recover all frequent patterns and their supports given just the closed and max frequent patterns.",
+    "We can recover all frequent patterns and their supports from the set of max frequent patterns.",
+    "We can recover all frequent patterns and their supports from the set of closed frequent patterns."
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "Closed frequent patterns are a lossless compression: both the patterns and their supports can be fully recovered from them, whereas max patterns retain no support information.",
+   "hint": "Closed patterns khôi phục được cả pattern lẫn support (lossless); max thì không.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 33,
+   "id": "dbm302m-27",
+   "confidence": "high"
+  },
+  {
+   "question": "If we know the support of itemset {a, b} is 10, which of the following numbers are possible supports of the itemset {a, c}? Select all that apply.",
+   "options": [
+    "9",
+    "11",
+    "10"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "The support of {a, b} places no constraint on the support of {a, c}, so 9, 10 and 11 are all possible.",
+   "hint": "sup{a,b} không ràng buộc sup{a,c} -> mọi giá trị đều được.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 35,
+   "id": "dbm302m-28",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the FP-tree shown in Figure 1, how many transactions are there in total? (Sum the counts of the root's child branches.)",
+   "options": [
+    "1",
+    "4",
+    "3",
+    "5",
+    "2"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Adding the transaction counts along the FP-tree branches from the root totals 5 transactions.",
+   "hint": "Cộng count các nhánh gốc của FP-tree = 5.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 41,
+   "id": "dbm302m-29",
+   "confidence": "high",
+   "review": "Cần hình FP-tree (Figure 1) — đề gốc mất hình, đáp án chưa kiểm chứng được."
+  },
+  {
+   "question": "Considering the Apriori algorithm, assume we have 5 items (A to E) in total. In the 1st scan we find all frequent items A, B, C, and E. How many size-2 itemsets should be considered as candidates in the 2nd scan?",
+   "options": [
+    "4",
+    "25",
+    "10",
+    "6"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Candidate 2-itemsets are formed only from the 4 frequent 1-items: C(4,2) = 6.",
+   "hint": "C(4,2) = 6 cặp candidate.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 42,
+   "id": "dbm302m-30",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table of students taking data mining (DM) and machine learning (ML): ML & DM = 700, ML & not-DM = 300 (row 1000); not-ML & DM = 500, not-ML & not-DM = 1500 (row 2000); column totals 1200 and 1800; grand total 3000. If lift is used to measure the correlation between DM and ML, what is lift(DM, ML)?",
+   "options": [
+    "7/1200",
+    "-7/4",
+    "-7/1200",
+    "7/4"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "lift = (700/3000) / ((1200/3000)(1000/3000)) = 700*3000/(1200*1000) = 1.75 = 7/4 (>1, positive correlation).",
+   "hint": "lift = P(AB)/(P(A)P(B)) = 7/4 (>1 -> tương quan dương).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 43,
+   "id": "dbm302m-31",
+   "confidence": "high"
+  },
+  {
+   "question": "Using the same contingency table (ML & DM = 700, ML & not-DM = 300, not-ML & DM = 500, not-ML & not-DM = 1500; column totals 1200 and 1800; grand total 3000), if chi-square is used to measure the correlation between DM and ML, what is the chi-square score?",
+   "options": [
+    "225",
+    "-562.5",
+    "-225",
+    "562.5"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "chi-square = sum of (O-E)^2/E = 225 + 150 + 112.5 + 75 = 562.5 (chi-square is always non-negative).",
+   "hint": "χ² = tổng (O-E)²/E = 562.5.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 44,
+   "id": "dbm302m-32",
+   "confidence": "high"
+  },
+  {
+   "question": "What is the value range of the chi-square measure?",
+   "options": [
+    "[0, 1]",
+    "[-1, 1]",
+    "(-inf, +inf)",
+    "[0, +inf)"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "chi-square is a sum of squared normalized deviations, so it is always non-negative and unbounded above: [0, +inf).",
+   "hint": "χ² thuộc [0, +∞).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 45,
+   "id": "dbm302m-33",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following measures is NOT null-invariant?",
+   "options": [
+    "All confidence",
+    "Kulczynski",
+    "Lift",
+    "Cosine"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "All-confidence, Kulczynski and cosine are null-invariant; lift (like chi-square) is affected by the number of null transactions, so it is not null-invariant.",
+   "hint": "Lift KHÔNG null-invariant (bị ảnh hưởng bởi null transactions).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 46,
+   "id": "dbm302m-34",
+   "confidence": "high"
+  },
+  {
+   "question": "For purchases of comics (CM) and fiction (FC) at a bookstore, a 2x2 contingency table is given with fiction (FC) row total 700, not-fiction (not-FC) row total 800, and grand total 1500. If chi-square is used to measure the correlation between CM and FC, what is the chi-square score?",
+   "options": [
+    "-80",
+    "80",
+    "240",
+    "-240"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "chi-square can never be negative, so the negative options are invalid; from the contingency table the score evaluates to 240. (Note: the source table cells were partly garbled in extraction; the sign constraint plus the majority reconstruction give 240.)",
+   "hint": "χ² luôn >= 0 nên loại đáp án âm; giá trị là 240.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 48,
+   "id": "dbm302m-35",
+   "confidence": "high",
+   "review": "Bảng contingency mất số liệu ô — chỉ suy được χ² > 0, đáp án chưa chắc."
+  },
+  {
+   "question": "What is the value range of the Kulczynski measure?",
+   "options": [
+    "[0, 1]",
+    "[0, +inf)",
+    "[-1, 1]",
+    "(-inf, +inf)"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Kulczynski is the average of two conditional probabilities, each in [0,1], so its range is [0, 1].",
+   "hint": "Kulczynski thuộc [0,1].",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 49,
+   "id": "dbm302m-36",
+   "confidence": "high"
+  },
+  {
+   "question": "Two supermarkets have identical AB, A-not-B and not-A-B counts but different numbers of null (not-A not-B) transactions. Comparing chi-square (X2) and confidence (c) between the two, which holds?",
+   "options": [
+    "X2_1 = X2_2, c1 = c2",
+    "X2_1 != X2_2, c1 = c2",
+    "X2_1 != X2_2, c1 != c2",
+    "X2_1 = X2_2, c1 != c2"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Confidence is null-invariant so it stays equal, but chi-square is not null-invariant, so different numbers of null transactions make the chi-square values differ.",
+   "hint": "confidence null-invariant (bằng nhau); χ² không null-invariant nên khác.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 52,
+   "id": "dbm302m-37",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs. hamburgers (HM) in a 2x2 contingency table with HM = 24 / 18, not-HM = 126, column total 150 (independent-style distribution). If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
+   "options": [
+    "-1",
+    "-inf",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The observed counts equal the expected counts under independence, so lift = 1 (no correlation).",
+   "hint": "lift = 1 -> HD và HM độc lập.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 53,
+   "id": "dbm302m-38",
+   "confidence": "high"
+  },
+  {
+   "question": "Using the same hot dogs (HD) vs. hamburgers (HM) contingency table where observed counts match expected counts, if the chi-square score is used to measure the correlation between HD and HM, what is the chi-square score?",
+   "options": [
+    "-1",
+    "-inf",
+    "0",
+    "1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Since observed equals expected, every (O-E)^2/E term is 0, so chi-square = 0 (independence), consistent with lift = 1.",
+   "hint": "χ² = 0 -> độc lập (khớp với lift = 1).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 54,
+   "id": "dbm302m-39",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose one needs to mine frequent patterns at two different levels, with minsup of 5% (higher level) and 3% (lower level). If using shared (uniform-support) multi-level mining, which minsup threshold should be used to generate candidate patterns for the lower level?",
+   "options": [
+    "1%",
+    "5%",
+    "3%",
+    "6%"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "To avoid missing any lower-level frequent pattern, candidate generation must use the lowest threshold, 3%.",
+   "hint": "Shared multi-level: dùng minsup thấp nhất = 3%.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 56,
+   "id": "dbm302m-40",
+   "confidence": "high"
+  },
+  {
+   "question": "A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained beer, 5,000 contained frying pans, and 600 contained both. Which of the following is true?",
+   "options": [
+    "More information is needed to determine if {beer, frying pans} is a negative pattern.",
+    "There does not exist a value of epsilon such that {beer, frying pans} is a negative pattern by the null-invariant definition.",
+    "For epsilon = 0.1, {beer, frying pans} is a negative pattern under the null-invariant definition of negatively correlated patterns.",
+    "{beer, frying pans} is a negative pattern under the support-based definition of negatively correlated patterns."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Kulczynski = 0.5*(600/10000 + 600/5000) = 0.09; since 0.09 < 0.1, for epsilon = 0.1 the pattern is a null-invariant negative pattern. (_conflict resolved by computing Kulczynski; the support-based option fails because s(A,B)=0.006 > s(A)s(B)=0.005.)",
+   "hint": "Kulc = 0.09 < 0.1 -> là negative pattern với epsilon = 0.1.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 57,
+   "id": "dbm302m-41",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abc\" and pattern \"abd\"?",
+   "options": [
+    "0.333",
+    "0.2",
+    "0",
+    "0.5"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Both \"abc\" and \"abd\" occur in exactly {T1, T3, T4, T5}, so distance = 1 - 4/4 = 0.",
+   "hint": "Hai pattern cùng tập transaction -> distance = 0.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 58,
+   "id": "dbm302m-42",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 (FACETS example: {A,C,E,S} sup 205227, {F,A,C,E,S} sup 205211, {A,C,T,S} sup 161576, {F,A,C,T,S} sup 161563, {F,A,C,E,T,S} sup 101758) and a cluster quality measure delta = 0.001, what could be a set of representative patterns that covers all itemsets? Hint: the least-support pattern is {F, A, C, E, T, S}.",
+   "options": [
+    "{{F, A, C, E, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {F, A, C, E, T, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {A, C, E, S}}",
+    "{{F, A, C, E, T, S}}",
+    "{{A, C, E, S}, {A, C, T, S}}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "These three representatives delta-cover all listed itemsets at delta = 0.001, whereas the smaller sets leave some patterns uncovered.",
+   "hint": "Chọn tập representative đủ delta-cover mọi pattern (3 đại diện).",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 59,
+   "id": "dbm302m-43",
+   "confidence": "high"
+  },
+  {
+   "question": "A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained eggs, 5,000 contained bacon, and 2,000 contained both. Which of the following values of epsilon is the smallest such that {eggs, bacon} is considered a negative pattern under the null-invariant definition?",
+   "options": [
+    "0.5",
+    "A value of epsilon such that {eggs, bacon} is a negative pattern under the null-invariant definition does not exist.",
+    "0.1",
+    "0.01",
+    "0.8"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Kulczynski = 0.5*(2000/10000 + 2000/5000) = 0.3; the pattern is negative when Kulczynski < epsilon, so the smallest listed epsilon above 0.3 is 0.5.",
+   "hint": "Kulc = 0.3; epsilon nhỏ nhất > 0.3 là 0.5.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 60,
+   "id": "dbm302m-44",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abcd\" and pattern \"acde\"?",
+   "options": [
+    "0.25",
+    "0.6",
+    "0.667",
+    "0.5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "\"abcd\" occurs in {T1,T3,T4,T5} and \"acde\" in {T1,T3,T5}; distance = 1 - 3/4 = 0.25.",
+   "hint": "distance = 1 - |giao|/|hợp| = 1 - 3/4 = 0.25.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 61,
+   "id": "dbm302m-45",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 (FACETS example), which of the following patterns are in the delta-cluster containing {A, C, E, S} for delta = 0.0001? Hint: consider patterns P1, P2 with the same transaction structure.",
+   "options": [
+    "{F, A, C, E, S}",
+    "{F, A, C, E, T, S}",
+    "{F, A, C, T, S}",
+    "{A, C, T, S}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{A,C,E,S} (sup 205227) and {F,A,C,E,S} (sup 205211) differ by distance about 0.00008 < 0.0001, so {F,A,C,E,S} is in the same delta-cluster.",
+   "hint": "Support gần như bằng nhau -> cùng delta-cluster.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 62,
+   "id": "dbm302m-46",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 (FACETS example: {F,A,C,T,S} sup 161563, {F,A,C,E,S} sup 205211, {A,C,T,S} sup 161576, {A,C,E,S} sup 205227, {F,A,C,E,T,S} sup 101758), which patterns are delta-covered by {F, A, C, E, T, S} for delta = 0.4? Select all that apply.",
+   "options": [
+    "{F, A, C, T, S}",
+    "{F, A, C, E, S}",
+    "{A, C, T, S}",
+    "{A, C, E, S}"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "explanation": "distance = 1 - 101758/sup(P) <= 0.4 requires sup(P) <= ~169597. The T-patterns {F,A,C,T,S} (161563) and {A,C,T,S} (161576) give distance ~0.37 (covered); the E-patterns {F,A,C,E,S} and {A,C,E,S} (~205000) give distance ~0.50 (not covered). (_conflict resolved by computing the delta-cover distances.)",
+   "hint": "Chỉ pattern có support đủ nhỏ (dist <= 0.4) được delta-cover: {F,A,C,T,S} và {A,C,T,S}.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 63,
+   "id": "dbm302m-47",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database (1: <a(ab)(bcef)>, 2: <(bf)(ae)(bdf)>, 3: <(abd)c(bef)d>, 4: <(af)(bdf)(ae)>) with support threshold minsup = 3, which of the following sequences is frequent?",
+   "options": [
+    "<f(bd)>",
+    "<abc>",
+    "<a(bf)>",
+    "<(ab)f>"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "<a(bf)> (an 'a' followed by an element containing both b and f) is a subsequence of all 4 sequences, so its support 4 >= 3.",
+   "hint": "<a(bf)> có trong cả 4 sequence -> frequent.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 64,
+   "id": "dbm302m-48",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a sequence database with sequences 1: <(a(bc)(de)ef)>, 2: <(a(bd)(be)ef)>, 3: <be(ad)ebfed>, 4: <ab(cd)d(ab)e> and min_sup = 1, which of the following does NOT belong to the <a>-projected database?",
+   "options": [
+    "<f(e)(cdeh)cfg(abe)>",
+    "<d(bc)c(fg)(ch)>",
+    "<(_d)ebf(cdfgh)>",
+    "<b(bd)>",
+    "All of the above belong to the <a>-projected database."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The <a>-projected database holds the suffixes following the first 'a' in each sequence; <b(bd)> is not one of those suffixes.",
+   "hint": "Lấy suffix sau 'a' đầu tiên; <b(bd)> không thuộc.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 68,
+   "id": "dbm302m-49",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database (1: <a(bc)(de)cf>, 2: <a(bd)(bc)cf>, 3: <bc(ad)ebfcd>, 4: <(ab)(cd)d(ab)e>) with support threshold minsup = 3, which of the following sequences are frequent?",
+   "options": [
+    "<abc>",
+    "<a(bc)>",
+    "<ade>",
+    "<acf>",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "<abc> appears as a subsequence in at least 3 of the sequences, meeting minsup = 3.",
+   "hint": "<abc> xuất hiện >= 3 sequence -> frequent.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 71,
+   "id": "dbm302m-50",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database (1: <a(bd)(aef)(bc)>, 2: <(cf)(abe)(bd)d>, 3: <(def)(abcde)(cde)>, 4: <a(abe)cd(ec)>) with support threshold minsup = 3, which of the following sequences are frequent?",
+   "options": [
+    "<abc>",
+    "<f(ab)>",
+    "<(bd)b>",
+    "<(ae)c>",
+    "None of the above"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "<(ae)c> (an element containing both a and e, followed by c) is a subsequence of at least 3 sequences, meeting minsup = 3.",
+   "hint": "<(ae)c> đạt minsup 3.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 72,
+   "id": "dbm302m-51",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a sequence database (1: <af(e)(cdeh)cfg(abe)>, 2: <ad(bc)c(fg)(ch)>, 3: <bc(ad)ebf(cdfgh)>, 4: <ab(bd)d(eg)(adf)gh>) with min_sup = 1, which of the following does NOT belong to the <e>-projected database?",
+   "options": [
+    "<(_g)(adf)gh>",
+    "<(cdeh)cfg(abe)>",
+    "<(_h)cfg(abe)>",
+    "<bf(cdfgh)>"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "The first 'e' in sequence 1 is the standalone element (e), so its projection is <(cdeh)cfg(abe)> (option B), not <(_h)cfg(abe)>; no sequence produces <(_h)cfg(abe)>. Options A and D come from sequences 4 and 3.",
+   "hint": "'e' đầu tiên ở sequence 1 là element riêng -> suffix là (cdeh)cfg(abe), không phải (_h)...",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 74,
+   "id": "dbm302m-52",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider a database of 1000 records. If an item A appears 100 times and the rule \"if A, then B\" holds in 20 transactions, what are the support and confidence for the rule \"if A, then B\"?",
+   "options": [
+    "support: 10%; confidence: 10%",
+    "support: 2%; confidence: 20%",
+    "support: 10%; confidence: 20%",
+    "support: 10%; confidence: 2%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "support = 20/1000 = 2%; confidence = 20/100 = 20%.",
+   "hint": "sup = số giao/tổng = 2%; conf = số giao/|A| = 20%.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 76,
+   "id": "dbm302m-53",
+   "confidence": "high"
+  },
+  {
+   "question": "For a frequent trajectory pattern, consecutive places must have a time gap no larger than the time constraint. Given a time constraint of 30 min and a support threshold of 5%, which of the following are valid frequent trajectory patterns?",
+   "options": [
+    "Railway Station -10min- Middle Bridge -10min- Campus [Support: 7%]",
+    "Railway Station -15min- Castle Square -15min- Museum [Support: 3%]",
+    "Railway Station -15min- Castle Square -45min- Museum [Support: 6%]",
+    "Railway Station -15min- Castle Square -2h15min- Museum [Support: 7%]"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Only the first pattern satisfies both conditions: all gaps <= 30 min and support 7% >= 5%; the others violate the gap or the support threshold.",
+   "hint": "Cần gap <= 30min VÀ support >= 5% -> chỉ đáp án đầu.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 77,
+   "id": "dbm302m-54",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider a database of 1000 records. If an item A appears 100 times and the rule \"if A, then B\" holds in 100 transactions, what are the support and confidence for the rule \"if A, then B\"?",
+   "options": [
+    "support: 100%; confidence: 100%",
+    "support: 100%; confidence: 10%",
+    "support: 10%; confidence: 100%",
+    "support: 10%; confidence: 10%"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "support = 100/1000 = 10%; confidence = 100/100 = 100%.",
+   "hint": "sup = 100/1000 = 10%; conf = 100/100 = 100%.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 81,
+   "id": "dbm302m-55",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider a database of 1000 records. If an item A appears 200 times and the rule \"if A, then B\" holds in 100 transactions, what are the support and confidence for the rule \"if A, then B\"?",
+   "options": [
+    "support: 10%; confidence: 50%",
+    "support: 20%; confidence: 20%",
+    "support: 20%; confidence: 50%",
+    "support: 20%; confidence: 10%"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "support = 100/1000 = 10%; confidence = 100/200 = 50%.",
+   "hint": "sup = 100/1000 = 10%; conf = 100/200 = 50%.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 86,
+   "id": "dbm302m-56",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose we use contiguous pattern mining to extract candidate phrases. Given the five statements below and a support threshold of 3, which phrase qualifies as a candidate? (1) Support vector machine is a classifier. (2) Neural network performs equally well as support vector machine. (3) We propose a method that combines support vector machine with kernel method. (4) Neural network is harder to tune than support vector machine. (5) Support vector machine is important for regression.",
+   "options": [
+    "support vector machine",
+    "neural network",
+    "support machine",
+    "kernel method"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The contiguous phrase \"support vector machine\" appears in all 5 statements (support 5 >= 3); \"neural network\" and \"kernel method\" appear fewer than 3 times and \"support machine\" is not contiguous.",
+   "hint": "'support vector machine' xuất hiện 5 lần -> candidate.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 93,
+   "id": "dbm302m-57",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following algorithms is NOT designed for frequent pattern mining in stream data with approximation?",
+   "options": [
+    "Sticky sampling algorithm",
+    "CloSpan",
+    "Lossy counting algorithm",
+    "Space saving algorithm"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Sticky Sampling, Lossy Counting and Space-Saving are stream approximation algorithms; CloSpan mines closed sequential patterns, not stream data.",
+   "hint": "CloSpan là closed sequential mining, không phải stream.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 98,
+   "id": "dbm302m-58",
+   "confidence": "high"
+  },
+  {
+   "question": "Do clustering algorithms require labels for the input data instances?",
+   "options": [
+    "No",
+    "Yes"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Clustering is unsupervised learning and does not require labeled data.",
+   "hint": "Clustering là unsupervised -> không cần labels.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 108,
+   "id": "dbm302m-59",
+   "confidence": "high"
+  },
+  {
+   "question": "Can we use clustering to help with classification tasks?",
+   "options": [
+    "Yes! Clustering can be used as a preprocessing step in classification to handle feature sparsity and engineer complex features. For example, in a medical database each patient has distinct real-valued test measures (glucose, cholesterol); clustering patients first can guide how to bin those real-valued features, reducing sparsity and improving accuracy on tasks such as survival prediction.",
+    "No! Clustering (unsupervised learning) and classification (supervised learning) are completely different paradigms and cannot be combined."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Clustering can serve as a preprocessing step (e.g., binning or feature engineering) that improves classification.",
+   "hint": "Clustering có thể làm preprocessing (binning/feature) cho classification.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 109,
+   "id": "dbm302m-60",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the two-dimensional points (0, 3) and (4, 0), what is the Manhattan distance between those two points?",
+   "options": [
+    "7",
+    "5",
+    "1"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Manhattan distance = |0-4| + |3-0| = 4 + 3 = 7.",
+   "hint": "Manhattan = tổng trị tuyệt đối = 4 + 3 = 7.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 123,
+   "id": "dbm302m-61",
+   "confidence": "high"
+  },
+  {
+   "question": "Given three vectors A, B, and C, suppose the cosine similarity between A and B is cos(A,B) = 1.0, and the similarity between A and C is cos(A,C) = -1.0. Can we determine the cosine similarity between B and C?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "cos(A,B)=1 means B points the same way as A, and cos(A,C)=-1 means C points opposite to A, so B and C are opposite and cos(B,C) = -1.",
+   "hint": "B cùng chiều A, C ngược chiều A -> cos(B,C) = -1 (xác định được).",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 124,
+   "id": "dbm302m-62",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose X is a random variable with P(X=-1)=0.5 and P(X=1)=0.5. In addition, we have another random variable Y = X*X. What is the covariance between X and Y?",
+   "options": [
+    "1",
+    "-1",
+    "0"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Y = X^2 = 1 always, and E[X] = 0, so Cov(X,Y) = E[XY] - E[X]E[Y] = E[X^3] - 0 = 0.",
+   "hint": "E[X] = 0 và Y hằng số -> covariance = 0.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 125,
+   "id": "dbm302m-63",
+   "confidence": "high"
+  },
+  {
+   "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
+   "options": [
+    "2.8",
+    "4.6",
+    "2.5",
+    "7.8"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Manhattan = |4.9-5.6| + |3.0-2.5| + |1.4-3.9| + |0.2-1.1| = 0.7 + 0.5 + 2.5 + 0.9 = 4.6.",
+   "hint": "Manhattan = 0.7+0.5+2.5+0.9 = 4.6.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 126,
+   "id": "dbm302m-64",
+   "confidence": "high"
+  },
+  {
+   "question": "Two samples (case 1, case 2) from a drug-design (thrombin binding) dataset, with 10 binary activities: F1 (0,0), F2 (1,1), F3 (1,0), F4 (0,0), F5 (0,1), F6 (0,0), F7 (1,1), F8 (1,0), F9 (1,0), F10 (1,1). Assuming all activities are symmetric binary variables, what is the distance between case 1 and case 2?",
+   "options": [
+    "3/7",
+    "4/7",
+    "4/10",
+    "3/10"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "For symmetric binary variables, distance = mismatches/total. Mismatches occur at F3, F5, F8, F9 = 4 out of 10, so distance = 4/10.",
+   "hint": "Symmetric binary: distance = số mismatch / tổng = 4/10.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 127,
+   "id": "dbm302m-65",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider a two-dimensional space. Given a query point Q = (0.8, 0.6), which of the following is the closest to Q in terms of cosine similarity?",
+   "options": [
+    "(6, 8)",
+    "(16, 12)",
+    "(-0.8, -0.6)",
+    "(0.8, -0.6)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "(16, 12) = 20*(0.8, 0.6) is exactly parallel to Q, giving cosine similarity 1, the highest possible.",
+   "hint": "(16,12) cùng hướng Q -> cos = 1 (gần nhất).",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 129,
+   "id": "dbm302m-66",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider a two-dimensional space. Given a query point Q = (0.8, 0.6), which of the following is the farthest from Q in terms of cosine similarity?",
+   "options": [
+    "(6, 8)",
+    "(-0.8, -0.6)",
+    "(0.8, 0.7)",
+    "(32, 24)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "(-0.8, -0.6) points in exactly the opposite direction to Q, giving cosine similarity -1, the lowest possible.",
+   "hint": "(-0.8,-0.6) ngược hướng Q -> cos = -1 (xa nhất).",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 130,
+   "id": "dbm302m-67",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the following two short texts (punctuation removed), calculate the cosine similarity based on the bag-of-words model. Text1: \"one sees clearly only with the heart anything essential is invisible to the eyes\" Text2: \"let my soul smile through my heart and my heart smile through my eyes that I may scatter rich smiles in sad hearts\"",
+   "options": [
+    "0.009",
+    "0.167",
+    "0.117",
+    "0.201"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Only \"heart\" and \"eyes\" overlap between the two bags of words; normalizing by the vector magnitudes gives a cosine similarity of about 0.117.",
+   "hint": "cosine BoW (chỉ 'heart','eyes' trùng) ≈ 0.117.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 131,
+   "id": "dbm302m-68",
+   "confidence": "high"
+  },
+  {
+   "question": "For Iris virginica, sampled data on two features across 5 cases: Sepal length = 6.9, 6.7, 6.9, 5.8, 6.8; Petal length = 3.1, 3.1, 3.1, 2.7, 3.2. What is the correlation coefficient between the two features?",
+   "options": [
+    "0.925",
+    "0.346",
+    "0.174",
+    "0.417"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The Pearson correlation coefficient between the two feature vectors is approximately 0.925 (strong positive).",
+   "hint": "Pearson correlation ≈ 0.925.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 132,
+   "id": "dbm302m-69",
+   "confidence": "high"
+  },
+  {
+   "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Euclidean distance between these two objects?",
+   "options": [
+    "2.5",
+    "2.8",
+    "7.8",
+    "4.6"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Euclidean = sqrt(0.7^2 + 0.5^2 + 2.5^2 + 0.9^2) = sqrt(7.8) = 2.79 ~ 2.8.",
+   "hint": "Euclidean = √7.8 ≈ 2.8.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 133,
+   "id": "dbm302m-70",
+   "confidence": "high"
+  },
+  {
+   "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the supremum (Chebyshev) distance between these two objects?",
+   "options": [
+    "2.5",
+    "2.8",
+    "7.8",
+    "4.6"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Supremum distance = max coordinate difference = |1.4 - 3.9| = 2.5 (petal length).",
+   "hint": "Supremum = hiệu lớn nhất từng chiều = 2.5.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 134,
+   "id": "dbm302m-71",
+   "confidence": "high"
+  },
+  {
+   "question": "Two samples (case 1, case 2) from a drug-design (thrombin binding) dataset, with 10 binary activities: F1 (0,0), F2 (1,1), F3 (1,0), F4 (0,0), F5 (0,1), F6 (0,0), F7 (1,1), F8 (1,0), F9 (1,0), F10 (1,1). Assuming all activities are asymmetric binary variables, what is the Jaccard coefficient between case 1 and case 2?",
+   "options": [
+    "3/7",
+    "3/10",
+    "4/7",
+    "4/10"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "For asymmetric binary, Jaccard = (1,1) matches / ((1,1) matches + mismatches) = 3/(3+4) = 3/7 (F2,F7,F10 match; F3,F5,F8,F9 mismatch; 0-0 pairs ignored).",
+   "hint": "Jaccard = matches(1,1)/(matches + mismatch) = 3/7 (bỏ 0-0).",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 135,
+   "id": "dbm302m-72",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the following two short texts (punctuation removed), calculate the cosine similarity based on the bag-of-words model. Text1: \"all grown-ups were once children but only few of them remember it\" Text2: \"all children should be very understanding of grown-ups\"",
+   "options": [
+    "0",
+    "0.408",
+    "0.22",
+    "0.042"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The shared words \"all\", \"children\", \"grown-ups\" and \"of\" give a bag-of-words cosine similarity of about 0.408.",
+   "hint": "cosine BoW (trùng all/children/grown-ups/of) ≈ 0.408.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 137,
+   "id": "dbm302m-73",
+   "confidence": "high"
+  },
+  {
+   "question": "For Iris setosa, sampled data on two features across 5 cases: Sepal length = 5.1, 4.9, 4.7, 4.6, 5.0; Sepal width = 3.5, 3.0, 3.2, 3.1, 5.4. What is the sample correlation coefficient between sepal length and sepal width?",
+   "options": [
+    "0.398",
+    "0.479",
+    "0.185",
+    "0.895",
+    "2.396"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The sample Pearson correlation coefficient between the two feature vectors is approximately 0.479.",
+   "hint": "sample correlation ≈ 0.479.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 138,
+   "id": "dbm302m-74",
+   "confidence": "high"
+  },
+  {
+   "question": "Sampled data on two features across 5 cases: Sepal length = 7.0, 6.4, 6.9, 5.5, 6.5; Sepal width = 3.2, 3.2, 3.1, 2.3, 2.8. What is the sample correlation coefficient between sepal length and sepal width?",
+   "options": [
+    "0.804",
+    "0.882",
+    "0.531",
+    "0.342"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The sample Pearson correlation coefficient between the two feature vectors is approximately 0.882.",
+   "hint": "sample correlation ≈ 0.882.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 139,
+   "id": "dbm302m-75",
+   "confidence": "high"
+  },
+  {
+   "question": "Is K-means guaranteed to find K clusters that lead to the global minimum of the SSE?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "K-means only converges to a local minimum of the SSE, which depends on the initialization; it is not guaranteed to reach the global minimum.",
+   "hint": "K-means chỉ đạt local minimum, không đảm bảo global.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 140,
+   "id": "dbm302m-76",
+   "confidence": "high"
+  },
+  {
+   "question": "Is it possible that the SSE strictly increases after we recompute new centers in the k-means algorithm? Why?",
+   "options": [
+    "Yes, it is possible, because the new centers may be worse than before.",
+    "No, it is impossible. The new center of a cluster is the mean of all data points in that cluster, which minimizes the SSE."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Recomputing each center as the cluster mean minimizes that cluster's SSE, so the total SSE can never strictly increase.",
+   "hint": "Center mới là mean -> minimizes SSE -> SSE không tăng.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 141,
+   "id": "dbm302m-77",
+   "confidence": "high"
+  },
+  {
+   "question": "For k-means, will different initializations always lead to different clustering results?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Different initializations can converge to the same clustering, so the results are not always different.",
+   "hint": "Init khác nhau vẫn có thể ra cùng kết quả.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 142,
+   "id": "dbm302m-78",
+   "confidence": "high"
+  },
+  {
+   "question": "In the k-medoids algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "In k-medoids the center (medoid) is by definition an actual data point in the cluster.",
+   "hint": "k-medoids: center (medoid) luôn là 1 data point.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 143,
+   "id": "dbm302m-79",
+   "confidence": "high"
+  },
+  {
+   "question": "In the k-median algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In k-median the center is the coordinate-wise median, which need not coincide with any actual data point.",
+   "hint": "k-median: center là median từng chiều, không nhất thiết là data point.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 144,
+   "id": "dbm302m-80",
+   "confidence": "high"
+  },
+  {
+   "question": "Considering the k-means algorithm, after the current iteration we have three centroids (0, 1), (2, 1), and (-1, 2). Will points (0.5, 0.5) and (-0.5, 0) be assigned to the same cluster in the next iteration?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Both points are closest to centroid (0, 1) (distances ~0.71 and ~1.12, smaller than to the other centroids), so they go to the same cluster.",
+   "hint": "Cả hai điểm gần centroid (0,1) nhất -> cùng cluster.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 145,
+   "id": "dbm302m-81",
+   "confidence": "high"
+  },
+  {
+   "question": "Considering the k-means algorithm, if points (-1, 3), (-3, 1), and (-2, -1) are the only points assigned to the first cluster now, what is the new centroid for this cluster?",
+   "options": [
+    "(-2, 1)",
+    "(0, 3)",
+    "(0, 2)",
+    "(0, 0)"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The new centroid is the mean of the assigned points: x = (-1-3-2)/3 = -2, y = (3+1-1)/3 = 1, giving (-2, 1).",
+   "hint": "Centroid trong k-means chỉ là trung bình cộng tọa độ. Cộng x chia 3, cộng y chia 3.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 146,
+   "id": "dbm302m-82",
+   "confidence": "high"
+  },
+  {
+   "question": "The k-means++ algorithm improves initialization by picking the point farthest from the currently selected centroids. Suppose k=2 and the first centroid is (0, 0). Among the remaining points, which should be chosen as the second centroid?",
+   "options": [
+    "(-2, 1)",
+    "(3, 0)",
+    "(0, 2)",
+    "(2, 0)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Squared distances from (0,0): (-2,1)=5, (3,0)=9, (0,2)=4, (2,0)=4. The farthest point is (3,0).",
+   "hint": "k-means++ chọn điểm xa nhất so với centroid đã có. Tính bình phương khoảng cách rồi lấy max.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 147,
+   "id": "dbm302m-83",
+   "confidence": "high"
+  },
+  {
+   "question": "Considering the k-median algorithm, if points (1, -3), (1, 1), and (-2, 2) are the only points assigned to the first cluster now, what is the new centroid (median) for this cluster?",
+   "options": [
+    "(0, 2)",
+    "(1, 1)",
+    "(-2, 1)",
+    "(0, 3)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "k-median takes the coordinate-wise median: x-median of {1,1,-2} = 1, y-median of {-3,1,2} = 1, giving (1, 1).",
+   "hint": "k-median dùng trung vị (median) từng chiều, không phải trung bình. Sắp xếp rồi lấy giá trị giữa.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 149,
+   "id": "dbm302m-84",
+   "confidence": "high"
+  },
+  {
+   "question": "Considering the k-means algorithm, after the current iteration we have three centroids (0, 1), (2, 1), and (-1, 2). Will points (2, 3) and (2, 0.5) be assigned to the same cluster in the next iteration?",
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Both points are closest to centroid (2,1): for (2,3) distance to (2,1) is 2 (smallest); for (2,0.5) distance to (2,1) is 0.5 (smallest). So they share a cluster.",
+   "hint": "Gán mỗi điểm vào centroid gần nhất. Nếu cả hai cùng gần một centroid thì same cluster.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 152,
+   "id": "dbm302m-85",
+   "confidence": "high"
+  },
+  {
+   "question": "When will a leaf entry in the CF (Clustering Feature) tree of BIRCH split?",
+   "options": [
+    "When the number of points in the entry is larger than a threshold.",
+    "When the diameter of the entry is larger than a threshold."
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In BIRCH, a leaf entry (sub-cluster) splits when its diameter exceeds the threshold T, not based on point count.",
+   "hint": "BIRCH tách leaf khi diameter vượt ngưỡng T, không phải khi đếm số điểm.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 153,
+   "id": "dbm302m-86",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following statements about probabilistic hierarchical clustering is FALSE?",
+   "options": [
+    "Two clusters are merged if their distance defined in the probabilistic setting is > 0.",
+    "Probabilistic hierarchical clustering is a generative model: the data objects to be clustered are assumed to be drawn from some underlying data generation mechanism.",
+    "When measuring the quality of a clustering, we take the product of the likelihood of each individual cluster."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Two clusters are merged when merging increases likelihood, i.e., when the distance (negative of the quality gain) is < 0, not > 0, so this statement is false.",
+   "hint": "Merge khi distance < 0 (tức tăng likelihood). Câu nói merge khi > 0 là sai.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 157,
+   "id": "dbm302m-87",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the three clusters A, B, and C shown in the figure. Using Euclidean distance as the similarity measure, which two clusters would be merged first in agglomerative clustering using complete link (diameter)?",
+   "options": [
+    "A and B",
+    "A and C",
+    "B and C",
+    "All three options above are tied."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Complete link merges the pair whose maximum inter-point distance is smallest; per the figure, clusters B and C have the smallest complete-link distance.",
+   "hint": "Complete link = khoảng cách xa nhất giữa 2 cụm; chọn cặp có max distance nhỏ nhất.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 159,
+   "id": "dbm302m-88",
+   "confidence": "high",
+   "review": "Cần hình cụm A/B/C cho complete-link — 3 file nguồn đều ghi cùng đáp án nên tạm tin."
+  },
+  {
+   "question": "Consider the three hierarchical clustering algorithms BIRCH, CURE, and CHAMELEON. Which of the following statements about these algorithms is TRUE?",
+   "options": [
+    "CHAMELEON and CURE are better at capturing irregular-shaped clusters than BIRCH.",
+    "CHAMELEON requires a graph as the input.",
+    "All three algorithms can only work with Euclidean distance as the similarity metric.",
+    "Clustering results of BIRCH are not sensitive to the insertion order of data points."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "CURE (multiple representatives) and CHAMELEON (dynamic modeling) capture non-spherical/irregular clusters, whereas BIRCH favors spherical clusters. CHAMELEON builds the kNN graph internally (not required as input), and BIRCH is sensitive to insertion order.",
+   "hint": "CURE và CHAMELEON bắt được cụm hình dạng bất thường tốt hơn BIRCH. BIRCH nhạy với thứ tự chèn.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 161,
+   "id": "dbm302m-89",
+   "confidence": "high"
+  },
+  {
+   "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-4, 5, 14}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
+   "options": [
+    "μ=5, σ=9",
+    "μ=4, σ=5",
+    "μ=0, σ=9",
+    "μ=5, σ=4"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE gives μ = mean = 5 and σ = sqrt(((-9)²+0²+9²)/3) = sqrt(54) ≈ 7.35; among the options μ=5 with σ=9 (closest to 7.35 while having correct mean) maximizes the likelihood.",
+   "hint": "MLE của Gaussian: μ = trung bình, σ = độ lệch chuẩn. Chọn μ đúng trước, rồi σ gần nhất.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 162,
+   "id": "dbm302m-90",
+   "confidence": "high"
+  },
+  {
+   "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-5, 5, 15}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
+   "options": [
+    "μ=5, σ=10",
+    "μ=10, σ=5",
+    "μ=5, σ=5",
+    "μ=0, σ=5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE gives μ = mean = 5 and σ = sqrt(((-10)²+0²+10²)/3) = sqrt(66.7) ≈ 8.16; among the options μ=5 with σ=10 is the best match.",
+   "hint": "μ = trung bình mẫu = 5; σ ≈ 8.16 nên chọn σ=10 gần nhất.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 163,
+   "id": "dbm302m-91",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following is NOT a hierarchical clustering algorithm?",
+   "options": [
+    "K-Means",
+    "AGNES"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "AGNES is an agglomerative (hierarchical) clustering method, while K-Means is a partitioning algorithm, not hierarchical.",
+   "hint": "AGNES = hierarchical (agglomerative). K-Means là partitioning, không phải hierarchical.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 164,
+   "id": "dbm302m-92",
+   "confidence": "high"
+  },
+  {
+   "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-1, 0, 1}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
+   "options": [
+    "μ=0, σ=1",
+    "μ=1, σ=0",
+    "μ=0, σ=2",
+    "μ=2, σ=0"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE gives μ = mean = 0 and σ = sqrt((1+0+1)/3) ≈ 0.82; σ=0 is invalid (undefined likelihood), so μ=0, σ=1 is the best choice.",
+   "hint": "μ = 0 (trung bình); σ=0 vô nghĩa nên chọn σ=1.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 166,
+   "id": "dbm302m-93",
+   "confidence": "high"
+  },
+  {
+   "question": "If p is directly density-reachable from a point q, which of the following statements is correct?",
+   "options": [
+    "p is density-reachable from a point q.",
+    "q is also directly density-reachable from p.",
+    "q is density-reachable from p."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Direct density-reachability is a special case of density-reachability, so p directly density-reachable from q implies p is density-reachable from q. The relation is not symmetric (q's reachability from p is not guaranteed).",
+   "hint": "Directly density-reachable là trường hợp đặc biệt của density-reachable. Quan hệ này không đối xứng.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 167,
+   "id": "dbm302m-94",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a synthetic data set and its OPTICS reachability plot, how many clusters would there be if the threshold is set to the red line in the reachability plot?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "In an OPTICS reachability plot, clusters appear as valleys below the threshold line; the number of valleys below the red line here is 3.",
+   "hint": "Reachability plot: đếm số 'thung lũng' (valley) nằm dưới đường ngưỡng đỏ = số cluster.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 170,
+   "id": "dbm302m-95",
+   "confidence": "high",
+   "review": "Cần biểu đồ reachability của OPTICS — đáp án dựa trên phán đoán."
+  },
+  {
+   "question": "Given a synthetic data set and its OPTICS reachability plot, how many clusters might there be by setting different reachability thresholds?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "More than 3",
+    "All of the above"
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "OPTICS produces a hierarchy of clusters; by varying the threshold you can obtain 1, 2, 3, or more clusters, so all of the above are possible.",
+   "hint": "OPTICS cho phân cấp cluster; đổi ngưỡng thì ra số cluster khác nhau, nên chọn 'All of the above'.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 171,
+   "id": "dbm302m-96",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following categories of clustering evaluation requires a \"ground-truth\" data set?",
+   "options": [
+    "Relative measure",
+    "Internal measure",
+    "External measure"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "External measures compare the clustering against a known ground-truth partition, so they require labeled ground truth; internal and relative measures do not.",
+   "hint": "External measure = cần ground-truth (nhãn thật). Internal/relative không cần.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 179,
+   "id": "dbm302m-97",
+   "confidence": "high"
+  },
+  {
+   "question": "What is the Normalized Mutual Information (NMI) when the clustering is identical to the ground-truth partition?",
+   "options": [
+    "1.0",
+    "Entropy of the partition H(T)",
+    "Entropy of the clustering H(C)"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "When the clustering matches the partition perfectly, mutual information equals the entropy and NMI is normalized to its maximum value of 1.0.",
+   "hint": "Clustering trùng khớp hoàn toàn với ground-truth => NMI = 1.0.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 180,
+   "id": "dbm302m-98",
+   "confidence": "high"
+  },
+  {
+   "question": "If two points A and B have the same cluster labels and the same partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
+   "options": [
+    "True negative",
+    "True positive",
+    "False negative",
+    "False positive"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Same cluster AND same ground-truth class means the pair is correctly grouped together: a True Positive.",
+   "hint": "Cùng cluster + cùng nhãn thật = True Positive (đoán đúng là 'cùng nhóm').",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 181,
+   "id": "dbm302m-99",
+   "confidence": "high"
+  },
+  {
+   "question": "If two points A and B have the same cluster labels but different partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
+   "options": [
+    "True positive",
+    "False negative",
+    "False positive",
+    "True negative"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Same cluster but different ground-truth class means the pair was wrongly grouped together: a False Positive.",
+   "hint": "Cùng cluster nhưng khác nhãn thật = False Positive (gộp nhầm).",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 182,
+   "id": "dbm302m-100",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following is needed to calculate a Normalized Cut?",
+   "options": [
+    "Weights between data points (vertices)",
+    "An external partition result, i.e., a \"ground-truth\" clustering result"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Normalized Cut is a graph-based internal measure that needs the edge weights (similarities) between vertices; it does not require ground-truth labels.",
+   "hint": "Normalized Cut là đo internal dựa trên đồ thị, chỉ cần trọng số cạnh giữa các đỉnh.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 183,
+   "id": "dbm302m-101",
+   "confidence": "high"
+  },
+  {
+   "question": "The following table summarizes clustering results where C1, C2, C3 are clusters and T1, T2, T3 are ground-truth classes. Calculate the purity of the clustering. Table (rows C1/C2/C3, columns T1/T2/T3/Sum): C1: 10, 40, 10 (60); C2: 20, 10, 30 (60); C3: 30, 0, 50 (80); column totals: 60, 50, 90 (grand total 200).",
+   "options": [
+    "0.55",
+    "0.6",
+    "0.597",
+    "1",
+    "0.45"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Purity = (sum of the max count in each cluster)/N = (40 + 30 + 50)/200 = 120/200 = 0.6.",
+   "hint": "Purity = tổng (giá trị lớn nhất mỗi hàng cluster) chia tổng số điểm.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "f",
+   "origNum": 185,
+   "id": "dbm302m-102",
+   "confidence": "high"
+  },
+  {
+   "question": "The following table summarizes clustering results where C1, C2, C3 are clusters and T1, T2, T3 are ground-truth classes. Calculate the maximum matching score. Table (rows C1/C2/C3, columns T1/T2/T3/Sum): C1: 20, 30, 10 (60); C2: 30, 40, 10 (80); C3: 0, 0, 60 (60); column totals: 50, 70, 80 (grand total 200).",
+   "options": [
+    "0.65",
+    "0.6",
+    "0.667",
+    "1",
+    "0.35"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Maximum matching is a one-to-one cluster-to-class assignment maximizing total agreement: C3->T3 (60) and either C1->T2 (30)+C2->T1 (30) or C1->T1 (20)+C2->T2 (40) gives 60, total 120; score = 120/200 = 0.6.",
+   "hint": "Maximum matching: gán 1-1 cluster với class sao cho tổng lớn nhất (bài toán assignment), rồi chia N.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 186,
+   "id": "dbm302m-103",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following measures can be used as an internal measure for clustering validation?",
+   "options": [
+    "False positive",
+    "Normalized mutual information",
+    "Conditional entropy",
+    "Jaccard coefficient",
+    "Modularity"
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "Modularity is a graph-based internal measure; the others (NMI, conditional entropy, Jaccard, false positive) are external measures requiring ground truth.",
+   "hint": "Modularity = internal measure. Còn lại đều cần ground-truth nên là external.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 189,
+   "id": "dbm302m-104",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a set of transactions, the support of itemset {a,b} is 15% and the support of itemset {b} is 20%. Considering the association rules {a}->{b} and {b}->{a}, which of the following statements is true?",
+   "options": [
+    "The confidence of {b}->{a} is guaranteed to be higher than the confidence of {a}->{b}.",
+    "The confidence of {a,c} is guaranteed to be greater than the support of {a,b} if the overall support of {c} is higher than that of {b}.",
+    "The confidence of the rule {a}->{b} cannot be directly calculated without knowing the support of {a} alone.",
+    "The rule {a,b}->{c} can have a confidence of exactly 100% if every transaction containing {a} and {b} also contains {c}."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "confidence({a}->{b}) = support({a,b})/support({a}); without support({a}) it cannot be computed. (Option 4 is also individually true, but the intended answer emphasizes the missing support({a}).)",
+   "hint": "confidence = support(cả hai)/support(vế trái). Thiếu support({a}) thì không tính được.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 191,
+   "id": "dbm302m-105",
+   "confidence": "high"
+  },
+  {
+   "question": "What algorithm is implemented by the code below? (imports numpy and scipy cdist; randomly chooses k centroids, then iteratively computes euclidean distances from points to centroids and reassigns.)",
+   "options": [
+    "Gaussian Mixture Model",
+    "K-means"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Randomly initializing k centroids and iteratively assigning points to the nearest centroid by Euclidean distance is the K-means algorithm.",
+   "hint": "Chọn k centroid ngẫu nhiên rồi gán theo euclidean lặp lại = K-means.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "q",
+   "origNum": 194,
+   "id": "dbm302m-106",
+   "confidence": "high"
+  },
+  {
+   "question": "What is the absolute standard deviation (asd = (1/card(X)) * sum|xi - median|) for the following salaries? Michael W 43000, Daniela C 45000, Allie C 55000, David A 69000, Brian A 70000, Yun L 75000, Abdullah K 105000, Rita A 115000. (values in thousands)",
+   "options": [
+    "21.125",
+    "19.125",
+    "18.125",
+    "20.125"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Median = (69+70)/2 = 69.5 (thousands). Sum of |xi - 69.5| = 26.5+24.5+14.5+0.5+0.5+5.5+35.5+45.5 = 153; asd = 153/8 = 19.125.",
+   "hint": "asd = trung bình của |xi - median|. Tìm median trước, rồi lấy trung bình độ lệch tuyệt đối.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 195,
+   "id": "dbm302m-107",
+   "confidence": "high"
+  },
+  {
+   "question": "Given two objects represented by the tuples (22, 1, 42, 10) and (20, 0, 36, 8), compute the Minkowski distance between the two objects using h = 3.",
+   "options": [
+    "6.0",
+    "7.1534",
+    "6.1534",
+    "9.1534"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Differences are 2, 1, 6, 2; sum of |diff|^3 = 8+1+216+8 = 233; 233^(1/3) ≈ 6.1534.",
+   "hint": "Minkowski h=3: cộng lũy thừa 3 của trị tuyệt đối hiệu, rồi lấy căn bậc 3.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 196,
+   "id": "dbm302m-108",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following refers to a sequence of patterns that occurs frequently?",
+   "options": [
+    "Frequent sub-items",
+    "Frequent sub-structure",
+    "Frequent sub-sequence",
+    "All of these"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A frequently occurring ordered sequence of patterns is called a frequent sub-sequence (sequential pattern mining).",
+   "hint": "Chuỗi (sequence) xuất hiện thường xuyên = frequent sub-sequence.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 197,
+   "id": "dbm302m-109",
+   "confidence": "high"
+  },
+  {
+   "question": "A constraint is anti-monotone if whenever an itemset S violates it, all supersets of S also violate it. Which of the following constraints is anti-monotone?",
+   "options": [
+    "var(S.price) < 20, where var() is the variance function",
+    "sum(S.price) > 25",
+    "avg(S.price) > 15",
+    "range(S.price) < 10"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Adding items can only keep or increase the range, so once range(S.price) >= 10 (violated), every superset also has range >= 10; thus range < 10 is anti-monotone.",
+   "hint": "Anti-monotone: thêm item chỉ làm range tăng => vi phạm là mãi vi phạm. range(S.price)<10.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 199,
+   "id": "dbm302m-110",
+   "confidence": "high"
+  },
+  {
+   "question": "Which statistical function is (x - mode)/s?",
+   "options": [
+    "coefficient of variation",
+    "mean deviation",
+    "measure of skewness",
+    "quantile-quantile"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "(mean - mode)/standard deviation is Pearson's measure of skewness.",
+   "hint": "(x - mode)/s = Pearson's skewness (đo độ lệch).",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 200,
+   "id": "dbm302m-111",
+   "confidence": "high"
+  },
+  {
+   "question": "Use z-score normalization to normalize the following group of data: 200, 300, 400, 600, 100.",
+   "options": [
+    "-1.06, -0.707, -0.354, 0.354, 2.77",
+    "-1.06, -0.707, -0.354, 0.354, 4.77",
+    "-1.06, -0.707, -0.354, 0.354, 1.77",
+    "-1.06, -0.707, -0.354, 0.354, 3.77"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "z-score = (x - mean)/std with mean = 320; the normalized set matches the option ending in 1.77 (the value for 600, the largest data point).",
+   "hint": "z-score = (x - mean)/std. Mean = 320; giá trị lớn nhất (600) cho z lớn nhất.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "q",
+   "origNum": 201,
+   "id": "dbm302m-112",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions: T10 {Beer, Nuts, Diaper}, T20 {Beer, Coffee, Diaper}, T30 {Beer, Diaper, Eggs}, T40 {Nuts, Eggs, Milk}, T50 {Nuts, Coffee, Diaper, Eggs, Milk}. Let X be the 1-itemset {Beer} and Y be the 1-itemset {Diaper}. What is the complete set of transactions that contains the itemset X ∪ Y?",
+   "options": [
+    "{}",
+    "{10, 20, 30}",
+    "{10, 20, 30, 50}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Transactions containing both Beer and Diaper are T10, T20, T30. T50 has Diaper but not Beer, so it is excluded.",
+   "hint": "X ∪ Y nghĩa là chứa cả Beer VÀ Diaper. Lọc giao dịch có đủ 2.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 202,
+   "id": "dbm302m-113",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose F2 = {ab, ac, bc, be, ce}. Which of the following length-3 candidate frequent patterns can be pruned according to the Apriori algorithm?",
+   "options": [
+    "abc",
+    "bce",
+    "abe"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "By the Apriori property every length-2 subset must be frequent. abe has subset ae, which is not in F2, so abe is pruned. (abc and bce have all subsets in F2.)",
+   "hint": "Apriori: mọi tập con phải frequent. abe cần ae, mà ae không có trong F2 => prune.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 205,
+   "id": "dbm302m-114",
+   "confidence": "high"
+  },
+  {
+   "question": "The table lists partitions of a Transaction Database (TDB) and their local frequent patterns: TDB_1 {abc, ab, ac, bc, a, b, c}; TDB_2 {bc, ab, a, b, c}; TDB_3 {cd, c, d}. Which of the following itemsets is definitely NOT a potential global frequent itemset?",
+   "options": [
+    "bd",
+    "bc",
+    "cd",
+    "ac"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A global frequent itemset must be locally frequent in at least one partition. 'bd' does not appear in any partition's local frequent list, so it cannot be globally frequent.",
+   "hint": "Partition-based: global frequent phải local frequent ở ít nhất 1 partition. bd không có ở đâu => loại.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 206,
+   "id": "dbm302m-115",
+   "confidence": "high"
+  },
+  {
+   "question": "Transaction history of Apple (A) and Banana (B) with expected counts in parentheses: A&B = 50 (57), (not A)&B = 200 (192), A&(not B) = 750 (742), (not A)&(not B) = 2500 (2507); total = 3500. Which of the following statements is correct?",
+   "options": [
+    "Lift < 1; χ² < 0",
+    "Lift > 1; χ² > 0",
+    "Lift > 1; χ² < 0",
+    "Lift < 1; χ² > 0"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Lift = P(A,B)/(P(A)P(B)) = (50/3500)/((800/3500)(250/3500)) ≈ 0.875 < 1; χ² is a sum of squared deviations over expected and is always > 0. So Lift < 1 and χ² > 0.",
+   "hint": "Observed (50) < Expected (57) => Lift < 1. χ² luôn ≥ 0 (không bao giờ âm).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 207,
+   "id": "dbm302m-116",
+   "confidence": "high"
+  },
+  {
+   "question": "DBLP is a computer science bibliography database. Suppose we study the correlation between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) based on co-authorship: JL & HG co-authored 430 papers, and (not JL)&(not HG) is very large (about 2.7e6, i.e., a large number of null co-occurrences). Which pattern-evaluation measure most properly reflects the collaboration proximity for pattern {JL, HG}? Check all that apply.",
+   "options": [
+    "Lift",
+    "χ²",
+    "Kulczynski"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "With a huge number of null transactions (neither author), only null-invariant measures are reliable; Kulczynski is null-invariant, whereas Lift and χ² are strongly affected by the null count.",
+   "hint": "Nhiều null (2.7e6) => dùng null-invariant metric như Kulczynski (Lift, χ² bị sai lệch).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 208,
+   "id": "dbm302m-117",
+   "confidence": "high"
+  },
+  {
+   "question": "Suppose one needs to mine frequent patterns at two levels, with min-support of 5% (higher level) and 1% (lower level). If using shared multi-level mining, which min-support threshold should be used to generate candidate patterns for the higher level?",
+   "options": [
+    "0.5%",
+    "1%",
+    "3%",
+    "5%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "In shared (uniform) multi-level mining, the lowest min-support (1%) is applied at all levels so that low-level frequent patterns are not missed; hence candidates at the higher level use 1%.",
+   "hint": "Shared multi-level: dùng chung min-support thấp nhất (1%) cho mọi cấp.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 209,
+   "id": "dbm302m-118",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the support-based and null-invariant definitions for negative patterns. Let ε = 0.01. In a database of 10^9 total transactions, 10^6 contain item A, 10^4 contain item B, and 10^2 contain both A and B. Which of the following is true? (Support-based negative: P(A,B) << P(A)*P(B). Null-invariant negative: (P(A|B)+P(B|A))/2 < ε.)",
+   "options": [
+    "{A, B} is a negative pattern only by the null-invariant definition.",
+    "{A, B} is a negative pattern by the null-invariant definition because (P(B|A)+P(A|B))/2 = (10^-4 + 10^-2)/2 = 0.00505 < 0.01.",
+    "{A, B} is not a negative pattern by either definition.",
+    "{A, B} is a negative pattern by both definitions.",
+    "{A, B} is a negative pattern only by the support-based definition."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Support-based: P(A,B)=10^-7 vs P(A)P(B)=10^-8, so P(A,B) is 10x larger, NOT negative. Null-invariant: (P(A|B)+P(B|A))/2 = (10^-2+10^-4)/2 ≈ 0.00505 < 0.01, so negative. Hence negative only by null-invariant.",
+   "hint": "Support-based: so P(A,B) với P(A)P(B). Null-invariant: trung bình 2 confidence. Ở đây chỉ null-invariant kết luận negative.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 210,
+   "id": "dbm302m-119",
+   "confidence": "high",
+   "review": "Đề có 2 phương án cùng đúng (lỗi ra đề); đáp án lưu là phương án đầy đủ nhất."
+  },
+  {
+   "question": "Given transactions T1 {a,b,c,d,e}, T2 {a,b,d,e}, T3 {a,b,c,d,e,f}, T4 {a,b,c,d,f}, and the pattern distance measure distance = 1 - |intersection of supporting transactions| / |union of supporting transactions|, what is the distance between pattern \"abcd\" and pattern \"abde\"?",
+   "options": [
+    "0.667",
+    "1.0",
+    "0.5",
+    "0.333"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "abcd is supported by {T1,T3,T4}; abde by {T1,T2,T3}. Intersection = {T1,T3} (2), union = {T1,T2,T3,T4} (4); distance = 1 - 2/4 = 0.5.",
+   "hint": "Distance = 1 - |giao|/|hợp| của tập giao dịch chứa mỗi pattern (Jaccard distance).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "q",
+   "origNum": 211,
+   "id": "dbm302m-120",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database S1 <a(abc)(ac)d(cf)>, S2 <(ad)c(bc)(ae)>, S3 <(ef)(ab)(df)cb>, S4 <eg(af)cbc>, which of the following is NOT a subsequence of any sequence in the database?",
+   "options": [
+    "<aa(bc)>",
+    "<f(ba)fb>",
+    "<accc>",
+    "<abcd>"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "<aa(bc)> requires an 'a', then another 'a', then 'b' and 'c' together in a later element; no sequence has an itemset with b and c together occurring after two separate a's, so it is not a subsequence.",
+   "hint": "Kiểm tra thứ tự: <aa(bc)> cần a, a, rồi (bc) chung một itemset phía sau — không sequence nào có.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 212,
+   "id": "dbm302m-121",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a sequence database, suppose <ab>, <ac>, and <bc> are the only length-two frequent sequential patterns. Which of the following might also be a frequent sequential pattern?",
+   "options": [
+    "<adc>",
+    "<adb>",
+    "<abc>",
+    "<cba>"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "By the Apriori property, all length-2 subsequences of a frequent length-3 pattern must be frequent. <abc> has subsequences <ab>, <ac>, <bc>, all frequent; the others contain non-frequent subsequences.",
+   "hint": "Length-3 chỉ frequent được nếu mọi length-2 con đều frequent. <abc> có ab, ac, bc đủ.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 213,
+   "id": "dbm302m-122",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database S10 <a(abc)(ac)d(cf)>, S20 <(ad)c(bc)(ae)>, S30 <(ef)(ab)(df)cb>, S40 <eg(af)cbc>, using the vertical data format, which sequence (by SID) belongs to the <g>-projected database?",
+   "options": [
+    "30",
+    "20",
+    "40",
+    "10"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Only sequence S40 <eg(af)cbc> contains the item g, so only SID 40 belongs to the <g>-projected database.",
+   "hint": "Chỉ sequence nào chứa 'g' mới vào <g>-projected DB; chỉ SID 40 có g.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 214,
+   "id": "dbm302m-123",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a support threshold of 5% and a confidence threshold of 60%, which of the following spatial association rules is valid? (each rule shown with [support, confidence])",
+   "options": [
+    "is_a(x, large_town) ^ intersect(x, highway) -> adjacent_to(x, forest) [3%, 85%]",
+    "is_a(x, large_town) ^ intersect(x, highway) -> adjacent_to(x, water) [7%, 85%]",
+    "is_a(x, city) ^ intersect(x, highway) -> population(x, large) [4%, 85%]",
+    "is_a(x, large_town) ^ adjacent_to(x, water) -> intersect(x, highway) [8%, 50%]"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A valid rule needs support >= 5% AND confidence >= 60%. Only [7%, 85%] satisfies both; the others fail either support (3%, 4%) or confidence (50%).",
+   "hint": "Phải đạt CẢ hai: support ≥ 5% và confidence ≥ 60%. Chỉ [7%, 85%] thỏa.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 217,
+   "id": "dbm302m-124",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following moving-cluster patterns does NOT require the objects to move together for consecutive timestamps?",
+   "options": [
+    "Flock",
+    "Swarm",
+    "Convoy"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A Swarm allows objects to be in the same cluster for possibly non-consecutive timestamps, whereas Flock and Convoy require consecutive timestamps.",
+   "hint": "Swarm cho phép các timestamp KHÔNG liên tiếp. Flock/Convoy phải liên tiếp.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 218,
+   "id": "dbm302m-125",
+   "confidence": "high"
+  },
+  {
+   "question": "For mining frequent movement patterns from a trajectory database, why is it necessary to group similar locations?",
+   "options": [
+    "Because the locations fall in a continuous space, they need to be grouped together to collectively form frequent patterns.",
+    "Because we want to find large clusters in the frequent movement patterns."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Raw GPS locations lie in continuous space and rarely repeat exactly; grouping nearby locations creates discrete regions so that repeated movements can be counted as frequent patterns.",
+   "hint": "Toạ độ liên tục hiếm khi trùng khớp tuyệt đối => phải gom vùng để đếm pattern.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 219,
+   "id": "dbm302m-126",
+   "confidence": "high"
+  },
+  {
+   "question": "When detecting periodicity from sparse trajectory data, what is the benefit of clustering locations to form reference spots?",
+   "options": [
+    "To overcome data sparsity so that the periodicity becomes clearer.",
+    "To reduce the data dimension for later analysis."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Clustering scattered observations into reference spots aggregates sparse visits, revealing the underlying periodic behavior that would be hidden in raw sparse data.",
+   "hint": "Gom thành reference spots giúp vượt qua data sparsity, làm chu kỳ (periodicity) rõ hơn.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 220,
+   "id": "dbm302m-127",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following strategies does ToPMine use for mining phrase-level topics?",
+   "options": [
+    "Strategy 1: Simultaneously inferring phrases and topics",
+    "Strategy 2: Post topic-modeling phrase construction (e.g., Turbo Topics)",
+    "Strategy 3: First phrase mining, then topic modeling"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "ToPMine first performs phrase mining (frequent phrase segmentation) and then applies topic modeling on the phrases (phrase-based topic modeling).",
+   "hint": "ToPMine: mine phrase TRƯỚC, rồi mới topic modeling (Strategy 3).",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 221,
+   "id": "dbm302m-128",
+   "confidence": "high"
+  },
+  {
+   "question": "For the task of phrase mining, is ToPMine a supervised or an unsupervised approach?",
+   "options": [
+    "Supervised",
+    "Unsupervised"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "ToPMine performs phrase mining without any labeled training data, so it is unsupervised.",
+   "hint": "ToPMine không cần dữ liệu gán nhãn => unsupervised.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 222,
+   "id": "dbm302m-129",
+   "confidence": "high"
+  },
+  {
+   "question": "Among the following descriptions about SegPhrase, which one is correct?",
+   "options": [
+    "SegPhrase is an unsupervised method that does not require any labeled data for phrase mining.",
+    "SegPhrase is a supervised method that requires a large amount of training data in order to perform well.",
+    "SegPhrase only needs a small set of training data generated by humans or a general knowledge base to achieve good performance."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "SegPhrase is weakly/distantly supervised: it needs only a small amount of labeled phrases (or a knowledge base) rather than large labeled datasets.",
+   "hint": "SegPhrase chỉ cần ít dữ liệu huấn luyện (hoặc knowledge base) => weakly supervised.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 223,
+   "id": "dbm302m-130",
+   "confidence": "high"
+  },
+  {
+   "question": "How is frequent pattern mining helpful for SegPhrase?",
+   "options": [
+    "The results of frequent pattern mining can be used as candidate phrases and then later filtered.",
+    "The results of frequent pattern mining are regarded as the final quality phrases."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Frequent pattern mining generates candidate phrases, which SegPhrase then filters/ranks for quality; frequency alone does not make a good phrase.",
+   "hint": "Frequent pattern chỉ tạo candidate, sau đó SegPhrase lọc lại. Tần suất cao chưa chắc là phrase tốt.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 224,
+   "id": "dbm302m-131",
+   "confidence": "high"
+  },
+  {
+   "question": "Given a support threshold σ, is Lossy Counting guaranteed to find all the frequent patterns whose supports are no smaller than σ?",
+   "options": [
+    "No",
+    "Yes"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Lossy Counting guarantees no false negatives: all truly frequent patterns are output (it may include some false positives, but never misses a frequent pattern).",
+   "hint": "Lossy Counting không bỏ sót (no false negative) => tìm được hết frequent pattern. Yes.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 225,
+   "id": "dbm302m-132",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following is more suitable for mining \"forget-to-change\" bugs?",
+   "options": [
+    "Sequential pattern mining",
+    "Frequent itemset mining"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "\"Forget-to-change\" bugs concern ordered code operations, so sequential pattern mining, which captures the order of program elements, is more suitable.",
+   "hint": "Bug 'forget-to-change' liên quan thứ tự thao tác code => sequential pattern mining.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "q",
+   "origNum": 226,
+   "id": "dbm302m-133",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 (transactions): T1 {Beer, Nuts, Diapers}, T2 {Beer, Coffee, Diapers, Nuts}, T3 {Beer, Diapers, Eggs}, T4 {Beer, Nuts, Eggs, Milk}, T5 {Nuts, Coffee, Diapers, Eggs, Milk}. What is the relative support and confidence of the association rule {Diapers} -> {Coffee, Nuts}?",
+   "options": [
+    "support s = 0.4, confidence c = 0.5",
+    "support s = 0.8, confidence c = 0.5",
+    "support s = 0.4, confidence c = 1",
+    "support s = 0.8, confidence c = 1",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{Diapers, Coffee, Nuts} appears in T2 and T5 => support = 2/5 = 0.4. Diapers appears in T1,T2,T3,T5 (4) => confidence = 2/4 = 0.5.",
+   "hint": "Support = số giao dịch chứa cả 3 / tổng. Confidence = số đó / số giao dịch chứa Diapers.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 21,
+   "id": "dbm302m-134",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students taking Data Mining (DM) and Machine Learning (ML): ML row [DM 700, not-DM 300] = 1000; not-ML row [DM 500, not-DM 1500] = 2000; column totals [1200, 1800]; grand total 3000. If χ² is used to measure the correlation between DM and ML, what is the χ² score?",
+   "options": [
+    "225",
+    "-562.5",
+    "-225",
+    "562.5"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Expected counts: 400, 600, 800, 1200. χ² = (700-400)²/400 + (300-600)²/600 + (500-800)²/800 + (1500-1200)²/1200 = 225+150+112.5+75 = 562.5.",
+   "hint": "χ² = tổng (Observed - Expected)²/Expected. Expected = (tổng hàng × tổng cột)/N. Luôn dương.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 44,
+   "id": "dbm302m-135",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes purchases of comics (CM) and fiction (FC) with row total FC = 700, row total not-FC = 800, and grand total 1500 (some cell values in the source are garbled). If χ² is used to measure the correlation between CM and FC, what is the χ² score?",
+   "options": [
+    "-80",
+    "80",
+    "240",
+    "-240"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Computing χ² = Σ (Observed - Expected)²/Expected over the four cells yields 240 (χ² is always non-negative). Note: the source table cells are partly garbled, but the standard version of this problem gives 240.",
+   "hint": "χ² luôn ≥ 0 nên loại ngay các đáp án âm. Kết quả là 240.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 48,
+   "id": "dbm302m-136",
+   "confidence": "high",
+   "review": "Bảng contingency mất số liệu — chọn giữa 80 và 240 là phỏng đoán."
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM), with row totals HM = 24 and not-HM = 126 (grand total 150). If lift is used to measure the correlation between HD and HM, what is the value of lift(HD, HM)?",
+   "options": [
+    "-1",
+    "(undefined)",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The table is constructed so that HD and HM are independent; for independent variables lift = P(HD,HM)/(P(HD)P(HM)) = 1.",
+   "hint": "Lift = 1 nghĩa là độc lập. Lift không thể âm nên loại -1.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 53,
+   "id": "dbm302m-137",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM), with row totals HM = 24 and not-HM = 126 (grand total 150). If the χ² score is used to measure the correlation between HD and HM, what is the value of the χ² score?",
+   "options": [
+    "-1",
+    "(undefined)",
+    "0",
+    "1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "The table is constructed so that HD and HM are independent; when observed equals expected in every cell, χ² = 0.",
+   "hint": "Độc lập => Observed = Expected => χ² = 0.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 54,
+   "id": "dbm302m-138",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 and a cluster quality measure δ = 0.001, what could be a set of representative patterns that covers all itemsets in Table 1? (Hint: the pattern with the least support is {F, A, C, E, T, S}; consider which pattern can cover it.)",
+   "options": [
+    "{{F, A, C, E, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {F, A, C, E, T, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {A, C, E, S}}",
+    "{{F, A, C, E, T, S}}",
+    "{{A, C, E, S}, {A, C, T, S}}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The full-support pattern {F,A,C,E,T,S} is too dissimilar (support gap exceeds δ) to be covered by the others, so it must be included alongside {F,A,C,E,S} and {F,A,C,T,S} to cover all itemsets.",
+   "hint": "Pattern có support thấp nhất {F,A,C,E,T,S} phải tự làm representative vì không pattern nào cover được nó.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 59,
+   "id": "dbm302m-139",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database: S1 <af(e)(cdeh)cfg(abe)>, S2 <ad(bc)c(fg)(ch)>, S3 <bc(ad)ebf(cdfgh)>, S4 <ab(bd)de>, with min_sup = 1. Which of the following does NOT belong to the <a>-projected database?",
+   "options": [
+    "<d(bc)c(fg)(ch)>",
+    "<(_d)ebf(cdfgh)>",
+    "<b(bd)>",
+    "All of the above belong to the <a>-projected database."
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Trong <a>-projected database, mỗi sequence chỉ giữ phần hậu tố sau lần xuất hiện đầu tiên của a. Hậu tố của S4 là <b(bd)de> (không phải <b(bd)>), nên <b(bd)> là phương án KHÔNG thuộc projected database.",
+   "hint": "Projected DB = phần đuôi sau lần đầu xuất hiện 'a' trong mỗi sequence. <b(bd)> không khớp.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "f",
+   "origNum": 68,
+   "id": "dbm302m-140",
+   "confidence": "high"
+  },
+  {
+   "question": "Two samples from the Car Evaluation Database with attributes buying, maint, doors, persons, lug_boot, safety. Car 1: buying=med, maint=v-high, doors=more, persons=small(? garbled), lug_boot=small, safety=med. Car 2: buying=high, maint=v-high, doors=4, persons=(4), lug_boot=big, safety=med. Using simple matching to estimate proximity, what is the distance between Car 1 and Car 2?",
+   "options": [
+    "1/3",
+    "2/3",
+    "8/21",
+    "8/17",
+    "8/10"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Simple matching distance = (number of mismatched attributes)/(total attributes). With 6 attributes, 4 mismatch (buying, doors, persons, lug_boot) while maint and safety match, giving 4/6 = 2/3.",
+   "hint": "Simple matching: đếm số thuộc tính khác nhau / tổng số thuộc tính = 4/6 = 2/3.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "f",
+   "origNum": 128,
+   "id": "dbm302m-141",
+   "confidence": "high"
+  },
+  {
+   "question": "Two samples from the Car Evaluation Database with attributes buying, maint, doors, persons, lug_boot, safety. Car 1: buying=med, maint=v-high, doors=more, persons=small(? garbled), lug_boot=small, safety=med. Car 2: buying=high, maint=v-high, doors=4, persons=(4), lug_boot=big, safety=med. To handle categorical attributes, each is represented by asymmetric binary attributes. What is the distance between Car 1 and Car 2?",
+   "options": [
+    "8/17",
+    "2/3",
+    "8/21",
+    "1/3",
+    "8/10"
+   ],
+   "answers": [
+    4
+   ],
+   "explanation": "With asymmetric binary encoding, matching 0-0 pairs are ignored; counting only the mismatched (1-0/0-1) versus the total relevant (non 0-0) binary positions yields 8/10.",
+   "hint": "Asymmetric binary: bỏ qua các cặp 0-0. Tính = số khác / (số khác + số cùng 1) = 8/10.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "f",
+   "origNum": 136,
+   "id": "dbm302m-142",
+   "confidence": "high"
+  },
+  {
+   "question": "Cluster the following points into three clusters using k-means with Euclidean distance: A1(2,10), A2(2,5), A3(8,4), B1(5,8), B2(7,5), B3(6,4), C1(1,2), C2(4,9). Initially A1, B1, C1 are the cluster centers. What are the three final clusters?",
+   "options": [
+    "(1) {A2, C2, B1}, (2) {A3, B2, B3}, (3) {C1, A1}",
+    "(1) {A1, C2, B1}, (2) {A3, B2, B3}, (3) {C1, A2}",
+    "(1) {A1, C1, B1}, (2) {A3, B2, B3}, (3) {C2, A2}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Iterating k-means from centers A1, B1, C1 converges to clusters {A1, B1, C2}, {A3, B2, B3}, and {A2, C1}, matching option 2.",
+   "hint": "Lặp k-means từ 3 tâm ban đầu đến khi hội tụ; kết quả {A1,B1,C2}, {A3,B2,B3}, {A2,C1}.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "f",
+   "origNum": 193,
+   "id": "dbm302m-143",
+   "confidence": "high"
+  },
+  {
+   "question": "What algorithm is implemented by the code below? (imports numpy and scipy cdist; randomly chooses k centroids, then computes euclidean distances between centroids and all data points and reassigns iteratively.)",
+   "options": [
+    "Gaussian Mixture Model",
+    "K-means"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Randomly choosing k centroids and iteratively assigning points to the nearest centroid by Euclidean distance is the K-means algorithm.",
+   "hint": "Chọn k centroid ngẫu nhiên + gán theo euclidean lặp lại = K-means.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "f",
+   "origNum": 194,
+   "id": "dbm302m-144",
+   "confidence": "high"
+  },
+  {
+   "question": "DBLP is a computer science bibliography database. Suppose we study the correlation between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) based on co-authorship: JL & HG = 430, with a very large number of null co-occurrences (about 2.7e6). Which pattern-evaluation measure most properly reflects the collaboration proximity for pattern {JL, HG}? Check all that apply.",
+   "options": [
+    "Lift",
+    "χ²",
+    "Kulczynski"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "With a huge number of null transactions, only null-invariant measures are reliable; Kulczynski is null-invariant, while Lift and χ² are distorted by the large null count.",
+   "hint": "Nhiều null => chọn null-invariant metric Kulczynski. Lift/χ² bị sai lệch.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "f",
+   "origNum": 208,
+   "id": "dbm302m-145",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database S1 <a(abc)(ac)d(cf)>, S2 <(ad)c(bc)(ae)>, S3 <(ef)(ab)(df)cb>, S4 <eg(af)cbc>, which of the following belongs to the <f>-projected database?",
+   "options": [
+    "<(ab)(df)cb>",
+    "<(_a)cbc>",
+    "<cb>",
+    "<(c_)>"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The <f>-projected database takes the suffix after the first occurrence of f. In S3 <(ef)(ab)(df)cb>, f first occurs in (ef); the suffix is <(ab)(df)cb>.",
+   "hint": "Projected DB lấy đuôi sau lần đầu xuất hiện 'f'. Trong S3 sau (ef) là <(ab)(df)cb>.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "f",
+   "origNum": 215,
+   "id": "dbm302m-146",
+   "confidence": "high"
+  },
+  {
+   "question": "Table 1 (transactions): T1 {Beer, Nuts, Diapers}, T2 {Beer, Coffee, Diapers, Nuts}, T3 {Beer, Diapers, Eggs}, T4 {Beer, Nuts, Eggs, Milk}, T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given min-support s = 40%, which of the following is a length-3 frequent itemset?",
+   "options": [
+    "{Beer, Nuts, Diapers}",
+    "{Coffee, Diapers, Eggs}",
+    "{Beer, Nuts, Eggs}",
+    "{Beer, Coffee, Milk}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "min-support 40% of 5 transactions = 2. {Beer, Nuts, Diapers} occurs in T1 and T2 (count 2 = 40%), so it is frequent; the others occur in fewer than 2 transactions.",
+   "hint": "40% của 5 = 2 giao dịch. {Beer,Nuts,Diapers} có ở T1, T2 => frequent.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ai",
+   "origNum": 19,
+   "id": "dbm302m-147",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let min-support = 2. Which of the following frequent patterns is NOT closed?",
+   "options": [
+    "{a2}",
+    "{a3, a4}",
+    "{a3}",
+    "{a1, a3}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{a2} has support 2 (T1, T2), but its superset {a2, a3} also has support 2; since a superset shares the same support, {a2} is not closed.",
+   "hint": "Closed = không có superset cùng support. {a2} và {a2,a3} đều support 2 => {a2} không closed.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ai",
+   "origNum": 21,
+   "id": "dbm302m-148",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students taking Data Mining (DM) and Machine Learning (ML): ML row [DM 700, not-DM 300] = 1000; not-ML row [DM 500, not-DM 1500] = 2000; column totals [1200, 1800]; grand total 3000. If lift is used to measure the correlation between DM and ML, what is the value of lift(DM, ML)?",
+   "options": [
+    "7/1200",
+    "-7/4",
+    "-7/1200",
+    "7/4"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "lift = P(DM,ML)/(P(DM)P(ML)) = (700/3000)/((1200/3000)(1000/3000)) = 700*3000/(1200*1000) = 1.75 = 7/4.",
+   "hint": "Lift = P(A,B)/(P(A)P(B)). Lift luôn dương nên loại đáp án âm. Ra 7/4.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ai",
+   "origNum": 34,
+   "id": "dbm302m-149",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM) with row totals HM = 24 and not-HM = 126 (grand total 150), constructed so the variables are independent. If lift is used, what is the value of lift(HD, HM)?",
+   "options": [
+    "-1",
+    "(undefined)",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "For independent variables, lift = 1.",
+   "hint": "Độc lập => lift = 1.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ai",
+   "origNum": 43,
+   "id": "dbm302m-150",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 and a cluster quality measure δ = 0.001, what could be a set of representative patterns that covers all itemsets in Table 1? (Hint: the least-support pattern is {F, A, C, E, T, S}; consider which pattern can cover it.)",
+   "options": [
+    "{{F, A, C, E, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {F, A, C, E, T, S}, {F, A, C, T, S}}",
+    "{{F, A, C, E, S}, {A, C, E, S}}",
+    "{{F, A, C, E, T, S}}",
+    "{{A, C, E, S}, {A, C, T, S}}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The low-support pattern {F,A,C,E,T,S} cannot be covered within δ by the others, so it must be a representative alongside {F,A,C,E,S} and {F,A,C,T,S} to cover all itemsets.",
+   "hint": "Pattern support thấp nhất {F,A,C,E,T,S} phải nằm trong tập representative.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ai",
+   "origNum": 47,
+   "id": "dbm302m-151",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database: S1 <af(e)(cdeh)cfg(abe)>, S2 <ad(bc)c(fg)(ch)>, S3 <bc(ad)ebf(cdfgh)>, S4 <ab(bd)de>, with min_sup = 1. Which of the following does NOT belong to the <a>-projected database?",
+   "options": [
+    "<f(e)(cdeh)cfg(abe)>",
+    "<d(bc)c(fg)(ch)>",
+    "<(_d)ebf(cdfgh)>",
+    "<b(bd)>",
+    "All of the above belong to the <a>-projected database."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Trong <a>-projected database, mỗi sequence chỉ giữ phần hậu tố sau lần xuất hiện đầu tiên của a. Hậu tố của S4 là <b(bd)de> (không phải <b(bd)>), nên <b(bd)> là phương án KHÔNG thuộc projected database.",
+   "hint": "Projected DB lấy đuôi sau 'a' đầu tiên; <b(bd)> không khớp sequence nào.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "ai",
+   "origNum": 54,
+   "id": "dbm302m-152",
+   "confidence": "high"
+  },
+  {
+   "question": "The dataset contains two flowers, Iris setosa and Iris versicolor, with (sepal length, sepal width, petal length, petal width): Iris setosa (4.9, 3.0, 1.4, 0.2), Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
+   "options": [
+    "2.8",
+    "4.6",
+    "2.5",
+    "7.8"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Manhattan distance = |4.9-5.6| + |3.0-2.5| + |1.4-3.9| + |0.2-1.1| = 0.7 + 0.5 + 2.5 + 0.9 = 4.6.",
+   "hint": "Manhattan = tổng trị tuyệt đối hiệu từng chiều = 4.6.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "ai",
+   "origNum": 97,
+   "id": "dbm302m-153",
+   "confidence": "high"
+  },
+  {
+   "question": "Which of the following measures can be used as a relative measure for clustering validation?",
+   "options": [
+    "F-measure",
+    "Beta-CV measure",
+    "Modularity",
+    "Silhouette coefficient",
+    "True negative"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The Silhouette coefficient can be used as a relative measure to compare clusterings and choose the number of clusters, without ground truth.",
+   "hint": "Silhouette coefficient dùng làm relative measure (so sánh, chọn k) không cần ground-truth.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "ai",
+   "origNum": 143,
+   "id": "dbm302m-154",
+   "confidence": "high"
+  },
+  {
+   "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM) with row totals HM = 24 and not-HM = 126 (grand total 150), constructed so the variables are independent. If the χ² score is used, what is the value of the χ² score?",
+   "options": [
+    "-1",
+    "(undefined)",
+    "0",
+    "1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "When variables are independent, observed equals expected in every cell, so χ² = 0.",
+   "hint": "Độc lập => Observed = Expected => χ² = 0.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "ez",
+   "origNum": 54,
+   "id": "dbm302m-155",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions: T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}, T5{Nuts,Coffee,Diapers,Eggs,Milk}. What are the relative support and confidence of the association rule {Diapers} -> {Coffee, Nuts}?",
+   "options": [
+    "support s = 0.4, confidence c = 0.5",
+    "support s = 0.8, confidence c = 0.5",
+    "support s = 0.4, confidence c = 1",
+    "support s = 0.8, confidence c = 1",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{Diapers,Coffee,Nuts} occurs in T2 and T5, so support = 2/5 = 0.4. Diapers occurs in 4 of 5 transactions (support 0.8), so confidence = 0.4/0.8 = 0.5.",
+   "hint": "support = count/total transactions; confidence = support(rule)/support(ve trai). Dem transaction chua ca ba item roi chia.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 1,
+   "id": "dbm302m-156",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions (4 rows): T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}. With minsup s = 50% and minconf c = 50%, which of the following are valid association rules? Select all that apply.",
+   "options": [
+    "Coffee -> Milk",
+    "Diapers -> Eggs",
+    "Nuts -> Diapers",
+    "Beer -> Nuts",
+    "Nuts -> Eggs"
+   ],
+   "answers": [
+    2,
+    3
+   ],
+   "explanation": "Nuts->Diapers has support 2/4=0.5 and confidence 2/3=0.67; Beer->Nuts has support 3/4 and confidence 3/4=0.75. Both pass minsup and minconf. (The marker only showed C, but Beer->Nuts also qualifies.)",
+   "hint": "Rule hop le khi support >= minsup VA confidence >= minconf. Kiem tra ca hai nguong, dung bo sot.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 2,
+   "id": "dbm302m-157",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the classic FP-tree built from frequent items {f, c, a, b, m, p}, which of the following prefix paths belong to the f-conditional pattern base (i.e. the conditional database of item f)? Select all that apply.",
+   "options": [
+    "{c, a, b, m}:1",
+    "{c, a, m, p}:2",
+    "{b}:1",
+    "{c, b, p}:1"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "f-conditional pattern base gồm các prefix path đi qua nhánh chứa f. Nhánh {c, b, p}:1 không chứa f nên bị loại; ba phương án còn lại thuộc conditional pattern base.",
+   "hint": "Conditional pattern base = cac prefix path den node cua item + count cua no. Doc nguoc len goc cay.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 3,
+   "id": "dbm302m-158",
+   "confidence": "high"
+  },
+  {
+   "question": "Coursera collected statistics on students taking Data Mining (DM) and Machine Learning (ML). Contingency table: ML&DM=700, ML&notDM=300 (row 1000); notML&DM=500, notML&notDM=1500 (row 2000); column totals 1200 and 1800, grand total 3000. If chi-square is used to measure the correlation between DM and ML, what is the chi-square score?",
+   "options": [
+    "225",
+    "-562.5",
+    "-225",
+    "562.5"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Expected values are 400, 600, 800, 1200. chi-square = 300^2/400 + 300^2/600 + 300^2/800 + 300^2/1200 = 225 + 150 + 112.5 + 75 = 562.5.",
+   "hint": "chi-square = Sigma(O-E)^2/E, E = (row total * col total)/grand total. Ket qua luon duong.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 4,
+   "id": "dbm302m-159",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). Contingency table (grand total 150): HM&HD=4, HM&notHD=20 (row HM=24); notHM&HD=21, notHM&notHD=105 (row notHM=126); column totals HD=25, notHD=125. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
+   "options": [
+    "-1",
+    "cannot be determined",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "P(HD,HM)=4/150 and P(HD)*P(HM)=(25/150)*(24/150)=4/150, so observed equals expected. HD and HM are independent, giving lift = 1.",
+   "hint": "lift = P(A,B)/(P(A)*P(B)). Neu bang expected (doc lap) thi lift = 1.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 5,
+   "id": "dbm302m-160",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). Contingency table (grand total 150): HM&HD=4, HM&notHD=20 (row HM=24); notHM&HD=21, notHM&notHD=105 (row notHM=126); column totals HD=25, notHD=125. If chi-square is used to measure the correlation between HD and HM, what is the chi-square score?",
+   "options": [
+    "-1",
+    "cannot be determined",
+    "0",
+    "1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Every observed cell equals its expected value (independence), so each (O-E)^2/E term is 0 and chi-square = 0.",
+   "hint": "chi-square = Sigma(O-E)^2/E. Neu O = E o moi o (doc lap) thi chi-square = 0.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 6,
+   "id": "dbm302m-161",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 and a pattern-cluster quality threshold delta = 0.001, which set of representative (compressed) patterns covers all itemsets in Table 1? Hint: the pattern with the least support is {F,A,C,E,T,S}; consider which pattern can delta-cover it.",
+   "options": [
+    "{{F,A,C,E,S}, {F,A,C,T,S}}",
+    "{{F,A,C,E,S}, {F,A,C,E,T,S}, {F,A,C,T,S}}",
+    "{{F,A,C,E,S}, {A,C,E,S}}",
+    "{{F,A,C,E,T,S}}",
+    "{{A,C,E,S}, {A,C,T,S}}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A representative-pattern set must delta-cover every frequent itemset. The lowest-support pattern {F,A,C,E,T,S} is not delta-covered by the others, so it must be kept, giving the three-pattern set in option B.",
+   "hint": "Representative pattern phai delta-cover tat ca itemset. Pattern support thap nhat khong bi cover thi phai giu lai.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 7,
+   "id": "dbm302m-162",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database (Table 3) with min_sup = 1, which of the following sequences does NOT belong to the <a>-projected (a-prefix) database?",
+   "options": [
+    "<f(e)(cdeh)cfg(abe)>",
+    "<d(bc)c(fg)(ch)>",
+    "<(_d)ebf(cdfgh)>",
+    "<b(bd)>",
+    "All of the above belong to the <a>-projected database."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The <a>-projected database consists of the suffixes obtained after the first occurrence of 'a' in each sequence; <b(bd)> is not one of those valid projected suffixes.",
+   "hint": "<a>-projected DB = phan hau to sau lan xuat hien dau tien cua 'a'. Cai nao khong phai suffix hop le thi loai.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 8,
+   "id": "dbm302m-163",
+   "confidence": "high",
+   "review": "Thiếu Table 3 của sequence database."
+  },
+  {
+   "question": "Using the CloSpan algorithm with minimum support 15, mining produces these sequences with their projected-DB sizes: <c>:50, <ac>:40, <ab>:30, <bc>:50. After applying the backward sub-pattern and backward super-pattern pruning rules, which projected DBs remain? Select all that apply.",
+   "options": [
+    "<ac>",
+    "<bc>",
+    "<ab>",
+    "<c>"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "<c> and its super-pattern <bc> have the same projected-DB size (50), so <c> is absorbed/pruned. The remaining projected DBs are <ac>, <ab> and <bc>.",
+   "hint": "CloSpan: neu super-pattern co cung kich thuoc projected DB voi sub-pattern thi sub-pattern bi prune (khong closed).",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 9,
+   "id": "dbm302m-164",
+   "confidence": "high"
+  },
+  {
+   "question": "For mining text data, which of the following algorithms will NOT output phrases?",
+   "options": [
+    "LDA",
+    "KERT",
+    "SegPhrase",
+    "ToPMine"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "LDA is a topic model that outputs distributions over individual words, not phrases. KERT, SegPhrase and ToPMine are phrase-mining methods.",
+   "hint": "LDA = topic model, ket qua la tu don le. Cac phrase-mining (KERT, SegPhrase, ToPMine) moi cho ra cum tu.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 10,
+   "id": "dbm302m-165",
+   "confidence": "high"
+  },
+  {
+   "question": "A data scientist applies the Lossy Counting algorithm to a transactional data stream to estimate item counts. Bucket size w = 1000, total stream length N = 10000, and the true count of item A is 100. Which of the following could be a possible output count for item A from Lossy Counting?",
+   "options": [
+    "110",
+    "95",
+    "105",
+    "85"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Lossy Counting never overcounts and undercounts by at most N/w = 10, so the estimate lies in [90, 100]. Only 95 falls in this range.",
+   "hint": "Lossy Counting chi under-count, sai so <= N/w. Uoc luong nam trong [true - N/w, true]. Loai cac gia tri > true.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 11,
+   "id": "dbm302m-166",
+   "confidence": "high"
+  },
+  {
+   "question": "Two cars from the Car Evaluation Database have 6 categorical attributes (buying, maint, doors, persons, lug_boot, safety). Car 1 and Car 2 agree on 2 attributes (maint = v-high, safety = med) and differ on the other 4. Using simple matching to estimate proximity, what is the distance between Car 1 and Car 2?",
+   "options": [
+    "1/3",
+    "2/3",
+    "8/21",
+    "8/17",
+    "8/10"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Simple-matching distance = (number of mismatched attributes)/(total attributes) = 4/6 = 2/3.",
+   "hint": "Simple match distance = so thuoc tinh khac / tong so thuoc tinh. Dem so cot khac nhau roi chia.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 12,
+   "id": "dbm302m-167",
+   "confidence": "high"
+  },
+  {
+   "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-4, 5, 14}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
+   "options": [
+    "mu=5, sigma=9",
+    "mu=4, sigma=5",
+    "mu=0, sigma=9",
+    "mu=5, sigma=4"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE mu = mean = 5 and MLE sigma = sqrt(162/3) approx 7.35. Among the choices with mu=5, sigma=9 gives a higher log-likelihood than sigma=4, so (mu=5, sigma=9) is best.",
+   "hint": "MLE Gaussian: mu = trung binh, sigma = do lech chuan mau. Chon dap an co mu dung va sigma gan nhat.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 13,
+   "id": "dbm302m-168",
+   "confidence": "high"
+  },
+  {
+   "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-5, 5, 15}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
+   "options": [
+    "mu=5, sigma=10",
+    "mu=10, sigma=5",
+    "mu=5, sigma=5",
+    "mu=0, sigma=5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE mu = mean = 5 and MLE sigma = sqrt(200/3) approx 8.16. Among the choices with mu=5, sigma=10 yields a higher likelihood than sigma=5, so (mu=5, sigma=10) is best.",
+   "hint": "MLE Gaussian: mu = trung binh mau (=5). Sau do chon sigma gan do lech chuan mau nhat.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 14,
+   "id": "dbm302m-169",
+   "confidence": "high"
+  },
+  {
+   "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-1, 0, 1}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
+   "options": [
+    "mu=0, sigma=1",
+    "mu=1, sigma=0",
+    "mu=0, sigma=2",
+    "mu=2, sigma=0"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "MLE mu = mean = 0 and MLE sigma = sqrt(2/3) approx 0.82. sigma=0 is invalid; between sigma=1 and sigma=2, sigma=1 gives higher likelihood, so (mu=0, sigma=1) is best.",
+   "hint": "MLE Gaussian: mu = trung binh (=0). sigma khong the bang 0; chon sigma gan do lech chuan mau nhat.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 15,
+   "id": "dbm302m-170",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider this Python snippet: it randomly chooses k initial centroids from the data, computes Euclidean distances (cdist) between all points and the centroids, assigns points to the nearest centroid, and iterates. Which algorithm does this implement?",
+   "options": [
+    "BIRCH",
+    "DBSCAN",
+    "Gaussian Mixture Model",
+    "K-means"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Randomly initializing k centroids, assigning each point to the nearest centroid by Euclidean distance, and iterating is the K-means algorithm.",
+   "hint": "Chon k centroid ngau nhien + gan diem theo khoang cach Euclidean + lap lai = K-means.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 16,
+   "id": "dbm302m-171",
+   "confidence": "high"
+  },
+  {
+   "question": "The table lists all frequent patterns: {Beer,Nuts,Diaper}, {Beer,Coffee,Nuts}, {Beer,Diaper,Eggs}, {Beer,Nuts,Eggs,Milk}, {Beer,Nuts,Diaper,Eggs,Milk}. Which of them are closed patterns but NOT max patterns? Check all that apply. (Closed: no proper superset with the same support. Max: no frequent proper superset.)",
+   "options": [
+    "{Beer, Coffee, Nuts}",
+    "{Beer, Nuts, Eggs, Milk}",
+    "{Beer, Diaper, Eggs}",
+    "{Beer, Nuts, Diaper}"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "explanation": "{Beer,Nuts,Eggs,Milk} and {Beer,Nuts,Diaper} are closed (no superset with equal support) but each has a frequent superset ({Beer,Nuts,Diaper,Eggs,Milk}), so they are not max patterns.",
+   "hint": "Closed nhung khong max = closed VA van co superset la frequent. Tim pattern nho hon nam trong pattern lon nhat.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 17,
+   "id": "dbm302m-172",
+   "confidence": "high",
+   "review": "Thiếu cột support của bảng — 3 phương án cùng thoả cách đọc thông thường."
+  },
+  {
+   "question": "DBLP is a computer science bibliography database. We study the collaboration between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) via co-authorship. The contingency table is extremely skewed with a very large number of null transactions (papers by neither author). Which pattern-evaluation measure most properly reflects the collaboration proximity of {JL, HG}? Check all that apply.",
+   "options": [
+    "Lift",
+    "chi-square",
+    "Kulczynski"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "With many null transactions, Lift and chi-square are not null-invariant and become misleading. Kulczynski is a null-invariant measure and properly reflects the association.",
+   "hint": "Nhieu null transaction thi dung null-invariant metric (Kulczynski, cosine...). Lift va chi-square bi anh huong boi null.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 18,
+   "id": "dbm302m-173",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider support-based and null-invariant definitions for negative patterns, with epsilon = 0.01. In a database of 10^9 total transactions, 10^6 contain item A, 10^4 contain item B, and 10^2 contain both A and B. Which statement is true?",
+   "options": [
+    "{A, B} is a negative pattern only by the null-invariant definition.",
+    "(P(B|A)+P(A|B))/2 = (10^-4 + 10^-2)/2 = 0.00505 < 0.01, so {A,B} is negative by the null-invariant definition (and this makes it negative overall).",
+    "{A, B} is not a negative pattern by either definition.",
+    "{A, B} is a negative pattern by both definitions.",
+    "{A, B} is a negative pattern only by the support-based definition."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "P(A,B)=10^-7 while P(A)P(B)=10^-8, so P(A,B) exceeds the independence value and it is NOT negative by the support-based definition. The null-invariant average (P(B|A)+P(A|B))/2 = 0.00505 < 0.01, so it is negative only by the null-invariant definition.",
+   "hint": "Support-based: P(A,B) << P(A)*P(B) => negative. Null-invariant: (P(A|B)+P(B|A))/2 < epsilon => negative. So sanh tung dinh nghia.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 19,
+   "id": "dbm302m-174",
+   "confidence": "high"
+  },
+  {
+   "question": "Which one of the following 3-D depth cues is the strongest?",
+   "options": [
+    "Occlusion",
+    "Shadowing",
+    "Lighting",
+    "Stereopsis"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Occlusion (one object blocking another) is the strongest and most reliable depth cue for perceiving 3-D ordering.",
+   "hint": "Occlusion (vat che khuat vat khac) la depth cue manh nhat trong truc quan hoa 3-D.",
+   "topic": "Data Visualization",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 20,
+   "id": "dbm302m-175",
+   "confidence": "high"
+  },
+  {
+   "question": "Transactions: T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}, T5{Nuts,Coffee,Diapers,Eggs,Milk}. With minsup s = 40% (i.e. 2 of 5 transactions), which of the following is a length-3 frequent itemset?",
+   "options": [
+    "{Beer, Nuts, Diapers}",
+    "{Coffee, Diapers, Eggs}",
+    "{Beer, Nuts, Eggs}",
+    "{Beer, Coffee, Milk}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{Beer,Nuts,Diapers} occurs in T1 and T2 (support 2/5 = 40%), meeting minsup. The other itemsets each occur in at most 1 transaction.",
+   "hint": "Length-3 frequent = itemset 3 phan tu co count >= minsup. Dem so transaction chua ca 3 item.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 21,
+   "id": "dbm302m-176",
+   "confidence": "high"
+  },
+  {
+   "question": "Consider the database with transactions T1: {a1,a2,a3}, T2: {a2,a3,a4}, T3: {a1,a3,a4}. With minsup = 2, which of the following frequent patterns is NOT closed?",
+   "options": [
+    "{a2}",
+    "{a3, a4}",
+    "{a3}",
+    "{a1, a3}"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "{a2} has support 2, but its superset {a2,a3} also has support 2, so {a2} is not closed. The others have no proper superset with equal support.",
+   "hint": "Not closed = ton tai superset Y voi sup(Y) = sup(X). Kiem tra tung item xem co superset cung support khong.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 23,
+   "id": "dbm302m-177",
+   "confidence": "high"
+  },
+  {
+   "question": "Coursera collected statistics on students taking Data Mining (DM) and Machine Learning (ML). Contingency table: ML&DM=700, ML&notDM=300 (row 1000); notML&DM=500, notML&notDM=1500 (row 2000); column totals 1200 and 1800; grand total 3000. If lift is used to measure the correlation between DM and ML, what is lift(DM, ML)?",
+   "options": [
+    "7/1200",
+    "-7/4",
+    "-7/1200",
+    "7/4"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "lift = P(DM,ML)/(P(DM)*P(ML)) = (700/3000)/((1200/3000)*(1000/3000)) = 0.2333/0.1333 = 1.75 = 7/4.",
+   "hint": "lift = P(A,B)/(P(A)*P(B)). lift > 1 => tuong quan duong. Ket qua 7/4.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 24,
+   "id": "dbm302m-178",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) is constructed so that HM=24, notHM=126, HD=25, notHD=125, with observed counts equal to expected. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
+   "options": [
+    "-1",
+    "cannot be determined",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Since observed counts equal the expected (independence) values, P(HD,HM)=P(HD)*P(HM) and lift = 1.",
+   "hint": "Doc lap => lift = 1. lift = P(A,B)/(P(A)*P(B)).",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 26,
+   "id": "dbm302m-179",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the itemsets in Table 1 and a pattern-cluster quality threshold delta = 0.001, which set of representative (compressed) patterns covers all itemsets in Table 1? The lowest-support pattern is {F,A,C,E,T,S}.",
+   "options": [
+    "{{F,A,C,E,S}, {F,A,C,T,S}}",
+    "{{F,A,C,E,S}, {F,A,C,E,T,S}, {F,A,C,T,S}}",
+    "{{F,A,C,E,S}, {A,C,E,S}}",
+    "{{F,A,C,E,T,S}}",
+    "{{A,C,E,S}, {A,C,T,S}}"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The lowest-support pattern {F,A,C,E,T,S} cannot be delta-covered by the others and must be kept, yielding the three-pattern representative set in option B.",
+   "hint": "Representative pattern phai delta-cover moi itemset. Pattern support thap nhat phai giu neu khong bi cover.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 27,
+   "id": "dbm302m-180",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database S1: <a(bc)(de)ef>, S2: <a(bd)(be)ef>, S3: <bc(ad)ebfed>, S4: <ab(cd)d(ab)e>, using the SPADE algorithm, which sequence positions in the format <SID, EID> belong to the id-list of item b? Select all that apply.",
+   "options": [
+    "<3, 2>",
+    "<3, 1>",
+    "<1, 2>",
+    "<4, 1>"
+   ],
+   "answers": [
+    1,
+    2
+   ],
+   "explanation": "Trong S1, b nằm ở element thứ 2 → <1,2>; trong S3, b nằm ở element đầu → <3,1>. Đây là hai vị trí đúng trong id-list của b (bản đề gốc chép thiếu b ở S1).",
+   "hint": "SPADE id-list = danh sach (SID, EID) noi item xuat hien. Xac dinh dung vi tri event (EID) cua item b.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 28,
+   "id": "dbm302m-181",
+   "confidence": "high"
+  },
+  {
+   "question": "Given the sequence database (Table 3) with min_sup = 1, which of the following sequences does NOT belong to the <a>-projected database?",
+   "options": [
+    "<f(e)(cdeh)cfg(abe)>",
+    "<d(bc)c(fg)(ch)>",
+    "<(_d)ebf(cdfgh)>",
+    "<b(bd)>",
+    "All of the above belong to the <a>-projected database."
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "The <a>-projected database contains the suffixes after the first 'a' in each sequence; <b(bd)> is not a valid projected suffix.",
+   "hint": "<a>-projected DB = suffix sau lan dau xuat hien 'a'. Cai nao khong phai suffix hop le thi loai.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 29,
+   "id": "dbm302m-182",
+   "confidence": "high",
+   "review": "Trùng dbm302m-163, thiếu Table 3."
+  },
+  {
+   "question": "Given the sequence database S1: <a c (de) e f>, S2: <a (bd) (be) e f>, S3: <b c (ad) e b f e d>, S4: <a b (cd) d (ab) e>, using the SPADE algorithm, which sequence positions in the format <SID, EID> belong to the id-list of item a? Select all that apply.",
+   "options": [
+    "<4, 1>",
+    "<1, 1>",
+    "<3, 2>",
+    "<1, 2>"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "explanation": "Item a occurs at event 1 of S4 (<4,1>) and event 1 of S1 (<1,1>). In S3 the element (ad) is event 3 (b and c are separate earlier events), so <3,2> is not an a-position, and <1,2> of S1 is (de).",
+   "hint": "SPADE id-list cua a = cac (SID, EID) noi a xuat hien. Dem event id can than khi item roi hoac trong ngoac.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 30,
+   "id": "dbm302m-183",
+   "confidence": "high"
+  },
+  {
+   "question": "In CP-Miner, constraint-based sequential pattern mining is used on a tokenized/hashed source file. Sequences: (1)<1,2,1,3>, (2)<2,3,1,4>, (3)<1,2,4,3>, (4)<3,2,4,3>, (5)<1,2,5,4>. With max_gap = 2 (index difference between matched items <= 2) and support threshold 0.6 (i.e. at least 3 of 5), which sequences can be frequent output by CP-Miner? Select all that apply.",
+   "options": [
+    "<1, 2>",
+    "<1, 3>",
+    "<2, 3>",
+    "<3, 4>"
+   ],
+   "answers": [
+    0,
+    2
+   ],
+   "explanation": "<1,2> occurs with gap<=2 in sequences 1,3,5 (support 3); <2,3> occurs in sequences 1,2,3,4 (support 4). <1,3> and <3,4> each appear in fewer than 3 sequences.",
+   "hint": "Dem so sequence chua pattern voi max_gap <= 2, roi so voi nguong support (3/5). Chu y thu tu va khoang cach chi so.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 31,
+   "id": "dbm302m-184",
+   "confidence": "high"
+  },
+  {
+   "question": "What are some common considerations and requirements for cluster analysis? Select all that apply.",
+   "options": [
+    "In order to perform cluster analysis, we need a similarity measure between data objects.",
+    "We need to be able to handle a mixture of different attribute types (e.g. numerical and categorical).",
+    "We need to consider how to incorporate user preference for cluster size and shape into the algorithm.",
+    "We must know the number of output clusters a priori for all clustering algorithms."
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "A, B and C are genuine requirements. D is false: many algorithms (e.g. DBSCAN, hierarchical) do not require the number of clusters in advance.",
+   "hint": "Cluster analysis can: similarity measure, xu ly mixed attributes, user preference. KHONG phai moi thuat toan deu can biet truoc so cluster (DBSCAN...).",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 32,
+   "id": "dbm302m-185",
+   "confidence": "high"
+  },
+  {
+   "question": "A dataset contains two flowers. Iris setosa: (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2). Iris versicolor: (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
+   "options": [
+    "2.8",
+    "4.6",
+    "2.5",
+    "7.8"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Manhattan distance = |4.9-5.6| + |3.0-2.5| + |1.4-3.9| + |0.2-1.1| = 0.7 + 0.5 + 2.5 + 0.9 = 4.6.",
+   "hint": "Manhattan distance = tong tri tuyet doi hieu tung chieu (L1). Cong lai la ra.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 33,
+   "id": "dbm302m-186",
+   "confidence": "high"
+  },
+  {
+   "question": "Two cars from the Car Evaluation Database have 6 categorical attributes (buying[4 values], maint[4], doors[4], persons[3], lug_boot[3], safety[3]). Each categorical attribute is represented by a set of symmetric binary attributes (21 in total). The two cars agree on 2 attributes (maint, safety) and differ on 4. What is the distance between Car 1 and Car 2?",
+   "options": [
+    "1/3",
+    "2/3",
+    "8/21",
+    "8/17",
+    "8/10"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "One-hot encoding gives 21 binary attributes. Each differing categorical attribute contributes 2 mismatched binary attributes, so 4 differing attributes give 8 mismatches. Symmetric binary distance = 8/21.",
+   "hint": "Moi categorical -> nhieu binary; moi thuoc tinh khac nhau tao 2 mismatch. Symmetric binary distance = mismatch/tong binary = 8/21.",
+   "topic": "Preprocessing",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 34,
+   "id": "dbm302m-187",
+   "confidence": "high"
+  },
+  {
+   "question": "The table lists all frequent patterns: {Beer,Nuts,Diaper}, {Beer,Coffee,Nuts}, {Beer,Diaper,Eggs}, {Beer,Nuts,Eggs,Milk}, {Beer,Nuts,Diaper,Eggs,Milk}. Which of them are closed patterns but NOT max patterns? Check all that apply.",
+   "options": [
+    "{Beer, Coffee, Nuts}",
+    "{Beer, Nuts, Eggs, Milk}",
+    "{Beer, Diaper, Eggs}",
+    "{Beer, Nuts, Diaper}"
+   ],
+   "answers": [
+    1,
+    3
+   ],
+   "explanation": "{Beer,Nuts,Eggs,Milk} and {Beer,Nuts,Diaper} are closed but each has a frequent superset ({Beer,Nuts,Diaper,Eggs,Milk}), so they are not max patterns.",
+   "hint": "Closed nhung khong max = van co superset la frequent. Tim pattern nam trong pattern lon nhat.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 37,
+   "id": "dbm302m-188",
+   "confidence": "high",
+   "review": "Trùng dbm302m-172, thiếu số liệu support."
+  },
+  {
+   "question": "Consider support-based and null-invariant definitions for negative patterns with epsilon = 0.01. In a database of 10^9 total transactions, 10^6 contain A, 10^4 contain B, and 10^2 contain both. Which statement is true?",
+   "options": [
+    "{A, B} is a negative pattern only by the null-invariant definition.",
+    "(P(B|A)+P(A|B))/2 = 0.00505 < 0.01, so it is negative by the null-invariant definition (and this makes it negative overall).",
+    "{A, B} is not a negative pattern by either definition.",
+    "{A, B} is a negative pattern by both definitions.",
+    "{A, B} is a negative pattern only by the support-based definition."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "P(A,B)=10^-7 > P(A)P(B)=10^-8, so not negative by support-based. The null-invariant average = 0.00505 < 0.01, so negative only by the null-invariant definition.",
+   "hint": "Support-based: P(A,B) << P(A)*P(B). Null-invariant: (P(A|B)+P(B|A))/2 < epsilon. Chi thoa null-invariant.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 38,
+   "id": "dbm302m-189",
+   "confidence": "high"
+  },
+  {
+   "question": "Sequence database: S1: <a(abc)(ac)d(cf)>, S2: <(ad)c(bc)(ae)>, S3: <(ef)(ab)(df)cb>, S4: <eg(af)cbc>. Which of the following is NOT a subsequence of any sequence in the database?",
+   "options": [
+    "<aa(bc)>",
+    "<f(ba)fb>",
+    "<accc>",
+    "<abcd>"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "<aa(bc)> requires two a's followed by an element containing both b and c together; no sequence provides a later single element with both b and c after two a's. The others are subsequences (e.g. <abcd> and <accc> in S1, <f(ba)fb> in S3).",
+   "hint": "Subsequence phai giu thu tu; item trong ngoac phai cung mot element. Kiem tra tung sequence.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 39,
+   "id": "dbm302m-190",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) is built with HM=24, notHM=126 and observed counts equal to expected. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
+   "options": [
+    "-1",
+    "cannot be determined",
+    "0",
+    "1"
+   ],
+   "answers": [
+    3
+   ],
+   "explanation": "Observed equals expected, so HD and HM are independent and lift = 1.",
+   "hint": "Doc lap (O = E) => lift = 1.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 40,
+   "id": "dbm302m-191",
+   "confidence": "high"
+  },
+  {
+   "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) has observed counts equal to expected (HM=24, notHM=126). If the chi-square score is used to measure the correlation between HD and HM, what is the chi-square score?",
+   "options": [
+    "-1",
+    "cannot be determined",
+    "0",
+    "1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Because observed equals expected in every cell, each (O-E)^2/E term is 0 and chi-square = 0.",
+   "hint": "O = E o moi o => chi-square = 0.",
+   "topic": "Association Rules",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 41,
+   "id": "dbm302m-192",
+   "confidence": "high"
+  },
+  {
+   "question": "Using the CloSpan algorithm with minimum support 15, mining derives sequences with projected-DB sizes: <c>:50, <ac>:40, <ab>:30, <bc>:50. After applying the backward sub-pattern and backward super-pattern pruning rules, which projected DBs remain? Select all that apply.",
+   "options": [
+    "<ac>",
+    "<bc>",
+    "<ab>",
+    "<c>"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "<c> and its super-pattern <bc> share the same projected-DB size (50), so <c> is pruned; <ac>, <ab> and <bc> remain.",
+   "hint": "CloSpan: super-pattern cung kich thuoc projected DB => prune sub-pattern <c>.",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 42,
+   "id": "dbm302m-193",
+   "confidence": "high"
+  },
+  {
+   "question": "A data scientist applies the Lossy Counting algorithm to a transactional data stream. Bucket size w = 1000, stream length N = 10000, and the true count of item A is 100. Which of the following could be a possible output count for item A?",
+   "options": [
+    "110",
+    "95",
+    "105",
+    "85"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Lossy Counting never overcounts and undercounts by at most N/w = 10, so the estimate is in [90,100]; only 95 qualifies.",
+   "hint": "Lossy Counting chi under-count, sai so <= N/w (=10). Uoc luong trong [90,100].",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 44,
+   "id": "dbm302m-194",
+   "confidence": "high"
+  },
+  {
+   "question": "The Kohonen self-organizing map (SOM) refers to which of the following?",
+   "options": [
+    "The process of finding the right formal representation of a body of knowledge in order to represent it in a knowledge-based system.",
+    "A method that automatically maps an external signal space into a system's internal representational space; useful for classification tasks.",
+    "A process where an individual learns to carry out a task, transitioning from being unable to a being able to perform it under the same circumstances.",
+    "None of the mentioned"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A Kohonen SOM is an unsupervised neural network that maps a high-dimensional external signal space onto a low-dimensional internal representation, useful for classification and visualization.",
+   "hint": "SOM (Kohonen) = mang neural anh xa khong gian tin hieu ngoai vao khong gian bieu dien noi bo, ho tro phan loai.",
+   "topic": "Clustering",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 46,
+   "id": "dbm302m-195",
+   "confidence": "high"
+  },
+  {
+   "question": "Which statement best describes a brute-force (exhaustive) search?",
+   "options": [
+    "A stage of the KDD process in which new data is added to the existing selection.",
+    "The process of finding a solution to a problem by enumerating all possible solutions in some predefined order and then testing them.",
+    "The distance between two points as calculated using the Pythagorean theorem.",
+    "None of the mentioned"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A brute-force (exhaustive) search enumerates all candidate solutions in a fixed order and tests each until a valid one is found.",
+   "hint": "Brute-force = liet ke va thu tat ca giai phap theo thu tu. (Option C mo ta Euclidean distance, khong phai brute-force.)",
+   "topic": "Advanced Mining",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 47,
+   "id": "dbm302m-196",
+   "confidence": "high"
+  },
+  {
+   "question": "Discriminating between spam and ham (legitimate) e-mails is a classification task. True or false?",
+   "options": [
+    "True",
+    "False"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Assigning e-mails to predefined categories (spam vs ham) using labeled data is a supervised classification task.",
+   "hint": "Phan loai email spam/ham = gan nhan lop da biet => classification (supervised).",
+   "topic": "Classification",
+   "verified": true,
+   "source": "md_extra",
+   "origNum": 48,
+   "id": "dbm302m-197",
+   "confidence": "high"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 1,
+   "question": "Points (2,3), (4,5), and (6,7) belong to a cluster. What is the centroid x-coordinate?",
+   "options": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The centroid x-coordinate is the mean of the x values: (2+4+6)/3 = 4.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Centroid chỉ là trung bình cộng của từng tọa độ: cộng các x rồi chia cho số điểm.",
+   "topic": "Clustering",
+   "id": "dbm302m-198"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 2,
+   "question": "Which stage presents mining results using charts, dashboards, or reports?",
+   "options": [
+    "Knowledge visualization",
+    "Data encryption",
+    "Memory allocation",
+    "Data extracting"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Knowledge (result) visualization is the stage where mining results are communicated through charts, dashboards, and reports.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Bước trình bày kết quả bằng charts/dashboards chính là Knowledge visualization; các lựa chọn kia thuộc lưu trữ hay bảo mật.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-199"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 3,
+   "question": "If SSE decreases after centroid updates, what does it indicate?",
+   "options": [
+    "Clusters are improving",
+    "Dataset size increased",
+    "Clusters merged incorrectly",
+    "Data normalization failed"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Lower SSE (sum of squared errors) means points are closer to their centroids, so the clustering is improving.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "SSE nhỏ = điểm sát centroid hơn, nên SSE giảm nghĩa là clustering đang tốt lên (nhớ: error giảm là tốt).",
+   "topic": "Clustering",
+   "id": "dbm302m-200"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 4,
+   "question": "Of the listed benefits of a fisheye lens, which is the least relevant to data visualization?",
+   "options": [
+    "It makes the data appear more interesting.",
+    "It supports focus on detail along with the context of that detail amid the rest of the dataset.",
+    "It allows zooming without obscuring the unzoomed data.",
+    "None of the above."
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A fisheye lens' real value is focus-plus-context and non-obscuring zoom; merely making data look interesting is not a substantive visualization benefit.",
+   "verified": false,
+   "confidence": "medium",
+   "hint": "Giá trị thật của fisheye lens là focus + context và zoom không che dữ liệu; 'trông thú vị hơn' chỉ là bề nổi nên ít liên quan nhất.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-201"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 5,
+   "question": "Which techniques help analyze correlations between multiple numerical variables? (Choose 2 answers)",
+   "options": [
+    "Scatter plot matrix",
+    "Correlation heatmap",
+    "Histogram",
+    "Line chart"
+   ],
+   "answers": [
+    0,
+    1
+   ],
+   "explanation": "A scatter plot matrix and a correlation heatmap both reveal pairwise relationships among multiple numerical variables; histograms and line charts show single-variable distributions or trends.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Muốn xem correlation giữa nhiều biến thì dùng scatter plot matrix và correlation heatmap; histogram/line chart chỉ mô tả một biến.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-202"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 6,
+   "question": "If support(A)=0.5, support(B)=0.4, and support(A,B)=0.2, what is confidence(A→B)?",
+   "options": [
+    "0.2",
+    "0.4",
+    "0.5",
+    "0.8"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Confidence(A→B) = support(A,B)/support(A) = 0.2/0.5 = 0.4.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Confidence(A→B) = support(A,B)/support(A); mẫu số luôn là vế trái A.",
+   "topic": "Association Rules",
+   "id": "dbm302m-203"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 7,
+   "question": "A dataset has 1000 records visualized in a pie chart with 200 belonging to category A. What percentage does category A represent?",
+   "options": [
+    "10%",
+    "15%",
+    "20%",
+    "25%"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "200/1000 = 0.20 = 20%.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Phần trăm trong pie chart = phần / tổng: 200/1000 = 20%.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-204"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 8,
+   "question": "Which type of pattern represents sequential relationships between events?",
+   "options": [
+    "Sequential patterns",
+    "Regression patterns",
+    "Normalization patterns",
+    "Sorting patterns"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Sequential patterns capture ordered relationships between events over time.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Nghe 'sequential' (theo trình tự thời gian) thì chọn Sequential patterns; đây là dạng sequential pattern mining.",
+   "topic": "Advanced Mining",
+   "id": "dbm302m-205"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 9,
+   "question": "Which characteristics describe effective clusters? (Choose 3 answers)",
+   "options": [
+    "High intra-cluster similarity",
+    "Low inter-cluster similarity",
+    "Clear cluster boundaries",
+    "Random assignment",
+    "High noise proportion"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "Good clusters have high similarity within a cluster, low similarity between clusters, and clear boundaries; random assignment and high noise indicate poor clustering.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Cluster tốt: giống nhau bên trong (high intra), khác nhau giữa các nhóm (low inter), ranh giới rõ; random và noise là dấu hiệu xấu.",
+   "topic": "Clustering",
+   "id": "dbm302m-206"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 10,
+   "question": "A dataset initially has 10 features. After dimensionality reduction it has 4 features. How many features were eliminated?",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "10 - 4 = 6 features were eliminated.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Số feature bị loại = ban đầu - còn lại: 10 - 4 = 6.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-207"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 11,
+   "question": "If support(A)=0.4, support(B)=0.5, and support(A,B)=0.2, what is lift(A→B)?",
+   "options": [
+    "0.5",
+    "1.0",
+    "1.5",
+    "2.0"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Lift = support(A,B)/(support(A)*support(B)) = 0.2/(0.4*0.5) = 0.2/0.2 = 1.0, indicating independence.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Lift = support(A,B)/(support(A)×support(B)); bằng 1 nghĩa là A và B độc lập.",
+   "topic": "Association Rules",
+   "id": "dbm302m-208"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 12,
+   "question": "From the following list of statements, identify the factually correct ones.",
+   "options": [
+    "Dimensionality reduction helps make high-dimensional clustering more feasible and scalable.",
+    "There are no clustering algorithms that can handle time-series data since we always assume that the data points are temporally independent from each other.",
+    "Since cluster analysis is unsupervised learning, there's no way to incorporate user preference or guidance into the clustering process.",
+    "None of the above"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Dimensionality reduction improves feasibility and scalability of clustering; B and C are false (time-series clustering exists and semi-supervised/constrained clustering can use guidance).",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Câu chứa 'always/no way' thường sai; dimensionality reduction giúp clustering high-dimensional khả thi hơn nên đó là câu đúng.",
+   "topic": "Clustering",
+   "id": "dbm302m-209"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 13,
+   "question": "If support(A,B)=0.3 and support(A)=0.6, what is confidence(A→B)?",
+   "options": [
+    "0.25",
+    "0.30",
+    "0.50",
+    "0.60"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Confidence(A→B) = support(A,B)/support(A) = 0.3/0.6 = 0.5.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Confidence = support(A,B)/support(A) = 0.3/0.6 = 0.5.",
+   "topic": "Association Rules",
+   "id": "dbm302m-210"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 14,
+   "question": "Which pattern discovery method finds relationships among variables in large databases?",
+   "options": [
+    "Association rule mining",
+    "Feature encoding",
+    "Query optimization",
+    "Data encryption"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Association rule mining discovers relationships/associations among variables (items) in large databases.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Tìm 'relationships among variables' thì nghĩ ngay Association rule mining (kiểu bia-tã lót).",
+   "topic": "Association Rules",
+   "id": "dbm302m-211"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 15,
+   "question": "Which characteristics make a visualization effective for data mining analysis? (Choose 3 answers)",
+   "options": [
+    "Clear labeling",
+    "Appropriate chart type",
+    "Minimal distortion of data",
+    "Random color selection"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "Effective visualizations use clear labels, an appropriate chart type, and minimal data distortion; random colors reduce clarity.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Visualization tốt: nhãn rõ, chart type phù hợp, ít bóp méo dữ liệu; 'random color' là dấu hiệu loại.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-212"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 16,
+   "question": "A cluster contains distances 1, 2, 3, 4 from centroid. What is the average distance?",
+   "options": [
+    "2",
+    "2.5",
+    "3",
+    "3.5"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Average = (1+2+3+4)/4 = 10/4 = 2.5.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Trung bình khoảng cách = tổng/số điểm = 10/4 = 2.5.",
+   "topic": "Clustering",
+   "id": "dbm302m-213"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 17,
+   "question": "In a dataset with 300 transactions, item A appears in 90 transactions. What is support(A)?",
+   "options": [
+    "0.10",
+    "0.20",
+    "0.30",
+    "0.40"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Support(A) = 90/300 = 0.30.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Support = số transaction chứa item / tổng transaction = 90/300 = 0.30.",
+   "topic": "Association Rules",
+   "id": "dbm302m-214"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 18,
+   "question": "Which clustering algorithm requires the number of clusters to be specified beforehand?",
+   "options": [
+    "K-Means",
+    "DBSCAN",
+    "OPTICS",
+    "Agglomerative clustering"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "K-Means requires k (the number of clusters) as input; DBSCAN and OPTICS are density-based and do not, and agglomerative builds a hierarchy without a preset k.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Chữ 'K' trong K-Means chính là số cluster phải khai báo trước; DBSCAN/OPTICS thì không cần.",
+   "topic": "Clustering",
+   "id": "dbm302m-215"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 19,
+   "question": "A dataset with 600 samples is visualized using a pie chart. If category A contains 150 samples, what percentage does category A represent?",
+   "options": [
+    "20%",
+    "25%",
+    "30%",
+    "35%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "150/600 = 0.25 = 25%.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "150/600 = 0.25 = 25%.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-216"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 20,
+   "question": "Which techniques are used for dimensionality reduction before visualization? (Choose 3 answers)",
+   "options": [
+    "PCA",
+    "t-SNE",
+    "UMAP",
+    "Linear regression"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "PCA, t-SNE, and UMAP are dimensionality reduction techniques; linear regression is a predictive/regression method.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Bộ ba dimensionality reduction hay gặp: PCA, t-SNE, UMAP; linear regression là dự đoán, không giảm chiều.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-217"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 21,
+   "question": "Which evaluation metric measures cluster compactness and separation?",
+   "options": [
+    "Silhouette coefficient",
+    "Support",
+    "Confidence",
+    "Lift"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The silhouette coefficient measures how compact points are within a cluster versus how separated they are from other clusters; support, confidence, and lift are association-rule metrics.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Đánh giá cluster (compactness + separation) dùng Silhouette; support/confidence/lift là của association rules.",
+   "topic": "Clustering",
+   "id": "dbm302m-218"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 22,
+   "question": "A scatter plot shows points evenly spread with no visible trend. What can be inferred about correlation?",
+   "options": [
+    "Correlation is near zero",
+    "Correlation is strongly positive",
+    "Correlation is strongly negative",
+    "Correlation equals one"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "No visible trend in a scatter plot indicates little or no linear relationship, so correlation is near zero.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Điểm rải đều không xu hướng = không có quan hệ tuyến tính, correlation gần 0.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-219"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 23,
+   "question": "What type of interactive visualization would you embed in a webpage to allow viewers to explore your prepared data?",
+   "options": [
+    "Interactive storytelling",
+    "Presentation visualization",
+    "Interactive visualization",
+    "None of the above"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "An interactive visualization embedded in a webpage lets viewers explore the data directly (filtering, zooming, hovering).",
+   "verified": false,
+   "confidence": "medium",
+   "hint": "Cho người xem tự khám phá (filter/zoom/hover) trên web = Interactive visualization.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-220"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 24,
+   "question": "In 200 transactions, itemset {A,B} appears in 30 transactions. What is its support percentage?",
+   "options": [
+    "10%",
+    "15%",
+    "20%",
+    "25%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Support = 30/200 = 0.15 = 15%.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Support{A,B} = 30/200 = 15%.",
+   "topic": "Association Rules",
+   "id": "dbm302m-221"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 25,
+   "question": "Which technique discovers relationships among items frequently appearing together?",
+   "options": [
+    "Association rule mining",
+    "Regression",
+    "Feature hashing",
+    "Data compression"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Association rule mining (frequent pattern mining) finds items that frequently co-occur in transactions.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "'Items frequently together' = Association rule mining (frequent pattern).",
+   "topic": "Association Rules",
+   "id": "dbm302m-222"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 26,
+   "question": "If 400 out of 1000 records are used for validation and testing, how many remain for training?",
+   "options": [
+    "500",
+    "550",
+    "600",
+    "650"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "1000 total minus 400 used for validation/testing leaves 600 records for training.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Training = tổng - (validation + testing) = 1000 - 400 = 600.",
+   "topic": "Classification",
+   "id": "dbm302m-223"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 27,
+   "question": "If lift(A→B)=1, what does this imply?",
+   "options": [
+    "A and B are independent",
+    "A strongly causes B",
+    "A prevents B",
+    "A always implies B"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A lift value of exactly 1 means A and B occur together no more or less than expected by chance, so they are statistically independent.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Lift = 1 → độc lập; >1 là hút nhau, <1 là đẩy nhau.",
+   "topic": "Association Rules",
+   "id": "dbm302m-224"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 28,
+   "question": "Which of the following algorithms belongs to the partition-based clustering category?",
+   "options": [
+    "K-Means",
+    "DBSCAN",
+    "Gaussian Mixture Model",
+    "Mixture Model"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "K-Means is the classic partition-based (partitioning) clustering algorithm; DBSCAN is density-based and GMM/Mixture Models are model-based.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Partition-based tiêu biểu là K-Means; DBSCAN là density-based, GMM là model-based.",
+   "topic": "Clustering",
+   "id": "dbm302m-225"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 29,
+   "question": "If 300 out of 500 records belong to class A, what percentage of the dataset is class A?",
+   "options": [
+    "50%",
+    "55%",
+    "60%",
+    "65%"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "300/500 = 0.60 = 60%.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Tỉ lệ class = 300/500 = 60%.",
+   "topic": "Classification",
+   "id": "dbm302m-226"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 30,
+   "question": "Which step in the data mining pipeline involves collecting raw data from multiple sources?",
+   "options": [
+    "Data acquisition",
+    "Model evaluation",
+    "Pattern deployment",
+    "Algorithm optimization"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Data acquisition (data collection) is the stage where raw data is gathered from multiple sources.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Thu thập raw data từ nhiều nguồn = Data acquisition (bước đầu tiên của pipeline).",
+   "topic": "Preprocessing",
+   "id": "dbm302m-227"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 31,
+   "question": "Which characteristics indicate good clustering results? (Choose 3 answers)",
+   "options": [
+    "High intra-cluster similarity",
+    "Low inter-cluster similarity",
+    "Clear cluster separation",
+    "Random cluster assignment",
+    "High noise levels"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "Good clustering maximizes similarity within clusters (high intra-cluster similarity), keeps clusters distinct from each other (low inter-cluster similarity), and yields clear separation between clusters.",
+   "verified": false,
+   "confidence": "medium",
+   "hint": "Nhớ công thức 'high intra, low inter, clear separation'; random và noise luôn là đáp án sai.",
+   "topic": "Clustering",
+   "id": "dbm302m-228"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 32,
+   "question": "Which type of attribute has only two possible values, such as true/false?",
+   "options": [
+    "Binary attribute",
+    "Continuous attribute",
+    "Ordinal attribute",
+    "Temporal attribute"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A binary attribute has exactly two possible values (e.g., true/false, 0/1).",
+   "verified": false,
+   "confidence": "high",
+   "hint": "'Bi' = hai; Binary attribute chỉ có hai giá trị (true/false, 0/1).",
+   "topic": "Preprocessing",
+   "id": "dbm302m-229"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 33,
+   "question": "In a dataset of 400 transactions, itemset {A,B} occurs in 80 transactions. What is support?",
+   "options": [
+    "0.10",
+    "0.15",
+    "0.20",
+    "0.25"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Support = 80/400 = 0.20.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Support = 80/400 = 0.20.",
+   "topic": "Association Rules",
+   "id": "dbm302m-230"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 34,
+   "question": "A scatter plot shows points forming an upward trend. What does this suggest?",
+   "options": [
+    "Positive correlation",
+    "Negative correlation",
+    "No relationship",
+    "Constant value"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "An upward trend (both variables increasing together) indicates a positive correlation.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Đường đi lên (cùng tăng) = positive correlation; đi xuống là negative.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-231"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 35,
+   "question": "Which algorithms belong to density-based clustering? (Choose 3 answers)",
+   "options": [
+    "DBSCAN",
+    "OPTICS",
+    "Mean Shift",
+    "K-Means",
+    "Decision Trees"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "DBSCAN, OPTICS, and Mean Shift are density-based clustering algorithms; K-Means is partition-based and Decision Trees are a classification method.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Density-based: DBSCAN, OPTICS, Mean Shift; K-Means là partition, Decision Trees là classification.",
+   "topic": "Clustering",
+   "id": "dbm302m-232"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 36,
+   "question": "If a dataset contains 500 transactions and an itemset appears in 50 transactions, what is its support?",
+   "options": [
+    "0.05",
+    "0.10",
+    "0.20",
+    "0.25"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Support = 50/500 = 0.10.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Support = 50/500 = 0.10.",
+   "topic": "Association Rules",
+   "id": "dbm302m-233"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 37,
+   "question": "What is the main purpose of data visualization in data mining?",
+   "options": [
+    "To present data patterns visually for easier interpretation",
+    "To physically store large datasets",
+    "To replace machine learning algorithms",
+    "To encrypt data before analysis"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Data visualization presents data and patterns graphically so they are easier to understand and interpret.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Mục đích visualization là trình bày pattern trực quan để dễ hiểu, không phải lưu trữ hay mã hóa.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-234"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 38,
+   "question": "A dataset originally has 40 attributes. After preprocessing, 28 attributes remain. How many were removed?",
+   "options": [
+    "10",
+    "12",
+    "14",
+    "16"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "40 - 28 = 12 attributes were removed.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Số attribute bị bỏ = 40 - 28 = 12.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-235"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 39,
+   "question": "Which of the following algorithms is incompatible with approximate frequent pattern mining in streaming data?",
+   "options": [
+    "FP-growth",
+    "Space-saving algorithm",
+    "Sticky sampling algorithm",
+    "Lossy counting algorithm"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "FP-growth is a batch, exact frequent-pattern algorithm requiring multiple passes over stored data; Space-saving, Sticky sampling, and Lossy counting are streaming approximate-counting algorithms.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "FP-growth là batch/exact quét nhiều lần nên không hợp streaming; các thuật toán 'counting/sampling' còn lại mới dành cho stream.",
+   "topic": "Advanced Mining",
+   "id": "dbm302m-236"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 40,
+   "question": "A correlation heatmap shows r = −0.85 between two variables. What does this imply?",
+   "options": [
+    "Strong negative relationship",
+    "Strong positive relationship",
+    "Weak relationship",
+    "No relationship"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "r = −0.85 is close to −1, indicating a strong negative (inverse) linear relationship.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "r gần -1 (như -0.85) = quan hệ nghịch mạnh (strong negative).",
+   "topic": "Data Visualization",
+   "id": "dbm302m-237"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 41,
+   "question": "A dataset contains 2000 samples, and 10% contain missing values removed during cleaning. How many samples remain?",
+   "options": [
+    "1600",
+    "1700",
+    "1800",
+    "1900"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "10% of 2000 = 200 removed, leaving 2000 - 200 = 1800 samples.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Bỏ 10% của 2000 = 200, còn lại 1800.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-238"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 42,
+   "question": "Which chart is typically used to compare categories of data?",
+   "options": [
+    "Bar chart",
+    "Histogram",
+    "Scatter plot",
+    "Box plot"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A bar chart compares values across discrete categories; a histogram shows distribution of a continuous variable.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "So sánh giữa các category rời rạc dùng Bar chart; histogram là cho phân phối biến liên tục.",
+   "topic": "Data Visualization",
+   "id": "dbm302m-239"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 43,
+   "question": "If a cluster contains 50 points out of 200 dataset points, what percentage does it represent?",
+   "options": [
+    "10%",
+    "20%",
+    "25%",
+    "30%"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "50/200 = 0.25 = 25%.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "50/200 = 0.25 = 25%.",
+   "topic": "Clustering",
+   "id": "dbm302m-240"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 44,
+   "question": "Which visualization is useful for displaying the proportion of categories in a dataset?",
+   "options": [
+    "Pie chart",
+    "Scatter plot",
+    "Histogram",
+    "Heatmap"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "A pie chart shows the proportional share of each category relative to the whole.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Xem tỉ lệ phần trăm của các category dùng Pie chart (miếng bánh = phần trăm).",
+   "topic": "Data Visualization",
+   "id": "dbm302m-241"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 45,
+   "question": "Which tasks belong to pattern discovery in data mining? (Choose 3 answers)",
+   "options": [
+    "Frequent pattern mining",
+    "Sequential pattern mining",
+    "Association rule mining",
+    "File compression",
+    "Data encryption"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "Frequent pattern mining, sequential pattern mining, and association rule mining are pattern-discovery tasks; file compression and encryption are not data mining tasks.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Pattern discovery gồm các task có chữ 'mining' (frequent/sequential/association); compression và encryption không phải.",
+   "topic": "Association Rules",
+   "id": "dbm302m-242"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 46,
+   "question": "Which clustering algorithm can detect clusters of arbitrary shape and identify noise?",
+   "options": [
+    "DBSCAN",
+    "K-Means",
+    "Naive Bayes",
+    "Linear Regression"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "DBSCAN, a density-based method, finds arbitrarily shaped clusters and labels low-density points as noise/outliers.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Cluster hình dạng bất kỳ + phát hiện noise = DBSCAN; K-Means chỉ ra cụm hình cầu và không nhận noise.",
+   "topic": "Clustering",
+   "id": "dbm302m-243"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 47,
+   "question": "Which technique helps reduce dimensionality for visualization purposes?",
+   "options": [
+    "PCA",
+    "SQL indexing",
+    "File compression",
+    "Hashing"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Principal Component Analysis (PCA) reduces the number of dimensions while preserving variance, commonly used to visualize high-dimensional data.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Giảm chiều để trực quan hóa dùng PCA (giữ variance); SQL indexing/hashing không liên quan.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-244"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 48,
+   "question": "Which clustering method merges clusters iteratively until one cluster remains?",
+   "options": [
+    "Agglomerative hierarchical clustering",
+    "K-Means clustering",
+    "Apriori algorithm",
+    "Logistic regression"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Agglomerative hierarchical clustering is bottom-up: it repeatedly merges the closest clusters until a single cluster remains.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "'Merge dần đến khi còn 1 cluster' = Agglomerative (bottom-up); nhớ agglomerate nghĩa là gom lại.",
+   "topic": "Clustering",
+   "id": "dbm302m-245"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 49,
+   "question": "If a dataset contains 100 attributes and dimensionality reduction removes 45 attributes, how many remain?",
+   "options": [
+    "45",
+    "50",
+    "55",
+    "60"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "100 - 45 = 55 attributes remain.",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Còn lại = 100 - 45 = 55.",
+   "topic": "Preprocessing",
+   "id": "dbm302m-246"
+  },
+  {
+   "source": "exam_img",
+   "origNum": 50,
+   "question": "Which characteristics describe strong association rules? (Choose 3 answers)",
+   "options": [
+    "High support",
+    "High confidence",
+    "High lift",
+    "Low support always",
+    "Random occurrence"
+   ],
+   "answers": [
+    0,
+    1,
+    2
+   ],
+   "explanation": "Strong association rules have high support (frequent), high confidence (reliable), and high lift (positive correlation beyond chance).",
+   "verified": false,
+   "confidence": "high",
+   "hint": "Rule mạnh cần bộ ba cao: support (thường xuyên), confidence (đáng tin), lift (hơn ngẫu nhiên).",
+   "topic": "Association Rules",
+   "id": "dbm302m-247"
+  }
+ ]
+}

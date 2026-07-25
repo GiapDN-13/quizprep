@@ -1,0 +1,1525 @@
+{
+ "id": "dbm302m-theory",
+ "questions": [
+  {
+   "id": "dbm302m-t1",
+   "source": "theory",
+   "origNum": 1,
+   "question": "Which of the following is a pre-attentive visual attribute (processed by the brain almost instantly, in under about 250 ms, without focused attention)?",
+   "options": [
+    "The exact numeric value printed inside a data label",
+    "Color (hue) of a mark",
+    "The correlation coefficient computed from the marks",
+    "The alphabetical ordering of category names"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Pre-attentive attributes such as hue, size, orientation, position and length are recognized almost instantly without focused attention. Reading a numeric value, computing a correlation, or parsing alphabetical order all require deliberate cognitive effort.",
+   "hint": "Pre-attentive = não nhận ra tức thì (<250ms): color/size/orientation/position/length. Đọc số hay tính toán thì KHÔNG phải.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t2",
+   "source": "theory",
+   "origNum": 2,
+   "question": "What is the correct order of steps in Shneiderman's Information Visualization Mantra?",
+   "options": [
+    "Details-on-demand, then filter, then zoom, then overview",
+    "Zoom first, then overview, then filter, then details-on-demand",
+    "Overview first, then zoom, then filter, then details-on-demand",
+    "Filter first, then overview, then details-on-demand, then zoom"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Shneiderman's mantra is: Overview first, zoom, filter, then details-on-demand. You start with the whole picture and progressively narrow toward specifics.",
+   "hint": "Mantra: Overview first -> Zoom -> Filter -> Details-on-demand. Tổng quan trước, chi tiết sau.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t3",
+   "source": "theory",
+   "origNum": 3,
+   "question": "You examine many individual customer records and, from those specific cases, formulate a general rule that 'customers who buy diapers tend to buy beer'. What kind of reasoning is this?",
+   "options": [
+    "Deductive reasoning",
+    "Inductive reasoning",
+    "Abductive reasoning",
+    "Simultaneous reasoning"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Generalizing a rule from many specific observed examples is inductive reasoning. Deductive applies a general rule to a specific case; abductive infers the most plausible explanation for an observation.",
+   "hint": "Từ nhiều ví dụ cụ thể -> khái quát thành quy luật = Inductive. (Deductive là chiều ngược lại.)",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t4",
+   "source": "theory",
+   "origNum": 4,
+   "question": "A doctor sees an unusual pattern in a patient's chart and reasons toward the single most likely diagnosis that would explain it. Which type of reasoning is this?",
+   "options": [
+    "Inductive reasoning",
+    "Deductive reasoning",
+    "Abductive reasoning",
+    "Presentation reasoning"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Inferring the most plausible explanation for an observation is abductive reasoning. Inductive generalizes rules from examples; deductive applies a known general rule to a specific case.",
+   "hint": "Suy ra lời giải thích khả dĩ NHẤT cho một quan sát = Abductive reasoning.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t5",
+   "source": "theory",
+   "origNum": 5,
+   "question": "Which chart type is most appropriate for comparing a single measured value across several discrete, unordered categories (e.g., sales by region)?",
+   "options": [
+    "Histogram",
+    "Bar chart",
+    "Scatter plot",
+    "Pie chart"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A bar chart is designed to compare values across discrete categories. A histogram shows the distribution of one continuous variable, and a scatter plot shows the relationship between two variables.",
+   "hint": "So sánh giữa các category rời rạc -> Bar chart. (Histogram là cho biến liên tục.)",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t6",
+   "source": "theory",
+   "origNum": 6,
+   "question": "Which chart type best shows the proportion each category contributes to a whole (parts of a total)?",
+   "options": [
+    "Line chart",
+    "Scatter plot",
+    "Pie chart",
+    "Histogram"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A pie chart displays each category's proportion relative to the total. Scatter plots show correlation and histograms show distribution, neither of which emphasizes parts-of-a-whole.",
+   "hint": "Tỉ lệ phần so với tổng thể -> Pie chart.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t7",
+   "source": "theory",
+   "origNum": 7,
+   "question": "A pie chart shows survey responses. One category received 150 out of 600 total responses. What percentage of the pie does this category occupy?",
+   "options": [
+    "15%",
+    "25%",
+    "40%",
+    "60%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The slice's percentage is part divided by total: 150 / 600 = 0.25 = 25%.",
+   "hint": "Pie chart %: phần / tổng = 150/600 = 25%.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t8",
+   "source": "theory",
+   "origNum": 8,
+   "question": "In a scatter plot, the cloud of points slopes clearly downward from upper-left to lower-right. What does this indicate?",
+   "options": [
+    "Positive correlation between the two variables",
+    "Negative correlation between the two variables",
+    "No correlation (correlation about 0)",
+    "That the data is categorical, not numeric"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A downward trend (as one variable increases the other decreases) indicates negative correlation. An upward trend would be positive, and a formless scatter indicates correlation near 0.",
+   "hint": "Scatter đi xuống = negative correlation; đi lên = positive; rải đều = ~0.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t9",
+   "source": "theory",
+   "origNum": 9,
+   "question": "A correlation coefficient r = -0.85 between two variables indicates:",
+   "options": [
+    "A strong positive linear relationship",
+    "A strong negative linear relationship",
+    "No linear relationship",
+    "An impossible value, since r cannot be negative"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Pearson's r lies in [-1, 1]; a value near -1 (such as -0.85) indicates a strong negative linear relationship. Negative values are perfectly valid.",
+   "hint": "r gần -1 (vd -0.85) = tương quan âm MẠNH. r thuộc [-1, 1].",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t10",
+   "source": "theory",
+   "origNum": 10,
+   "question": "You want to inspect the pairwise correlations among many numeric variables at once. Which visualization is most suitable?",
+   "options": [
+    "A single pie chart",
+    "A scatter plot matrix or correlation heatmap",
+    "A one-dimensional histogram",
+    "A single bar chart"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A scatter plot matrix or a correlation heatmap is designed to reveal relationships among many numeric variables simultaneously. A single pie, histogram or bar chart only handles one or two variables.",
+   "hint": "Xem tương quan giữa NHIỀU biến số cùng lúc -> scatter plot matrix / correlation heatmap.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t11",
+   "source": "theory",
+   "origNum": 11,
+   "question": "Which of the following should be AVOIDED when designing an effective visualization?",
+   "options": [
+    "Clear labeling of axes and marks",
+    "Assigning random colors to marks",
+    "Choosing an appropriate chart type",
+    "Minimizing distortion of the underlying data"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Effective visualizations need clear labeling, an appropriate chart type, and minimal data distortion. Randomly assigned colors reduce clarity and should be avoided.",
+   "hint": "Nên: clear labeling, đúng chart type, ít distortion. Tránh: random color.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t12",
+   "source": "theory",
+   "origNum": 12,
+   "question": "Which chart type is specifically intended to show the distribution of a single continuous variable by binning it into ranges and counting items in each range?",
+   "options": [
+    "Bar chart",
+    "Pie chart",
+    "Histogram",
+    "Scatter plot"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A histogram bins one continuous variable into ranges and plots the count in each bin, showing its distribution. A bar chart compares discrete categories, which is a different purpose.",
+   "hint": "Phân phối của MỘT biến liên tục -> Histogram (chia bin rồi đếm). Đừng nhầm với bar chart.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t13",
+   "source": "theory",
+   "origNum": 13,
+   "question": "In the knowledge discovery process, presenting the mined results to users through charts, dashboards and reports corresponds to which step?",
+   "options": [
+    "Data acquisition",
+    "Data cleaning",
+    "Knowledge (result) visualization",
+    "Candidate generation"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Knowledge (result) visualization is the step where mining results are communicated via charts, dashboards and reports. Acquisition and cleaning are early preprocessing steps.",
+   "hint": "Bước trình bày KẾT QUẢ khai phá bằng charts/dashboards/reports = Knowledge (result) visualization.",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t14",
+   "source": "theory",
+   "origNum": 14,
+   "question": "Which 3-D depth cue relies specifically on the slightly different images received by the two eyes (binocular disparity)?",
+   "options": [
+    "Occlusion",
+    "Illumination / shading",
+    "Stereopsis",
+    "Shadowing"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Stereopsis is the depth cue that uses the disparity between the two eyes' images. Occlusion (blocking) is the strongest single cue, and illumination/shading conveys surface orientation.",
+   "hint": "Cue dùng HAI mắt (binocular disparity) = Stereopsis. (Occlusion mạnh nhất; shading = hướng bề mặt.)",
+   "topic": "Data Visualization",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t15",
+   "source": "theory",
+   "origNum": 15,
+   "question": "What is the Euclidean (L2) distance between the two points (1, 2) and (4, 6)?",
+   "options": [
+    "5",
+    "7",
+    "25",
+    "3.5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Euclidean distance = sqrt((4-1)^2 + (6-2)^2) = sqrt(9 + 16) = sqrt(25) = 5. (The value 7 is the Manhattan distance, and 25 is the squared distance.)",
+   "hint": "Euclidean = √(Σ(xi-yi)²) = √(9+16) = 5. (7 là Manhattan, 25 là bình phương.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t16",
+   "source": "theory",
+   "origNum": 16,
+   "question": "What is the Chebyshev (supremum, L-infinity) distance between the points (2, 5, 1) and (5, 1, 7)?",
+   "options": [
+    "13",
+    "6",
+    "3",
+    "7.81"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Chebyshev distance = max of the absolute per-dimension differences = max(|2-5|, |5-1|, |1-7|) = max(3, 4, 6) = 6. (13 is the Manhattan sum, 7.81 is roughly the Euclidean distance.)",
+   "hint": "Chebyshev = MAX của |xi-yi| = max(3,4,6) = 6. (13 là Manhattan.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t17",
+   "source": "theory",
+   "origNum": 17,
+   "question": "Compute the Minkowski distance with h = 3 between the points (22, 1, 42, 10) and (20, 0, 36, 8). (Absolute differences are 2, 1, 6, 2.)",
+   "options": [
+    "About 11",
+    "About 6.15",
+    "About 3.87",
+    "About 233"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Minkowski(h=3) = (2^3 + 1^3 + 6^3 + 2^3)^(1/3) = (8 + 1 + 216 + 8)^(1/3) = 233^(1/3) about 6.15. (11 is the Manhattan sum; 233 is the pre-root sum.)",
+   "hint": "Minkowski(h) = (Σ|xi-yi|^h)^(1/h). h=3: 233^(1/3) ≈ 6.15. (h=1->Manhattan, h=2->Euclidean.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t18",
+   "source": "theory",
+   "origNum": 18,
+   "question": "Two records are compared on asymmetric binary attributes. There are q = 3 attributes where both are 1, 4 attributes that mismatch (one is 1 and the other 0), and 2 attributes where both are 0. What is the Jaccard coefficient (similarity)?",
+   "options": [
+    "3/9",
+    "3/7",
+    "4/7",
+    "3/5"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Jaccard similarity for asymmetric binary = q / (q + r + s), ignoring the (0,0) matches. Here q = 3 and r + s = 4, so Jaccard = 3 / (3 + 4) = 3/7. Including the two (0,0) matches (giving 3/9) is the classic mistake.",
+   "hint": "Jaccard = q/(q+r+s), BỎ các cặp (0,0). = 3/(3+4) = 3/7. (3/9 là bẫy vì tính cả 0-0.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t19",
+   "source": "theory",
+   "origNum": 19,
+   "question": "Two objects are described by 6 categorical attributes. They have different values on 4 of the attributes. Using simple matching, what is the distance between them?",
+   "options": [
+    "4/6 = 2/3",
+    "2/6 = 1/3",
+    "4/2 = 2",
+    "6/4 = 1.5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Simple matching distance for categorical data = (number of attributes that differ) / (total attributes) = 4/6 = 2/3.",
+   "hint": "Simple matching distance = số thuộc tính KHÁC / tổng thuộc tính = 4/6 = 2/3.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t20",
+   "source": "theory",
+   "origNum": 20,
+   "question": "For the dataset {2, 4, 4, 4, 5, 5, 7, 9} (mean = 5, standard deviation = 2), what is the z-score of the value 9?",
+   "options": [
+    "0.5",
+    "2",
+    "4",
+    "9"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "z-score = (x - mean) / std = (9 - 5) / 2 = 2.",
+   "hint": "z-score = (x - mean)/std = (9-5)/2 = 2.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t21",
+   "source": "theory",
+   "origNum": 21,
+   "question": "A feature ranges from a minimum of 20 to a maximum of 60. After min-max normalization to [0, 1], what is the normalized value of x = 40?",
+   "options": [
+    "0.4",
+    "0.5",
+    "0.67",
+    "0.8"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Min-max: x' = (x - min) / (max - min) = (40 - 20) / (60 - 20) = 20/40 = 0.5.",
+   "hint": "Min-max = (x - min)/(max - min) = (40-20)/(60-20) = 0.5.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t22",
+   "source": "theory",
+   "origNum": 22,
+   "question": "Temperature measured in degrees Celsius is an example of which attribute type?",
+   "options": [
+    "Nominal",
+    "Ordinal",
+    "Interval",
+    "Ratio"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Celsius temperature is an interval attribute: it is ordered with equal spacing but has no true (absolute) zero, so ratios are not meaningful. A ratio attribute (like weight) has a true zero.",
+   "hint": "°C có thứ tự + khoảng đều nhưng KHÔNG có mốc 0 tuyệt đối -> Interval. (Ratio thì có 0 thật.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t23",
+   "source": "theory",
+   "origNum": 23,
+   "question": "Which of the following is a ratio-scaled attribute (has a true zero, so ratios are meaningful)?",
+   "options": [
+    "Calendar year",
+    "Body weight in kilograms",
+    "T-shirt size (small/medium/large)",
+    "Temperature in Celsius"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Body weight has a meaningful absolute zero (0 kg = no mass) and ratios make sense (10 kg is twice 5 kg), so it is ratio. Year and Celsius are interval, and T-shirt size is ordinal.",
+   "hint": "Ratio = có mốc 0 thật, tỉ số có nghĩa -> weight/income/count. (Year, °C là Interval; size là Ordinal.)",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t24",
+   "source": "theory",
+   "origNum": 24,
+   "question": "For the dataset {1, 2, 3, 4}, compute the absolute standard deviation (asd), defined as the average absolute deviation from the median.",
+   "options": [
+    "1",
+    "1.29",
+    "2.5",
+    "0.5"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "The median is (2+3)/2 = 2.5. The sum of absolute deviations = |1-2.5| + |2-2.5| + |3-2.5| + |4-2.5| = 1.5 + 0.5 + 0.5 + 1.5 = 4. asd = 4 / 4 = 1.",
+   "hint": "asd = (1/n)·Σ|xi - median|. Median = 2.5 -> asd = 4/4 = 1. Nhớ dùng MEDIAN, không phải mean.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t25",
+   "source": "theory",
+   "origNum": 25,
+   "question": "Which of the following is NOT a dimensionality reduction technique?",
+   "options": [
+    "PCA (Principal Component Analysis)",
+    "t-SNE",
+    "Linear regression",
+    "UMAP"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "PCA, t-SNE and UMAP all reduce dimensionality. Linear regression is a predictive/modeling method, not a dimensionality reduction technique.",
+   "hint": "PCA, t-SNE, UMAP = giảm chiều. Linear regression là dự đoán, KHÔNG phải giảm chiều.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t26",
+   "source": "theory",
+   "origNum": 26,
+   "question": "A dataset originally has 100 features. After applying PCA, only 45 components are retained. How many features were effectively removed?",
+   "options": [
+    "45",
+    "55",
+    "100",
+    "145"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Features removed = original - retained = 100 - 45 = 55.",
+   "hint": "Số feature bị loại = ban đầu - còn lại = 100 - 45 = 55.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t27",
+   "source": "theory",
+   "origNum": 27,
+   "question": "Which of the following is a valid strategy for handling missing values during data cleaning?",
+   "options": [
+    "Reducing the dimensionality with PCA",
+    "Imputing with the column's mean, median or mode",
+    "Applying min-max normalization",
+    "Computing the cosine similarity of every pair of rows"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Data cleaning handles missing values by dropping affected rows or imputing with the mean, median, mode, or a predicted value. PCA, normalization and cosine similarity address other concerns.",
+   "hint": "Missing values: bỏ dòng hoặc điền mean/median/mode (hoặc dự đoán). Đó là data cleaning.",
+   "topic": "Preprocessing",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t28",
+   "source": "theory",
+   "origNum": 28,
+   "question": "A database has 800 transactions. Item 'milk' appears in 200 transactions, and 'milk' and 'bread' appear together in 120 transactions. What are the support and confidence of the rule {milk} => {bread}?",
+   "options": [
+    "support = 25%, confidence = 60%",
+    "support = 15%, confidence = 60%",
+    "support = 15%, confidence = 40%",
+    "support = 60%, confidence = 15%"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "support = support(milk and bread) = 120/800 = 15%. confidence = support(milk and bread)/support(milk) = 120/200 = 60%. The denominator of confidence is always the left-hand side (milk).",
+   "hint": "support = giao/N = 120/800 = 15%; confidence = giao/|milk| = 120/200 = 60%. Mẫu số confidence là vế TRÁI.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t29",
+   "source": "theory",
+   "origNum": 29,
+   "question": "A rule A => B has confidence 0.6, and item B has support 0.4. What is the lift of the rule?",
+   "options": [
+    "1.5",
+    "0.24",
+    "0.67",
+    "2.4"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "lift(A,B) = confidence(A=>B) / support(B) = 0.6 / 0.4 = 1.5. Since lift > 1, A and B are positively correlated.",
+   "hint": "lift = confidence / support(B) = 0.6/0.4 = 1.5 (>1 -> tương quan dương).",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t30",
+   "source": "theory",
+   "origNum": 30,
+   "question": "If the lift of A and B is less than 1, what does it mean?",
+   "options": [
+    "A and B are statistically independent",
+    "A and B are positively correlated (they attract each other)",
+    "A and B are negatively correlated (they repel each other)",
+    "The computation is invalid, since lift cannot be less than 1"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "lift < 1 means the two items co-occur less than expected under independence, i.e. they are negatively correlated. lift = 1 is independence and lift > 1 is positive correlation.",
+   "hint": "lift < 1 -> tương quan âm (đẩy nhau); = 1 độc lập; > 1 dương. Lift ∈ [0, +∞).",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t31",
+   "source": "theory",
+   "origNum": 31,
+   "question": "In a 2x2 contingency table the row total for a cell is 400, its column total is 500, and the grand total is 1000. Under independence, what is the expected count E for that cell?",
+   "options": [
+    "100",
+    "200",
+    "250",
+    "900"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "E = (row total x column total) / grand total = (400 x 500) / 1000 = 200.",
+   "hint": "E = (row total × column total)/grand total = 400×500/1000 = 200.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t32",
+   "source": "theory",
+   "origNum": 32,
+   "question": "A 2x2 contingency table has grand total 200 with all row totals = 100 and all column totals = 100. The observed counts are (1,1)=60, (1,2)=40, (2,1)=40, (2,2)=60. What is the chi-square value?",
+   "options": [
+    "8",
+    "-8",
+    "16",
+    "40"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Each expected count is (100 x 100)/200 = 50. chi-square = sum of (O-E)^2/E = 4 x (60-50)^2/50 = 4 x 100/50 = 4 x 2 = 8. Chi-square is always non-negative.",
+   "hint": "E mỗi ô = 100×100/200 = 50. χ² = 4×(10²/50) = 4×2 = 8. χ² luôn ≥ 0.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t33",
+   "source": "theory",
+   "origNum": 33,
+   "question": "Which statement correctly expresses the Apriori property (the anti-monotone property)?",
+   "options": [
+    "If an itemset is frequent, all of its supersets are frequent",
+    "If an itemset is infrequent, all of its supersets are infrequent",
+    "If an itemset is infrequent, all of its subsets are infrequent",
+    "The support of an itemset can increase when items are added"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The Apriori (anti-monotone) property states that if an itemset is infrequent, then every superset of it is also infrequent (equivalently, all subsets of a frequent itemset are frequent). Support never increases as items are added.",
+   "hint": "Anti-monotone: tập không frequent thì MỌI superset cũng không frequent (mọi tập con của frequent itemset đều frequent).",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t34",
+   "source": "theory",
+   "origNum": 34,
+   "question": "In Apriori, the frequent 2-itemsets are F2 = {ab, ac, bc, be, ce}. When generating and pruning candidate 3-itemsets, which candidate is pruned because one of its size-2 subsets is not in F2?",
+   "options": [
+    "abc",
+    "bce",
+    "abe",
+    "None of them are pruned"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Candidate 'abe' requires all its 2-subsets (ab, ae, be) to be frequent, but 'ae' is not in F2, so abe is pruned. Both abc (subsets ab, ac, bc) and bce (subsets bc, be, ce) have all subsets in F2 and survive.",
+   "hint": "Apriori prune: kiểm tra MỌI tập con (k-1). 'abe' cần 'ae' ∉ F2 -> bị prune. (abc, bce đủ tập con nên giữ.)",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t35",
+   "source": "theory",
+   "origNum": 35,
+   "question": "In partition-based frequent pattern mining, which statement is TRUE?",
+   "options": [
+    "An itemset that is globally frequent must be locally frequent in at least one partition",
+    "An itemset that is globally frequent must be locally frequent in every partition",
+    "An itemset that is locally frequent in one partition must be globally frequent",
+    "Partitioning cannot be used to find global frequent itemsets"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "If an itemset is globally frequent, it must reach the local support threshold in at least one partition. This is why anything not frequent in any partition can be safely discarded as a global candidate.",
+   "hint": "Global frequent -> phải local frequent ở ÍT NHẤT một partition. (Không cần ở mọi partition.)",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t36",
+   "source": "theory",
+   "origNum": 36,
+   "question": "In FP-growth, the 'conditional pattern base' of an item consists of:",
+   "options": [
+    "All transactions that do not contain the item",
+    "The prefix paths leading to that item's nodes, together with their counts",
+    "The single most frequent item in the database",
+    "The set of all candidate itemsets generated for that item"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The conditional pattern base of an item is the collection of prefix paths (read from each of the item's nodes back toward the root) along with their counts. It is used to build the conditional FP-tree recursively.",
+   "hint": "Conditional pattern base = các PREFIX PATH dẫn tới node của item (đọc ngược lên root) kèm count.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t37",
+   "source": "theory",
+   "origNum": 37,
+   "question": "Which statement correctly defines a MAXIMAL frequent itemset?",
+   "options": [
+    "A frequent itemset that has no superset with the same support",
+    "A frequent itemset that has no frequent superset",
+    "An itemset with the highest support in the database",
+    "An itemset from which all supports can be losslessly recovered"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A maximal frequent itemset has no frequent superset. Having no superset with the same support is the definition of a CLOSED itemset; closed patterns (not maximal) allow lossless recovery of supports.",
+   "hint": "Maximal = không có superset nào còn FREQUENT. (Closed = không superset nào cùng SUPPORT.)",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t38",
+   "source": "theory",
+   "origNum": 38,
+   "question": "Assuming all item prices are positive, which of the following constraints is anti-monotone?",
+   "options": [
+    "sum(S.price) >= v",
+    "sum(S.price) <= v",
+    "min(S.price) <= v",
+    "max(S.price) >= v"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "With positive prices, adding items only increases the sum, so once sum(S.price) <= v is violated it can never be satisfied again by extending the itemset. This makes 'sum(S.price) <= v' anti-monotone; the others can be satisfied by adding items, hence monotone.",
+   "hint": "Anti-monotone: thêm item KHÔNG cứu được vi phạm. Với giá dương, sum(S.price) <= v một khi vi phạm là mãi vi phạm.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t39",
+   "source": "theory",
+   "origNum": 39,
+   "question": "You are given only support(A and B) = 0.2 for a rule A => B. Can you compute its confidence?",
+   "options": [
+    "Yes, confidence equals support(A and B) = 0.2",
+    "Yes, confidence = 1 - support(A and B) = 0.8",
+    "No, you also need support(A), which is the denominator",
+    "No, you also need support(B), which is the denominator"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "confidence(A => B) = support(A and B) / support(A). Without support(A) (the denominator, i.e. the left-hand side), the confidence cannot be computed.",
+   "hint": "confidence(A⇒B) = support(A∪B)/support(A). Thiếu support(A) (mẫu số = vế trái) thì KHÔNG tính được.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t40",
+   "source": "theory",
+   "origNum": 40,
+   "question": "A database contains 20 transactions and the minimum support threshold is set to 25%. An itemset is frequent only if it appears in at least how many transactions?",
+   "options": [
+    "2",
+    "4",
+    "5",
+    "8"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Absolute minimum support count = 25% x 20 = 5 transactions. An itemset must appear in at least 5 transactions to be frequent.",
+   "hint": "minsup count = 25% × 20 = 5 transaction.",
+   "topic": "Association Rules",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t41",
+   "source": "theory",
+   "origNum": 41,
+   "question": "Which of the following tasks is an example of supervised learning?",
+   "options": [
+    "Grouping customers into segments based on similarity, with no labels given",
+    "Predicting whether a loan applicant will default, using a history of labeled outcomes",
+    "Finding itemsets that frequently appear together in transactions",
+    "Reducing a 100-dimensional dataset to 2 dimensions for plotting"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Classification is supervised learning: it trains on data with known class labels to predict labels for new instances. Predicting loan default from labeled history fits this; the others are clustering, association mining, and dimensionality reduction.",
+   "hint": "Supervised = học từ data đã có label. Có nhãn kết quả -> classification; gộp nhóm không nhãn -> clustering.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t42",
+   "source": "theory",
+   "origNum": 42,
+   "question": "A decision-tree parent node has 10 samples (5 positive, 5 negative), so its entropy is 1.0. An attribute splits it into branch A (4 samples: 4 positive, 0 negative) and branch B (6 samples: 1 positive, 5 negative), whose entropy is about 0.650. What is the information gain of this split?",
+   "options": [
+    "0.610",
+    "0.390",
+    "0.650",
+    "0.250"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Weighted child entropy = (4/10)(0) + (6/10)(0.650) = 0.390. Information gain = parent entropy - weighted child entropy = 1.0 - 0.390 = 0.610.",
+   "hint": "Info Gain = Entropy(cha) - Σ(nᵢ/n)·Entropy(con). Branch thuần (0) không đóng góp; 1 - 0.390 = 0.610.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t43",
+   "source": "theory",
+   "origNum": 43,
+   "question": "A node contains 10 instances: 6 of class A and 4 of class B. What is its Gini index?",
+   "options": [
+    "0.52",
+    "0.48",
+    "0.24",
+    "0.50"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Gini = 1 - Σ pᵢ² = 1 - (0.6² + 0.4²) = 1 - (0.36 + 0.16) = 1 - 0.52 = 0.48.",
+   "hint": "Gini = 1 - Σpᵢ². 1 - (0.36+0.16) = 0.48. Đừng quên trừ khỏi 1.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t44",
+   "source": "theory",
+   "origNum": 44,
+   "question": "When growing a decision tree, which attribute is chosen for a split at each node?",
+   "options": [
+    "The attribute with the lowest information gain",
+    "The attribute with the highest entropy in its children",
+    "The attribute with the highest information gain (or lowest weighted Gini)",
+    "The attribute with the most distinct values"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "The best split maximizes the reduction in impurity: pick the attribute with the highest information gain, equivalently the lowest weighted Gini index.",
+   "hint": "Chọn split theo MAX information gain (hoặc MIN weighted Gini). Không chọn theo số giá trị.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t45",
+   "source": "theory",
+   "origNum": 45,
+   "question": "What is the core (\"naive\") assumption of the Naive Bayes classifier?",
+   "options": [
+    "All classes are equally probable a priori",
+    "The features are conditionally independent given the class",
+    "The features are independent of the class label",
+    "Every feature follows a Gaussian distribution"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Naive Bayes assumes features are conditionally independent given the class, so P(X|C) = Πⱼ P(xⱼ|C). This is not the same as features being independent of the class.",
+   "hint": "Naive Bayes: features ĐỘC LẬP CÓ ĐIỀU KIỆN khi biết class -> P(X|C)=∏P(xⱼ|C).",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t46",
+   "source": "theory",
+   "origNum": 46,
+   "question": "Using Naive Bayes with priors P(C1)=0.6 and P(C2)=0.4, a test instance X gives P(x1|C1)=0.5, P(x2|C1)=0.4, P(x1|C2)=0.3, P(x2|C2)=0.5. Which class is predicted?",
+   "options": [
+    "C1",
+    "C2",
+    "It is a tie",
+    "Cannot be determined without P(X)"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Score(C1) = 0.6 x 0.5 x 0.4 = 0.12; Score(C2) = 0.4 x 0.3 x 0.5 = 0.06. Since 0.12 > 0.06, C1 is predicted (the common denominator P(X) does not affect the argmax).",
+   "hint": "Tính P(C)·∏P(xⱼ|C) cho mỗi lớp, chọn lớn nhất. 0.12 > 0.06 -> C1. P(X) không ảnh hưởng argmax.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t47",
+   "source": "theory",
+   "origNum": 47,
+   "question": "A query point Q=(0,0) is classified by k-NN with k=3 (Euclidean distance). The labeled points are P1(1,0)=Red, P2(0,1)=Red, P3(0,2)=Blue, P4(2,2)=Blue, P5(3,3)=Blue. What class does Q get?",
+   "options": [
+    "Red",
+    "Blue",
+    "A tie between Red and Blue",
+    "Cannot be determined"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Distances: P1=1, P2=1, P3=2, P4=2.83, P5=4.24. The 3 nearest are P1(Red), P2(Red), P3(Blue), so majority vote gives Red (2 vs 1).",
+   "hint": "k-NN: tìm k điểm gần nhất rồi vote đa số. 3 gần nhất = Red, Red, Blue -> Red.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t48",
+   "source": "theory",
+   "origNum": 48,
+   "question": "Why is k-NN called a \"lazy learner\"?",
+   "options": [
+    "It builds a compact model slowly during a long training phase",
+    "It does not build an explicit model at training time; it stores the data and does the work at prediction time",
+    "It always predicts the overall majority class and ignores the query",
+    "It discards the training data after fitting"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "k-NN performs no real training: it simply stores the training examples and defers all computation (finding nearest neighbors and voting) until a query must be classified.",
+   "hint": "Lazy learner = không 'học' model lúc train, để dành tính toán (tìm neighbors) lúc predict.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t49",
+   "source": "theory",
+   "origNum": 49,
+   "question": "What is the main idea of a Support Vector Machine (SVM)?",
+   "options": [
+    "Find the separating hyperplane that maximizes the margin between classes",
+    "Find the hyperplane that minimizes the margin to fit training data tightly",
+    "Store all points and vote among the k nearest ones",
+    "Recursively split the feature space by information gain"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "An SVM seeks the hyperplane that separates the classes with the largest possible margin; the boundary-defining points are the support vectors.",
+   "hint": "SVM = tìm hyperplane có MARGIN lớn nhất; điểm sát biên = support vectors.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t50",
+   "source": "theory",
+   "origNum": 50,
+   "question": "What is the purpose of the kernel trick in SVM?",
+   "options": [
+    "To prune the decision tree and avoid overfitting",
+    "To handle data that is not linearly separable by mapping it into a higher-dimensional space",
+    "To normalize features to the range [0,1]",
+    "To reduce the number of support vectors to exactly two"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Kernels (e.g., polynomial, RBF) let an SVM find a separating boundary for data that is not linearly separable, by implicitly mapping it into a higher-dimensional feature space.",
+   "hint": "Kernel trick giúp SVM tách dữ liệu KHÔNG tuyến tính (linear, polynomial, RBF).",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t51",
+   "source": "theory",
+   "origNum": 51,
+   "question": "A binary classifier gives TP=80, FP=20, FN=40, TN=60. What is its precision?",
+   "options": [
+    "0.667",
+    "0.80",
+    "0.70",
+    "0.75"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Precision = TP/(TP+FP) = 80/(80+20) = 80/100 = 0.80.",
+   "hint": "Precision = TP/(TP+FP). Mẫu số chứa FP. 80/100 = 0.80.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t52",
+   "source": "theory",
+   "origNum": 52,
+   "question": "For the same classifier with TP=80, FP=20, FN=40, TN=60, what is its recall (sensitivity)?",
+   "options": [
+    "0.80",
+    "0.70",
+    "0.667",
+    "0.60"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Recall = TP/(TP+FN) = 80/(80+40) = 80/120 = 0.667.",
+   "hint": "Recall = TP/(TP+FN). Mẫu số chứa FN. 80/120 ≈ 0.667.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t53",
+   "source": "theory",
+   "origNum": 53,
+   "question": "A classifier has precision = 0.80 and recall = 0.667. What is its F1 score (rounded to two decimals)?",
+   "options": [
+    "0.73",
+    "0.80",
+    "0.67",
+    "0.50"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "F1 = 2(P x R)/(P + R) = 2(0.80 x 0.667)/(0.80 + 0.667) = 1.067/1.467 ≈ 0.73.",
+   "hint": "F1 = 2·(P·R)/(P+R), là harmonic mean của precision & recall. ≈ 0.73.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t54",
+   "source": "theory",
+   "origNum": 54,
+   "question": "A decision tree fits the training data almost perfectly but performs poorly on the test set. Which technique most directly addresses this overfitting?",
+   "options": [
+    "Increasing the maximum tree depth further",
+    "Pruning the tree",
+    "Removing the validation set",
+    "Training on the test set as well"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Overfitting means the model has learned noise in the training data. Pruning reduces tree complexity and improves generalization; deepening the tree would worsen overfitting.",
+   "hint": "Overfitting: train tốt, test kém. Khắc phục tree = pruning (giảm độ phức tạp). Tăng depth càng tệ.",
+   "topic": "Classification",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t55",
+   "source": "theory",
+   "origNum": 55,
+   "question": "A k-means cluster currently contains the points (1,2), (3,6), (8,4), and (4,0). What is its new centroid?",
+   "options": [
+    "(3,4)",
+    "(4,3)",
+    "(4,4)",
+    "(16,12)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The centroid is the coordinate-wise mean: x = (1+3+8+4)/4 = 16/4 = 4, y = (2+6+4+0)/4 = 12/4 = 3, giving (4,3).",
+   "hint": "Centroid k-means = mean từng chiều. x=16/4=4, y=12/4=3 -> (4,3). Đừng đảo thứ tự x,y.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t56",
+   "source": "theory",
+   "origNum": 56,
+   "question": "A clustering of 100 points has three clusters. Cluster C1 (30 points) has class counts 25/5; C2 (30 points) has 10/20; C3 (40 points) has 5/35. What is the purity?",
+   "options": [
+    "0.60",
+    "0.70",
+    "0.80",
+    "0.50"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Purity = (sum of the max class count in each cluster)/N = (25 + 20 + 35)/100 = 80/100 = 0.80.",
+   "hint": "Purity = Σ(max count mỗi cluster)/N = (25+20+35)/100 = 0.80.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t57",
+   "source": "theory",
+   "origNum": 57,
+   "question": "In agglomerative hierarchical clustering, which linkage defines the distance between two clusters as the MAXIMUM distance between any pair of points (one from each cluster)?",
+   "options": [
+    "Single link",
+    "Complete link",
+    "Average link",
+    "Centroid link"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Complete link uses the maximum (diameter) distance between the two clusters; single link uses the minimum, and average link uses the mean over all cross pairs.",
+   "hint": "Complete link = MAX (diameter); single link = MIN; average link = trung bình mọi cặp.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t58",
+   "source": "theory",
+   "origNum": 58,
+   "question": "Which two parameters must be specified for the DBSCAN algorithm?",
+   "options": [
+    "The number of clusters k and the radius epsilon",
+    "The radius epsilon and MinPts",
+    "The number of clusters k and MinPts",
+    "The number of iterations and the learning rate"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "DBSCAN is density-based and needs epsilon (the neighborhood radius) and MinPts (the minimum number of points to form a dense region); it does NOT require the number of clusters in advance.",
+   "hint": "DBSCAN cần ε (bán kính) và MinPts. KHÔNG cần biết trước số cluster k.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t59",
+   "source": "theory",
+   "origNum": 59,
+   "question": "Which statement about density-reachability in DBSCAN is correct?",
+   "options": [
+    "It is always a symmetric relation between two points",
+    "It is a chain of directly-density-reachable steps and is generally not symmetric",
+    "It is exactly the same as directly-density-reachable",
+    "It requires every point on the path to be a border point"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Density-reachability chains directly-density-reachable steps through core points; because a border point can be reachable from a core but not vice versa, the relation is not symmetric.",
+   "hint": "Density-reachable = chuỗi directly-density-reachable qua core points; quan hệ KHÔNG đối xứng.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t60",
+   "source": "theory",
+   "origNum": 60,
+   "question": "How does the CURE algorithm represent each cluster so it can capture non-spherical shapes and resist outliers?",
+   "options": [
+    "By a single centroid (mean)",
+    "By multiple representative points per cluster",
+    "By one medoid chosen from the data",
+    "By the parameters of a Gaussian distribution"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "CURE uses several scattered representative points per cluster (shrunk toward the center), letting it capture irregular shapes and stay robust to outliers, unlike single-centroid methods.",
+   "hint": "CURE dùng NHIỀU representative points/cluster -> bắt được cluster hình dạng lạ, bền outlier.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t61",
+   "source": "theory",
+   "origNum": 61,
+   "question": "Which statement best describes the CHAMELEON clustering algorithm?",
+   "options": [
+    "It requires a precomputed graph as input from the user",
+    "It uses dynamic modeling and internally builds a k-nearest-neighbor graph to find clusters of complex shape",
+    "It assumes all clusters are spherical, like k-means",
+    "It is a density-based method needing only epsilon and MinPts"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "CHAMELEON applies dynamic modeling, constructing its own kNN graph internally (it does not need a graph as input) to capture clusters of complex, arbitrary shapes.",
+   "hint": "CHAMELEON: dynamic modeling, TỰ xây kNN graph bên trong; bắt cluster hình dạng phức tạp.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t62",
+   "source": "theory",
+   "origNum": 62,
+   "question": "What is the value range of the silhouette coefficient?",
+   "options": [
+    "[0, 1]",
+    "[-1, 1]",
+    "[0, +inf)",
+    "(-inf, +inf)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The silhouette coefficient compares within-cluster compactness against between-cluster separation and ranges in [-1, 1], with values near 1 indicating well-clustered points.",
+   "hint": "Silhouette ∈ [-1, 1]; càng gần 1 càng tốt. Là internal/relative measure.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t63",
+   "source": "theory",
+   "origNum": 63,
+   "question": "Which hierarchical clustering approach works top-down (divisive)?",
+   "options": [
+    "AGNES",
+    "DIANA",
+    "BIRCH",
+    "DBSCAN"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "DIANA is divisive (top-down), starting from one cluster and splitting it; AGNES is agglomerative (bottom-up). BIRCH and DBSCAN are not divisive hierarchical methods.",
+   "hint": "DIANA = divisive (top-down, chia dần); AGNES = agglomerative (bottom-up, gộp dần).",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t64",
+   "source": "theory",
+   "origNum": 64,
+   "question": "Which clustering method performs soft assignment, giving each point a probability of belonging to each cluster?",
+   "options": [
+    "K-means",
+    "Gaussian Mixture Model (GMM)",
+    "DBSCAN",
+    "Single-link agglomerative clustering"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "A GMM is a model-based method that assigns each point a membership probability for each Gaussian component (soft assignment), unlike the hard assignments of k-means or DBSCAN.",
+   "hint": "GMM = model-based, soft assignment (xác suất thuộc mỗi cluster). k-means là hard assignment.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t65",
+   "source": "theory",
+   "origNum": 65,
+   "question": "In k-means++, the first centroid is (0,0). The remaining candidate points and their squared distances to (0,0) are (1,1)=2, (3,4)=25, (2,0)=4, (0,3)=9. Which point is chosen as the next centroid?",
+   "options": [
+    "(1,1)",
+    "(3,4)",
+    "(2,0)",
+    "(0,3)"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "k-means++ favors the point farthest (by squared distance) from the chosen centroids; (3,4) has the largest squared distance (25), so it is selected.",
+   "hint": "k-means++ chọn điểm XA nhất (bình phương khoảng cách) so với centroid đã chọn -> (3,4) với 25.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t66",
+   "source": "theory",
+   "origNum": 66,
+   "question": "Two points A and B are placed in DIFFERENT clusters but share the SAME ground-truth class label. In pair-counting cluster evaluation, this pair is a:",
+   "options": [
+    "True Positive",
+    "False Positive",
+    "False Negative",
+    "True Negative"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "A pair with the same true label that the clustering fails to place together (different clusters) is a False Negative. Same cluster + same label is TP; same cluster + different label is FP.",
+   "hint": "Khác cluster nhưng cùng nhãn thật = False Negative. (Cùng cluster+cùng nhãn=TP; cùng cluster+khác nhãn=FP.)",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t67",
+   "source": "theory",
+   "origNum": 67,
+   "question": "Why is k-medoids generally more robust to outliers than k-means?",
+   "options": [
+    "It uses the mean of each cluster, which ignores outliers",
+    "Its center (medoid) is an actual data point chosen to minimize total dissimilarity, so it is not pulled by extreme values like the mean is",
+    "It does not require a distance measure at all",
+    "It always finds the global optimum"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "k-medoids uses an actual data point (the medoid) that minimizes total dissimilarity as the center. Unlike the mean used in k-means, a medoid is not dragged toward extreme outlier values.",
+   "hint": "k-medoids dùng medoid (data point thật) -> ít bị outlier kéo lệch như mean của k-means.",
+   "topic": "Clustering",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t68",
+   "source": "theory",
+   "origNum": 68,
+   "question": "In Lossy Counting with bucket width w = 500 on a stream of length N = 10000, what is the maximum possible under-count (error) for any item's estimated frequency?",
+   "options": [
+    "20",
+    "50",
+    "500",
+    "0"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "Lossy Counting only under-counts, with error bounded by N/w = 10000/500 = 20; the true count lies within [estimate, estimate + 20].",
+   "hint": "Lossy Counting chỉ under-count, sai số ≤ N/w = 10000/500 = 20.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t69",
+   "source": "theory",
+   "origNum": 69,
+   "question": "Which of the following IS an algorithm for approximate frequent-item mining over data streams?",
+   "options": [
+    "FP-growth",
+    "Apriori",
+    "Space-Saving",
+    "CloSpan"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "Space-Saving (like Lossy Counting and Sticky Sampling) is a streaming approximation algorithm. FP-growth and Apriori are batch/exact methods, and CloSpan mines closed sequential patterns.",
+   "hint": "Stream approximate: Lossy Counting, Sticky Sampling, Space-Saving. FP-growth/Apriori = batch; CloSpan = sequential.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t70",
+   "source": "theory",
+   "origNum": 70,
+   "question": "How is the GSP (Generalized Sequential Pattern) algorithm best characterized?",
+   "options": [
+    "Apriori-based: generate candidate sequences then test and prune them",
+    "Pattern-growth using projected databases with no candidate generation",
+    "Vertical format mining with id-lists of (SID, EID)",
+    "Closed sequential pattern mining with backward pruning"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "GSP is the Apriori-style approach for sequences: it generates candidate sequences of increasing length and prunes them, scanning the database each pass. PrefixSpan uses projected DBs, SPADE uses id-lists, CloSpan mines closed patterns.",
+   "hint": "GSP = Apriori cho sequence (sinh candidate + prune). PrefixSpan=projected DB; SPADE=id-list; CloSpan=closed.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t71",
+   "source": "theory",
+   "origNum": 71,
+   "question": "PrefixSpan mines sequential patterns primarily by:",
+   "options": [
+    "Generating and testing all candidate sequences like Apriori",
+    "Recursively growing prefixes and mining their projected databases (no candidate generation)",
+    "Storing a vertical id-list for every item",
+    "Building a single FP-tree over the whole stream"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "PrefixSpan is a pattern-growth method: it grows frequent prefixes and recursively mines the projected database (suffixes) for each prefix, avoiding explicit candidate generation.",
+   "hint": "PrefixSpan = pattern-growth; grow prefix rồi mine projected database (suffix), không sinh candidate.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t72",
+   "source": "theory",
+   "origNum": 72,
+   "question": "Which data representation does the SPADE algorithm use to mine sequential patterns?",
+   "options": [
+    "Horizontal transaction lists",
+    "A vertical format with id-lists of (SID, EID) pairs",
+    "An FP-tree with a header table",
+    "A suffix-tree of the whole database"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "SPADE uses the vertical format: for each item it keeps an id-list of (sequence-id, event-id) pairs, and support is computed by joining these id-lists.",
+   "hint": "SPADE = vertical format, id-list gồm (SID, EID). Đếm support bằng cách join id-list.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t73",
+   "source": "theory",
+   "origNum": 73,
+   "question": "Which moving-object cluster pattern REQUIRES the objects to stay in the same cluster at consecutive timestamps?",
+   "options": [
+    "Swarm",
+    "Convoy",
+    "Both allow non-consecutive timestamps",
+    "Neither requires any time structure"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Convoy (and Flock) require the objects to be clustered together over consecutive timestamps. Swarm relaxes this, allowing the objects to be in the same cluster at non-consecutive timestamps.",
+   "hint": "Convoy/Flock = timestamp LIÊN TIẾP; Swarm = cho phép timestamp KHÔNG liên tiếp.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t74",
+   "source": "theory",
+   "origNum": 74,
+   "question": "In sequential pattern notation, what does it mean when two items are enclosed together in the same parentheses, e.g. the (bf) in <a(bf)>?",
+   "options": [
+    "b must strictly occur before f in time",
+    "b and f occur together within one element (the same event/transaction)",
+    "b and f are alternatives; only one need appear",
+    "b and f belong to two different sequences"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "Items inside the same parentheses form one element, meaning they occur together in the same event/transaction; order is only imposed between separate elements.",
+   "hint": "Item trong cùng ngoặc = một element = xảy ra CÙNG một event. Thứ tự chỉ giữa các element khác nhau.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t75",
+   "source": "theory",
+   "origNum": 75,
+   "question": "In uniform (shared) support multi-level mining, a single minimum support is used for all levels. What is the trade-off?",
+   "options": [
+    "A high threshold may miss meaningful low-level patterns, while a low threshold generates many uninteresting high-level patterns",
+    "It always finds fewer patterns than using per-level thresholds",
+    "It cannot be applied to concept hierarchies",
+    "It guarantees no false positives at any level"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "With one shared threshold, setting it high misses rare but meaningful lower-level (specific) patterns, while setting it low floods the higher levels with too many patterns.",
+   "hint": "Uniform support: ngưỡng cao -> sót pattern cấp thấp; ngưỡng thấp -> quá nhiều pattern cấp cao.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t76",
+   "source": "theory",
+   "origNum": 76,
+   "question": "In pattern compression, what does it mean for pattern P1 to \"delta-cover\" pattern P2?",
+   "options": [
+    "P1 is a superset of P2",
+    "The pattern distance between P1 and P2 is at most delta (their supporting-transaction sets, and thus supports, are close)",
+    "P1 and P2 have exactly equal support",
+    "P2 has higher support than every other pattern"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "P1 delta-covers P2 when their pattern distance (1 - Jaccard of supporting transactions) is at most delta, i.e., their supports are close enough to be represented by P1.",
+   "hint": "delta-cover: pattern distance (1 - Jaccard) ≤ delta -> support đủ gần để đại diện.",
+   "topic": "Advanced Mining",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t77",
+   "source": "theory",
+   "origNum": 77,
+   "question": "In data mining, an outlier (anomaly) is best defined as:",
+   "options": [
+    "A data object that deviates significantly from the majority of the data",
+    "The most frequently occurring value in the dataset",
+    "A point that lies exactly at a cluster centroid",
+    "Any point that has a missing attribute value"
+   ],
+   "answers": [
+    0
+   ],
+   "explanation": "An outlier is an object that differs markedly from the rest of the data, suggesting it may have been generated by a different mechanism.",
+   "hint": "Outlier = điểm khác biệt ĐÁNG KỂ so với phần lớn data. Không phải giá trị hay gặp nhất.",
+   "topic": "Outlier Detection",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t78",
+   "source": "theory",
+   "origNum": 78,
+   "question": "The Local Outlier Factor (LOF) identifies outliers based on:",
+   "options": [
+    "A point's global distance to the overall data mean",
+    "A point's local density compared with the local densities of its neighbors",
+    "How often the point's value appears in the dataset",
+    "Whether the point belongs to the largest cluster"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "LOF is a density-based method: a point is an outlier if its local density is substantially lower than the local densities of its neighbors, giving it a high LOF score.",
+   "hint": "LOF = so mật độ cục bộ của điểm với mật độ của các neighbors. Density-based.",
+   "topic": "Outlier Detection",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t79",
+   "source": "theory",
+   "origNum": 79,
+   "question": "In DBSCAN, points that are neither core points nor density-reachable from any core point are labeled as:",
+   "options": [
+    "Border points",
+    "Core points",
+    "Noise (outliers)",
+    "Cluster centroids"
+   ],
+   "answers": [
+    2
+   ],
+   "explanation": "DBSCAN naturally performs outlier detection: points that are not core and cannot be reached from any core point are marked as noise, i.e., outliers.",
+   "hint": "DBSCAN gán điểm không core và không reachable là noise (outlier). Đây là clustering-based outlier detection.",
+   "topic": "Outlier Detection",
+   "verified": true
+  },
+  {
+   "id": "dbm302m-t80",
+   "source": "theory",
+   "origNum": 80,
+   "question": "In a statistical (model-based) approach to outlier detection, a data point is flagged as an outlier when:",
+   "options": [
+    "It has a high probability under the assumed distribution",
+    "It has a very low probability under the assumed distribution (e.g., far beyond a few standard deviations)",
+    "It equals the sample mean",
+    "It is the closest point to another point"
+   ],
+   "answers": [
+    1
+   ],
+   "explanation": "The statistical approach fits a distribution to the data and flags points with very low probability (e.g., lying several standard deviations from the mean) as outliers.",
+   "hint": "Statistical outlier: điểm có xác suất RẤT THẤP dưới phân phối giả định (vd cách mean nhiều std).",
+   "topic": "Outlier Detection",
+   "verified": true
+  }
+ ]
+}
