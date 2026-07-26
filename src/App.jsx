@@ -368,11 +368,22 @@ function HintBox({ q, show, setShow }) {
   )
 }
 
-// Trick panel: trick riêng của câu TỰ BUNG sẵn; mẹo chung + giải thích ẩn sau nút nhỏ
-function TrickBox({ q, tricks }) {
+// Trick panel. reveal=true (chế độ Học, hoặc đã trả lời) → hiện trick sẵn.
+// reveal=false (chế độ Kiểm tra, chưa trả lời) → ẩn để tự test, có nút xem tạm.
+function TrickBox({ q, tricks, reveal = true }) {
   const [more, setMore] = useState(false)
+  const [peek, setPeek] = useState(false)
+  useEffect(() => { setPeek(false); setMore(false) }, [q.id])
   const topicLines = tricks ? [...(tricks[q.topic] || []), ...(tricks._general || [])] : []
   if (!q.trick && !topicLines.length && !q.hint) return null
+
+  if (!reveal && !peek) {
+    return (
+      <div className="trick-wrap" onClick={(e) => e.stopPropagation()}>
+        <button className="trick-more-btn" onClick={() => setPeek(true)}>🎯 Xem gợi ý (đang ẩn để tự kiểm tra)</button>
+      </div>
+    )
+  }
   return (
     <div className="trick-wrap" onClick={(e) => e.stopPropagation()}>
       {q.trick && <div className="trick-self">🎯 {q.trick}</div>}
@@ -510,6 +521,8 @@ function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = fal
   const [showHint, setShowHint] = useState(false)
   const [session, setSession] = useState(resume?.session || { done: 0, ok: 0 })
   const [requeued, setRequeued] = useState(0)
+  const [learnMode, setLearnMode] = useState(() => localStorage.getItem('quizapp:pref:trickMode') !== 'test')
+  useEffect(() => { localStorage.setItem('quizapp:pref:trickMode', learnMode ? 'learn' : 'test') }, [learnMode])
 
   const q = idx < queue.length ? queue[idx] : null
 
@@ -582,12 +595,18 @@ function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = fal
         <span>Đúng: {session.ok}/{session.done}</span>
       </div>
       <div className="progress-track"><div className="progress-fill" style={{ width: `${(idx / queue.length) * 100}%` }} /></div>
-      <Badges q={q} srs={srsEntry} />
+      <div className="meta-row" style={{ justifyContent: 'space-between', marginBottom: 4 }}>
+        <Badges q={q} srs={srsEntry} />
+        <button className="mode-toggle" title="Đổi giữa Học (hiện trick sẵn) và Kiểm tra (ẩn trick tới khi trả lời)"
+          onClick={() => setLearnMode((m) => !m)}>
+          {learnMode ? '📖 Chế độ Học' : '✍️ Chế độ Kiểm tra'}
+        </button>
+      </div>
       <div className="question-text">{q.question}</div>
       {multi && !revealed && (
         <div className="multi-note">📌 Câu nhiều đáp án — chọn đúng <strong>{q.answers.length}</strong> ý (đã chọn {selected.length}/{q.answers.length}) rồi bấm <strong>Kiểm tra</strong>.</div>
       )}
-      <TrickBox q={q} tricks={tricks} />
+      <TrickBox q={q} tricks={tricks} reveal={learnMode || revealed} />
       <Options
         q={q} selected={selected} revealed={revealed} disabled={revealed}
         onToggle={(i) => choose(i)}
