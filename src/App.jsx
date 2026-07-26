@@ -122,9 +122,10 @@ const dataBase = () => (localStorage.getItem(DATA_BASE) ?? DEFAULT_DATA_BASE).re
 // trả về danh sách URL để thử theo thứ tự: từ xa trước, rồi bản local
 function dataUrls(path) {
   const p = path.replace(/^data\//, '')
-  const local = `${import.meta.env.BASE_URL}data/${p}`
+  const t = Date.now()
+  const local = `${import.meta.env.BASE_URL}data/${p}?t=${t}`  // chống cache dữ liệu
   const base = dataBase()
-  return base ? [`${base}/${p}?t=${Date.now()}`, local] : [local]
+  return base ? [`${base}/${p}?t=${t}`, local] : [local]
 }
 async function fetchData(path, asText = false) {
   let lastErr
@@ -367,19 +368,22 @@ function HintBox({ q, show, setShow }) {
   )
 }
 
-// Trick panel: trick riêng cho câu + mẹo chung theo chủ đề
+// Trick panel: trick riêng của câu TỰ BUNG sẵn; mẹo chung + giải thích ẩn sau nút nhỏ
 function TrickBox({ q, tricks }) {
-  const [show, setShow] = useState(false)
+  const [more, setMore] = useState(false)
   const topicLines = tricks ? [...(tricks[q.topic] || []), ...(tricks._general || [])] : []
-  if (!q.trick && !topicLines.length) return null
+  if (!q.trick && !topicLines.length && !q.hint) return null
   return (
     <div className="trick-wrap" onClick={(e) => e.stopPropagation()}>
-      <button className="btn btn-sm btn-trick" onClick={() => setShow((s) => !s)}>
-        {show ? '✕ Ẩn trick' : '🎯 Trick câu này'}
-      </button>
-      {show && (
+      {q.trick && <div className="trick-self">🎯 {q.trick}</div>}
+      {(q.hint || topicLines.length > 0) && (
+        <button className="trick-more-btn" onClick={() => setMore((s) => !s)}>
+          {more ? '▲ Ẩn mẹo chi tiết' : '▾ Mẹo chi tiết & chủ đề'}
+        </button>
+      )}
+      {more && (
         <div className="trick-box">
-          {q.trick && <div className="trick-self">🎯 {q.trick}</div>}
+          {q.hint && <div className="trick-hint">💡 {q.hint}</div>}
           {topicLines.length > 0 && (
             <>
               <div className="trick-title">Mẹo chung — {q.topic}</div>
@@ -583,10 +587,7 @@ function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = fal
       {multi && !revealed && (
         <div className="multi-note">📌 Câu nhiều đáp án — chọn đúng <strong>{q.answers.length}</strong> ý (đã chọn {selected.length}/{q.answers.length}) rồi bấm <strong>Kiểm tra</strong>.</div>
       )}
-      <div className="assist-row">
-        <HintBox q={q} show={showHint} setShow={setShowHint} />
-        <TrickBox q={q} tricks={tricks} />
-      </div>
+      <TrickBox q={q} tricks={tricks} />
       <Options
         q={q} selected={selected} revealed={revealed} disabled={revealed}
         onToggle={(i) => choose(i)}
@@ -616,7 +617,7 @@ function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = fal
         {!revealed && multi && <button className="btn btn-primary" disabled={!selected.length} onClick={submit}>Kiểm tra ⏎</button>}
         {revealed && <button className="btn btn-primary" onClick={next}>Câu tiếp ⏎</button>}
       </div>
-      <div className="kbd-help">Phím tắt: <kbd>1</kbd>–<kbd>{q.options.length}</kbd> chọn đáp án · <kbd>⏎</kbd> {multi ? 'kiểm tra / ' : ''}câu tiếp · <kbd>H</kbd> mẹo ghi nhớ</div>
+      <div className="kbd-help">Phím tắt: <kbd>1</kbd>–<kbd>{q.options.length}</kbd> chọn đáp án · <kbd>⏎</kbd> {multi ? 'kiểm tra / ' : ''}câu tiếp</div>
     </div>
   )
 }
