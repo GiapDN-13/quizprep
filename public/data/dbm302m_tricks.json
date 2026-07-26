@@ -1,0 +1,58 @@
+{
+  "Data Visualization": [
+    "Câu 3 loại viz: \"personal question / tự khám phá dữ liệu của mình\" → Interactive visualization; \"slide show / present cho đồng nghiệp\" → Presentation; \"web page cho người xem tự đào sâu\" → Interactive storytelling.",
+    "\"graphics pipeline process order\" → Vertex processing → Rasterization → Pixel processing.",
+    "\"human working memory ... items\" → 3–7 items.",
+    "depth cue \"strongest\" → Occlusion; \"surface orientation\" → Illumination/shading.",
+    "fisheye \"least important/relevant\" → chọn \"makes the data appear more interesting\".",
+    "pixel (x,y,b) hỏi axis nào KHÔNG cho vị trí duy nhất → chọn \"product of x and y\" (tích gây trùng, vd 2×3 = 3×2).",
+    "\"overview of a large dataset\" → hiển thị toàn bộ dữ liệu, trải rộng ra (không nhồi chi tiết)."
+  ],
+  "Preprocessing": [
+    "Tổng |xi − yi| → Manhattan; căn tổng bình phương → Euclidean; lấy MAX hiệu → Chebyshev; tham số bậc h → Minkowski.",
+    "nhị phân, bỏ qua cặp 0-0 / asymmetric → Jaccard; tính cả cặp 0-0 → Simple matching.",
+    "\"angle giữa hai vector / documents\" → Cosine.",
+    "chuẩn hoá về [0,1] → min-max; chuẩn hoá theo mean & std → z-score.",
+    "nominal/ordinal/interval/ratio: có thứ tự nhưng không đo khoảng cách đều → ordinal; có gốc 0 thật (đo tỉ lệ) → ratio."
+  ],
+  "Association Rules": [
+    "\"recover / khôi phục support (lossless)\" → Closed; \"no frequent superset / biên ngoài\" → Maximal. Kích thước: Max ≤ Closed ≤ All.",
+    "\"which is NOT null-invariant\" → Lift hoặc Chi-square. \"null-invariant\" → Kulczynski, Cosine, All-confidence, Max-confidence, Jaccard.",
+    "\"candidate generation, join + prune, quét DB nhiều lần\" → Apriori; \"no candidate / divide-and-conquer / conditional pattern base\" → FP-growth.",
+    "support = số giao dịch chứa / N; confidence(A→B) = s(AB)/s(A); lift = conf / s(B) (>1 dương, =1 độc lập, <1 âm).",
+    "\"NOT a frequent itemset\" → đổi minsup% ra số đếm rồi tìm cái có count THẤP nhất, dưới ngưỡng."
+  ],
+  "Classification": [
+    "\"lazy learner / không train trước / dựa hàng xóm\" → k-NN.",
+    "\"giả định các thuộc tính độc lập\" → Naïve Bayes.",
+    "\"maximize margin / hyperplane / support vectors\" → SVM.",
+    "impurity \"1 − Σ p²\" → Gini; \"−Σ p·log₂p\" → Entropy / Information Gain.",
+    "đánh giá: Precision = TP/(TP+FP), Recall = TP/(TP+FN), Accuracy = (TP+TN)/tổng."
+  ],
+  "Clustering": [
+    "\"cần biết trước k / dùng mean / cụm hình cầu\" → k-means; \"tâm là điểm dữ liệu thật / bền outlier\" → k-medoids (PAM).",
+    "\"density / hình dạng bất kỳ / có noise / tham số ε và MinPts\" → DBSCAN.",
+    "\"gộp dần bottom-up\" → AGNES (agglomerative); \"chia dần top-down\" → DIANA.",
+    "\"CF-tree / dữ liệu rất lớn\" → BIRCH; \"nhiều điểm đại diện\" → CURE; \"hình dạng bất thường\" → CHAMELEON.",
+    "good clustering = HIGH similarity trong cùng cụm + LOW similarity giữa các cụm (đề hay đảo chữ HIGH/LOW để gài).",
+    "purity = Σ (số điểm lớp trội mỗi cụm) / tổng điểm; SSE càng nhỏ càng tốt."
+  ],
+  "Advanced Mining": [
+    "sequential: \"vertical id-list\" → SPADE; \"projected DB, không sinh candidate\" → PrefixSpan; \"closed sequences\" → CloSpan; \"copy-paste bug\" → CP-Miner; \"Apriori-like, quét nhiều lần\" → GSP.",
+    "stream: \"error bound ≤ εN / bucket width 1/ε\" → Lossy Counting.",
+    "trajectory: \"cùng nhau tại các mốc LIÊN TIẾP\" → Convoy; \"không cần liên tiếp\" → Swarm; \"hình tròn cố định\" → Flock.",
+    "phrase mining: \"unsupervised\" → ToPMine; \"cần ít training data\" → SegPhrase; \"xếp hạng phrase\" → KERT.",
+    "\"projected database của <a>\" → giữ phần hậu tố SAU lần đầu xuất hiện của a trong mỗi sequence."
+  ],
+  "Outlier Detection": [
+    "\"local density so với hàng xóm\" → LOF (Local Outlier Factor).",
+    "\"khoảng cách / tỉ lệ điểm trong bán kính\" → distance-based outlier.",
+    "outlier = điểm lệch hẳn phần còn lại; phân biệt global vs local vs collective."
+  ],
+  "_general": [
+    "Phương án có từ tuyệt đối \"always / never / completely / cannot at all\" → thường SAI.",
+    "Phương án dài nhất, nhiều điều kiện đúng nhất → thường ĐÚNG (trong bank này).",
+    "\"Select all that apply\" → đọc TỪNG ý như một câu đúng/sai riêng, đừng bỏ sót ý đúng cuối.",
+    "Câu \"NOT / EXCEPT / LEAST\" → tìm cái NGƯỢC với phần còn lại, đừng chọn theo phản xạ."
+  ]
+}

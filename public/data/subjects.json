@@ -13,6 +13,7 @@
     "description": "Visualization · Preprocessing · Association Rules · Classification · Clustering · Advanced",
     "file": "data/dbm302m.json",
     "theory": "data/dbm302m_theory.md",
-    "theoryQuiz": "data/dbm302m_theory_quiz.json"
+    "theoryQuiz": "data/dbm302m_theory_quiz.json",
+    "tricks": "data/dbm302m_tricks.json"
   }
 ]

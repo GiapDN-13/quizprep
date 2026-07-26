@@ -367,6 +367,27 @@ function HintBox({ q, show, setShow }) {
   )
 }
 
+// Trick panel: mẹo nhìn-ra-đáp-án theo chủ đề của câu
+function TrickBox({ q, tricks }) {
+  const [show, setShow] = useState(false)
+  if (!tricks) return null
+  const lines = [...(tricks[q.topic] || []), ...(tricks._general || [])]
+  if (!lines.length) return null
+  return (
+    <div className="trick-wrap" onClick={(e) => e.stopPropagation()}>
+      <button className="btn btn-sm btn-trick" onClick={() => setShow((s) => !s)}>
+        {show ? '✕ Ẩn trick' : `🎯 Trick ${q.topic}`}
+      </button>
+      {show && (
+        <div className="trick-box">
+          <div className="trick-title">🎯 Nhìn ra đáp án — {q.topic}</div>
+          <ul>{lines.map((t, i) => <li key={i}>{t}</li>)}</ul>
+        </div>
+      )}
+    </div>
+  )
+}
+
 // AI panel per question: translate EN↔VI + free-form Q&A tutor
 function QuestionAI({ subject, q }) {
   const [trans, setTrans] = useState(null)   // {question, options, explanation}
@@ -464,7 +485,7 @@ function QuestionAI({ subject, q }) {
 
 // ---------- Practice mode ----------
 // order: 'shuffle' | 'priority' | 'keep'   drill: chế độ luyện đề (lặp lại tới khi thuộc)
-function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = false, resume = null, sessionId = null }) {
+function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = false, resume = null, sessionId = null, tricks = null }) {
   const [queue, setQueue] = useState(() => {
     if (resume?.ids?.length) {
       const byId = Object.fromEntries(pool.map((q) => [q.id, q]))
@@ -558,7 +579,10 @@ function Practice({ subject, pool, onExit, title, order = 'shuffle', drill = fal
       {multi && !revealed && (
         <div className="multi-note">📌 Câu nhiều đáp án — chọn đúng <strong>{q.answers.length}</strong> ý (đã chọn {selected.length}/{q.answers.length}) rồi bấm <strong>Kiểm tra</strong>.</div>
       )}
-      <HintBox q={q} show={showHint} setShow={setShowHint} />
+      <div className="assist-row">
+        <HintBox q={q} show={showHint} setShow={setShowHint} />
+        <TrickBox q={q} tricks={tricks} />
+      </div>
       <Options
         q={q} selected={selected} revealed={revealed} disabled={revealed}
         onToggle={(i) => choose(i)}
@@ -1293,6 +1317,7 @@ export default function App() {
   const [subject, setSubject] = useState(null)
   const [data, setData] = useState(null)
   const [theoryQs, setTheoryQs] = useState([])
+  const [tricks, setTricks] = useState(null)
   const [mode, setMode] = useState('home')
   const [topic, setTopic] = useState('Tất cả')
   const [error, setError] = useState(null)
@@ -1333,6 +1358,8 @@ export default function App() {
     setSubject(s)
     setData(null)
     setTheoryQs([])
+    setTricks(null)
+    if (s.tricks) fetchData(s.tricks).then(setTricks).catch(() => {})
     fetchData(s.file)
       .then(setData)
       .catch(() => setError(`Không tải được dữ liệu môn ${s.name}.`))
@@ -1459,24 +1486,24 @@ export default function App() {
       {data && mode === 'today' && (
         todayPool.length
           ? <Practice subject={subject} pool={todayPool} onExit={goHome} title="Ôn hôm nay"
-              order="priority" sessionId="today" resume={resumeData} />
+              order="priority" sessionId="today" resume={resumeData} tricks={tricks} />
           : <Empty onExit={goHome} msg="🎉 Hôm nay không còn câu nào đến hạn! Quay lại sau, hoặc chọn Practice để học thêm câu mới." />
       )}
       {data && mode === 'drill' && (
         examDrillPool.length
           ? <Practice subject={subject} pool={examDrillPool} onExit={goHome} title="Luyện đề thi thật"
-              order="keep" drill sessionId="drill" resume={resumeData} />
+              order="keep" drill sessionId="drill" resume={resumeData} tricks={tricks} />
           : <Empty onExit={goHome} msg="Môn này chưa có câu từ đề thi thật." />
       )}
-      {data && mode === 'practice' && <Practice subject={subject} pool={pool} onExit={goHome} title="Practice" order="priority" sessionId="practice" resume={resumeData} />}
+      {data && mode === 'practice' && <Practice subject={subject} pool={pool} onExit={goHome} title="Practice" order="priority" sessionId="practice" resume={resumeData} tricks={tricks} />}
       {data && mode === 'exam' && <Exam subject={subject} pool={pool} onExit={goHome} examTopic={topic} />}
       {data && mode === 'flash' && <Flashcards subject={subject} pool={pool} onExit={goHome} />}
       {data && mode === 'theory' && <Theory subject={subject} onExit={goHome} />}
-      {data && mode === 'theoryquiz' && <Practice subject={subject} pool={theoryPool} onExit={goHome} title="Luyện lý thuyết" order="priority" sessionId="theoryquiz" resume={resumeData} />}
+      {data && mode === 'theoryquiz' && <Practice subject={subject} pool={theoryPool} onExit={goHome} title="Luyện lý thuyết" order="priority" sessionId="theoryquiz" resume={resumeData} tricks={tricks} />}
       {data && mode === 'search' && <SearchView subject={subject} allPool={allPool} onExit={goHome} />}
       {data && mode === 'wrong' && (
         wrongPool.length
-          ? <Practice subject={subject} pool={wrongPool} onExit={goHome} title="Ôn câu sai" drill />
+          ? <Practice subject={subject} pool={wrongPool} onExit={goHome} title="Ôn câu sai" drill tricks={tricks} />
           : <Empty onExit={goHome} msg="Chưa có câu sai nào — làm Practice hoặc Thi thử trước nhé!" />
       )}
     </div>

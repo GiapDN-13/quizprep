@@ -269,6 +269,21 @@ kbd {
 }
 .hint-box.static { cursor: default; }
 
+.assist-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-start; }
+.trick-wrap { }
+.btn-trick { background: #ecfeff; color: #0e7490; border: 1px solid #67e8f9; }
+html.dark .btn-trick { background: #0c2c33; color: #67e8f9; border-color: #155e6b; }
+.trick-box {
+  margin: 8px 0 14px; padding: 12px 14px; border-left: 4px solid #06b6d4;
+  background: #ecfeff; border-radius: 0 10px 10px 0; text-align: left;
+}
+html.dark .trick-box { background: #0c2229; }
+.trick-title { font-weight: 700; color: #0e7490; margin-bottom: 6px; font-size: 14px; }
+html.dark .trick-title { color: #67e8f9; }
+.trick-box ul { margin: 0; padding-left: 20px; }
+.trick-box li { margin: 5px 0; font-size: 13.5px; line-height: 1.5; }
+.trick-box code { background: var(--bg); padding: 1px 5px; border-radius: 5px; }
+
 /* ----- SRS / thống kê / chế độ mới ----- */
 .badge-box { background: var(--bg); color: var(--muted); border: 1px solid var(--border); }
 .badge-box.b1, .badge-box.b2 { background: var(--red-soft); color: var(--red); border-color: transparent; }
