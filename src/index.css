@@ -108,6 +108,12 @@ button { font-family: inherit; cursor: pointer; }
 .badge-review { background: #ffe4e6; color: #be123c; cursor: help; }
 .badge-drill { background: #e0f2fe; color: #0369a1; }
 html.dark .badge-drill { background: #10304a; color: #7dd3fc; }
+.badge-calc { background: #fef3c7; color: #92400e; }
+.badge-concept { background: #dcfce7; color: #166534; }
+html.dark .badge-calc { background: #3a2f10; color: #fcd34d; }
+html.dark .badge-concept { background: #14311f; color: #86efac; }
+.pref-toggle { display: flex; align-items: center; gap: 8px; margin: 4px 0 2px; font-size: 13.5px; color: var(--text); cursor: pointer; }
+.pref-toggle input { width: 17px; height: 17px; }
 .review-note {
   margin-top: 10px; padding: 9px 13px; border-left: 4px solid var(--red);
   background: var(--red-soft); color: #7f1d1d; border-radius: 0 10px 10px 0; font-size: 13.5px;

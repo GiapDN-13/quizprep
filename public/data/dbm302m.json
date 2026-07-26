@@ -22,7 +22,9 @@
    "id": "dbm302m-1",
    "confidence": "high",
    "drill": true,
-   "drillNo": 1
+   "drillNo": 1,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which kind of visualization would you use to share a discovery about your data with your colleagues in a slide show?",
@@ -43,7 +45,9 @@
    "id": "dbm302m-2",
    "confidence": "high",
    "drill": true,
-   "drillNo": 2
+   "drillNo": 2,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which kind of visualization would you use to create a web page that shows viewers a visualization you prepared, but also allows the viewer to further investigate the data?",
@@ -62,7 +66,8 @@
    "source": "q",
    "origNum": 3,
    "id": "dbm302m-3",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "In what order does a data visualization graphics pipeline process information?",
@@ -86,7 +91,9 @@
    "id": "dbm302m-4",
    "confidence": "high",
    "drill": true,
-   "drillNo": 4
+   "drillNo": 4,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "How many items can human working memory (short-term memory) typically hold?",
@@ -107,7 +114,9 @@
    "id": "dbm302m-5",
    "confidence": "high",
    "drill": true,
-   "drillNo": 5
+   "drillNo": 5,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "A light gray box drawn on top of a dark gray background will make the light gray box appear:",
@@ -128,7 +137,9 @@
    "id": "dbm302m-6",
    "confidence": "high",
    "drill": true,
-   "drillNo": 6
+   "drillNo": 6,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "When visualizing data, you should keep your eyes focused on one point for the entire duration of the visualization.",
@@ -146,7 +157,8 @@
    "source": "q",
    "origNum": 7,
    "id": "dbm302m-7",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "On which of these colors does the human eye have the most difficulty focusing?",
@@ -168,7 +180,9 @@
    "id": "dbm302m-8",
    "confidence": "high",
    "drill": true,
-   "drillNo": 8
+   "drillNo": 8,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which one of the 3-D depth cues below is the strongest?",
@@ -190,7 +204,9 @@
    "id": "dbm302m-9",
    "confidence": "high",
    "drill": true,
-   "drillNo": 9
+   "drillNo": 9,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which one of the 3-D depth cues below indicates surface orientation?",
@@ -212,7 +228,9 @@
    "id": "dbm302m-10",
    "confidence": "high",
    "drill": true,
-   "drillNo": 10
+   "drillNo": 10,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Given a plot of life expectancy based on country and birth year, you look up your country and birth year, find the displayed life expectancy, and conclude you will probably live that long. This is an example of:",
@@ -234,7 +252,9 @@
    "id": "dbm302m-11",
    "confidence": "high",
    "drill": true,
-   "drillNo": 11
+   "drillNo": 11,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "When creating an overview visualization of a large dataset, it is most important to:",
@@ -255,7 +275,9 @@
    "id": "dbm302m-12",
    "confidence": "high",
    "drill": true,
-   "drillNo": 12
+   "drillNo": 12,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The process of zooming on the data plotted in a visualization, where the zoomed region then fills the entire display:",
@@ -278,7 +300,9 @@
    "id": "dbm302m-13",
    "confidence": "high",
    "drill": true,
-   "drillNo": 13
+   "drillNo": 13,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The goal of the filtering step of the information visualization mantra is to:",
@@ -299,7 +323,9 @@
    "id": "dbm302m-14",
    "confidence": "high",
    "drill": true,
-   "drillNo": 14
+   "drillNo": 14,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which of the following benefits of a fisheye lens is LEAST important for data visualization?",
@@ -320,7 +346,9 @@
    "id": "dbm302m-15",
    "confidence": "high",
    "drill": true,
-   "drillNo": 15
+   "drillNo": 15,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which of the following provides the best histogram of the data?",
@@ -339,7 +367,8 @@
    "source": "q",
    "origNum": 16,
    "id": "dbm302m-16",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which of the following represents a \"rollup\" of the x and y dimensions of this dataset?",
@@ -358,7 +387,8 @@
    "source": "q",
    "origNum": 17,
    "id": "dbm302m-17",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which axis definition would we NOT use if we wanted to plot the pixel brightness at a unique axis location for every pixel in the image?",
@@ -377,7 +407,8 @@
    "source": "q",
    "origNum": 18,
    "id": "dbm302m-18",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "When designing a dashboard visualization, what should the primary concern be?",
@@ -398,7 +429,9 @@
    "id": "dbm302m-19",
    "confidence": "high",
    "drill": true,
-   "drillNo": 19
+   "drillNo": 19,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 40%, which of the following is a length-3 frequent itemset?",
@@ -418,7 +451,8 @@
    "source": "q",
    "origNum": 20,
    "id": "dbm302m-20",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. What are the confidence and relative support of the association rule {Diapers} => {Coffee, Nuts}?",
@@ -439,7 +473,8 @@
    "source": "q",
    "origNum": 21,
    "id": "dbm302m-21",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let minsup = 2. Which of the following frequent patterns is NOT closed?",
@@ -461,7 +496,9 @@
    "id": "dbm302m-22",
    "confidence": "high",
    "drill": true,
-   "drillNo": 27
+   "drillNo": 27,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let minsup = 2. Which of the following frequent patterns is closed?",
@@ -483,7 +520,9 @@
    "id": "dbm302m-23",
    "confidence": "high",
    "drill": true,
-   "drillNo": 29
+   "drillNo": 29,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Rank the following sets by their cardinality for a given database: {all frequent patterns}, {closed frequent patterns}, and {max frequent patterns}.",
@@ -506,7 +545,9 @@
    "id": "dbm302m-24",
    "confidence": "high",
    "drill": true,
-   "drillNo": 32
+   "drillNo": 32,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 50%, which of the following is NOT a frequent itemset?",
@@ -526,7 +567,8 @@
    "source": "q",
    "origNum": 30,
    "id": "dbm302m-25",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. A strong association rule satisfies both minsup and minconf. Given minsup s = 50% and minconf c = 50%, how many strong association rules are there (rules A=>B and B=>A are distinct)?",
@@ -547,7 +589,8 @@
    "source": "q",
    "origNum": 31,
    "id": "dbm302m-26",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which of the following statements is true?",
@@ -568,7 +611,8 @@
    "source": "q",
    "origNum": 33,
    "id": "dbm302m-27",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "If we know the support of itemset {a, b} is 10, which of the following numbers are possible supports of the itemset {a, c}? Select all that apply.",
@@ -589,7 +633,8 @@
    "source": "q",
    "origNum": 35,
    "id": "dbm302m-28",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the FP-tree shown in Figure 1, how many transactions are there in total? (Sum the counts of the root's child branches.)",
@@ -611,7 +656,8 @@
    "origNum": 41,
    "id": "dbm302m-29",
    "confidence": "high",
-   "review": "Cần hình FP-tree (Figure 1) — đề gốc mất hình, đáp án chưa kiểm chứng được."
+   "review": "Cần hình FP-tree (Figure 1) — đề gốc mất hình, đáp án chưa kiểm chứng được.",
+   "calc": true
   },
   {
    "question": "Considering the Apriori algorithm, assume we have 5 items (A to E) in total. In the 1st scan we find all frequent items A, B, C, and E. How many size-2 itemsets should be considered as candidates in the 2nd scan?",
@@ -631,7 +677,8 @@
    "source": "q",
    "origNum": 42,
    "id": "dbm302m-30",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table of students taking data mining (DM) and machine learning (ML): ML & DM = 700, ML & not-DM = 300 (row 1000); not-ML & DM = 500, not-ML & not-DM = 1500 (row 2000); column totals 1200 and 1800; grand total 3000. If lift is used to measure the correlation between DM and ML, what is lift(DM, ML)?",
@@ -651,7 +698,8 @@
    "source": "q",
    "origNum": 43,
    "id": "dbm302m-31",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Using the same contingency table (ML & DM = 700, ML & not-DM = 300, not-ML & DM = 500, not-ML & not-DM = 1500; column totals 1200 and 1800; grand total 3000), if chi-square is used to measure the correlation between DM and ML, what is the chi-square score?",
@@ -671,7 +719,8 @@
    "source": "q",
    "origNum": 44,
    "id": "dbm302m-32",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "What is the value range of the chi-square measure?",
@@ -693,7 +742,9 @@
    "id": "dbm302m-33",
    "confidence": "high",
    "drill": true,
-   "drillNo": 44
+   "drillNo": 44,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which of the following measures is NOT null-invariant?",
@@ -715,7 +766,9 @@
    "id": "dbm302m-34",
    "confidence": "high",
    "drill": true,
-   "drillNo": 45
+   "drillNo": 45,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "For purchases of comics (CM) and fiction (FC) at a bookstore, a 2x2 contingency table is given with fiction (FC) row total 700, not-fiction (not-FC) row total 800, and grand total 1500. If chi-square is used to measure the correlation between CM and FC, what is the chi-square score?",
@@ -736,7 +789,8 @@
    "origNum": 48,
    "id": "dbm302m-35",
    "confidence": "high",
-   "review": "Bảng contingency mất số liệu ô — chỉ suy được χ² > 0, đáp án chưa chắc."
+   "review": "Bảng contingency mất số liệu ô — chỉ suy được χ² > 0, đáp án chưa chắc.",
+   "calc": true
   },
   {
    "question": "What is the value range of the Kulczynski measure?",
@@ -758,7 +812,9 @@
    "id": "dbm302m-36",
    "confidence": "high",
    "drill": true,
-   "drillNo": 50
+   "drillNo": 50,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Two supermarkets have identical AB, A-not-B and not-A-B counts but different numbers of null (not-A not-B) transactions. Comparing chi-square (X2) and confidence (c) between the two, which holds?",
@@ -778,7 +834,8 @@
    "source": "q",
    "origNum": 52,
    "id": "dbm302m-37",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs. hamburgers (HM) in a 2x2 contingency table with HM = 24 / 18, not-HM = 126, column total 150 (independent-style distribution). If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
@@ -798,7 +855,8 @@
    "source": "q",
    "origNum": 53,
    "id": "dbm302m-38",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Using the same hot dogs (HD) vs. hamburgers (HM) contingency table where observed counts match expected counts, if the chi-square score is used to measure the correlation between HD and HM, what is the chi-square score?",
@@ -818,7 +876,8 @@
    "source": "q",
    "origNum": 54,
    "id": "dbm302m-39",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Suppose one needs to mine frequent patterns at two different levels, with minsup of 5% (higher level) and 3% (lower level). If using shared (uniform-support) multi-level mining, which minsup threshold should be used to generate candidate patterns for the lower level?",
@@ -838,7 +897,8 @@
    "source": "q",
    "origNum": 56,
    "id": "dbm302m-40",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained beer, 5,000 contained frying pans, and 600 contained both. Which of the following is true?",
@@ -860,7 +920,9 @@
    "id": "dbm302m-41",
    "confidence": "high",
    "drill": true,
-   "drillNo": 56
+   "drillNo": 56,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abc\" and pattern \"abd\"?",
@@ -880,7 +942,8 @@
    "source": "q",
    "origNum": 58,
    "id": "dbm302m-42",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 (FACETS example: {A,C,E,S} sup 205227, {F,A,C,E,S} sup 205211, {A,C,T,S} sup 161576, {F,A,C,T,S} sup 161563, {F,A,C,E,T,S} sup 101758) and a cluster quality measure delta = 0.001, what could be a set of representative patterns that covers all itemsets? Hint: the least-support pattern is {F, A, C, E, T, S}.",
@@ -901,7 +964,8 @@
    "source": "q",
    "origNum": 59,
    "id": "dbm302m-43",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A store had 100,000 total transactions in Q4 2014. 10,000 transactions contained eggs, 5,000 contained bacon, and 2,000 contained both. Which of the following values of epsilon is the smallest such that {eggs, bacon} is considered a negative pattern under the null-invariant definition?",
@@ -924,7 +988,9 @@
    "id": "dbm302m-44",
    "confidence": "high",
    "drill": true,
-   "drillNo": 57
+   "drillNo": 57,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abcd\" and pattern \"acde\"?",
@@ -944,7 +1010,8 @@
    "source": "q",
    "origNum": 61,
    "id": "dbm302m-45",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 (FACETS example), which of the following patterns are in the delta-cluster containing {A, C, E, S} for delta = 0.0001? Hint: consider patterns P1, P2 with the same transaction structure.",
@@ -964,7 +1031,8 @@
    "source": "q",
    "origNum": 62,
    "id": "dbm302m-46",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given the itemsets in Table 1 (FACETS example: {F,A,C,T,S} sup 161563, {F,A,C,E,S} sup 205211, {A,C,T,S} sup 161576, {A,C,E,S} sup 205227, {F,A,C,E,T,S} sup 101758), which patterns are delta-covered by {F, A, C, E, T, S} for delta = 0.4? Select all that apply.",
@@ -985,7 +1053,8 @@
    "source": "q",
    "origNum": 63,
    "id": "dbm302m-47",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given the sequence database (1: <a(ab)(bcef)>, 2: <(bf)(ae)(bdf)>, 3: <(abd)c(bef)d>, 4: <(af)(bdf)(ae)>) with support threshold minsup = 3, which of the following sequences is frequent?",
@@ -1007,7 +1076,9 @@
    "id": "dbm302m-48",
    "confidence": "high",
    "drill": true,
-   "drillNo": 62
+   "drillNo": 62,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Given a sequence database with sequences 1: <(a(bc)(de)ef)>, 2: <(a(bd)(be)ef)>, 3: <be(ad)ebfed>, 4: <ab(cd)d(ab)e> and min_sup = 1, which of the following does NOT belong to the <a>-projected database?",
@@ -1028,7 +1099,8 @@
    "source": "q",
    "origNum": 68,
    "id": "dbm302m-49",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given the sequence database (1: <a(bc)(de)cf>, 2: <a(bd)(bc)cf>, 3: <bc(ad)ebfcd>, 4: <(ab)(cd)d(ab)e>) with support threshold minsup = 3, which of the following sequences are frequent?",
@@ -1049,7 +1121,8 @@
    "source": "q",
    "origNum": 71,
    "id": "dbm302m-50",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database (1: <a(bd)(aef)(bc)>, 2: <(cf)(abe)(bd)d>, 3: <(def)(abcde)(cde)>, 4: <a(abe)cd(ec)>) with support threshold minsup = 3, which of the following sequences are frequent?",
@@ -1070,7 +1143,8 @@
    "source": "q",
    "origNum": 72,
    "id": "dbm302m-51",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given a sequence database (1: <af(e)(cdeh)cfg(abe)>, 2: <ad(bc)c(fg)(ch)>, 3: <bc(ad)ebf(cdfgh)>, 4: <ab(bd)d(eg)(adf)gh>) with min_sup = 1, which of the following does NOT belong to the <e>-projected database?",
@@ -1090,7 +1164,8 @@
    "source": "q",
    "origNum": 74,
    "id": "dbm302m-52",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Consider a database of 1000 records. If an item A appears 100 times and the rule \"if A, then B\" holds in 20 transactions, what are the support and confidence for the rule \"if A, then B\"?",
@@ -1110,7 +1185,8 @@
    "source": "q",
    "origNum": 76,
    "id": "dbm302m-53",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "For a frequent trajectory pattern, consecutive places must have a time gap no larger than the time constraint. Given a time constraint of 30 min and a support threshold of 5%, which of the following are valid frequent trajectory patterns?",
@@ -1130,7 +1206,8 @@
    "source": "q",
    "origNum": 77,
    "id": "dbm302m-54",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider a database of 1000 records. If an item A appears 100 times and the rule \"if A, then B\" holds in 100 transactions, what are the support and confidence for the rule \"if A, then B\"?",
@@ -1150,7 +1227,8 @@
    "source": "q",
    "origNum": 81,
    "id": "dbm302m-55",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider a database of 1000 records. If an item A appears 200 times and the rule \"if A, then B\" holds in 100 transactions, what are the support and confidence for the rule \"if A, then B\"?",
@@ -1170,7 +1248,8 @@
    "source": "q",
    "origNum": 86,
    "id": "dbm302m-56",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Suppose we use contiguous pattern mining to extract candidate phrases. Given the five statements below and a support threshold of 3, which phrase qualifies as a candidate? (1) Support vector machine is a classifier. (2) Neural network performs equally well as support vector machine. (3) We propose a method that combines support vector machine with kernel method. (4) Neural network is harder to tune than support vector machine. (5) Support vector machine is important for regression.",
@@ -1190,7 +1269,8 @@
    "source": "q",
    "origNum": 93,
    "id": "dbm302m-57",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which of the following algorithms is NOT designed for frequent pattern mining in stream data with approximation?",
@@ -1212,7 +1292,9 @@
    "id": "dbm302m-58",
    "confidence": "high",
    "drill": true,
-   "drillNo": 106
+   "drillNo": 106,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Do clustering algorithms require labels for the input data instances?",
@@ -1232,7 +1314,9 @@
    "id": "dbm302m-59",
    "confidence": "high",
    "drill": true,
-   "drillNo": 118
+   "drillNo": 118,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Can we use clustering to help with classification tasks?",
@@ -1252,7 +1336,9 @@
    "id": "dbm302m-60",
    "confidence": "high",
    "drill": true,
-   "drillNo": 119
+   "drillNo": 119,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Given the two-dimensional points (0, 3) and (4, 0), what is the Manhattan distance between those two points?",
@@ -1273,7 +1359,9 @@
    "id": "dbm302m-61",
    "confidence": "high",
    "drill": true,
-   "drillNo": 133
+   "drillNo": 133,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Given three vectors A, B, and C, suppose the cosine similarity between A and B is cos(A,B) = 1.0, and the similarity between A and C is cos(A,C) = -1.0. Can we determine the cosine similarity between B and C?",
@@ -1291,7 +1379,8 @@
    "source": "q",
    "origNum": 124,
    "id": "dbm302m-62",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Suppose X is a random variable with P(X=-1)=0.5 and P(X=1)=0.5. In addition, we have another random variable Y = X*X. What is the covariance between X and Y?",
@@ -1312,7 +1401,9 @@
    "id": "dbm302m-63",
    "confidence": "high",
    "drill": true,
-   "drillNo": 135
+   "drillNo": 135,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
@@ -1332,7 +1423,8 @@
    "source": "q",
    "origNum": 126,
    "id": "dbm302m-64",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Two samples (case 1, case 2) from a drug-design (thrombin binding) dataset, with 10 binary activities: F1 (0,0), F2 (1,1), F3 (1,0), F4 (0,0), F5 (0,1), F6 (0,0), F7 (1,1), F8 (1,0), F9 (1,0), F10 (1,1). Assuming all activities are symmetric binary variables, what is the distance between case 1 and case 2?",
@@ -1352,7 +1444,8 @@
    "source": "q",
    "origNum": 127,
    "id": "dbm302m-65",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider a two-dimensional space. Given a query point Q = (0.8, 0.6), which of the following is the closest to Q in terms of cosine similarity?",
@@ -1372,7 +1465,8 @@
    "source": "q",
    "origNum": 129,
    "id": "dbm302m-66",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider a two-dimensional space. Given a query point Q = (0.8, 0.6), which of the following is the farthest from Q in terms of cosine similarity?",
@@ -1392,7 +1486,8 @@
    "source": "q",
    "origNum": 130,
    "id": "dbm302m-67",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the following two short texts (punctuation removed), calculate the cosine similarity based on the bag-of-words model. Text1: \"one sees clearly only with the heart anything essential is invisible to the eyes\" Text2: \"let my soul smile through my heart and my heart smile through my eyes that I may scatter rich smiles in sad hearts\"",
@@ -1415,7 +1510,9 @@
    "confidence": "high",
    "drill": true,
    "drillNo": 145,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "For Iris virginica, sampled data on two features across 5 cases: Sepal length = 6.9, 6.7, 6.9, 5.8, 6.8; Petal length = 3.1, 3.1, 3.1, 2.7, 3.2. What is the correlation coefficient between the two features?",
@@ -1437,7 +1534,9 @@
    "id": "dbm302m-69",
    "confidence": "high",
    "drill": true,
-   "drillNo": 147
+   "drillNo": 147,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Euclidean distance between these two objects?",
@@ -1457,7 +1556,8 @@
    "source": "q",
    "origNum": 133,
    "id": "dbm302m-70",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the supremum (Chebyshev) distance between these two objects?",
@@ -1477,7 +1577,8 @@
    "source": "q",
    "origNum": 134,
    "id": "dbm302m-71",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Two samples (case 1, case 2) from a drug-design (thrombin binding) dataset, with 10 binary activities: F1 (0,0), F2 (1,1), F3 (1,0), F4 (0,0), F5 (0,1), F6 (0,0), F7 (1,1), F8 (1,0), F9 (1,0), F10 (1,1). Assuming all activities are asymmetric binary variables, what is the Jaccard coefficient between case 1 and case 2?",
@@ -1497,7 +1598,8 @@
    "source": "q",
    "origNum": 135,
    "id": "dbm302m-72",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the following two short texts (punctuation removed), calculate the cosine similarity based on the bag-of-words model. Text1: \"all grown-ups were once children but only few of them remember it\" Text2: \"all children should be very understanding of grown-ups\"",
@@ -1519,7 +1621,9 @@
    "id": "dbm302m-73",
    "confidence": "high",
    "drill": true,
-   "drillNo": 146
+   "drillNo": 146,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "For Iris setosa, sampled data on two features across 5 cases: Sepal length = 5.1, 4.9, 4.7, 4.6, 5.0; Sepal width = 3.5, 3.0, 3.2, 3.1, 5.4. What is the sample correlation coefficient between sepal length and sepal width?",
@@ -1542,7 +1646,9 @@
    "id": "dbm302m-74",
    "confidence": "high",
    "drill": true,
-   "drillNo": 148
+   "drillNo": 148,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Sampled data on two features across 5 cases: Sepal length = 7.0, 6.4, 6.9, 5.5, 6.5; Sepal width = 3.2, 3.2, 3.1, 2.3, 2.8. What is the sample correlation coefficient between sepal length and sepal width?",
@@ -1564,7 +1670,9 @@
    "id": "dbm302m-75",
    "confidence": "high",
    "drill": true,
-   "drillNo": 149
+   "drillNo": 149,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Is K-means guaranteed to find K clusters that lead to the global minimum of the SSE?",
@@ -1582,7 +1690,8 @@
    "source": "q",
    "origNum": 140,
    "id": "dbm302m-76",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Is it possible that the SSE strictly increases after we recompute new centers in the k-means algorithm? Why?",
@@ -1602,7 +1711,9 @@
    "id": "dbm302m-77",
    "confidence": "high",
    "drill": true,
-   "drillNo": 151
+   "drillNo": 151,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "For k-means, will different initializations always lead to different clustering results?",
@@ -1622,7 +1733,9 @@
    "id": "dbm302m-78",
    "confidence": "high",
    "drill": true,
-   "drillNo": 152
+   "drillNo": 152,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "In the k-medoids algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
@@ -1642,7 +1755,9 @@
    "id": "dbm302m-79",
    "confidence": "high",
    "drill": true,
-   "drillNo": 153
+   "drillNo": 153,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "In the k-median algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
@@ -1662,7 +1777,9 @@
    "id": "dbm302m-80",
    "confidence": "high",
    "drill": true,
-   "drillNo": 154
+   "drillNo": 154,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Considering the k-means algorithm, after the current iteration we have three centroids (0, 1), (2, 1), and (-1, 2). Will points (0.5, 0.5) and (-0.5, 0) be assigned to the same cluster in the next iteration?",
@@ -1682,7 +1799,9 @@
    "id": "dbm302m-81",
    "confidence": "high",
    "drill": true,
-   "drillNo": 155
+   "drillNo": 155,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Considering the k-means algorithm, if points (-1, 3), (-3, 1), and (-2, -1) are the only points assigned to the first cluster now, what is the new centroid for this cluster?",
@@ -1704,7 +1823,9 @@
    "id": "dbm302m-82",
    "confidence": "high",
    "drill": true,
-   "drillNo": 157
+   "drillNo": 157,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "The k-means++ algorithm improves initialization by picking the point farthest from the currently selected centroids. Suppose k=2 and the first centroid is (0, 0). Among the remaining points, which should be chosen as the second centroid?",
@@ -1724,7 +1845,8 @@
    "source": "q",
    "origNum": 147,
    "id": "dbm302m-83",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Considering the k-median algorithm, if points (1, -3), (1, 1), and (-2, 2) are the only points assigned to the first cluster now, what is the new centroid (median) for this cluster?",
@@ -1744,7 +1866,8 @@
    "source": "q",
    "origNum": 149,
    "id": "dbm302m-84",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Considering the k-means algorithm, after the current iteration we have three centroids (0, 1), (2, 1), and (-1, 2). Will points (2, 3) and (2, 0.5) be assigned to the same cluster in the next iteration?",
@@ -1764,7 +1887,9 @@
    "id": "dbm302m-85",
    "confidence": "high",
    "drill": true,
-   "drillNo": 156
+   "drillNo": 156,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "When will a leaf entry in the CF (Clustering Feature) tree of BIRCH split?",
@@ -1785,7 +1910,9 @@
    "id": "dbm302m-86",
    "confidence": "high",
    "drill": true,
-   "drillNo": 163
+   "drillNo": 163,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which of the following statements about probabilistic hierarchical clustering is FALSE?",
@@ -1806,7 +1933,9 @@
    "id": "dbm302m-87",
    "confidence": "high",
    "drill": true,
-   "drillNo": 167
+   "drillNo": 167,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Consider the three clusters A, B, and C shown in the figure. Using Euclidean distance as the similarity measure, which two clusters would be merged first in agglomerative clustering using complete link (diameter)?",
@@ -1827,7 +1956,8 @@
    "origNum": 159,
    "id": "dbm302m-88",
    "confidence": "high",
-   "review": "Cần hình cụm A/B/C cho complete-link — 3 file nguồn đều ghi cùng đáp án nên tạm tin."
+   "review": "Cần hình cụm A/B/C cho complete-link — 3 file nguồn đều ghi cùng đáp án nên tạm tin.",
+   "calc": false
   },
   {
    "question": "Consider the three hierarchical clustering algorithms BIRCH, CURE, and CHAMELEON. Which of the following statements about these algorithms is TRUE?",
@@ -1847,7 +1977,8 @@
    "source": "q",
    "origNum": 161,
    "id": "dbm302m-89",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-4, 5, 14}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
@@ -1867,7 +1998,8 @@
    "source": "q",
    "origNum": 162,
    "id": "dbm302m-90",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-5, 5, 15}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
@@ -1887,7 +2019,8 @@
    "source": "q",
    "origNum": 163,
    "id": "dbm302m-91",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Which of the following is NOT a hierarchical clustering algorithm?",
@@ -1909,7 +2042,9 @@
    "id": "dbm302m-92",
    "confidence": "high",
    "drill": true,
-   "drillNo": 169
+   "drillNo": 169,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-1, 0, 1}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
@@ -1929,7 +2064,8 @@
    "source": "q",
    "origNum": 166,
    "id": "dbm302m-93",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "If p is directly density-reachable from a point q, which of the following statements is correct?",
@@ -1948,7 +2084,8 @@
    "source": "q",
    "origNum": 167,
    "id": "dbm302m-94",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given a synthetic data set and its OPTICS reachability plot, how many clusters would there be if the threshold is set to the red line in the reachability plot?",
@@ -1970,7 +2107,8 @@
    "origNum": 170,
    "id": "dbm302m-95",
    "confidence": "high",
-   "review": "Cần biểu đồ reachability của OPTICS — đáp án dựa trên phán đoán."
+   "review": "Cần biểu đồ reachability của OPTICS — đáp án dựa trên phán đoán.",
+   "calc": false
   },
   {
    "question": "Given a synthetic data set and its OPTICS reachability plot, how many clusters might there be by setting different reachability thresholds?",
@@ -1991,7 +2129,8 @@
    "source": "q",
    "origNum": 171,
    "id": "dbm302m-96",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Which of the following categories of clustering evaluation requires a \"ground-truth\" data set?",
@@ -2012,7 +2151,9 @@
    "id": "dbm302m-97",
    "confidence": "high",
    "drill": true,
-   "drillNo": 182
+   "drillNo": 182,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "What is the Normalized Mutual Information (NMI) when the clustering is identical to the ground-truth partition?",
@@ -2033,7 +2174,9 @@
    "id": "dbm302m-98",
    "confidence": "high",
    "drill": true,
-   "drillNo": 183
+   "drillNo": 183,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "If two points A and B have the same cluster labels and the same partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
@@ -2055,7 +2198,9 @@
    "id": "dbm302m-99",
    "confidence": "high",
    "drill": true,
-   "drillNo": 184
+   "drillNo": 184,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "If two points A and B have the same cluster labels but different partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
@@ -2077,7 +2222,9 @@
    "id": "dbm302m-100",
    "confidence": "high",
    "drill": true,
-   "drillNo": 185
+   "drillNo": 185,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which of the following is needed to calculate a Normalized Cut?",
@@ -2098,7 +2245,9 @@
    "id": "dbm302m-101",
    "confidence": "high",
    "drill": true,
-   "drillNo": 186
+   "drillNo": 186,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The following table summarizes clustering results where C1, C2, C3 are clusters and T1, T2, T3 are ground-truth classes. Calculate the purity of the clustering. Table (rows C1/C2/C3, columns T1/T2/T3/Sum): C1: 10, 40, 10 (60); C2: 20, 10, 30 (60); C3: 30, 0, 50 (80); column totals: 60, 50, 90 (grand total 200).",
@@ -2119,7 +2268,8 @@
    "source": "f",
    "origNum": 185,
    "id": "dbm302m-102",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The following table summarizes clustering results where C1, C2, C3 are clusters and T1, T2, T3 are ground-truth classes. Calculate the maximum matching score. Table (rows C1/C2/C3, columns T1/T2/T3/Sum): C1: 20, 30, 10 (60); C2: 30, 40, 10 (80); C3: 0, 0, 60 (60); column totals: 50, 70, 80 (grand total 200).",
@@ -2140,7 +2290,8 @@
    "source": "q",
    "origNum": 186,
    "id": "dbm302m-103",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which of the following measures can be used as an internal measure for clustering validation?",
@@ -2163,7 +2314,9 @@
    "id": "dbm302m-104",
    "confidence": "high",
    "drill": true,
-   "drillNo": 188
+   "drillNo": 188,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Given a set of transactions, the support of itemset {a,b} is 15% and the support of itemset {b} is 20%. Considering the association rules {a}->{b} and {b}->{a}, which of the following statements is true?",
@@ -2183,7 +2336,8 @@
    "source": "q",
    "origNum": 191,
    "id": "dbm302m-105",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "What algorithm is implemented by the code below? (imports numpy and scipy cdist; randomly chooses k centroids, then iteratively computes euclidean distances from points to centroids and reassigns.)",
@@ -2201,7 +2355,8 @@
    "source": "q",
    "origNum": 194,
    "id": "dbm302m-106",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "What is the absolute standard deviation (asd = (1/card(X)) * sum|xi - median|) for the following salaries? Michael W 43000, Daniela C 45000, Allie C 55000, David A 69000, Brian A 70000, Yun L 75000, Abdullah K 105000, Rita A 115000. (values in thousands)",
@@ -2221,7 +2376,8 @@
    "source": "q",
    "origNum": 195,
    "id": "dbm302m-107",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given two objects represented by the tuples (22, 1, 42, 10) and (20, 0, 36, 8), compute the Minkowski distance between the two objects using h = 3.",
@@ -2243,7 +2399,9 @@
    "id": "dbm302m-108",
    "confidence": "high",
    "drill": true,
-   "drillNo": 199
+   "drillNo": 199,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Which of the following refers to a sequence of patterns that occurs frequently?",
@@ -2263,7 +2421,8 @@
    "source": "q",
    "origNum": 197,
    "id": "dbm302m-109",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "A constraint is anti-monotone if whenever an itemset S violates it, all supersets of S also violate it. Which of the following constraints is anti-monotone?",
@@ -2285,7 +2444,9 @@
    "id": "dbm302m-110",
    "confidence": "high",
    "drill": true,
-   "drillNo": 202
+   "drillNo": 202,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which statistical function is (x - mode)/s?",
@@ -2305,7 +2466,8 @@
    "source": "q",
    "origNum": 200,
    "id": "dbm302m-111",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Use z-score normalization to normalize the following group of data: 200, 300, 400, 600, 100.",
@@ -2327,7 +2489,9 @@
    "id": "dbm302m-112",
    "confidence": "high",
    "drill": true,
-   "drillNo": 204
+   "drillNo": 204,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "question": "Transactions: T10 {Beer, Nuts, Diaper}, T20 {Beer, Coffee, Diaper}, T30 {Beer, Diaper, Eggs}, T40 {Nuts, Eggs, Milk}, T50 {Nuts, Coffee, Diaper, Eggs, Milk}. Let X be the 1-itemset {Beer} and Y be the 1-itemset {Diaper}. What is the complete set of transactions that contains the itemset X ∪ Y?",
@@ -2346,7 +2510,8 @@
    "source": "q",
    "origNum": 202,
    "id": "dbm302m-113",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Suppose F2 = {ab, ac, bc, be, ce}. Which of the following length-3 candidate frequent patterns can be pruned according to the Apriori algorithm?",
@@ -2367,7 +2532,9 @@
    "id": "dbm302m-114",
    "confidence": "high",
    "drill": true,
-   "drillNo": 208
+   "drillNo": 208,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The table lists partitions of a Transaction Database (TDB) and their local frequent patterns: TDB_1 {abc, ab, ac, bc, a, b, c}; TDB_2 {bc, ab, a, b, c}; TDB_3 {cd, c, d}. Which of the following itemsets is definitely NOT a potential global frequent itemset?",
@@ -2389,7 +2556,9 @@
    "id": "dbm302m-115",
    "confidence": "high",
    "drill": true,
-   "drillNo": 209
+   "drillNo": 209,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Transaction history of Apple (A) and Banana (B) with expected counts in parentheses: A&B = 50 (57), (not A)&B = 200 (192), A&(not B) = 750 (742), (not A)&(not B) = 2500 (2507); total = 3500. Which of the following statements is correct?",
@@ -2409,7 +2578,8 @@
    "source": "q",
    "origNum": 207,
    "id": "dbm302m-116",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "DBLP is a computer science bibliography database. Suppose we study the correlation between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) based on co-authorship: JL & HG co-authored 430 papers, and (not JL)&(not HG) is very large (about 2.7e6, i.e., a large number of null co-occurrences). Which pattern-evaluation measure most properly reflects the collaboration proximity for pattern {JL, HG}? Check all that apply.",
@@ -2428,7 +2598,8 @@
    "source": "q",
    "origNum": 208,
    "id": "dbm302m-117",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Suppose one needs to mine frequent patterns at two levels, with min-support of 5% (higher level) and 1% (lower level). If using shared multi-level mining, which min-support threshold should be used to generate candidate patterns for the higher level?",
@@ -2448,7 +2619,8 @@
    "source": "q",
    "origNum": 209,
    "id": "dbm302m-118",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider the support-based and null-invariant definitions for negative patterns. Let ε = 0.01. In a database of 10^9 total transactions, 10^6 contain item A, 10^4 contain item B, and 10^2 contain both A and B. Which of the following is true? (Support-based negative: P(A,B) << P(A)*P(B). Null-invariant negative: (P(A|B)+P(B|A))/2 < ε.)",
@@ -2470,7 +2642,8 @@
    "origNum": 210,
    "id": "dbm302m-119",
    "confidence": "high",
-   "review": "Đề có 2 phương án cùng đúng (lỗi ra đề); đáp án lưu là phương án đầy đủ nhất."
+   "review": "Đề có 2 phương án cùng đúng (lỗi ra đề); đáp án lưu là phương án đầy đủ nhất.",
+   "calc": true
   },
   {
    "question": "Given transactions T1 {a,b,c,d,e}, T2 {a,b,d,e}, T3 {a,b,c,d,e,f}, T4 {a,b,c,d,f}, and the pattern distance measure distance = 1 - |intersection of supporting transactions| / |union of supporting transactions|, what is the distance between pattern \"abcd\" and pattern \"abde\"?",
@@ -2490,7 +2663,8 @@
    "source": "q",
    "origNum": 211,
    "id": "dbm302m-120",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database S1 <a(abc)(ac)d(cf)>, S2 <(ad)c(bc)(ae)>, S3 <(ef)(ab)(df)cb>, S4 <eg(af)cbc>, which of the following is NOT a subsequence of any sequence in the database?",
@@ -2510,7 +2684,8 @@
    "source": "q",
    "origNum": 212,
    "id": "dbm302m-121",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given a sequence database, suppose <ab>, <ac>, and <bc> are the only length-two frequent sequential patterns. Which of the following might also be a frequent sequential pattern?",
@@ -2532,7 +2707,9 @@
    "id": "dbm302m-122",
    "confidence": "high",
    "drill": true,
-   "drillNo": 73
+   "drillNo": 73,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Given the sequence database S10 <a(abc)(ac)d(cf)>, S20 <(ad)c(bc)(ae)>, S30 <(ef)(ab)(df)cb>, S40 <eg(af)cbc>, using the vertical data format, which sequence (by SID) belongs to the <g>-projected database?",
@@ -2552,7 +2729,8 @@
    "source": "q",
    "origNum": 214,
    "id": "dbm302m-123",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given a support threshold of 5% and a confidence threshold of 60%, which of the following spatial association rules is valid? (each rule shown with [support, confidence])",
@@ -2572,7 +2750,8 @@
    "source": "q",
    "origNum": 217,
    "id": "dbm302m-124",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which of the following moving-cluster patterns does NOT require the objects to move together for consecutive timestamps?",
@@ -2593,7 +2772,9 @@
    "id": "dbm302m-125",
    "confidence": "high",
    "drill": true,
-   "drillNo": 88
+   "drillNo": 88,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "For mining frequent movement patterns from a trajectory database, why is it necessary to group similar locations?",
@@ -2614,7 +2795,9 @@
    "id": "dbm302m-126",
    "confidence": "high",
    "drill": true,
-   "drillNo": 89
+   "drillNo": 89,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "When detecting periodicity from sparse trajectory data, what is the benefit of clustering locations to form reference spots?",
@@ -2635,7 +2818,9 @@
    "id": "dbm302m-127",
    "confidence": "high",
    "drill": true,
-   "drillNo": 90
+   "drillNo": 90,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Which of the following strategies does ToPMine use for mining phrase-level topics?",
@@ -2656,7 +2841,9 @@
    "id": "dbm302m-128",
    "confidence": "high",
    "drill": true,
-   "drillNo": 102
+   "drillNo": 102,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "For the task of phrase mining, is ToPMine a supervised or an unsupervised approach?",
@@ -2677,7 +2864,9 @@
    "id": "dbm302m-129",
    "confidence": "high",
    "drill": true,
-   "drillNo": 103
+   "drillNo": 103,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Among the following descriptions about SegPhrase, which one is correct?",
@@ -2698,7 +2887,9 @@
    "id": "dbm302m-130",
    "confidence": "high",
    "drill": true,
-   "drillNo": 104
+   "drillNo": 104,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "How is frequent pattern mining helpful for SegPhrase?",
@@ -2719,7 +2910,9 @@
    "id": "dbm302m-131",
    "confidence": "high",
    "drill": true,
-   "drillNo": 105
+   "drillNo": 105,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Given a support threshold σ, is Lossy Counting guaranteed to find all the frequent patterns whose supports are no smaller than σ?",
@@ -2737,7 +2930,8 @@
    "source": "q",
    "origNum": 225,
    "id": "dbm302m-132",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Which of the following is more suitable for mining \"forget-to-change\" bugs?",
@@ -2757,7 +2951,9 @@
    "id": "dbm302m-133",
    "confidence": "high",
    "drill": true,
-   "drillNo": 117
+   "drillNo": 117,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "Table 1 (transactions): T1 {Beer, Nuts, Diapers}, T2 {Beer, Coffee, Diapers, Nuts}, T3 {Beer, Diapers, Eggs}, T4 {Beer, Nuts, Eggs, Milk}, T5 {Nuts, Coffee, Diapers, Eggs, Milk}. What is the relative support and confidence of the association rule {Diapers} -> {Coffee, Nuts}?",
@@ -2778,7 +2974,8 @@
    "source": "f",
    "origNum": 21,
    "id": "dbm302m-134",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes students taking Data Mining (DM) and Machine Learning (ML): ML row [DM 700, not-DM 300] = 1000; not-ML row [DM 500, not-DM 1500] = 2000; column totals [1200, 1800]; grand total 3000. If χ² is used to measure the correlation between DM and ML, what is the χ² score?",
@@ -2798,7 +2995,8 @@
    "source": "f",
    "origNum": 44,
    "id": "dbm302m-135",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes purchases of comics (CM) and fiction (FC) with row total FC = 700, row total not-FC = 800, and grand total 1500 (some cell values in the source are garbled). If χ² is used to measure the correlation between CM and FC, what is the χ² score?",
@@ -2819,7 +3017,8 @@
    "origNum": 48,
    "id": "dbm302m-136",
    "confidence": "high",
-   "review": "Bảng contingency mất số liệu — chọn giữa 80 và 240 là phỏng đoán."
+   "review": "Bảng contingency mất số liệu — chọn giữa 80 và 240 là phỏng đoán.",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM), with row totals HM = 24 and not-HM = 126 (grand total 150). If lift is used to measure the correlation between HD and HM, what is the value of lift(HD, HM)?",
@@ -2839,7 +3038,8 @@
    "source": "f",
    "origNum": 53,
    "id": "dbm302m-137",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM), with row totals HM = 24 and not-HM = 126 (grand total 150). If the χ² score is used to measure the correlation between HD and HM, what is the value of the χ² score?",
@@ -2859,7 +3059,8 @@
    "source": "f",
    "origNum": 54,
    "id": "dbm302m-138",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 and a cluster quality measure δ = 0.001, what could be a set of representative patterns that covers all itemsets in Table 1? (Hint: the pattern with the least support is {F, A, C, E, T, S}; consider which pattern can cover it.)",
@@ -2880,7 +3081,8 @@
    "source": "f",
    "origNum": 59,
    "id": "dbm302m-139",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database: S1 <af(e)(cdeh)cfg(abe)>, S2 <ad(bc)c(fg)(ch)>, S3 <bc(ad)ebf(cdfgh)>, S4 <ab(bd)de>, with min_sup = 1. Which of the following does NOT belong to the <a>-projected database?",
@@ -2900,7 +3102,8 @@
    "source": "f",
    "origNum": 68,
    "id": "dbm302m-140",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Two samples from the Car Evaluation Database with attributes buying, maint, doors, persons, lug_boot, safety. Car 1: buying=med, maint=v-high, doors=more, persons=small(? garbled), lug_boot=small, safety=med. Car 2: buying=high, maint=v-high, doors=4, persons=(4), lug_boot=big, safety=med. Using simple matching to estimate proximity, what is the distance between Car 1 and Car 2?",
@@ -2921,7 +3124,8 @@
    "source": "f",
    "origNum": 128,
    "id": "dbm302m-141",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Two samples from the Car Evaluation Database with attributes buying, maint, doors, persons, lug_boot, safety. Car 1: buying=med, maint=v-high, doors=more, persons=small(? garbled), lug_boot=small, safety=med. Car 2: buying=high, maint=v-high, doors=4, persons=(4), lug_boot=big, safety=med. To handle categorical attributes, each is represented by asymmetric binary attributes. What is the distance between Car 1 and Car 2?",
@@ -2942,7 +3146,8 @@
    "source": "f",
    "origNum": 136,
    "id": "dbm302m-142",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Cluster the following points into three clusters using k-means with Euclidean distance: A1(2,10), A2(2,5), A3(8,4), B1(5,8), B2(7,5), B3(6,4), C1(1,2), C2(4,9). Initially A1, B1, C1 are the cluster centers. What are the three final clusters?",
@@ -2961,7 +3166,8 @@
    "source": "f",
    "origNum": 193,
    "id": "dbm302m-143",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "What algorithm is implemented by the code below? (imports numpy and scipy cdist; randomly chooses k centroids, then computes euclidean distances between centroids and all data points and reassigns iteratively.)",
@@ -2979,7 +3185,8 @@
    "source": "f",
    "origNum": 194,
    "id": "dbm302m-144",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "DBLP is a computer science bibliography database. Suppose we study the correlation between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) based on co-authorship: JL & HG = 430, with a very large number of null co-occurrences (about 2.7e6). Which pattern-evaluation measure most properly reflects the collaboration proximity for pattern {JL, HG}? Check all that apply.",
@@ -2998,7 +3205,8 @@
    "source": "f",
    "origNum": 208,
    "id": "dbm302m-145",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database S1 <a(abc)(ac)d(cf)>, S2 <(ad)c(bc)(ae)>, S3 <(ef)(ab)(df)cb>, S4 <eg(af)cbc>, which of the following belongs to the <f>-projected database?",
@@ -3018,7 +3226,8 @@
    "source": "f",
    "origNum": 215,
    "id": "dbm302m-146",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Table 1 (transactions): T1 {Beer, Nuts, Diapers}, T2 {Beer, Coffee, Diapers, Nuts}, T3 {Beer, Diapers, Eggs}, T4 {Beer, Nuts, Eggs, Milk}, T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given min-support s = 40%, which of the following is a length-3 frequent itemset?",
@@ -3038,7 +3247,8 @@
    "source": "ai",
    "origNum": 19,
    "id": "dbm302m-147",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let min-support = 2. Which of the following frequent patterns is NOT closed?",
@@ -3058,7 +3268,8 @@
    "source": "ai",
    "origNum": 21,
    "id": "dbm302m-148",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes students taking Data Mining (DM) and Machine Learning (ML): ML row [DM 700, not-DM 300] = 1000; not-ML row [DM 500, not-DM 1500] = 2000; column totals [1200, 1800]; grand total 3000. If lift is used to measure the correlation between DM and ML, what is the value of lift(DM, ML)?",
@@ -3078,7 +3289,8 @@
    "source": "ai",
    "origNum": 34,
    "id": "dbm302m-149",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM) with row totals HM = 24 and not-HM = 126 (grand total 150), constructed so the variables are independent. If lift is used, what is the value of lift(HD, HM)?",
@@ -3098,7 +3310,8 @@
    "source": "ai",
    "origNum": 43,
    "id": "dbm302m-150",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 and a cluster quality measure δ = 0.001, what could be a set of representative patterns that covers all itemsets in Table 1? (Hint: the least-support pattern is {F, A, C, E, T, S}; consider which pattern can cover it.)",
@@ -3119,7 +3332,8 @@
    "source": "ai",
    "origNum": 47,
    "id": "dbm302m-151",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The dataset contains two flowers, Iris setosa and Iris versicolor, with (sepal length, sepal width, petal length, petal width): Iris setosa (4.9, 3.0, 1.4, 0.2), Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
@@ -3139,7 +3353,8 @@
    "source": "ai",
    "origNum": 97,
    "id": "dbm302m-153",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which of the following measures can be used as a relative measure for clustering validation?",
@@ -3160,7 +3375,8 @@
    "source": "ai",
    "origNum": 143,
    "id": "dbm302m-154",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "A 2x2 contingency table summarizes students' preference for hot dogs (HD) vs hamburgers (HM) with row totals HM = 24 and not-HM = 126 (grand total 150), constructed so the variables are independent. If the χ² score is used, what is the value of the χ² score?",
@@ -3180,7 +3396,8 @@
    "source": "ez",
    "origNum": 54,
    "id": "dbm302m-155",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Transactions: T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}, T5{Nuts,Coffee,Diapers,Eggs,Milk}. What are the relative support and confidence of the association rule {Diapers} -> {Coffee, Nuts}?",
@@ -3201,7 +3418,8 @@
    "source": "md_extra",
    "origNum": 1,
    "id": "dbm302m-156",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Transactions (4 rows): T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}. With minsup s = 50% and minconf c = 50%, which of the following are valid association rules? Select all that apply.",
@@ -3223,7 +3441,8 @@
    "source": "md_extra",
    "origNum": 2,
    "id": "dbm302m-157",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given the classic FP-tree built from frequent items {f, c, a, b, m, p}, which of the following prefix paths belong to the f-conditional pattern base (i.e. the conditional database of item f)? Select all that apply.",
@@ -3245,7 +3464,8 @@
    "source": "md_extra",
    "origNum": 3,
    "id": "dbm302m-158",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Coursera collected statistics on students taking Data Mining (DM) and Machine Learning (ML). Contingency table: ML&DM=700, ML&notDM=300 (row 1000); notML&DM=500, notML&notDM=1500 (row 2000); column totals 1200 and 1800, grand total 3000. If chi-square is used to measure the correlation between DM and ML, what is the chi-square score?",
@@ -3265,7 +3485,8 @@
    "source": "md_extra",
    "origNum": 4,
    "id": "dbm302m-159",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). Contingency table (grand total 150): HM&HD=4, HM&notHD=20 (row HM=24); notHM&HD=21, notHM&notHD=105 (row notHM=126); column totals HD=25, notHD=125. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
@@ -3285,7 +3506,8 @@
    "source": "md_extra",
    "origNum": 5,
    "id": "dbm302m-160",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). Contingency table (grand total 150): HM&HD=4, HM&notHD=20 (row HM=24); notHM&HD=21, notHM&notHD=105 (row notHM=126); column totals HD=25, notHD=125. If chi-square is used to measure the correlation between HD and HM, what is the chi-square score?",
@@ -3305,7 +3527,8 @@
    "source": "md_extra",
    "origNum": 6,
    "id": "dbm302m-161",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 and a pattern-cluster quality threshold delta = 0.001, which set of representative (compressed) patterns covers all itemsets in Table 1? Hint: the pattern with the least support is {F,A,C,E,T,S}; consider which pattern can delta-cover it.",
@@ -3326,7 +3549,8 @@
    "source": "md_extra",
    "origNum": 7,
    "id": "dbm302m-162",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database (Table 3) with min_sup = 1, which of the following sequences does NOT belong to the <a>-projected (a-prefix) database?",
@@ -3348,7 +3572,8 @@
    "origNum": 8,
    "id": "dbm302m-163",
    "confidence": "high",
-   "review": "Thiếu Table 3 của sequence database."
+   "review": "Thiếu Table 3 của sequence database.",
+   "calc": false
   },
   {
    "question": "Using the CloSpan algorithm with minimum support 15, mining produces these sequences with their projected-DB sizes: <c>:50, <ac>:40, <ab>:30, <bc>:50. After applying the backward sub-pattern and backward super-pattern pruning rules, which projected DBs remain? Select all that apply.",
@@ -3370,7 +3595,8 @@
    "source": "md_extra",
    "origNum": 9,
    "id": "dbm302m-164",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "For mining text data, which of the following algorithms will NOT output phrases?",
@@ -3392,7 +3618,9 @@
    "id": "dbm302m-165",
    "confidence": "high",
    "drill": true,
-   "drillNo": 91
+   "drillNo": 91,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "A data scientist applies the Lossy Counting algorithm to a transactional data stream to estimate item counts. Bucket size w = 1000, total stream length N = 10000, and the true count of item A is 100. Which of the following could be a possible output count for item A from Lossy Counting?",
@@ -3412,7 +3640,8 @@
    "source": "md_extra",
    "origNum": 11,
    "id": "dbm302m-166",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Two cars from the Car Evaluation Database have 6 categorical attributes (buying, maint, doors, persons, lug_boot, safety). Car 1 and Car 2 agree on 2 attributes (maint = v-high, safety = med) and differ on the other 4. Using simple matching to estimate proximity, what is the distance between Car 1 and Car 2?",
@@ -3433,7 +3662,8 @@
    "source": "md_extra",
    "origNum": 12,
    "id": "dbm302m-167",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-4, 5, 14}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
@@ -3453,7 +3683,8 @@
    "source": "md_extra",
    "origNum": 13,
    "id": "dbm302m-168",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-5, 5, 15}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
@@ -3473,7 +3704,8 @@
    "source": "md_extra",
    "origNum": 14,
    "id": "dbm302m-169",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The MLE objective is to find parameters maximizing the likelihood of observed data drawn from a Gaussian. For D = {-1, 0, 1}, which parameter set (mu, sigma) produces the maximum L(N(mu, sigma^2) | D)?",
@@ -3493,7 +3725,8 @@
    "source": "md_extra",
    "origNum": 15,
    "id": "dbm302m-170",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Consider this Python snippet: it randomly chooses k initial centroids from the data, computes Euclidean distances (cdist) between all points and the centroids, assigns points to the nearest centroid, and iterates. Which algorithm does this implement?",
@@ -3513,7 +3746,8 @@
    "source": "md_extra",
    "origNum": 16,
    "id": "dbm302m-171",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "The table lists all frequent patterns: {Beer,Nuts,Diaper}, {Beer,Coffee,Nuts}, {Beer,Diaper,Eggs}, {Beer,Nuts,Eggs,Milk}, {Beer,Nuts,Diaper,Eggs,Milk}. Which of them are closed patterns but NOT max patterns? Check all that apply. (Closed: no proper superset with the same support. Max: no frequent proper superset.)",
@@ -3535,7 +3769,8 @@
    "origNum": 17,
    "id": "dbm302m-172",
    "confidence": "high",
-   "review": "Thiếu cột support của bảng — 3 phương án cùng thoả cách đọc thông thường."
+   "review": "Thiếu cột support của bảng — 3 phương án cùng thoả cách đọc thông thường.",
+   "calc": false
   },
   {
    "question": "DBLP is a computer science bibliography database. We study the collaboration between authors Jure Leskovec (JL) and Hector Garcia-Molina (HG) via co-authorship. The contingency table is extremely skewed with a very large number of null transactions (papers by neither author). Which pattern-evaluation measure most properly reflects the collaboration proximity of {JL, HG}? Check all that apply.",
@@ -3554,7 +3789,8 @@
    "source": "md_extra",
    "origNum": 18,
    "id": "dbm302m-173",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Consider support-based and null-invariant definitions for negative patterns, with epsilon = 0.01. In a database of 10^9 total transactions, 10^6 contain item A, 10^4 contain item B, and 10^2 contain both A and B. Which statement is true?",
@@ -3575,7 +3811,8 @@
    "source": "md_extra",
    "origNum": 19,
    "id": "dbm302m-174",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Which one of the following 3-D depth cues is the strongest?",
@@ -3595,7 +3832,8 @@
    "source": "md_extra",
    "origNum": 20,
    "id": "dbm302m-175",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Transactions: T1{Beer,Nuts,Diapers}, T2{Beer,Coffee,Diapers,Nuts}, T3{Beer,Diapers,Eggs}, T4{Beer,Nuts,Eggs,Milk}, T5{Nuts,Coffee,Diapers,Eggs,Milk}. With minsup s = 40% (i.e. 2 of 5 transactions), which of the following is a length-3 frequent itemset?",
@@ -3615,7 +3853,8 @@
    "source": "md_extra",
    "origNum": 21,
    "id": "dbm302m-176",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Consider the database with transactions T1: {a1,a2,a3}, T2: {a2,a3,a4}, T3: {a1,a3,a4}. With minsup = 2, which of the following frequent patterns is NOT closed?",
@@ -3635,7 +3874,8 @@
    "source": "md_extra",
    "origNum": 23,
    "id": "dbm302m-177",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Coursera collected statistics on students taking Data Mining (DM) and Machine Learning (ML). Contingency table: ML&DM=700, ML&notDM=300 (row 1000); notML&DM=500, notML&notDM=1500 (row 2000); column totals 1200 and 1800; grand total 3000. If lift is used to measure the correlation between DM and ML, what is lift(DM, ML)?",
@@ -3655,7 +3895,8 @@
    "source": "md_extra",
    "origNum": 24,
    "id": "dbm302m-178",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) is constructed so that HM=24, notHM=126, HD=25, notHD=125, with observed counts equal to expected. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
@@ -3675,7 +3916,8 @@
    "source": "md_extra",
    "origNum": 26,
    "id": "dbm302m-179",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the itemsets in Table 1 and a pattern-cluster quality threshold delta = 0.001, which set of representative (compressed) patterns covers all itemsets in Table 1? The lowest-support pattern is {F,A,C,E,T,S}.",
@@ -3696,7 +3938,8 @@
    "source": "md_extra",
    "origNum": 27,
    "id": "dbm302m-180",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Given the sequence database S1: <a(bc)(de)ef>, S2: <a(bd)(be)ef>, S3: <bc(ad)ebfed>, S4: <ab(cd)d(ab)e>, using the SPADE algorithm, which sequence positions in the format <SID, EID> belong to the id-list of item b? Select all that apply.",
@@ -3717,7 +3960,8 @@
    "source": "md_extra",
    "origNum": 28,
    "id": "dbm302m-181",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Given the sequence database (Table 3) with min_sup = 1, which of the following sequences does NOT belong to the <a>-projected database?",
@@ -3739,7 +3983,8 @@
    "origNum": 29,
    "id": "dbm302m-182",
    "confidence": "high",
-   "review": "Trùng dbm302m-163, thiếu Table 3."
+   "review": "Trùng dbm302m-163, thiếu Table 3.",
+   "calc": false
   },
   {
    "question": "Given the sequence database S1: <a c (de) e f>, S2: <a (bd) (be) e f>, S3: <b c (ad) e b f e d>, S4: <a b (cd) d (ab) e>, using the SPADE algorithm, which sequence positions in the format <SID, EID> belong to the id-list of item a? Select all that apply.",
@@ -3760,7 +4005,8 @@
    "source": "md_extra",
    "origNum": 30,
    "id": "dbm302m-183",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "In CP-Miner, constraint-based sequential pattern mining is used on a tokenized/hashed source file. Sequences: (1)<1,2,1,3>, (2)<2,3,1,4>, (3)<1,2,4,3>, (4)<3,2,4,3>, (5)<1,2,5,4>. With max_gap = 2 (index difference between matched items <= 2) and support threshold 0.6 (i.e. at least 3 of 5), which sequences can be frequent output by CP-Miner? Select all that apply.",
@@ -3781,7 +4027,8 @@
    "source": "md_extra",
    "origNum": 31,
    "id": "dbm302m-184",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "What are some common considerations and requirements for cluster analysis? Select all that apply.",
@@ -3805,7 +4052,9 @@
    "id": "dbm302m-185",
    "confidence": "high",
    "drill": true,
-   "drillNo": 126
+   "drillNo": 126,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "A dataset contains two flowers. Iris setosa: (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2). Iris versicolor: (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
@@ -3825,7 +4074,8 @@
    "source": "md_extra",
    "origNum": 33,
    "id": "dbm302m-186",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Two cars from the Car Evaluation Database have 6 categorical attributes (buying[4 values], maint[4], doors[4], persons[3], lug_boot[3], safety[3]). Each categorical attribute is represented by a set of symmetric binary attributes (21 in total). The two cars agree on 2 attributes (maint, safety) and differ on 4. What is the distance between Car 1 and Car 2?",
@@ -3846,7 +4096,8 @@
    "source": "md_extra",
    "origNum": 34,
    "id": "dbm302m-187",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "The table lists all frequent patterns: {Beer,Nuts,Diaper}, {Beer,Coffee,Nuts}, {Beer,Diaper,Eggs}, {Beer,Nuts,Eggs,Milk}, {Beer,Nuts,Diaper,Eggs,Milk}. Which of them are closed patterns but NOT max patterns? Check all that apply.",
@@ -3868,7 +4119,8 @@
    "origNum": 37,
    "id": "dbm302m-188",
    "confidence": "high",
-   "review": "Trùng dbm302m-172, thiếu số liệu support."
+   "review": "Trùng dbm302m-172, thiếu số liệu support.",
+   "calc": false
   },
   {
    "question": "Consider support-based and null-invariant definitions for negative patterns with epsilon = 0.01. In a database of 10^9 total transactions, 10^6 contain A, 10^4 contain B, and 10^2 contain both. Which statement is true?",
@@ -3889,7 +4141,8 @@
    "source": "md_extra",
    "origNum": 38,
    "id": "dbm302m-189",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Sequence database: S1: <a(abc)(ac)d(cf)>, S2: <(ad)c(bc)(ae)>, S3: <(ef)(ab)(df)cb>, S4: <eg(af)cbc>. Which of the following is NOT a subsequence of any sequence in the database?",
@@ -3909,7 +4162,8 @@
    "source": "md_extra",
    "origNum": 39,
    "id": "dbm302m-190",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) is built with HM=24, notHM=126 and observed counts equal to expected. If lift is used to measure the correlation between HD and HM, what is lift(HD, HM)?",
@@ -3929,7 +4183,8 @@
    "source": "md_extra",
    "origNum": 40,
    "id": "dbm302m-191",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A school collected data on students' preference for hot dogs (HD) vs hamburgers (HM). The 2x2 contingency table (grand total 150) has observed counts equal to expected (HM=24, notHM=126). If the chi-square score is used to measure the correlation between HD and HM, what is the chi-square score?",
@@ -3949,7 +4204,8 @@
    "source": "md_extra",
    "origNum": 41,
    "id": "dbm302m-192",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "Using the CloSpan algorithm with minimum support 15, mining derives sequences with projected-DB sizes: <c>:50, <ac>:40, <ab>:30, <bc>:50. After applying the backward sub-pattern and backward super-pattern pruning rules, which projected DBs remain? Select all that apply.",
@@ -3971,7 +4227,8 @@
    "source": "md_extra",
    "origNum": 42,
    "id": "dbm302m-193",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": true
   },
   {
    "question": "A data scientist applies the Lossy Counting algorithm to a transactional data stream. Bucket size w = 1000, stream length N = 10000, and the true count of item A is 100. Which of the following could be a possible output count for item A?",
@@ -3993,7 +4250,9 @@
    "id": "dbm302m-194",
    "confidence": "high",
    "drill": true,
-   "drillNo": 112
+   "drillNo": 112,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "question": "The Kohonen self-organizing map (SOM) refers to which of the following?",
@@ -4013,7 +4272,8 @@
    "source": "md_extra",
    "origNum": 46,
    "id": "dbm302m-195",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Which statement best describes a brute-force (exhaustive) search?",
@@ -4033,7 +4293,8 @@
    "source": "md_extra",
    "origNum": 47,
    "id": "dbm302m-196",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "question": "Discriminating between spam and ham (legitimate) e-mails is a classification task. True or false?",
@@ -4051,7 +4312,8 @@
    "source": "md_extra",
    "origNum": 48,
    "id": "dbm302m-197",
-   "confidence": "high"
+   "confidence": "high",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4071,7 +4333,11 @@
    "confidence": "high",
    "hint": "Centroid chỉ là trung bình cộng của từng tọa độ: cộng các x rồi chia cho số điểm.",
    "topic": "Clustering",
-   "id": "dbm302m-198"
+   "id": "dbm302m-198",
+   "drill": true,
+   "drillNo": 214,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4091,7 +4357,11 @@
    "confidence": "high",
    "hint": "Bước trình bày kết quả bằng charts/dashboards chính là Knowledge visualization; các lựa chọn kia thuộc lưu trữ hay bảo mật.",
    "topic": "Data Visualization",
-   "id": "dbm302m-199"
+   "id": "dbm302m-199",
+   "drill": true,
+   "drillNo": 215,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4111,7 +4381,11 @@
    "confidence": "high",
    "hint": "SSE nhỏ = điểm sát centroid hơn, nên SSE giảm nghĩa là clustering đang tốt lên (nhớ: error giảm là tốt).",
    "topic": "Clustering",
-   "id": "dbm302m-200"
+   "id": "dbm302m-200",
+   "drill": true,
+   "drillNo": 216,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4131,7 +4405,11 @@
    "confidence": "medium",
    "hint": "Giá trị thật của fisheye lens là focus + context và zoom không che dữ liệu; 'trông thú vị hơn' chỉ là bề nổi nên ít liên quan nhất.",
    "topic": "Data Visualization",
-   "id": "dbm302m-201"
+   "id": "dbm302m-201",
+   "drill": true,
+   "drillNo": 217,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4152,7 +4430,11 @@
    "confidence": "high",
    "hint": "Muốn xem correlation giữa nhiều biến thì dùng scatter plot matrix và correlation heatmap; histogram/line chart chỉ mô tả một biến.",
    "topic": "Data Visualization",
-   "id": "dbm302m-202"
+   "id": "dbm302m-202",
+   "drill": true,
+   "drillNo": 218,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4172,7 +4454,11 @@
    "confidence": "high",
    "hint": "Confidence(A→B) = support(A,B)/support(A); mẫu số luôn là vế trái A.",
    "topic": "Association Rules",
-   "id": "dbm302m-203"
+   "id": "dbm302m-203",
+   "drill": true,
+   "drillNo": 219,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4192,7 +4478,11 @@
    "confidence": "high",
    "hint": "Phần trăm trong pie chart = phần / tổng: 200/1000 = 20%.",
    "topic": "Data Visualization",
-   "id": "dbm302m-204"
+   "id": "dbm302m-204",
+   "drill": true,
+   "drillNo": 220,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4212,7 +4502,11 @@
    "confidence": "high",
    "hint": "Nghe 'sequential' (theo trình tự thời gian) thì chọn Sequential patterns; đây là dạng sequential pattern mining.",
    "topic": "Advanced Mining",
-   "id": "dbm302m-205"
+   "id": "dbm302m-205",
+   "drill": true,
+   "drillNo": 221,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4235,7 +4529,11 @@
    "confidence": "high",
    "hint": "Cluster tốt: giống nhau bên trong (high intra), khác nhau giữa các nhóm (low inter), ranh giới rõ; random và noise là dấu hiệu xấu.",
    "topic": "Clustering",
-   "id": "dbm302m-206"
+   "id": "dbm302m-206",
+   "drill": true,
+   "drillNo": 222,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4255,7 +4553,11 @@
    "confidence": "high",
    "hint": "Số feature bị loại = ban đầu - còn lại: 10 - 4 = 6.",
    "topic": "Preprocessing",
-   "id": "dbm302m-207"
+   "id": "dbm302m-207",
+   "drill": true,
+   "drillNo": 223,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4275,7 +4577,11 @@
    "confidence": "high",
    "hint": "Lift = support(A,B)/(support(A)×support(B)); bằng 1 nghĩa là A và B độc lập.",
    "topic": "Association Rules",
-   "id": "dbm302m-208"
+   "id": "dbm302m-208",
+   "drill": true,
+   "drillNo": 224,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4295,7 +4601,11 @@
    "confidence": "high",
    "hint": "Câu chứa 'always/no way' thường sai; dimensionality reduction giúp clustering high-dimensional khả thi hơn nên đó là câu đúng.",
    "topic": "Clustering",
-   "id": "dbm302m-209"
+   "id": "dbm302m-209",
+   "drill": true,
+   "drillNo": 225,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4315,7 +4625,11 @@
    "confidence": "high",
    "hint": "Confidence = support(A,B)/support(A) = 0.3/0.6 = 0.5.",
    "topic": "Association Rules",
-   "id": "dbm302m-210"
+   "id": "dbm302m-210",
+   "drill": true,
+   "drillNo": 226,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4335,7 +4649,11 @@
    "confidence": "high",
    "hint": "Tìm 'relationships among variables' thì nghĩ ngay Association rule mining (kiểu bia-tã lót).",
    "topic": "Association Rules",
-   "id": "dbm302m-211"
+   "id": "dbm302m-211",
+   "drill": true,
+   "drillNo": 227,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4357,7 +4675,11 @@
    "confidence": "high",
    "hint": "Visualization tốt: nhãn rõ, chart type phù hợp, ít bóp méo dữ liệu; 'random color' là dấu hiệu loại.",
    "topic": "Data Visualization",
-   "id": "dbm302m-212"
+   "id": "dbm302m-212",
+   "drill": true,
+   "drillNo": 228,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4377,7 +4699,11 @@
    "confidence": "high",
    "hint": "Trung bình khoảng cách = tổng/số điểm = 10/4 = 2.5.",
    "topic": "Clustering",
-   "id": "dbm302m-213"
+   "id": "dbm302m-213",
+   "drill": true,
+   "drillNo": 229,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4397,7 +4723,11 @@
    "confidence": "high",
    "hint": "Support = số transaction chứa item / tổng transaction = 90/300 = 0.30.",
    "topic": "Association Rules",
-   "id": "dbm302m-214"
+   "id": "dbm302m-214",
+   "drill": true,
+   "drillNo": 230,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4417,7 +4747,11 @@
    "confidence": "high",
    "hint": "Chữ 'K' trong K-Means chính là số cluster phải khai báo trước; DBSCAN/OPTICS thì không cần.",
    "topic": "Clustering",
-   "id": "dbm302m-215"
+   "id": "dbm302m-215",
+   "drill": true,
+   "drillNo": 231,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4437,7 +4771,11 @@
    "confidence": "high",
    "hint": "150/600 = 0.25 = 25%.",
    "topic": "Data Visualization",
-   "id": "dbm302m-216"
+   "id": "dbm302m-216",
+   "drill": true,
+   "drillNo": 232,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4459,7 +4797,11 @@
    "confidence": "high",
    "hint": "Bộ ba dimensionality reduction hay gặp: PCA, t-SNE, UMAP; linear regression là dự đoán, không giảm chiều.",
    "topic": "Preprocessing",
-   "id": "dbm302m-217"
+   "id": "dbm302m-217",
+   "drill": true,
+   "drillNo": 233,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4479,7 +4821,11 @@
    "confidence": "high",
    "hint": "Đánh giá cluster (compactness + separation) dùng Silhouette; support/confidence/lift là của association rules.",
    "topic": "Clustering",
-   "id": "dbm302m-218"
+   "id": "dbm302m-218",
+   "drill": true,
+   "drillNo": 234,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4499,7 +4845,11 @@
    "confidence": "high",
    "hint": "Điểm rải đều không xu hướng = không có quan hệ tuyến tính, correlation gần 0.",
    "topic": "Data Visualization",
-   "id": "dbm302m-219"
+   "id": "dbm302m-219",
+   "drill": true,
+   "drillNo": 235,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4519,7 +4869,11 @@
    "confidence": "medium",
    "hint": "Cho người xem tự khám phá (filter/zoom/hover) trên web = Interactive visualization.",
    "topic": "Data Visualization",
-   "id": "dbm302m-220"
+   "id": "dbm302m-220",
+   "drill": true,
+   "drillNo": 236,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4539,7 +4893,11 @@
    "confidence": "high",
    "hint": "Support{A,B} = 30/200 = 15%.",
    "topic": "Association Rules",
-   "id": "dbm302m-221"
+   "id": "dbm302m-221",
+   "drill": true,
+   "drillNo": 237,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4559,7 +4917,11 @@
    "confidence": "high",
    "hint": "'Items frequently together' = Association rule mining (frequent pattern).",
    "topic": "Association Rules",
-   "id": "dbm302m-222"
+   "id": "dbm302m-222",
+   "drill": true,
+   "drillNo": 238,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4579,7 +4941,11 @@
    "confidence": "high",
    "hint": "Training = tổng - (validation + testing) = 1000 - 400 = 600.",
    "topic": "Classification",
-   "id": "dbm302m-223"
+   "id": "dbm302m-223",
+   "drill": true,
+   "drillNo": 239,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4599,7 +4965,11 @@
    "confidence": "high",
    "hint": "Lift = 1 → độc lập; >1 là hút nhau, <1 là đẩy nhau.",
    "topic": "Association Rules",
-   "id": "dbm302m-224"
+   "id": "dbm302m-224",
+   "drill": true,
+   "drillNo": 240,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4619,7 +4989,11 @@
    "confidence": "high",
    "hint": "Partition-based tiêu biểu là K-Means; DBSCAN là density-based, GMM là model-based.",
    "topic": "Clustering",
-   "id": "dbm302m-225"
+   "id": "dbm302m-225",
+   "drill": true,
+   "drillNo": 241,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4639,7 +5013,11 @@
    "confidence": "high",
    "hint": "Tỉ lệ class = 300/500 = 60%.",
    "topic": "Classification",
-   "id": "dbm302m-226"
+   "id": "dbm302m-226",
+   "drill": true,
+   "drillNo": 242,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4659,7 +5037,11 @@
    "confidence": "high",
    "hint": "Thu thập raw data từ nhiều nguồn = Data acquisition (bước đầu tiên của pipeline).",
    "topic": "Preprocessing",
-   "id": "dbm302m-227"
+   "id": "dbm302m-227",
+   "drill": true,
+   "drillNo": 243,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4682,7 +5064,11 @@
    "confidence": "medium",
    "hint": "Nhớ công thức 'high intra, low inter, clear separation'; random và noise luôn là đáp án sai.",
    "topic": "Clustering",
-   "id": "dbm302m-228"
+   "id": "dbm302m-228",
+   "drill": true,
+   "drillNo": 244,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4702,7 +5088,11 @@
    "confidence": "high",
    "hint": "'Bi' = hai; Binary attribute chỉ có hai giá trị (true/false, 0/1).",
    "topic": "Preprocessing",
-   "id": "dbm302m-229"
+   "id": "dbm302m-229",
+   "drill": true,
+   "drillNo": 245,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4722,7 +5112,11 @@
    "confidence": "high",
    "hint": "Support = 80/400 = 0.20.",
    "topic": "Association Rules",
-   "id": "dbm302m-230"
+   "id": "dbm302m-230",
+   "drill": true,
+   "drillNo": 246,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4742,7 +5136,11 @@
    "confidence": "high",
    "hint": "Đường đi lên (cùng tăng) = positive correlation; đi xuống là negative.",
    "topic": "Data Visualization",
-   "id": "dbm302m-231"
+   "id": "dbm302m-231",
+   "drill": true,
+   "drillNo": 247,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4765,7 +5163,11 @@
    "confidence": "high",
    "hint": "Density-based: DBSCAN, OPTICS, Mean Shift; K-Means là partition, Decision Trees là classification.",
    "topic": "Clustering",
-   "id": "dbm302m-232"
+   "id": "dbm302m-232",
+   "drill": true,
+   "drillNo": 248,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4785,7 +5187,11 @@
    "confidence": "high",
    "hint": "Support = 50/500 = 0.10.",
    "topic": "Association Rules",
-   "id": "dbm302m-233"
+   "id": "dbm302m-233",
+   "drill": true,
+   "drillNo": 249,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4805,7 +5211,11 @@
    "confidence": "high",
    "hint": "Mục đích visualization là trình bày pattern trực quan để dễ hiểu, không phải lưu trữ hay mã hóa.",
    "topic": "Data Visualization",
-   "id": "dbm302m-234"
+   "id": "dbm302m-234",
+   "drill": true,
+   "drillNo": 250,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4825,7 +5235,11 @@
    "confidence": "high",
    "hint": "Số attribute bị bỏ = 40 - 28 = 12.",
    "topic": "Preprocessing",
-   "id": "dbm302m-235"
+   "id": "dbm302m-235",
+   "drill": true,
+   "drillNo": 251,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4845,7 +5259,11 @@
    "confidence": "high",
    "hint": "FP-growth là batch/exact quét nhiều lần nên không hợp streaming; các thuật toán 'counting/sampling' còn lại mới dành cho stream.",
    "topic": "Advanced Mining",
-   "id": "dbm302m-236"
+   "id": "dbm302m-236",
+   "drill": true,
+   "drillNo": 252,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4865,7 +5283,11 @@
    "confidence": "high",
    "hint": "r gần -1 (như -0.85) = quan hệ nghịch mạnh (strong negative).",
    "topic": "Data Visualization",
-   "id": "dbm302m-237"
+   "id": "dbm302m-237",
+   "drill": true,
+   "drillNo": 253,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4885,7 +5307,11 @@
    "confidence": "high",
    "hint": "Bỏ 10% của 2000 = 200, còn lại 1800.",
    "topic": "Preprocessing",
-   "id": "dbm302m-238"
+   "id": "dbm302m-238",
+   "drill": true,
+   "drillNo": 254,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -4905,7 +5331,11 @@
    "confidence": "high",
    "hint": "So sánh giữa các category rời rạc dùng Bar chart; histogram là cho phân phối biến liên tục.",
    "topic": "Data Visualization",
-   "id": "dbm302m-239"
+   "id": "dbm302m-239",
+   "drill": true,
+   "drillNo": 255,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4925,7 +5355,11 @@
    "confidence": "high",
    "hint": "50/200 = 0.25 = 25%.",
    "topic": "Clustering",
-   "id": "dbm302m-240"
+   "id": "dbm302m-240",
+   "drill": true,
+   "drillNo": 256,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4945,7 +5379,11 @@
    "confidence": "high",
    "hint": "Xem tỉ lệ phần trăm của các category dùng Pie chart (miếng bánh = phần trăm).",
    "topic": "Data Visualization",
-   "id": "dbm302m-241"
+   "id": "dbm302m-241",
+   "drill": true,
+   "drillNo": 257,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4968,7 +5406,11 @@
    "confidence": "high",
    "hint": "Pattern discovery gồm các task có chữ 'mining' (frequent/sequential/association); compression và encryption không phải.",
    "topic": "Association Rules",
-   "id": "dbm302m-242"
+   "id": "dbm302m-242",
+   "drill": true,
+   "drillNo": 258,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -4988,7 +5430,11 @@
    "confidence": "high",
    "hint": "Cluster hình dạng bất kỳ + phát hiện noise = DBSCAN; K-Means chỉ ra cụm hình cầu và không nhận noise.",
    "topic": "Clustering",
-   "id": "dbm302m-243"
+   "id": "dbm302m-243",
+   "drill": true,
+   "drillNo": 259,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -5008,7 +5454,11 @@
    "confidence": "high",
    "hint": "Giảm chiều để trực quan hóa dùng PCA (giữ variance); SQL indexing/hashing không liên quan.",
    "topic": "Preprocessing",
-   "id": "dbm302m-244"
+   "id": "dbm302m-244",
+   "drill": true,
+   "drillNo": 260,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -5028,7 +5478,11 @@
    "confidence": "high",
    "hint": "'Merge dần đến khi còn 1 cluster' = Agglomerative (bottom-up); nhớ agglomerate nghĩa là gom lại.",
    "topic": "Clustering",
-   "id": "dbm302m-245"
+   "id": "dbm302m-245",
+   "drill": true,
+   "drillNo": 261,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_img",
@@ -5048,7 +5502,11 @@
    "confidence": "high",
    "hint": "Còn lại = 100 - 45 = 55.",
    "topic": "Preprocessing",
-   "id": "dbm302m-246"
+   "id": "dbm302m-246",
+   "drill": true,
+   "drillNo": 262,
+   "drillGroup": "FE SP26",
+   "calc": true
   },
   {
    "source": "exam_img",
@@ -5071,7 +5529,11 @@
    "confidence": "high",
    "hint": "Rule mạnh cần bộ ba cao: support (thường xuyên), confidence (đáng tin), lift (hơn ngẫu nhiên).",
    "topic": "Association Rules",
-   "id": "dbm302m-247"
+   "id": "dbm302m-247",
+   "drill": true,
+   "drillNo": 263,
+   "drillGroup": "FE SP26",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5092,7 +5554,9 @@
    "confidence": "high",
    "id": "dbm302m-248",
    "drill": true,
-   "drillNo": 3
+   "drillNo": 3,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5113,7 +5577,9 @@
    "confidence": "high",
    "id": "dbm302m-249",
    "drill": true,
-   "drillNo": 7
+   "drillNo": 7,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5136,7 +5602,9 @@
    "id": "dbm302m-250",
    "drill": true,
    "drillNo": 16,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5159,7 +5627,9 @@
    "id": "dbm302m-251",
    "drill": true,
    "drillNo": 17,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5180,7 +5650,9 @@
    "confidence": "high",
    "id": "dbm302m-252",
    "drill": true,
-   "drillNo": 18
+   "drillNo": 18,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5202,7 +5674,9 @@
    "confidence": "high",
    "id": "dbm302m-253",
    "drill": true,
-   "drillNo": 20
+   "drillNo": 20,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5225,7 +5699,9 @@
    "confidence": "high",
    "id": "dbm302m-254",
    "drill": true,
-   "drillNo": 21
+   "drillNo": 21,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5248,7 +5724,9 @@
    "confidence": "high",
    "id": "dbm302m-255",
    "drill": true,
-   "drillNo": 22
+   "drillNo": 22,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5272,7 +5750,9 @@
    "confidence": "high",
    "id": "dbm302m-256",
    "drill": true,
-   "drillNo": 23
+   "drillNo": 23,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5296,7 +5776,9 @@
    "confidence": "high",
    "id": "dbm302m-257",
    "drill": true,
-   "drillNo": 24
+   "drillNo": 24,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5318,7 +5800,9 @@
    "confidence": "high",
    "id": "dbm302m-258",
    "drill": true,
-   "drillNo": 25
+   "drillNo": 25,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5341,7 +5825,9 @@
    "confidence": "high",
    "id": "dbm302m-259",
    "drill": true,
-   "drillNo": 26
+   "drillNo": 26,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5363,7 +5849,9 @@
    "confidence": "high",
    "id": "dbm302m-260",
    "drill": true,
-   "drillNo": 28
+   "drillNo": 28,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5387,7 +5875,9 @@
    "confidence": "high",
    "id": "dbm302m-261",
    "drill": true,
-   "drillNo": 30
+   "drillNo": 30,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5410,7 +5900,9 @@
    "id": "dbm302m-262",
    "drill": true,
    "drillNo": 31,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5434,7 +5926,9 @@
    "confidence": "high",
    "id": "dbm302m-263",
    "drill": true,
-   "drillNo": 33
+   "drillNo": 33,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5457,7 +5951,9 @@
    "confidence": "high",
    "id": "dbm302m-264",
    "drill": true,
-   "drillNo": 34
+   "drillNo": 34,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5479,7 +5975,9 @@
    "confidence": "high",
    "id": "dbm302m-265",
    "drill": true,
-   "drillNo": 35
+   "drillNo": 35,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5502,7 +6000,9 @@
    "confidence": "high",
    "id": "dbm302m-266",
    "drill": true,
-   "drillNo": 36
+   "drillNo": 36,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5528,7 +6028,9 @@
    "confidence": "high",
    "id": "dbm302m-267",
    "drill": true,
-   "drillNo": 37
+   "drillNo": 37,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5550,7 +6052,9 @@
    "confidence": "high",
    "id": "dbm302m-268",
    "drill": true,
-   "drillNo": 38
+   "drillNo": 38,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5574,7 +6078,9 @@
    "confidence": "high",
    "id": "dbm302m-269",
    "drill": true,
-   "drillNo": 39
+   "drillNo": 39,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5597,7 +6103,9 @@
    "confidence": "high",
    "id": "dbm302m-270",
    "drill": true,
-   "drillNo": 40
+   "drillNo": 40,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5619,7 +6127,9 @@
    "confidence": "high",
    "id": "dbm302m-271",
    "drill": true,
-   "drillNo": 41
+   "drillNo": 41,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5642,7 +6152,9 @@
    "id": "dbm302m-272",
    "drill": true,
    "drillNo": 42,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5665,7 +6177,9 @@
    "id": "dbm302m-273",
    "drill": true,
    "drillNo": 43,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5687,7 +6201,9 @@
    "confidence": "high",
    "id": "dbm302m-274",
    "drill": true,
-   "drillNo": 46
+   "drillNo": 46,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5709,7 +6225,9 @@
    "confidence": "high",
    "id": "dbm302m-275",
    "drill": true,
-   "drillNo": 47
+   "drillNo": 47,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5732,7 +6250,9 @@
    "confidence": "high",
    "id": "dbm302m-276",
    "drill": true,
-   "drillNo": 48
+   "drillNo": 48,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5755,7 +6275,9 @@
    "id": "dbm302m-277",
    "drill": true,
    "drillNo": 49,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5778,7 +6300,9 @@
    "id": "dbm302m-278",
    "drill": true,
    "drillNo": 51,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5801,7 +6325,9 @@
    "id": "dbm302m-279",
    "drill": true,
    "drillNo": 52,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5824,7 +6350,9 @@
    "id": "dbm302m-280",
    "drill": true,
    "drillNo": 53,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5847,7 +6375,9 @@
    "id": "dbm302m-281",
    "drill": true,
    "drillNo": 54,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -5870,7 +6400,9 @@
    "id": "dbm302m-282",
    "drill": true,
    "drillNo": 55,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5892,7 +6424,9 @@
    "confidence": "high",
    "id": "dbm302m-283",
    "drill": true,
-   "drillNo": 58
+   "drillNo": 58,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5914,7 +6448,9 @@
    "confidence": "high",
    "id": "dbm302m-284",
    "drill": true,
-   "drillNo": 59
+   "drillNo": 59,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5936,7 +6472,9 @@
    "confidence": "high",
    "id": "dbm302m-285",
    "drill": true,
-   "drillNo": 60
+   "drillNo": 60,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5959,7 +6497,9 @@
    "id": "dbm302m-286",
    "drill": true,
    "drillNo": 61,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -5982,7 +6522,9 @@
    "confidence": "high",
    "id": "dbm302m-287",
    "drill": true,
-   "drillNo": 63
+   "drillNo": 63,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6005,7 +6547,9 @@
    "confidence": "high",
    "id": "dbm302m-288",
    "drill": true,
-   "drillNo": 64
+   "drillNo": 64,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6028,7 +6572,9 @@
    "confidence": "high",
    "id": "dbm302m-289",
    "drill": true,
-   "drillNo": 65
+   "drillNo": 65,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6052,7 +6598,9 @@
    "confidence": "high",
    "id": "dbm302m-290",
    "drill": true,
-   "drillNo": 66
+   "drillNo": 66,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6077,7 +6625,9 @@
    "id": "dbm302m-291",
    "drill": true,
    "drillNo": 67,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6102,7 +6652,9 @@
    "id": "dbm302m-292",
    "drill": true,
    "drillNo": 68,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6124,7 +6676,9 @@
    "confidence": "high",
    "id": "dbm302m-293",
    "drill": true,
-   "drillNo": 69
+   "drillNo": 69,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6146,7 +6700,9 @@
    "confidence": "high",
    "id": "dbm302m-294",
    "drill": true,
-   "drillNo": 70
+   "drillNo": 70,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6168,7 +6724,9 @@
    "confidence": "high",
    "id": "dbm302m-295",
    "drill": true,
-   "drillNo": 71
+   "drillNo": 71,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6190,7 +6748,9 @@
    "confidence": "high",
    "id": "dbm302m-296",
    "drill": true,
-   "drillNo": 72
+   "drillNo": 72,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6213,7 +6773,9 @@
    "confidence": "high",
    "id": "dbm302m-297",
    "drill": true,
-   "drillNo": 74
+   "drillNo": 74,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6236,7 +6798,9 @@
    "confidence": "high",
    "id": "dbm302m-298",
    "drill": true,
-   "drillNo": 75
+   "drillNo": 75,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6259,7 +6823,9 @@
    "confidence": "high",
    "id": "dbm302m-299",
    "drill": true,
-   "drillNo": 76
+   "drillNo": 76,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6281,7 +6847,9 @@
    "confidence": "high",
    "id": "dbm302m-300",
    "drill": true,
-   "drillNo": 77
+   "drillNo": 77,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6303,7 +6871,9 @@
    "confidence": "high",
    "id": "dbm302m-301",
    "drill": true,
-   "drillNo": 78
+   "drillNo": 78,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6325,7 +6895,9 @@
    "confidence": "high",
    "id": "dbm302m-302",
    "drill": true,
-   "drillNo": 79
+   "drillNo": 79,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6347,7 +6919,9 @@
    "confidence": "high",
    "id": "dbm302m-303",
    "drill": true,
-   "drillNo": 80
+   "drillNo": 80,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6369,7 +6943,9 @@
    "confidence": "high",
    "id": "dbm302m-304",
    "drill": true,
-   "drillNo": 81
+   "drillNo": 81,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6391,7 +6967,9 @@
    "confidence": "high",
    "id": "dbm302m-305",
    "drill": true,
-   "drillNo": 82
+   "drillNo": 82,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6413,7 +6991,9 @@
    "confidence": "high",
    "id": "dbm302m-306",
    "drill": true,
-   "drillNo": 83
+   "drillNo": 83,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6436,7 +7016,9 @@
    "confidence": "high",
    "id": "dbm302m-307",
    "drill": true,
-   "drillNo": 84
+   "drillNo": 84,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6460,7 +7042,9 @@
    "confidence": "high",
    "id": "dbm302m-308",
    "drill": true,
-   "drillNo": 85
+   "drillNo": 85,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6484,7 +7068,9 @@
    "confidence": "high",
    "id": "dbm302m-309",
    "drill": true,
-   "drillNo": 86
+   "drillNo": 86,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6508,7 +7094,9 @@
    "confidence": "high",
    "id": "dbm302m-310",
    "drill": true,
-   "drillNo": 87
+   "drillNo": 87,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6530,7 +7118,9 @@
    "confidence": "high",
    "id": "dbm302m-311",
    "drill": true,
-   "drillNo": 92
+   "drillNo": 92,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6554,7 +7144,9 @@
    "confidence": "high",
    "id": "dbm302m-312",
    "drill": true,
-   "drillNo": 93
+   "drillNo": 93,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6578,7 +7170,9 @@
    "confidence": "high",
    "id": "dbm302m-313",
    "drill": true,
-   "drillNo": 94
+   "drillNo": 94,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6602,7 +7196,9 @@
    "confidence": "high",
    "id": "dbm302m-314",
    "drill": true,
-   "drillNo": 95
+   "drillNo": 95,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6625,7 +7221,9 @@
    "confidence": "high",
    "id": "dbm302m-315",
    "drill": true,
-   "drillNo": 96
+   "drillNo": 96,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6647,7 +7245,9 @@
    "confidence": "high",
    "id": "dbm302m-316",
    "drill": true,
-   "drillNo": 97
+   "drillNo": 97,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6671,7 +7271,9 @@
    "confidence": "high",
    "id": "dbm302m-317",
    "drill": true,
-   "drillNo": 98
+   "drillNo": 98,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6695,7 +7297,9 @@
    "confidence": "high",
    "id": "dbm302m-318",
    "drill": true,
-   "drillNo": 99
+   "drillNo": 99,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6718,7 +7322,9 @@
    "confidence": "high",
    "id": "dbm302m-319",
    "drill": true,
-   "drillNo": 100
+   "drillNo": 100,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6742,7 +7348,9 @@
    "confidence": "high",
    "id": "dbm302m-320",
    "drill": true,
-   "drillNo": 101
+   "drillNo": 101,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6764,7 +7372,9 @@
    "confidence": "high",
    "id": "dbm302m-321",
    "drill": true,
-   "drillNo": 107
+   "drillNo": 107,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6786,7 +7396,9 @@
    "confidence": "high",
    "id": "dbm302m-322",
    "drill": true,
-   "drillNo": 108
+   "drillNo": 108,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6806,7 +7418,9 @@
    "confidence": "high",
    "id": "dbm302m-323",
    "drill": true,
-   "drillNo": 109
+   "drillNo": 109,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6829,7 +7443,9 @@
    "confidence": "high",
    "id": "dbm302m-324",
    "drill": true,
-   "drillNo": 110
+   "drillNo": 110,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6853,7 +7469,9 @@
    "confidence": "high",
    "id": "dbm302m-325",
    "drill": true,
-   "drillNo": 111
+   "drillNo": 111,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6876,7 +7494,9 @@
    "confidence": "high",
    "id": "dbm302m-326",
    "drill": true,
-   "drillNo": 113
+   "drillNo": 113,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6900,7 +7520,9 @@
    "confidence": "high",
    "id": "dbm302m-327",
    "drill": true,
-   "drillNo": 114
+   "drillNo": 114,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -6924,7 +7546,9 @@
    "confidence": "high",
    "id": "dbm302m-328",
    "drill": true,
-   "drillNo": 115
+   "drillNo": 115,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6948,7 +7572,9 @@
    "confidence": "high",
    "id": "dbm302m-329",
    "drill": true,
-   "drillNo": 116
+   "drillNo": 116,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6971,7 +7597,9 @@
    "confidence": "high",
    "id": "dbm302m-330",
    "drill": true,
-   "drillNo": 120
+   "drillNo": 120,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -6994,7 +7622,9 @@
    "confidence": "high",
    "id": "dbm302m-331",
    "drill": true,
-   "drillNo": 121
+   "drillNo": 121,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7017,7 +7647,9 @@
    "confidence": "high",
    "id": "dbm302m-332",
    "drill": true,
-   "drillNo": 122
+   "drillNo": 122,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7039,7 +7671,9 @@
    "confidence": "high",
    "id": "dbm302m-333",
    "drill": true,
-   "drillNo": 123
+   "drillNo": 123,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7061,7 +7695,9 @@
    "confidence": "high",
    "id": "dbm302m-334",
    "drill": true,
-   "drillNo": 124
+   "drillNo": 124,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7084,7 +7720,9 @@
    "confidence": "high",
    "id": "dbm302m-335",
    "drill": true,
-   "drillNo": 125
+   "drillNo": 125,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7108,7 +7746,9 @@
    "confidence": "high",
    "id": "dbm302m-336",
    "drill": true,
-   "drillNo": 127
+   "drillNo": 127,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7131,7 +7771,9 @@
    "confidence": "high",
    "id": "dbm302m-337",
    "drill": true,
-   "drillNo": 128
+   "drillNo": 128,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7154,7 +7796,9 @@
    "confidence": "high",
    "id": "dbm302m-338",
    "drill": true,
-   "drillNo": 129
+   "drillNo": 129,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7177,7 +7821,9 @@
    "confidence": "high",
    "id": "dbm302m-339",
    "drill": true,
-   "drillNo": 130
+   "drillNo": 130,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7201,7 +7847,9 @@
    "confidence": "high",
    "id": "dbm302m-340",
    "drill": true,
-   "drillNo": 131
+   "drillNo": 131,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7221,7 +7869,9 @@
    "confidence": "high",
    "id": "dbm302m-341",
    "drill": true,
-   "drillNo": 132
+   "drillNo": 132,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7244,7 +7894,9 @@
    "id": "dbm302m-342",
    "drill": true,
    "drillNo": 134,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7266,7 +7918,9 @@
    "confidence": "high",
    "id": "dbm302m-343",
    "drill": true,
-   "drillNo": 136
+   "drillNo": 136,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7288,7 +7942,9 @@
    "confidence": "high",
    "id": "dbm302m-344",
    "drill": true,
-   "drillNo": 137
+   "drillNo": 137,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7310,7 +7966,9 @@
    "confidence": "high",
    "id": "dbm302m-345",
    "drill": true,
-   "drillNo": 138
+   "drillNo": 138,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7332,7 +7990,9 @@
    "confidence": "high",
    "id": "dbm302m-346",
    "drill": true,
-   "drillNo": 139
+   "drillNo": 139,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7354,7 +8014,9 @@
    "confidence": "high",
    "id": "dbm302m-347",
    "drill": true,
-   "drillNo": 140
+   "drillNo": 140,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7377,7 +8039,9 @@
    "id": "dbm302m-348",
    "drill": true,
    "drillNo": 141,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7401,7 +8065,9 @@
    "id": "dbm302m-349",
    "drill": true,
    "drillNo": 142,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7423,7 +8089,9 @@
    "confidence": "high",
    "id": "dbm302m-350",
    "drill": true,
-   "drillNo": 143
+   "drillNo": 143,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7445,7 +8113,9 @@
    "confidence": "high",
    "id": "dbm302m-351",
    "drill": true,
-   "drillNo": 144
+   "drillNo": 144,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7465,7 +8135,9 @@
    "confidence": "high",
    "id": "dbm302m-352",
    "drill": true,
-   "drillNo": 150
+   "drillNo": 150,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7487,7 +8159,9 @@
    "confidence": "high",
    "id": "dbm302m-353",
    "drill": true,
-   "drillNo": 158
+   "drillNo": 158,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7509,7 +8183,9 @@
    "confidence": "high",
    "id": "dbm302m-354",
    "drill": true,
-   "drillNo": 159
+   "drillNo": 159,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7531,7 +8207,9 @@
    "confidence": "high",
    "id": "dbm302m-355",
    "drill": true,
-   "drillNo": 160
+   "drillNo": 160,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7555,7 +8233,9 @@
    "confidence": "high",
    "id": "dbm302m-356",
    "drill": true,
-   "drillNo": 161
+   "drillNo": 161,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7578,7 +8258,9 @@
    "confidence": "high",
    "id": "dbm302m-357",
    "drill": true,
-   "drillNo": 162
+   "drillNo": 162,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7601,7 +8283,9 @@
    "id": "dbm302m-358",
    "drill": true,
    "drillNo": 164,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7624,7 +8308,9 @@
    "id": "dbm302m-359",
    "drill": true,
    "drillNo": 165,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7647,7 +8333,9 @@
    "id": "dbm302m-360",
    "drill": true,
    "drillNo": 166,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7669,7 +8357,9 @@
    "confidence": "high",
    "id": "dbm302m-361",
    "drill": true,
-   "drillNo": 168
+   "drillNo": 168,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7691,7 +8381,9 @@
    "confidence": "high",
    "id": "dbm302m-362",
    "drill": true,
-   "drillNo": 170
+   "drillNo": 170,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7713,7 +8405,9 @@
    "confidence": "high",
    "id": "dbm302m-363",
    "drill": true,
-   "drillNo": 171
+   "drillNo": 171,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7735,7 +8429,9 @@
    "confidence": "high",
    "id": "dbm302m-364",
    "drill": true,
-   "drillNo": 172
+   "drillNo": 172,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7757,7 +8453,9 @@
    "confidence": "high",
    "id": "dbm302m-365",
    "drill": true,
-   "drillNo": 173
+   "drillNo": 173,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7779,7 +8477,9 @@
    "confidence": "high",
    "id": "dbm302m-366",
    "drill": true,
-   "drillNo": 174
+   "drillNo": 174,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -7800,7 +8500,9 @@
    "confidence": "high",
    "id": "dbm302m-367",
    "drill": true,
-   "drillNo": 175
+   "drillNo": 175,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7823,7 +8525,9 @@
    "confidence": "high",
    "id": "dbm302m-368",
    "drill": true,
-   "drillNo": 176
+   "drillNo": 176,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7846,7 +8550,9 @@
    "confidence": "high",
    "id": "dbm302m-369",
    "drill": true,
-   "drillNo": 177
+   "drillNo": 177,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7869,7 +8575,9 @@
    "confidence": "high",
    "id": "dbm302m-370",
    "drill": true,
-   "drillNo": 178
+   "drillNo": 178,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7892,7 +8600,9 @@
    "confidence": "high",
    "id": "dbm302m-371",
    "drill": true,
-   "drillNo": 179
+   "drillNo": 179,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7915,7 +8625,9 @@
    "confidence": "high",
    "id": "dbm302m-372",
    "drill": true,
-   "drillNo": 180
+   "drillNo": 180,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7938,7 +8650,9 @@
    "confidence": "high",
    "id": "dbm302m-373",
    "drill": true,
-   "drillNo": 181
+   "drillNo": 181,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7962,7 +8676,9 @@
    "confidence": "high",
    "id": "dbm302m-374",
    "drill": true,
-   "drillNo": 187
+   "drillNo": 187,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -7986,7 +8702,9 @@
    "confidence": "high",
    "id": "dbm302m-375",
    "drill": true,
-   "drillNo": 189
+   "drillNo": 189,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8009,7 +8727,9 @@
    "id": "dbm302m-376",
    "drill": true,
    "drillNo": 190,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8032,7 +8752,9 @@
    "id": "dbm302m-377",
    "drill": true,
    "drillNo": 191,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8056,7 +8778,9 @@
    "id": "dbm302m-378",
    "drill": true,
    "drillNo": 192,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8079,7 +8803,9 @@
    "confidence": "high",
    "id": "dbm302m-379",
    "drill": true,
-   "drillNo": 193
+   "drillNo": 193,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8102,7 +8828,9 @@
    "id": "dbm302m-380",
    "drill": true,
    "drillNo": 194,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8125,7 +8853,9 @@
    "id": "dbm302m-381",
    "drill": true,
    "drillNo": 195,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8146,7 +8876,9 @@
    "confidence": "high",
    "id": "dbm302m-382",
    "drill": true,
-   "drillNo": 196
+   "drillNo": 196,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8168,7 +8900,9 @@
    "confidence": "high",
    "id": "dbm302m-383",
    "drill": true,
-   "drillNo": 197
+   "drillNo": 197,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8190,7 +8924,9 @@
    "confidence": "high",
    "id": "dbm302m-384",
    "drill": true,
-   "drillNo": 198
+   "drillNo": 198,
+   "drillGroup": "Quizlet 213",
+   "calc": true
   },
   {
    "source": "exam_pdf",
@@ -8212,7 +8948,9 @@
    "confidence": "high",
    "id": "dbm302m-385",
    "drill": true,
-   "drillNo": 200
+   "drillNo": 200,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8236,7 +8974,9 @@
    "id": "dbm302m-386",
    "drill": true,
    "drillNo": 201,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8258,7 +8998,9 @@
    "confidence": "high",
    "id": "dbm302m-387",
    "drill": true,
-   "drillNo": 203
+   "drillNo": 203,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8279,7 +9021,9 @@
    "confidence": "high",
    "id": "dbm302m-388",
    "drill": true,
-   "drillNo": 205
+   "drillNo": 205,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8302,7 +9046,9 @@
    "confidence": "high",
    "id": "dbm302m-389",
    "drill": true,
-   "drillNo": 206
+   "drillNo": 206,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8325,7 +9071,9 @@
    "confidence": "high",
    "id": "dbm302m-390",
    "drill": true,
-   "drillNo": 207
+   "drillNo": 207,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8348,7 +9096,9 @@
    "id": "dbm302m-391",
    "drill": true,
    "drillNo": 210,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8369,7 +9119,9 @@
    "confidence": "high",
    "id": "dbm302m-392",
    "drill": true,
-   "drillNo": 211
+   "drillNo": 211,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8391,7 +9143,9 @@
    "confidence": "high",
    "id": "dbm302m-393",
    "drill": true,
-   "drillNo": 212
+   "drillNo": 212,
+   "drillGroup": "Quizlet 213",
+   "calc": false
   },
   {
    "source": "exam_pdf",
@@ -8414,7 +9168,9 @@
    "id": "dbm302m-394",
    "drill": true,
    "drillNo": 213,
-   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức."
+   "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
+   "drillGroup": "Quizlet 213",
+   "calc": false
   }
  ]
 }

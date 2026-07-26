@@ -306,7 +306,8 @@ function Badges({ q, srs }) {
           {isMastered(srs) ? '🏆' : '📦'} {boxLabel(srs.box)}
         </span>
       )}
-      {q.drill && <span className="badge badge-drill">📄 Đề gốc · câu {q.drillNo}</span>}
+      {q.drill && <span className="badge badge-drill">📄 Đề gốc{q.drillGroup === 'FE SP26' ? ' FE' : ''} · câu {q.drillNo}</span>}
+      {q.calc != null && <span className={`badge ${q.calc ? 'badge-calc' : 'badge-concept'}`}>{q.calc ? '🧮 Tính toán' : '📘 Lý thuyết'}</span>}
       {q.source === 'theory'
         ? <span className="badge badge-multi">🧠 Câu tự luyện từ lý thuyết</span>
         : q.verified
@@ -1070,7 +1071,7 @@ function Empty({ onExit, msg = 'Không có câu hỏi nào trong mục này.' })
 }
 
 // ---------- Home ----------
-function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, examPool, allPool }) {
+function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, examPool, allPool, conceptFirst, setConceptFirst }) {
   const [, force] = useState(0)
   const stats = store.get(statsKey(subject.id), { attempts: 0, correct: 0 })
   const wrong = store.get(wrongKey(subject.id), {})
@@ -1090,12 +1091,14 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, exam
   const todayPool = [...dueList, ...newList.slice(0, 20)]
   const masteredCount = allPool.filter((q) => isMastered(srsOf(srs, q.id))).length
 
-  // luyện đề thật: các câu nguồn đề thi FE
+  // luyện đề thật: các câu nguồn đề FE
   const examDone = examPool.filter((q) => (srsOf(srs, q.id).streak || 0) >= MASTER_STREAK).length
+  const examCalc = examPool.filter((q) => q.calc).length
+  const examConcept = examPool.length - examCalc
 
   const modes = [
     { id: 'today', icon: '🎯', name: 'Ôn hôm nay', desc: 'Lịch lặp lại ngắt quãng — ưu tiên câu đến hạn và câu chưa gặp. Học đúng thứ cần học.', count: `${todayPool.length} câu`, hot: todayPool.length > 0 },
-    ...(examPool.length ? [{ id: 'drill', icon: '📄', name: 'Luyện đề thi thật', desc: 'Đúng bộ đề gốc, không lọc chủ đề — sai là gặp lại ngay, luyện tới khi thuộc 100%.', count: `${examDone}/${examPool.length} thuộc`, hot: examDone < examPool.length }] : []),
+    ...(examPool.length ? [{ id: 'drill', icon: '📄', name: 'Luyện đề thi thật', desc: `Đúng bộ đề gốc (${examConcept} lý thuyết + ${examCalc} tính toán) — sai là gặp lại ngay, luyện tới khi thuộc 100%.`, count: `${examDone}/${examPool.length} thuộc`, hot: examDone < examPool.length }] : []),
     { id: 'practice', icon: '📝', name: 'Practice', desc: 'Làm từng câu, hiện đáp án + giải thích ngay.', count: `${pool.length} câu` },
     { id: 'exam', icon: '⏱️', name: 'Thi thử', desc: 'Chọn số câu & thời gian, nộp bài mới biết điểm.', count: `${pool.length} câu` },
     { id: 'wrong', icon: '🔁', name: 'Ôn câu sai', desc: 'Luyện lại các câu từng làm sai (đúng 2 lần liên tiếp sẽ thoát danh sách).', count: `${wrongInPool} câu` },
@@ -1142,6 +1145,10 @@ function Home({ subject, onMode, topic, setTopic, pool, theoryPool, topics, exam
             <button key={t} className={`chip ${topic === t ? 'active' : ''}`} onClick={() => setTopic(t)}>{t}</button>
           ))}
         </div>
+        <label className="pref-toggle">
+          <input type="checkbox" checked={conceptFirst} onChange={(e) => setConceptFirst(e.target.checked)} />
+          <span>📘 Học lý thuyết trước, để câu tính toán 🧮 sau (áp dụng cho Luyện đề)</span>
+        </label>
         <div className="stat-grid">
           <div className="stat-box"><div className="num">{todayPool.length}</div><div className="lbl">cần ôn hôm nay</div></div>
           <div className="stat-box"><div className="num">{masteredCount}</div><div className="lbl">đã thuộc</div></div>
@@ -1293,7 +1300,10 @@ export default function App() {
   const [syncState, setSyncState] = useState(syncEnabled() ? 'idle' : 'off')
   const [resumeData, setResumeData] = useState(null)
   const [dark, setDark] = useState(() => localStorage.getItem(THEME) === 'dark')
+  const [conceptFirst, setConceptFirst] = useState(() => localStorage.getItem('quizapp:pref:conceptFirst') !== '0')
   const [, forceApp] = useState(0)
+
+  useEffect(() => { localStorage.setItem('quizapp:pref:conceptFirst', conceptFirst ? '1' : '0') }, [conceptFirst])
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', dark)
@@ -1375,18 +1385,20 @@ export default function App() {
   }, [data, subject, allPool, mode])
 
   // bộ câu sát đề thi thật — KHÔNG lọc theo chủ đề, luôn đủ bộ đề
-  // ưu tiên: câu có cờ drill (đề gốc do bạn cung cấp), nếu môn chưa có thì dùng ảnh đề FE
+  // conceptFirst: học câu lý thuyết trước, câu tính toán để sau (đỡ nản)
   const examDrillPool = useMemo(() => {
     if (!data || !subject) return []
     const all = [...data.questions, ...theoryQs]
     const flagged = all.filter((q) => q.drill)
     const src = flagged.length ? flagged : all.filter((q) => q.source === 'exam_img')
     const srs = getSrs(subject.id)
-    // câu chưa thuộc lên trước; cùng mức thì giữ đúng thứ tự đề gốc
+    const mastered = (q) => ((srsOf(srs, q.id).streak || 0) >= MASTER_STREAK ? 1 : 0)
     return [...src].sort((a, b) =>
+      mastered(a) - mastered(b) ||                                   // chưa thuộc trước
+      (conceptFirst ? ((a.calc ? 1 : 0) - (b.calc ? 1 : 0)) : 0) ||  // lý thuyết trước tính toán
       (srsOf(srs, a.id).streak || 0) - (srsOf(srs, b.id).streak || 0) ||
       (a.drillNo || 0) - (b.drillNo || 0))
-  }, [data, theoryQs, subject, mode])
+  }, [data, theoryQs, subject, mode, conceptFirst])
 
   if (error) return <div className="card empty">{error}</div>
   if (!subjects) return <div className="card empty">Đang tải…</div>
@@ -1440,7 +1452,8 @@ export default function App() {
       {data && mode === 'home' && (
         <Home subject={subject} onMode={openMode} topic={topic} setTopic={setTopic}
           pool={pool} theoryPool={theoryPool} topics={topics}
-          examPool={examDrillPool} allPool={allPool} />
+          examPool={examDrillPool} allPool={allPool}
+          conceptFirst={conceptFirst} setConceptFirst={setConceptFirst} />
       )}
       {data && mode === 'today' && (
         todayPool.length
