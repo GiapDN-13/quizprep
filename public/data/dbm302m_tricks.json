@@ -5,7 +5,7 @@
     "\"human working memory ... items\" → 3–7 items.",
     "depth cue \"strongest\" → Occlusion; \"surface orientation\" → Illumination/shading.",
     "fisheye \"least important/relevant\" → chọn \"makes the data appear more interesting\".",
-    "pixel (x,y,b) hỏi axis nào KHÔNG cho vị trí duy nhất → chọn \"product of x and y\" (tích gây trùng, vd 2×3 = 3×2).",
+    "pixel (x,y,b) hỏi axis nào KHÔNG cho vị trí duy nhất → theo đáp án đề chọn \"concatenation of x and y\" (product & nesting mới cho vị trí riêng).",
     "\"overview of a large dataset\" → hiển thị toàn bộ dữ liệu, trải rộng ra (không nhồi chi tiết)."
   ],
   "Preprocessing": [

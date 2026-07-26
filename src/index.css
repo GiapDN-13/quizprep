@@ -278,7 +278,9 @@ html.dark .btn-trick { background: #0c2c33; color: #67e8f9; border-color: #155e6
   background: #ecfeff; border-radius: 0 10px 10px 0; text-align: left;
 }
 html.dark .trick-box { background: #0c2229; }
-.trick-title { font-weight: 700; color: #0e7490; margin-bottom: 6px; font-size: 14px; }
+.trick-self { font-weight: 700; font-size: 14.5px; margin-bottom: 8px; color: #0e7490; }
+html.dark .trick-self { color: #a5f3fc; }
+.trick-title { font-weight: 700; color: #0e7490; margin: 4px 0 6px; font-size: 13px; opacity: .85; }
 html.dark .trick-title { color: #67e8f9; }
 .trick-box ul { margin: 0; padding-left: 20px; }
 .trick-box li { margin: 5px 0; font-size: 13.5px; line-height: 1.5; }

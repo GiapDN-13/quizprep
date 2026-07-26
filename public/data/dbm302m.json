@@ -24,7 +24,8 @@
    "drill": true,
    "drillNo": 1,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'personal question about your data' → chọn Interactive visualization."
   },
   {
    "question": "Which kind of visualization would you use to share a discovery about your data with your colleagues in a slide show?",
@@ -47,7 +48,8 @@
    "drill": true,
    "drillNo": 2,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'share ... in a slide show' → chọn Presentation visualization."
   },
   {
    "question": "Which kind of visualization would you use to create a web page that shows viewers a visualization you prepared, but also allows the viewer to further investigate the data?",
@@ -93,7 +95,8 @@
    "drill": true,
    "drillNo": 4,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'graphics pipeline order' → Vertex → Rasterization → Pixel processing."
   },
   {
    "question": "How many items can human working memory (short-term memory) typically hold?",
@@ -116,7 +119,8 @@
    "drill": true,
    "drillNo": 5,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'working memory / short-term memory hold' → chọn 3-7 items (Miller 7±2)."
   },
   {
    "question": "A light gray box drawn on top of a dark gray background will make the light gray box appear:",
@@ -139,7 +143,8 @@
    "drill": true,
    "drillNo": 6,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'light gray on dark gray background' → chọn Brighter (simultaneous contrast)."
   },
   {
    "question": "When visualizing data, you should keep your eyes focused on one point for the entire duration of the visualization.",
@@ -182,7 +187,8 @@
    "drill": true,
    "drillNo": 8,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'most difficulty focusing' → chọn Blue (ít blue cones)."
   },
   {
    "question": "Which one of the 3-D depth cues below is the strongest?",
@@ -206,7 +212,8 @@
    "drill": true,
    "drillNo": 9,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'strongest 3-D depth cue' → chọn Occlusion."
   },
   {
    "question": "Which one of the 3-D depth cues below indicates surface orientation?",
@@ -230,7 +237,8 @@
    "drill": true,
    "drillNo": 10,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'depth cue indicates surface orientation' → chọn Illumination (lưu ý không có Occlusion là mạnh nhất)."
   },
   {
    "question": "Given a plot of life expectancy based on country and birth year, you look up your country and birth year, find the displayed life expectancy, and conclude you will probably live that long. This is an example of:",
@@ -254,7 +262,8 @@
    "drill": true,
    "drillNo": 11,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'look up your country/birth year ... conclude you will live that long' → chọn Deductive reasoning (chung→riêng)."
   },
   {
    "question": "When creating an overview visualization of a large dataset, it is most important to:",
@@ -277,7 +286,8 @@
    "drill": true,
    "drillNo": 12,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'overview visualization of a large dataset' → chọn Display all the data, simple representation, spread axes."
   },
   {
    "question": "The process of zooming on the data plotted in a visualization, where the zoomed region then fills the entire display:",
@@ -302,7 +312,8 @@
    "drill": true,
    "drillNo": 13,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'zooming ... zoomed region fills entire display' → chọn All of the above."
   },
   {
    "question": "The goal of the filtering step of the information visualization mantra is to:",
@@ -325,7 +336,8 @@
    "drill": true,
    "drillNo": 14,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'filtering step of the mantra' → chọn Display a subset (không phải làm sạch/loại outlier)."
   },
   {
    "question": "Which of the following benefits of a fisheye lens is LEAST important for data visualization?",
@@ -348,7 +360,8 @@
    "drill": true,
    "drillNo": 15,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'fisheye lens LEAST important' → chọn 'makes the data appear more interesting'."
   },
   {
    "question": "Suppose we have a dataset representing an image consisting of pixel records of the form (x,y,b) where x and y are the spatial coordinates of the pixel and b is the brightness of the pixel. Which of the following provides the best histogram of the data?",
@@ -431,7 +444,8 @@
    "drill": true,
    "drillNo": 19,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'dashboard ... primary concern' → chọn presents all data necessary to make informed decision."
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 40%, which of the following is a length-3 frequent itemset?",
@@ -498,7 +512,8 @@
    "drill": true,
    "drillNo": 27,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT closed', options gồm {a2} → chọn {a2} (bị {a2,a3} cùng support 2 nuốt)."
   },
   {
    "question": "Consider the database with transactions T1 {a1, a2, a3}, T2 {a2, a3, a4}, T3 {a1, a3, a4}. Let minsup = 2. Which of the following frequent patterns is closed?",
@@ -522,7 +537,8 @@
    "drill": true,
    "drillNo": 29,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'which is closed' → chọn {a1,a3} (các singleton đều bị superset nuốt)."
   },
   {
    "question": "Rank the following sets by their cardinality for a given database: {all frequent patterns}, {closed frequent patterns}, and {max frequent patterns}.",
@@ -547,7 +563,8 @@
    "drill": true,
    "drillNo": 32,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'rank cardinality all/closed/max' → chọn |all| ≥ |closed| ≥ |max|."
   },
   {
    "question": "Table 1 transactions: T1 {Beer, Nuts, Diapers}; T2 {Beer, Coffee, Diapers, Nuts}; T3 {Beer, Diapers, Eggs}; T4 {Beer, Nuts, Eggs, Milk}; T5 {Nuts, Coffee, Diapers, Eggs, Milk}. Given minsup s = 50%, which of the following is NOT a frequent itemset?",
@@ -744,7 +761,8 @@
    "drill": true,
    "drillNo": 44,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'value range of chi-square' → chọn [0, +inf)."
   },
   {
    "question": "Which of the following measures is NOT null-invariant?",
@@ -768,7 +786,8 @@
    "drill": true,
    "drillNo": 45,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT null-invariant' (options có Lift) → chọn Lift."
   },
   {
    "question": "For purchases of comics (CM) and fiction (FC) at a bookstore, a 2x2 contingency table is given with fiction (FC) row total 700, not-fiction (not-FC) row total 800, and grand total 1500. If chi-square is used to measure the correlation between CM and FC, what is the chi-square score?",
@@ -814,7 +833,8 @@
    "drill": true,
    "drillNo": 50,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'value range of Kulczynski' → chọn [0, 1]."
   },
   {
    "question": "Two supermarkets have identical AB, A-not-B and not-A-B counts but different numbers of null (not-A not-B) transactions. Comparing chi-square (X2) and confidence (c) between the two, which holds?",
@@ -922,7 +942,8 @@
    "drill": true,
    "drillNo": 56,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"beer, frying pans\" 600 both → Kulc=0.5(600/10000+600/5000)=0.09<0.1 → chọn \"epsilon=0.1, null-invariant negative pattern\"."
   },
   {
    "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abc\" and pattern \"abd\"?",
@@ -990,7 +1011,8 @@
    "drill": true,
    "drillNo": 57,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"eggs, bacon\" 2000 both → Kulc=0.5(0.2+0.4)=0.3 → chọn epsilon nhỏ nhất >0.3 = 0.5."
   },
   {
    "question": "Transactions: T1 abcde, T2 abefg, T3 abcdef, T4 abcdf, T5 abcdeg. Using the pattern distance measure (1 minus Jaccard of the transaction sets), what is the distance between pattern \"abcd\" and pattern \"acde\"?",
@@ -1078,7 +1100,8 @@
    "drill": true,
    "drillNo": 62,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy minsup=3 hỏi frequent → chọn <a(bf)>: a rồi 1 element chứa cả b lẫn f, đủ cả 4 sequence."
   },
   {
    "question": "Given a sequence database with sequences 1: <(a(bc)(de)ef)>, 2: <(a(bd)(be)ef)>, 3: <be(ad)ebfed>, 4: <ab(cd)d(ab)e> and min_sup = 1, which of the following does NOT belong to the <a>-projected database?",
@@ -1294,7 +1317,8 @@
    "drill": true,
    "drillNo": 106,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"NOT designed for stream data\" (Sticky/CloSpan/Lossy/Space saving) → chọn CloSpan (batch closed sequential)."
   },
   {
    "question": "Do clustering algorithms require labels for the input data instances?",
@@ -1316,7 +1340,8 @@
    "drill": true,
    "drillNo": 118,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'clustering require labels' → chọn No (clustering = unsupervised)."
   },
   {
    "question": "Can we use clustering to help with classification tasks?",
@@ -1338,7 +1363,8 @@
    "drill": true,
    "drillNo": 119,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'clustering help with classification' → chọn Yes (preprocessing, binning feature)."
   },
   {
    "question": "Given the two-dimensional points (0, 3) and (4, 0), what is the Manhattan distance between those two points?",
@@ -1361,7 +1387,8 @@
    "drill": true,
    "drillNo": 133,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: |0-4|+|3-0|=7 → chọn 7 (5 là Euclidean, bẫy)."
   },
   {
    "question": "Given three vectors A, B, and C, suppose the cosine similarity between A and B is cos(A,B) = 1.0, and the similarity between A and C is cos(A,C) = -1.0. Can we determine the cosine similarity between B and C?",
@@ -1403,7 +1430,8 @@
    "drill": true,
    "drillNo": 135,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: Y=X²=1, E[X]=0, E[X³]=0 → Cov(X,Y)=0 → chọn 0."
   },
   {
    "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
@@ -1512,7 +1540,8 @@
    "drillNo": 145,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: chung 'heart'(2),'eyes' → dot=3, chuẩn 4 & √41 → 3/(4×6.4)≈0.117 → chọn 0.117."
   },
   {
    "question": "For Iris virginica, sampled data on two features across 5 cases: Sepal length = 6.9, 6.7, 6.9, 5.8, 6.8; Petal length = 3.1, 3.1, 3.1, 2.7, 3.2. What is the correlation coefficient between the two features?",
@@ -1536,7 +1565,8 @@
    "drill": true,
    "drillNo": 147,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy Iris virginica, cả 2 feature cùng tụt ở case 4 → dương rất mạnh → chọn 0.925 (số lớn nhất)."
   },
   {
    "question": "Two flowers: Iris setosa (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2) and Iris versicolor (5.6, 2.5, 3.9, 1.1). What is the Euclidean distance between these two objects?",
@@ -1623,7 +1653,8 @@
    "drill": true,
    "drillNo": 146,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: chung all,children,of,grown-ups → 4/(√12×√8)≈0.408 → chọn 0.408."
   },
   {
    "question": "For Iris setosa, sampled data on two features across 5 cases: Sepal length = 5.1, 4.9, 4.7, 4.6, 5.0; Sepal width = 3.5, 3.0, 3.2, 3.1, 5.4. What is the sample correlation coefficient between sepal length and sepal width?",
@@ -1648,7 +1679,8 @@
    "drill": true,
    "drillNo": 148,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy Iris setosa với width outlier 5.4 → loại 2.396 (>1) → chọn 0.479 (trung bình)."
   },
   {
    "question": "Sampled data on two features across 5 cases: Sepal length = 7.0, 6.4, 6.9, 5.5, 6.5; Sepal width = 3.2, 3.2, 3.1, 2.3, 2.8. What is the sample correlation coefficient between sepal length and sepal width?",
@@ -1672,7 +1704,8 @@
    "drill": true,
    "drillNo": 149,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy cả 2 cột cùng thấp nhất ở case 4 (5.5 & 2.3) → dương mạnh → chọn 0.882."
   },
   {
    "question": "Is K-means guaranteed to find K clusters that lead to the global minimum of the SSE?",
@@ -1713,7 +1746,8 @@
    "drill": true,
    "drillNo": 151,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'SSE strictly increases after recompute centers' → chọn No (mean minimize SSE)."
   },
   {
    "question": "For k-means, will different initializations always lead to different clustering results?",
@@ -1735,7 +1769,8 @@
    "drill": true,
    "drillNo": 152,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'always lead to different clustering' → chọn No (từ 'always' làm sai)."
   },
   {
    "question": "In the k-medoids algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
@@ -1757,7 +1792,8 @@
    "drill": true,
    "drillNo": 153,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'k-medoids...center one of the data points' → chọn Yes (medoid = member thật)."
   },
   {
    "question": "In the k-median algorithm, after computing the new center for each cluster, is the center always guaranteed to be one of the data points in that cluster?",
@@ -1779,7 +1815,8 @@
    "drill": true,
    "drillNo": 154,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'k-median...center one of the data points' → chọn No (median từng chiều → điểm ảo)."
   },
   {
    "question": "Considering the k-means algorithm, after the current iteration we have three centroids (0, 1), (2, 1), and (-1, 2). Will points (0.5, 0.5) and (-0.5, 0) be assigned to the same cluster in the next iteration?",
@@ -1801,7 +1838,8 @@
    "drill": true,
    "drillNo": 155,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Calc: (0.5,0.5) & (-0.5,0) đều gần centroid (0,1) nhất → chọn Yes."
   },
   {
    "question": "Considering the k-means algorithm, if points (-1, 3), (-3, 1), and (-2, -1) are the only points assigned to the first cluster now, what is the new centroid for this cluster?",
@@ -1825,7 +1863,8 @@
    "drill": true,
    "drillNo": 157,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc mean: x=(-1-3-2)/3=-2, y=(3+1-1)/3=1 → chọn (-2,1)."
   },
   {
    "question": "The k-means++ algorithm improves initialization by picking the point farthest from the currently selected centroids. Suppose k=2 and the first centroid is (0, 0). Among the remaining points, which should be chosen as the second centroid?",
@@ -1889,7 +1928,8 @@
    "drill": true,
    "drillNo": 156,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Calc: (2,3) & (2,0.5) đều gần centroid (2,1) nhất → chọn Yes."
   },
   {
    "question": "When will a leaf entry in the CF (Clustering Feature) tree of BIRCH split?",
@@ -1912,7 +1952,8 @@
    "drill": true,
    "drillNo": 163,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'leaf entry BIRCH split khi nào' → chọn 'diameter larger than a threshold', KHÔNG phải đông điểm/branching factor."
   },
   {
    "question": "Which of the following statements about probabilistic hierarchical clustering is FALSE?",
@@ -1935,7 +1976,8 @@
    "drill": true,
    "drillNo": 167,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'probabilistic hierarchical FALSE' → chọn 'merge if distance > 0' (thật ra merge khi < 0)."
   },
   {
    "question": "Consider the three clusters A, B, and C shown in the figure. Using Euclidean distance as the similarity measure, which two clusters would be merged first in agglomerative clustering using complete link (diameter)?",
@@ -2044,7 +2086,8 @@
    "drill": true,
    "drillNo": 169,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'NOT a hierarchical algorithm' giữa CHAMELEON/BIRCH/AGNES → chọn K-Means (partitioning)."
   },
   {
    "question": "The objective of learning generative models is to find the parameters that maximize the likelihood of the observed data. Suppose D is drawn from a Gaussian distribution. For D = {-1, 0, 1}, which set of parameters (μ, σ) produces the maximum likelihood L(N(μ, σ²) : D)?",
@@ -2153,7 +2196,8 @@
    "drill": true,
    "drillNo": 182,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'requires ground-truth' → chọn External measure."
   },
   {
    "question": "What is the Normalized Mutual Information (NMI) when the clustering is identical to the ground-truth partition?",
@@ -2176,7 +2220,8 @@
    "drill": true,
    "drillNo": 183,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NMI when clustering identical to ground-truth' → chọn 1.0."
   },
   {
    "question": "If two points A and B have the same cluster labels and the same partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
@@ -2200,7 +2245,8 @@
    "drill": true,
    "drillNo": 184,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'same cluster + same ground-truth' → chọn True positive."
   },
   {
    "question": "If two points A and B have the same cluster labels but different partition (ground-truth) labels, which of the following categories should the pair (A, B) belong to?",
@@ -2224,7 +2270,8 @@
    "drill": true,
    "drillNo": 185,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'same cluster BUT different ground-truth' → chọn False positive (gom nhầm)."
   },
   {
    "question": "Which of the following is needed to calculate a Normalized Cut?",
@@ -2247,7 +2294,8 @@
    "drill": true,
    "drillNo": 186,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'calculate Normalized Cut' → chọn 'Weights between data points (vertices)' (không cần ground-truth)."
   },
   {
    "question": "The following table summarizes clustering results where C1, C2, C3 are clusters and T1, T2, T3 are ground-truth classes. Calculate the purity of the clustering. Table (rows C1/C2/C3, columns T1/T2/T3/Sum): C1: 10, 40, 10 (60); C2: 20, 10, 30 (60); C3: 30, 0, 50 (80); column totals: 60, 50, 90 (grand total 200).",
@@ -2316,7 +2364,8 @@
    "drill": true,
    "drillNo": 188,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'internal measure' với danh sách có Modularity → chọn Modularity (còn lại là external)."
   },
   {
    "question": "Given a set of transactions, the support of itemset {a,b} is 15% and the support of itemset {b} is 20%. Considering the association rules {a}->{b} and {b}->{a}, which of the following statements is true?",
@@ -2401,7 +2450,8 @@
    "drill": true,
    "drillNo": 199,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'Minkowski h=3', chênh 2,1,6,2 → cube 8+1+216+8=233, ∛233≈6.15 → chọn 6.1534."
   },
   {
    "question": "Which of the following refers to a sequence of patterns that occurs frequently?",
@@ -2446,7 +2496,8 @@
    "drill": true,
    "drillNo": 202,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'anti-monotone constraint' → chọn range(S.price) < 10 (thêm item range chỉ tăng)."
   },
   {
    "question": "Which statistical function is (x - mode)/s?",
@@ -2491,7 +2542,8 @@
    "drill": true,
    "drillNo": 204,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'z-score 200,300,400,600,100' → n nhỏ |z| không lớn → chọn đuôi '...0.354, 1.77'."
   },
   {
    "question": "Transactions: T10 {Beer, Nuts, Diaper}, T20 {Beer, Coffee, Diaper}, T30 {Beer, Diaper, Eggs}, T40 {Nuts, Eggs, Milk}, T50 {Nuts, Coffee, Diaper, Eggs, Milk}. Let X be the 1-itemset {Beer} and Y be the 1-itemset {Diaper}. What is the complete set of transactions that contains the itemset X ∪ Y?",
@@ -2534,7 +2586,8 @@
    "drill": true,
    "drillNo": 208,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'F2={ab,ac,bc,be,ce}, prune length-3' → abe có subset 'ae' vắng F2 → chọn abe."
   },
   {
    "question": "The table lists partitions of a Transaction Database (TDB) and their local frequent patterns: TDB_1 {abc, ab, ac, bc, a, b, c}; TDB_2 {bc, ab, a, b, c}; TDB_3 {cd, c, d}. Which of the following itemsets is definitely NOT a potential global frequent itemset?",
@@ -2558,7 +2611,8 @@
    "drill": true,
    "drillNo": 209,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'partitions TDB, NOT potential global frequent' → 'bd' không xuất hiện ở partition nào → chọn bd."
   },
   {
    "question": "Transaction history of Apple (A) and Banana (B) with expected counts in parentheses: A&B = 50 (57), (not A)&B = 200 (192), A&(not B) = 750 (742), (not A)&(not B) = 2500 (2507); total = 3500. Which of the following statements is correct?",
@@ -2709,7 +2763,8 @@
    "drill": true,
    "drillNo": 73,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy length-2 frequent chỉ <ab>,<ac>,<bc> → chọn <abc> (mọi subsequence dài 2 đều frequent)."
   },
   {
    "question": "Given the sequence database S10 <a(abc)(ac)d(cf)>, S20 <(ad)c(bc)(ae)>, S30 <(ef)(ab)(df)cb>, S40 <eg(af)cbc>, using the vertical data format, which sequence (by SID) belongs to the <g>-projected database?",
@@ -2774,7 +2829,8 @@
    "drill": true,
    "drillNo": 88,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"NOT require consecutive timestamps\" (Flock/Swarm/Convoy) → chọn Swarm (lỏng nhất, timestamp không liên tiếp)."
   },
   {
    "question": "For mining frequent movement patterns from a trajectory database, why is it necessary to group similar locations?",
@@ -2797,7 +2853,8 @@
    "drill": true,
    "drillNo": 89,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"why group similar locations\" → chọn \"continuous space nên phải gom để cùng tạo frequent pattern\"."
   },
   {
    "question": "When detecting periodicity from sparse trajectory data, what is the benefit of clustering locations to form reference spots?",
@@ -2820,7 +2877,8 @@
    "drill": true,
    "drillNo": 90,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"periodicity từ sparse data, reference spots\" → chọn \"overcome data sparsity để periodicity rõ hơn\"."
   },
   {
    "question": "Which of the following strategies does ToPMine use for mining phrase-level topics?",
@@ -2843,7 +2901,8 @@
    "drill": true,
    "drillNo": 102,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"ToPMine strategy\" → chọn Strategy 3: First phrase mining, then topic modeling."
   },
   {
    "question": "For the task of phrase mining, is ToPMine a supervised or an unsupervised approach?",
@@ -2866,7 +2925,8 @@
    "drill": true,
    "drillNo": 103,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"ToPMine supervised or unsupervised\" → chọn Unsupervised (chỉ dùng corpus statistics)."
   },
   {
    "question": "Among the following descriptions about SegPhrase, which one is correct?",
@@ -2889,7 +2949,8 @@
    "drill": true,
    "drillNo": 104,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"SegPhrase correct description\" → chọn \"only needs small training data từ human/knowledge base\" (weakly supervised)."
   },
   {
    "question": "How is frequent pattern mining helpful for SegPhrase?",
@@ -2912,7 +2973,8 @@
    "drill": true,
    "drillNo": 105,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"frequent pattern mining giúp gì cho SegPhrase\" → chọn \"tạo candidate phrases rồi lọc sau\"."
   },
   {
    "question": "Given a support threshold σ, is Lossy Counting guaranteed to find all the frequent patterns whose supports are no smaller than σ?",
@@ -2953,7 +3015,8 @@
    "drill": true,
    "drillNo": 117,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'forget-to-change bugs' → chọn Sequential pattern mining (có order)."
   },
   {
    "question": "Table 1 (transactions): T1 {Beer, Nuts, Diapers}, T2 {Beer, Coffee, Diapers, Nuts}, T3 {Beer, Diapers, Eggs}, T4 {Beer, Nuts, Eggs, Milk}, T5 {Nuts, Coffee, Diapers, Eggs, Milk}. What is the relative support and confidence of the association rule {Diapers} -> {Coffee, Nuts}?",
@@ -3620,7 +3683,8 @@
    "drill": true,
    "drillNo": 91,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"NOT output phrases\" (KERT/LDA/PDLDA/ToPMine) → chọn LDA (bag-of-words, chỉ unigram)."
   },
   {
    "question": "A data scientist applies the Lossy Counting algorithm to a transactional data stream to estimate item counts. Bucket size w = 1000, total stream length N = 10000, and the true count of item A is 100. Which of the following could be a possible output count for item A from Lossy Counting?",
@@ -4054,7 +4118,8 @@
    "drill": true,
    "drillNo": 126,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'must know number of output clusters a priori for ALL' → loại; chọn 3 câu còn lại."
   },
   {
    "question": "A dataset contains two flowers. Iris setosa: (sepal length 4.9, sepal width 3.0, petal length 1.4, petal width 0.2). Iris versicolor: (5.6, 2.5, 3.9, 1.1). What is the Manhattan distance between these two objects?",
@@ -4252,7 +4317,8 @@
    "drill": true,
    "drillNo": 112,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Calc: N/w=10 → [90,100] → chỉ 95 hợp lệ."
   },
   {
    "question": "The Kohonen self-organizing map (SOM) refers to which of the following?",
@@ -4337,7 +4403,8 @@
    "drill": true,
    "drillNo": 214,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '(2,3),(4,5),(6,7)... centroid x' → (2+4+6)/3 = 4 → chọn 4."
   },
   {
    "source": "exam_img",
@@ -4361,7 +4428,8 @@
    "drill": true,
    "drillNo": 215,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'presents mining results using charts, dashboards, or reports' → chọn 'Knowledge visualization'."
   },
   {
    "source": "exam_img",
@@ -4385,7 +4453,8 @@
    "drill": true,
    "drillNo": 216,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'SSE decreases after centroid updates' → error giảm là tốt → chọn 'Clusters are improving'."
   },
   {
    "source": "exam_img",
@@ -4409,7 +4478,8 @@
    "drill": true,
    "drillNo": 217,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'fisheye lens... least relevant' → chọn 'It makes the data appear more interesting' (chỉ bề nổi)."
   },
   {
    "source": "exam_img",
@@ -4434,7 +4504,8 @@
    "drill": true,
    "drillNo": 218,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'correlations between multiple numerical variables (Choose 2)' → chọn 'Scatter plot matrix' + 'Correlation heatmap'."
   },
   {
    "source": "exam_img",
@@ -4458,7 +4529,8 @@
    "drill": true,
    "drillNo": 219,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'support(A)=0.5... support(A,B)=0.2... confidence(A→B)' → 0.2/0.5 = 0.4 → chọn 0.4."
   },
   {
    "source": "exam_img",
@@ -4482,7 +4554,8 @@
    "drill": true,
    "drillNo": 220,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy '1000 records... 200 category A, pie chart' → 200/1000 = 20% → chọn 20%."
   },
   {
    "source": "exam_img",
@@ -4506,7 +4579,8 @@
    "drill": true,
    "drillNo": 221,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'sequential relationships between events' → chọn 'Sequential patterns' (nghe sequential chọn sequential)."
   },
   {
    "source": "exam_img",
@@ -4533,7 +4607,8 @@
    "drill": true,
    "drillNo": 222,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'effective clusters (Choose 3)' → chọn 'High intra', 'Low inter', 'Clear cluster boundaries'; bỏ random/noise."
   },
   {
    "source": "exam_img",
@@ -4557,7 +4632,8 @@
    "drill": true,
    "drillNo": 223,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '10 features → 4 features, eliminated' → 10-4 = 6 → chọn 6."
   },
   {
    "source": "exam_img",
@@ -4581,7 +4657,8 @@
    "drill": true,
    "drillNo": 224,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'lift(A→B), support(A)=0.4, B=0.5, A,B=0.2' → 0.2/(0.4×0.5)=1.0 → chọn 1.0 (độc lập)."
   },
   {
    "source": "exam_img",
@@ -4605,7 +4682,8 @@
    "drill": true,
    "drillNo": 225,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy câu chứa 'no clustering... always temporally independent' + 'no way to incorporate guidance' → sai; chọn 'Dimensionality reduction helps... feasible and scalable'."
   },
   {
    "source": "exam_img",
@@ -4629,7 +4707,8 @@
    "drill": true,
    "drillNo": 226,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'support(A,B)=0.3, support(A)=0.6, confidence(A→B)' → 0.3/0.6 = 0.5 → chọn 0.50."
   },
   {
    "source": "exam_img",
@@ -4653,7 +4732,8 @@
    "drill": true,
    "drillNo": 227,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'finds relationships among variables in large databases' → chọn 'Association rule mining'."
   },
   {
    "source": "exam_img",
@@ -4679,7 +4759,8 @@
    "drill": true,
    "drillNo": 228,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'effective visualization (Choose 3)' → chọn 'Clear labeling', 'Appropriate chart type', 'Minimal distortion'; bỏ random color."
   },
   {
    "source": "exam_img",
@@ -4703,7 +4784,8 @@
    "drill": true,
    "drillNo": 229,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'distances 1,2,3,4 from centroid, average' → 10/4 = 2.5 → chọn 2.5."
   },
   {
    "source": "exam_img",
@@ -4727,7 +4809,8 @@
    "drill": true,
    "drillNo": 230,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '300 transactions, A in 90, support(A)' → 90/300 = 0.30 → chọn 0.30."
   },
   {
    "source": "exam_img",
@@ -4751,7 +4834,8 @@
    "drill": true,
    "drillNo": 231,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'requires the number of clusters beforehand' → chữ K = k → chọn 'K-Means'."
   },
   {
    "source": "exam_img",
@@ -4775,7 +4859,8 @@
    "drill": true,
    "drillNo": 232,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy '600 samples... 150 category A, pie chart' → 150/600 = 25% → chọn 25%."
   },
   {
    "source": "exam_img",
@@ -4801,7 +4886,8 @@
    "drill": true,
    "drillNo": 233,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'dimensionality reduction before visualization (Choose 3)' → chọn 'PCA', 't-SNE', 'UMAP'; bỏ linear regression."
   },
   {
    "source": "exam_img",
@@ -4825,7 +4911,8 @@
    "drill": true,
    "drillNo": 234,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'measures cluster compactness and separation' → chọn 'Silhouette coefficient'."
   },
   {
    "source": "exam_img",
@@ -4849,7 +4936,8 @@
    "drill": true,
    "drillNo": 235,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'evenly spread with no visible trend' → chọn 'Correlation is near zero'."
   },
   {
    "source": "exam_img",
@@ -4873,7 +4961,8 @@
    "drill": true,
    "drillNo": 236,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'embed in a webpage to allow viewers to explore' → chọn 'Interactive visualization'."
   },
   {
    "source": "exam_img",
@@ -4897,7 +4986,8 @@
    "drill": true,
    "drillNo": 237,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '200 transactions, {A,B} in 30, support %' → 30/200 = 15% → chọn 15%."
   },
   {
    "source": "exam_img",
@@ -4921,7 +5011,8 @@
    "drill": true,
    "drillNo": 238,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'items frequently appearing together' → chọn 'Association rule mining'."
   },
   {
    "source": "exam_img",
@@ -4945,7 +5036,8 @@
    "drill": true,
    "drillNo": 239,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '400 of 1000 for validation and testing, remain for training' → 1000-400 = 600 → chọn 600."
   },
   {
    "source": "exam_img",
@@ -4969,7 +5061,8 @@
    "drill": true,
    "drillNo": 240,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'lift(A→B)=1 implies' → chọn 'A and B are independent' (lift=1 độc lập)."
   },
   {
    "source": "exam_img",
@@ -4993,7 +5086,8 @@
    "drill": true,
    "drillNo": 241,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'partition-based clustering category' → chọn 'K-Means'; DBSCAN density, GMM model-based."
   },
   {
    "source": "exam_img",
@@ -5017,7 +5111,8 @@
    "drill": true,
    "drillNo": 242,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy '300 out of 500 class A, percentage' → 300/500 = 60% → chọn 60%."
   },
   {
    "source": "exam_img",
@@ -5041,7 +5136,8 @@
    "drill": true,
    "drillNo": 243,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'collecting raw data from multiple sources' → chọn 'Data acquisition'."
   },
   {
    "source": "exam_img",
@@ -5068,7 +5164,8 @@
    "drill": true,
    "drillNo": 244,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'good clustering results (Choose 3)' → chọn 'High intra', 'Low inter', 'Clear cluster separation'; bỏ random/noise."
   },
   {
    "source": "exam_img",
@@ -5092,7 +5189,8 @@
    "drill": true,
    "drillNo": 245,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'only two possible values, such as true/false' → Bi = hai → chọn 'Binary attribute'."
   },
   {
    "source": "exam_img",
@@ -5116,7 +5214,8 @@
    "drill": true,
    "drillNo": 246,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '400 transactions, {A,B} in 80, support' → 80/400 = 0.20 → chọn 0.20."
   },
   {
    "source": "exam_img",
@@ -5140,7 +5239,8 @@
    "drill": true,
    "drillNo": 247,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'points forming an upward trend' → chọn 'Positive correlation'."
   },
   {
    "source": "exam_img",
@@ -5167,7 +5267,8 @@
    "drill": true,
    "drillNo": 248,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'density-based clustering (Choose 3)' → chọn 'DBSCAN', 'OPTICS', 'Mean Shift'; bỏ K-Means/Decision Trees."
   },
   {
    "source": "exam_img",
@@ -5191,7 +5292,8 @@
    "drill": true,
    "drillNo": 249,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '500 transactions, itemset in 50, support' → 50/500 = 0.10 → chọn 0.10."
   },
   {
    "source": "exam_img",
@@ -5215,7 +5317,8 @@
    "drill": true,
    "drillNo": 250,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'main purpose of data visualization' → chọn 'To present data patterns visually for easier interpretation'."
   },
   {
    "source": "exam_img",
@@ -5239,7 +5342,8 @@
    "drill": true,
    "drillNo": 251,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '40 attributes → 28 remain, how many removed' → 40-28 = 12 → chọn 12."
   },
   {
    "source": "exam_img",
@@ -5263,7 +5367,8 @@
    "drill": true,
    "drillNo": 252,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'incompatible with approximate frequent pattern mining in streaming' → chọn 'FP-growth' (batch/exact)."
   },
   {
    "source": "exam_img",
@@ -5287,7 +5392,8 @@
    "drill": true,
    "drillNo": 253,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'r = −0.85' → gần -1 → chọn 'Strong negative relationship'."
   },
   {
    "source": "exam_img",
@@ -5311,7 +5417,8 @@
    "drill": true,
    "drillNo": 254,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '2000 samples, 10% missing removed, remain' → 2000-200 = 1800 → chọn 1800."
   },
   {
    "source": "exam_img",
@@ -5335,7 +5442,8 @@
    "drill": true,
    "drillNo": 255,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'compare categories of data' → chọn 'Bar chart'; histogram là phân phối."
   },
   {
    "source": "exam_img",
@@ -5359,7 +5467,8 @@
    "drill": true,
    "drillNo": 256,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy '50 points out of 200, percentage' → 50/200 = 25% → chọn 25%."
   },
   {
    "source": "exam_img",
@@ -5383,7 +5492,8 @@
    "drill": true,
    "drillNo": 257,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'proportion of categories in a dataset' → chọn 'Pie chart' (miếng bánh = tỉ lệ)."
   },
   {
    "source": "exam_img",
@@ -5410,7 +5520,8 @@
    "drill": true,
    "drillNo": 258,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'pattern discovery (Choose 3)' → chọn 3 câu có 'mining': Frequent, Sequential, Association rule; bỏ compression/encryption."
   },
   {
    "source": "exam_img",
@@ -5434,7 +5545,8 @@
    "drill": true,
    "drillNo": 259,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'arbitrary shape and identify noise' → chọn 'DBSCAN'."
   },
   {
    "source": "exam_img",
@@ -5458,7 +5570,8 @@
    "drill": true,
    "drillNo": 260,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'reduce dimensionality for visualization' → chọn 'PCA' (giữ variance)."
   },
   {
    "source": "exam_img",
@@ -5482,7 +5595,8 @@
    "drill": true,
    "drillNo": 261,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'merges clusters iteratively until one cluster remains' → chọn 'Agglomerative hierarchical clustering' (bottom-up)."
   },
   {
    "source": "exam_img",
@@ -5506,7 +5620,8 @@
    "drill": true,
    "drillNo": 262,
    "drillGroup": "FE SP26",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '100 attributes, removes 45, remain' → 100-45 = 55 → chọn 55."
   },
   {
    "source": "exam_img",
@@ -5533,7 +5648,8 @@
    "drill": true,
    "drillNo": 263,
    "drillGroup": "FE SP26",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'strong association rules (Choose 3)' → chọn 'High support', 'High confidence', 'High lift'; bỏ low support/random."
   },
   {
    "source": "exam_pdf",
@@ -5556,7 +5672,8 @@
    "drill": true,
    "drillNo": 3,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'web page ... you prepared, but also allows the viewer to further investigate' → chọn Interactive storytelling."
   },
   {
    "source": "exam_pdf",
@@ -5579,7 +5696,8 @@
    "drill": true,
    "drillNo": 7,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'keep eyes focused on one point entire duration' → chọn False, visual system play tricks."
   },
   {
    "source": "exam_pdf",
@@ -5604,7 +5722,8 @@
    "drillNo": 16,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'best histogram' của (x,y,b) → chọn subdivision of brightness into ranges, count pixels."
   },
   {
    "source": "exam_pdf",
@@ -5629,7 +5748,8 @@
    "drillNo": 17,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'rollup of x and y dimensions' → chọn average brightness of the image."
   },
   {
    "source": "exam_pdf",
@@ -5652,7 +5772,8 @@
    "drill": true,
    "drillNo": 18,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT use ... unique axis location for every pixel' → chọn concatenation (product và nesting mới unique)."
   },
   {
    "source": "exam_pdf",
@@ -5676,7 +5797,8 @@
    "drill": true,
    "drillNo": 20,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'length-3 frequent itemset, s=40%' → chọn {Beer, Nuts, Diapers} (T10,T20 = count 2)."
   },
   {
    "source": "exam_pdf",
@@ -5701,7 +5823,8 @@
    "drill": true,
    "drillNo": 21,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'confidence & support của {Diapers}⇒{Coffee,Nuts}' → 2/5, 2/4 → chọn s=0.4, c=0.5."
   },
   {
    "source": "exam_pdf",
@@ -5726,7 +5849,8 @@
    "drill": true,
    "drillNo": 22,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT strong rule, minsup=50%' → chọn {Beer,Nuts}⇒{Diapers} (support 40%<50%)."
   },
   {
    "source": "exam_pdf",
@@ -5752,7 +5876,8 @@
    "drill": true,
    "drillNo": 23,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'which are association rules (select all), minsup 50%' → chọn Beer⇒Nuts và Nuts⇒Diapers (mỗi cặp 60%)."
   },
   {
    "source": "exam_pdf",
@@ -5778,7 +5903,8 @@
    "drill": true,
    "drillNo": 24,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy cùng đề 'select all' đảo thứ tự → vẫn chọn Nuts⇒Diapers và Beer⇒Nuts."
   },
   {
    "source": "exam_pdf",
@@ -5802,7 +5928,8 @@
    "drill": true,
    "drillNo": 25,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT a frequent itemset, minsup=50%' → chọn {Coffee} (2/5=40%)."
   },
   {
    "source": "exam_pdf",
@@ -5827,7 +5954,8 @@
    "drill": true,
    "drillNo": 26,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'how many strong rules, A⇒B và B⇒A distinct' → 3 cặp × 2 = chọn 6."
   },
   {
    "source": "exam_pdf",
@@ -5851,7 +5979,8 @@
    "drill": true,
    "drillNo": 28,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT closed', options gồm {a1} → chọn {a1} (bị {a1,a3} cùng support 2 nuốt)."
   },
   {
    "source": "exam_pdf",
@@ -5877,7 +6006,8 @@
    "drill": true,
    "drillNo": 30,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'BOTH max & closed, T1{a1..a5},T2{a2..a6}, minsup=1' → chọn {a2,a3,a4,a5,a6} và {a1,a2,a3,a4,a5}."
   },
   {
    "source": "exam_pdf",
@@ -5902,7 +6032,8 @@
    "drillNo": 31,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'fraction max của all frequent, T1{a1,a2,a3},T2{a2,a3,a4}, minsup=1' → 7+7-3=11, max=2 → chọn 2/11."
   },
   {
    "source": "exam_pdf",
@@ -5928,7 +6059,8 @@
    "drill": true,
    "drillNo": 33,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'given closed frequent patterns we can (select all)' → chọn 3 câu: find max, always recover all patterns+support, recover all transactions."
   },
   {
    "source": "exam_pdf",
@@ -5953,7 +6085,8 @@
    "drill": true,
    "drillNo": 34,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'statement true về closed vs max' → chọn 'recover all frequent patterns and supports from closed'."
   },
   {
    "source": "exam_pdf",
@@ -5977,7 +6110,8 @@
    "drill": true,
    "drillNo": 35,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'support {a,b,c}=10, possible {a,b}' → subset ≥ 10 → chọn 11 và 10."
   },
   {
    "source": "exam_pdf",
@@ -6002,7 +6136,8 @@
    "drill": true,
    "drillNo": 36,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '{a,b}=10, possible {a,c}' → không phải subset-superset → chọn cả 9, 10, 11."
   },
   {
    "source": "exam_pdf",
@@ -6030,7 +6165,8 @@
    "drill": true,
    "drillNo": 37,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '{a}=50, {a,b,c}=10, possible {a,w}' → trần = 50 → chọn 5, 10, 30, 50 (loại 100)."
   },
   {
    "source": "exam_pdf",
@@ -6054,7 +6190,8 @@
    "drill": true,
    "drillNo": 38,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '{a,b}=10, possible {a,b,c}' → superset ≤ 10 → chọn 9 và 10 (loại 11)."
   },
   {
    "source": "exam_pdf",
@@ -6080,7 +6217,8 @@
    "drill": true,
    "drillNo": 39,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '{a}=50, {a,b,c}=30, possible {a,b}' → kẹp 30≤x≤50 → chọn 30 và 50."
   },
   {
    "source": "exam_pdf",
@@ -6105,7 +6243,8 @@
    "drill": true,
    "drillNo": 40,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'size-3 candidates từ 2-itemsets' → chọn {B,C,E} và {A,B,C} (đủ 3 subset frequent)."
   },
   {
    "source": "exam_pdf",
@@ -6129,7 +6268,8 @@
    "drill": true,
    "drillNo": 41,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '5 items, frequent A,B,C,E, how many size-2' → C(4,2) → chọn 6."
   },
   {
    "source": "exam_pdf",
@@ -6154,7 +6294,8 @@
    "drillNo": 42,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'lift(DM,ML)' với 700/1000/1200/3000 → 3000×700/(1000×1200) → chọn 7/4."
   },
   {
    "source": "exam_pdf",
@@ -6179,7 +6320,8 @@
    "drillNo": 43,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'chi-square' DM/ML (expected 400,600,800,1200 lệch 300) → chọn 562.5."
   },
   {
    "source": "exam_pdf",
@@ -6203,7 +6345,8 @@
    "drill": true,
    "drillNo": 46,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT null invariant' (options có Lift) → chọn Lift."
   },
   {
    "source": "exam_pdf",
@@ -6227,7 +6370,8 @@
    "drill": true,
    "drillNo": 47,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT null invariant' (options có Chi-square, không có Lift) → chọn Chi-square."
   },
   {
    "source": "exam_pdf",
@@ -6252,7 +6396,8 @@
    "drill": true,
    "drillNo": 48,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'different numbers of null transactions ... consistently' → chọn Kulczynski và Cosine."
   },
   {
    "source": "exam_pdf",
@@ -6277,7 +6422,8 @@
    "drillNo": 49,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'chi-square' CM/FC (expected 500,500,1000,1000 lệch 200) → chọn 240."
   },
   {
    "source": "exam_pdf",
@@ -6302,7 +6448,8 @@
    "drillNo": 51,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'only null transactions differ (300 vs 90000)' → chi-square khác, cosine bằng → chọn chi-square(1)≠chi-square(2), c1=c2."
   },
   {
    "source": "exam_pdf",
@@ -6327,7 +6474,8 @@
    "drillNo": 52,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'lift(HD,HM)' 400×40=250×64 → chọn 1 (độc lập)."
   },
   {
    "source": "exam_pdf",
@@ -6352,7 +6500,8 @@
    "drillNo": 53,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'chi-square' HD/HM (observed=expected) → chọn 0."
   },
   {
    "source": "exam_pdf",
@@ -6377,7 +6526,8 @@
    "drillNo": 54,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"shared (uniform)\" hỏi minsup cho LOWER level → chọn 3% (lấy minsup nhỏ nhất)."
   },
   {
    "source": "exam_pdf",
@@ -6402,7 +6552,8 @@
    "drillNo": 55,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"shared multi-level\" hỏi threshold cho HIGHER level → vẫn chọn 1%, the lowest threshold (dùng minsup nhỏ nhất cho mọi level)."
   },
   {
    "source": "exam_pdf",
@@ -6426,7 +6577,8 @@
    "drill": true,
    "drillNo": 58,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"10^9 ... 10^2 both, epsilon=0.01\" → s(A,B)=1e-7>s(A)s(B)=1e-8 (không support-based), Kulc=0.00505<0.01 → chọn \"only by null-invariant\"."
   },
   {
    "source": "exam_pdf",
@@ -6450,7 +6602,8 @@
    "drill": true,
    "drillNo": 59,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"abc và abd\" (T1 abcde...) → cùng xuất hiện {T1,T3,T4,T5} → Jaccard=4/4=1 → distance chọn 0."
   },
   {
    "source": "exam_pdf",
@@ -6474,7 +6627,8 @@
    "drill": true,
    "drillNo": 60,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"abcd và acde\" → abcd={T1,T3,T4,T5}, acde={T1,T3,T5} → 1-3/4 → chọn 0.25."
   },
   {
    "source": "exam_pdf",
@@ -6499,7 +6653,8 @@
    "drillNo": 61,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy DB chỉ 4 giao dịch \"abcd và abde\" → abcd={T1,T3,T4}, abde={T1,T2,T3}, giao 2/hợp 4 → chọn 0.5."
   },
   {
    "source": "exam_pdf",
@@ -6524,7 +6679,8 @@
    "drill": true,
    "drillNo": 63,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy database \"a(bc)(de)cf...\" minsup=3 → chọn <abc>: a→b→c khác element, có ở seq 1,2,4."
   },
   {
    "source": "exam_pdf",
@@ -6549,7 +6705,8 @@
    "drill": true,
    "drillNo": 64,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"a(bd)(aef)(bc)...\" minsup=3 → chọn <(ae)c>: element chứa đủ a,e rồi có c sau, ở seq 1,3,4."
   },
   {
    "source": "exam_pdf",
@@ -6574,7 +6731,8 @@
    "drill": true,
    "drillNo": 65,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy frequent singletons chỉ a,b,d, options có <ac>,<(bc)> → loại mọi cái dính c → chọn <ab> và <(bd)>."
   },
   {
    "source": "exam_pdf",
@@ -6600,7 +6758,8 @@
    "drill": true,
    "drillNo": 66,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy singletons a,b,d, options có <bc> → loại <bc> vì có c → chọn <ad>, <(bd)>, <ab>."
   },
   {
    "source": "exam_pdf",
@@ -6627,7 +6786,8 @@
    "drillNo": 67,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy CloSpan \"<c>:50 ... <bc>:50\" → <c> bị nuốt (super-pattern <bc> cùng size 50) → chọn <ac>,<bc>,<ab>."
   },
   {
    "source": "exam_pdf",
@@ -6654,7 +6814,8 @@
    "drillNo": 68,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy CloSpan \"<c>:50, <ac>:50\" → <c> bị nuốt bởi <ac> cùng size → chọn <ab>,<bc>,<ac>."
   },
   {
    "source": "exam_pdf",
@@ -6678,7 +6839,8 @@
    "drill": true,
    "drillNo": 69,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy hỏi cái NÀO KHÔNG thuộc <e>-projected → seq1 e đứng riêng (e) nên suffix là (cdeh)... → chọn <(_h)cfg(abe)> (sai)."
   },
   {
    "source": "exam_pdf",
@@ -6702,7 +6864,8 @@
    "drill": true,
    "drillNo": 70,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy hỏi KHÔNG là subsequence → chọn <aa(bc)>: không seq nào có element chứa đủ b,c sau HAI chữ a."
   },
   {
    "source": "exam_pdf",
@@ -6726,7 +6889,8 @@
    "drill": true,
    "drillNo": 71,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy hỏi <g>-projected → chỉ seq 40 \"eg(af)cbc\" có g → chọn 40."
   },
   {
    "source": "exam_pdf",
@@ -6750,7 +6914,8 @@
    "drill": true,
    "drillNo": 72,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy hỏi <f>-projected → seq30 f trong (ef) là cuối element → suffix chọn <(ab)(df)cb>."
   },
   {
    "source": "exam_pdf",
@@ -6775,7 +6940,8 @@
    "drill": true,
    "drillNo": 74,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"<abcd>:50 ... <cd>:150\" hỏi closed → chọn <abcd>:50 và <cd>:150 (không super-pattern nào cùng support)."
   },
   {
    "source": "exam_pdf",
@@ -6800,7 +6966,8 @@
    "drill": true,
    "drillNo": 75,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy spatial association + \"progressive refinement\" → chọn câu cần cả minsup&minconf VÀ progressive refinement giảm search space."
   },
   {
    "source": "exam_pdf",
@@ -6825,7 +6992,8 @@
    "drill": true,
    "drillNo": 76,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy option \"refinement of the rough patterns\" → chọn câu cần cả minsup&minconf VÀ result là refinement của rough patterns bước 1."
   },
   {
    "source": "exam_pdf",
@@ -6849,7 +7017,8 @@
    "drill": true,
    "drillNo": 77,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy câu đơn về spatial association → chọn \"hierarchy of spatial relationships speeds up mining\"."
   },
   {
    "source": "exam_pdf",
@@ -6873,7 +7042,8 @@
    "drill": true,
    "drillNo": 78,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"A 100 lần, rule holds 20 records/1000\" → sup=20/1000=2%, conf=20/100=20% → chọn support:2%; confidence:20%."
   },
   {
    "source": "exam_pdf",
@@ -6897,7 +7067,8 @@
    "drill": true,
    "drillNo": 79,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"A 100 lần, holds 100 records/1000\" → sup=100/1000=10%, conf=100/100=100% → chọn 10%;100%."
   },
   {
    "source": "exam_pdf",
@@ -6921,7 +7092,8 @@
    "drill": true,
    "drillNo": 80,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy \"A 200 lần, holds 100 records/1000\" → sup=100/1000=10%, conf=100/200=50% → chọn 10%;50%."
   },
   {
    "source": "exam_pdf",
@@ -6945,7 +7117,8 @@
    "drill": true,
    "drillNo": 81,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy sup>=5% & conf>=60% → chọn rule [7%, 85%] (adjacent_to water); các cái khác trượt sup 3%/4% hoặc conf 50%."
   },
   {
    "source": "exam_pdf",
@@ -6969,7 +7142,8 @@
    "drill": true,
    "drillNo": 82,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy time constraint 30min, sup 5% → chọn \"Middle Bridge 10min/10min [7%]\" (mọi khoảng <=30 & sup đủ)."
   },
   {
    "source": "exam_pdf",
@@ -6993,7 +7167,8 @@
    "drill": true,
    "drillNo": 83,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy đảo thứ tự đáp án, vẫn 30min & 5% → chọn \"Middle Bridge 10min/10min [7%]\"."
   },
   {
    "source": "exam_pdf",
@@ -7018,7 +7193,8 @@
    "drill": true,
    "drillNo": 84,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy time constraint nới lên 60min → 45min được cứu → chọn Castle Square 45min [6%] VÀ Middle Bridge 10/10 [7%]."
   },
   {
    "source": "exam_pdf",
@@ -7044,7 +7220,8 @@
    "drill": true,
    "drillNo": 85,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy Splitter options có \"reflect only spatial transitions\" → loại nó → chọn 3 câu còn lại (sup>=d, top-down giảm search space, gom similar places)."
   },
   {
    "source": "exam_pdf",
@@ -7070,7 +7247,8 @@
    "drill": true,
    "drillNo": 86,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy Splitter + \"coarse patterns ... semantics level\" → loại \"only spatial\" → chọn: top-down giảm search space, same semantic category grouped, coarse=semantics level."
   },
   {
    "source": "exam_pdf",
@@ -7096,7 +7274,8 @@
    "drill": true,
    "drillNo": 87,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy Splitter + \"each place carries location & semantic\" → loại \"only spatial\" → chọn place=location+semantic, sup>=d, gom similar places."
   },
   {
    "source": "exam_pdf",
@@ -7120,7 +7299,8 @@
    "drill": true,
    "drillNo": 92,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy \"NOT output phrases\" (LDA/KERT/SegPhrase/ToPMine) → chọn LDA (chỉ ra từ đơn)."
   },
   {
    "source": "exam_pdf",
@@ -7146,7 +7326,8 @@
    "drill": true,
    "drillNo": 93,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy colocation strength có \"edit distance\" → loại edit distance → chọn Mutual information, T-test, Z-test."
   },
   {
    "source": "exam_pdf",
@@ -7172,7 +7353,8 @@
    "drill": true,
    "drillNo": 94,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy colocation có \"edit distance\" → loại nó → chọn Z-test, Likelihood ratio, Mutual information."
   },
   {
    "source": "exam_pdf",
@@ -7198,7 +7380,8 @@
    "drill": true,
    "drillNo": 95,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy colocation có \"edit distance\" → loại nó → chọn Chi-squared test, Likelihood ratio, Mutual information."
   },
   {
    "source": "exam_pdf",
@@ -7223,7 +7406,8 @@
    "drill": true,
    "drillNo": 96,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy contiguous mining \"support vector machine\", sup=3 → chọn support vector & vector machine (liền kề); loại \"support machine\"."
   },
   {
    "source": "exam_pdf",
@@ -7247,7 +7431,8 @@
    "drill": true,
    "drillNo": 97,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy câu đơn contiguous sup=3 → chọn \"support vector machine\" (3-gram liền kề đủ 3 lần)."
   },
   {
    "source": "exam_pdf",
@@ -7273,7 +7458,8 @@
    "drill": true,
    "drillNo": 98,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy choose-all contiguous sup=3 → chọn support vector machine + vector machine + support vector (Apriori sub-phrase); loại neural network."
   },
   {
    "source": "exam_pdf",
@@ -7299,7 +7485,8 @@
    "drill": true,
    "drillNo": 99,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy KERT ranking + \"Likelihood ratio\" → loại likelihood ratio → chọn Informativeness, Popularity, Completeness."
   },
   {
    "source": "exam_pdf",
@@ -7324,7 +7511,8 @@
    "drill": true,
    "drillNo": 100,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy KERT ranking + \"Mutual information, KL divergence\" → loại 2 cái thống kê → chọn Popularity, Completeness."
   },
   {
    "source": "exam_pdf",
@@ -7350,7 +7538,8 @@
    "drill": true,
    "drillNo": 101,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy KERT ranking + \"KL divergence\" → loại KL → chọn Concordance, Completeness, Popularity."
   },
   {
    "source": "exam_pdf",
@@ -7374,7 +7563,8 @@
    "drill": true,
    "drillNo": 107,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT designed for...stream' mà có FP-growth → chọn FP-growth (batch, dựng FP-tree nhiều pass)."
   },
   {
    "source": "exam_pdf",
@@ -7398,7 +7588,8 @@
    "drill": true,
    "drillNo": 108,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'NOT designed for...stream' mà có PrefixSpan → chọn PrefixSpan (sequential batch, offline)."
   },
   {
    "source": "exam_pdf",
@@ -7420,7 +7611,8 @@
    "drill": true,
    "drillNo": 109,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'Lossy Counting guaranteed to find all frequent' → chọn Yes (no false negative, chỉ thừa)."
   },
   {
    "source": "exam_pdf",
@@ -7445,7 +7637,8 @@
    "drill": true,
    "drillNo": 110,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Calc: N/w=10000/1000=10 → khoảng [90,100] → chọn 98 và 90."
   },
   {
    "source": "exam_pdf",
@@ -7471,7 +7664,8 @@
    "drill": true,
    "drillNo": 111,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Calc: N/w=10 → [90,100], không bao giờ dư nên loại 101 → chọn 100, 92, 99."
   },
   {
    "source": "exam_pdf",
@@ -7496,7 +7690,8 @@
    "drill": true,
    "drillNo": 113,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: cần ≥3/5. <1,2> ở seq 1,3,5 & <2,3> ở seq 1,2,3,4 → chọn <1,2>, <2,3>."
   },
   {
    "source": "exam_pdf",
@@ -7522,7 +7717,8 @@
    "drill": true,
    "drillNo": 114,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc: ≥3/5 → <2,4>, <1,2>, <2,3>; <1,3> chỉ 2/5 nên loại."
   },
   {
    "source": "exam_pdf",
@@ -7548,7 +7744,8 @@
    "drill": true,
    "drillNo": 115,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'σ-frequent' → loại (pattern mining); chọn t-closeness, Differential privacy, K-anonymity."
   },
   {
    "source": "exam_pdf",
@@ -7574,7 +7771,8 @@
    "drill": true,
    "drillNo": 116,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'σ-frequent' → loại; chọn t-closeness, Differential privacy, l-diversity."
   },
   {
    "source": "exam_pdf",
@@ -7599,7 +7797,8 @@
    "drill": true,
    "drillNo": 120,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'Country->State->Municipality / taxonomy' → chọn cả 3 (đều nested → hierarchical)."
   },
   {
    "source": "exam_pdf",
@@ -7624,7 +7823,8 @@
    "drill": true,
    "drillNo": 121,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'Graph, Time series, Text' → chọn cả 3 (chỉ cần similarity measure)."
   },
   {
    "source": "exam_pdf",
@@ -7649,7 +7849,8 @@
    "drill": true,
    "drillNo": 122,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy tiền tố 'K-' → chọn K-Medoids & K-Means; DBSCAN=density, GMM=model."
   },
   {
    "source": "exam_pdf",
@@ -7673,7 +7874,8 @@
    "drill": true,
    "drillNo": 123,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'Salary' → loại (numeric); chọn Sex, Race (nhãn categorical)."
   },
   {
    "source": "exam_pdf",
@@ -7697,7 +7899,8 @@
    "drill": true,
    "drillNo": 124,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'papers only' & 'authors only' → chọn 2 cái đó; 'keep all three node types' vẫn heterogeneous nên loại."
   },
   {
    "source": "exam_pdf",
@@ -7722,7 +7925,8 @@
    "drill": true,
    "drillNo": 125,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Chọn 'wide range of applications' + 'similar objects in same cluster'; loại 'supervised' & 'impossible to cluster stream'."
   },
   {
    "source": "exam_pdf",
@@ -7748,7 +7952,8 @@
    "drill": true,
    "drillNo": 127,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'requires a large amount of labeled training data' → loại; chọn similarity measure, shape/size, space (subset features)."
   },
   {
    "source": "exam_pdf",
@@ -7773,7 +7978,8 @@
    "drill": true,
    "drillNo": 128,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Loại câu tuyệt đối 'no clustering algorithm'/'no way'; chọn 'dimensionality reduction can help' & 'K-means is distance-based'."
   },
   {
    "source": "exam_pdf",
@@ -7798,7 +8004,8 @@
    "drill": true,
    "drillNo": 129,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'latent topics' & 'communities in a social network' → chọn (không có target); predict price/stock = supervised."
   },
   {
    "source": "exam_pdf",
@@ -7823,7 +8030,8 @@
    "drill": true,
    "drillNo": 130,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Chọn 'wide range of applications' + 'unsupervised, no labeled data'; loại 'dissimilar same cluster' & 'impossible to cluster stream'."
   },
   {
    "source": "exam_pdf",
@@ -7849,7 +8057,8 @@
    "drill": true,
    "drillNo": 131,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'only visualize when data is 2-dimensional' → loại (có PCA/t-SNE); chọn 3 câu đầu."
   },
   {
    "source": "exam_pdf",
@@ -7871,7 +8080,8 @@
    "drill": true,
    "drillNo": 132,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'similarity within same cluster' → chọn HIGH (intra-cluster cao)."
   },
   {
    "source": "exam_pdf",
@@ -7896,7 +8106,8 @@
    "drillNo": 134,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'cos(A,B)=1.0 & cos(A,C)=-1.0' → B,C ngược hướng → chọn cos(B,C)=-1."
   },
   {
    "source": "exam_pdf",
@@ -7920,7 +8131,8 @@
    "drill": true,
    "drillNo": 136,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc Manhattan Iris: 0.7+0.5+2.5+0.9=4.6 → chọn 4.6 (Manhattan lớn nhất)."
   },
   {
    "source": "exam_pdf",
@@ -7944,7 +8156,8 @@
    "drill": true,
    "drillNo": 137,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc Euclidean Iris: √(0.49+0.25+6.25+0.81)=√7.8≈2.8 → chọn 2.8 (7.8 là bẫy)."
   },
   {
    "source": "exam_pdf",
@@ -7968,7 +8181,8 @@
    "drill": true,
    "drillNo": 138,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc supremum Iris: max(0.7,0.5,2.5,0.9)=2.5 (petal length) → chọn 2.5."
   },
   {
    "source": "exam_pdf",
@@ -7992,7 +8206,8 @@
    "drill": true,
    "drillNo": 139,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'SYMMETRIC binary' → mismatch/tất cả 10 = 4/10 → chọn 4/10."
   },
   {
    "source": "exam_pdf",
@@ -8016,7 +8231,8 @@
    "drill": true,
    "drillNo": 140,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'ASYMMETRIC...Jaccard coefficient' → q/(q+r+s)=3/7 → chọn 3/7 (bỏ cặp 0-0)."
   },
   {
    "source": "exam_pdf",
@@ -8041,7 +8257,8 @@
    "drillNo": 141,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'simple matching' cars → 4/6 mismatch = 2/3 → chọn 2/3 (chỉ v-high & med khớp)."
   },
   {
    "source": "exam_pdf",
@@ -8067,7 +8284,8 @@
    "drillNo": 142,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'asymmetric binary...one binary per distinct value' → 10 cột, q=2 → 8/10 → chọn 8/10."
   },
   {
    "source": "exam_pdf",
@@ -8091,7 +8309,8 @@
    "drill": true,
    "drillNo": 143,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'closest...cosine' với Q=(0.8,0.6) → (16,12)=20×Q cùng hướng → chọn (16,12)."
   },
   {
    "source": "exam_pdf",
@@ -8115,7 +8334,8 @@
    "drill": true,
    "drillNo": 144,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'farthest...cosine' → (-0.8,-0.6) ngược hướng Q → chọn (-0.8,-0.6)."
   },
   {
    "source": "exam_pdf",
@@ -8137,7 +8357,8 @@
    "drill": true,
    "drillNo": 150,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'global minimum of the SSE' → chọn No (K-means chỉ local min)."
   },
   {
    "source": "exam_pdf",
@@ -8161,7 +8382,8 @@
    "drill": true,
    "drillNo": 158,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc K-means++ xa nhất từ (0,0): (3,0)=3 lớn nhất → chọn (3,0)."
   },
   {
    "source": "exam_pdf",
@@ -8185,7 +8407,8 @@
    "drill": true,
    "drillNo": 159,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Calc xa nhất từ (0,0): (4,0)=4 lớn nhất → chọn (4,0)."
   },
   {
    "source": "exam_pdf",
@@ -8209,7 +8432,8 @@
    "drill": true,
    "drillNo": 160,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'k-median' + 3 điểm (1,-3)(1,1)(-2,2) → median mỗi chiều: x{−2,1,1}=1, y{−3,1,2}=1 → chọn (1, 1)."
   },
   {
    "source": "exam_pdf",
@@ -8235,7 +8459,8 @@
    "drill": true,
    "drillNo": 161,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'k-medoids, k-median, k-modes correct' → chọn 3: k-means center có thể ảo + k-medoids/median ít nhạy outlier + k-modes cho categorical. Bẫy: 'k-medoids center may not be data point' là SAI."
   },
   {
    "source": "exam_pdf",
@@ -8260,7 +8485,8 @@
    "drill": true,
    "drillNo": 162,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'about k-means correct' → chọn 'sensitive to outliers' + 'centroid may not be observed data point'. Bỏ 'same results' và 'categorical'."
   },
   {
    "source": "exam_pdf",
@@ -8285,7 +8511,8 @@
    "drillNo": 164,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'well-scattered representative points... shrunk toward centroid' → chọn CURE."
   },
   {
    "source": "exam_pdf",
@@ -8310,7 +8537,8 @@
    "drillNo": 165,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'tree structure → microclusters → macroclusters' → chọn BIRCH."
   },
   {
    "source": "exam_pdf",
@@ -8335,7 +8563,8 @@
    "drillNo": 166,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'k-nearest-neighbor graph → graphlets → merge' → chọn CHAMELEON."
   },
   {
    "source": "exam_pdf",
@@ -8359,7 +8588,8 @@
    "drill": true,
    "drillNo": 168,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'is a hierarchical algorithm' giữa K-Medoid/K-Means/DBSCAN → chọn BIRCH."
   },
   {
    "source": "exam_pdf",
@@ -8383,7 +8613,8 @@
    "drill": true,
    "drillNo": 170,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'BIRCH, CURE, CHAMELEON TRUE' → chọn 'CHAMELEON and CURE better capture irregular shaped clusters than BIRCH'."
   },
   {
    "source": "exam_pdf",
@@ -8407,7 +8638,8 @@
    "drill": true,
    "drillNo": 171,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Cùng bộ ba nhưng thấy 'CF vector... 1st and 2nd moments' → chọn 'micro-cluster in BIRCH represented by CF vector'."
   },
   {
    "source": "exam_pdf",
@@ -8431,7 +8663,8 @@
    "drill": true,
    "drillNo": 172,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "MLE D={−4,5,14}: μ=mean=5; σ=√((81+0+81)/2)=√81=9 → chọn μ=5, σ=9."
   },
   {
    "source": "exam_pdf",
@@ -8455,7 +8688,8 @@
    "drill": true,
    "drillNo": 173,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "MLE D={−5,5,15}: μ=5; lệch ±10 → σ=√((100+0+100)/2)=10 → chọn μ=5, σ=10."
   },
   {
    "source": "exam_pdf",
@@ -8479,7 +8713,8 @@
    "drill": true,
    "drillNo": 174,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "MLE D={−1,0,1}: μ=0; σ=√((1+0+1)/2)=1 → chọn μ=0, σ=1 (loại mọi σ=0)."
   },
   {
    "source": "exam_pdf",
@@ -8502,7 +8737,8 @@
    "drill": true,
    "drillNo": 175,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'p directly density-reachable from q' → chọn 'p is density-reachable from q' (không đối xứng)."
   },
   {
    "source": "exam_pdf",
@@ -8527,7 +8763,8 @@
    "drill": true,
    "drillNo": 176,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'density-CONNECTED' → chọn 'p may be density-reachable but not necessarily' + 'q density-connected to p' (đối xứng)."
   },
   {
    "source": "exam_pdf",
@@ -8552,7 +8789,8 @@
    "drill": true,
    "drillNo": 177,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'density-REACHABLE' → chọn 'q density-connected to p' + 'o reachable from p thì reachable from q' (bắc cầu)."
   },
   {
    "source": "exam_pdf",
@@ -8577,7 +8815,8 @@
    "drill": true,
    "drillNo": 178,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Cùng 'density-REACHABLE' (đảo thứ tự): chọn 'q density-connected to p' + 'o reachable from p thì từ q'."
   },
   {
    "source": "exam_pdf",
@@ -8602,7 +8841,8 @@
    "drill": true,
    "drillNo": 179,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'eps=4, MinPts=5, dist=1cm' (gần < eps) → chọn 'may be in different clusters' + 'may not belong to any cluster'."
   },
   {
    "source": "exam_pdf",
@@ -8627,7 +8867,8 @@
    "drill": true,
    "drillNo": 180,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'eps=1, dist=4cm' (xa > eps) → chọn 'may not be in same cluster' + 'may not belong to any cluster'."
   },
   {
    "source": "exam_pdf",
@@ -8652,7 +8893,8 @@
    "drill": true,
    "drillNo": 181,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'CLIQUE monotonicity 1-D → 2-D' → chọn 'not in 1-D cluster ⇒ not in any 2-D' + 'in 1-D may not be in 2-D'."
   },
   {
    "source": "exam_pdf",
@@ -8678,7 +8920,8 @@
    "drill": true,
    "drillNo": 187,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'relative measures' → chọn Beta-CV + Silhouette coefficient."
   },
   {
    "source": "exam_pdf",
@@ -8704,7 +8947,8 @@
    "drill": true,
    "drillNo": 189,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'EXTERNAL measures' → chọn F-measure + Purity."
   },
   {
    "source": "exam_pdf",
@@ -8729,7 +8973,8 @@
    "drillNo": 190,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'calculate the purity', bảng (10,40,10)(20,10,30)(30,0,50), N=200 → max mỗi hàng (40+30+50)/200 → chọn 0.6."
   },
   {
    "source": "exam_pdf",
@@ -8754,7 +8999,8 @@
    "drillNo": 191,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'maximum matching score', bảng C1(10,30,10)C2(30,40,10)C3(0,0,60) → gán một-một tốt nhất 30+30+60=120/200 → chọn 0.6."
   },
   {
    "source": "exam_pdf",
@@ -8780,7 +9026,8 @@
    "drillNo": 192,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Bảng C1(9,1) C2(2,8), 20 điểm → TP=C(9,2)+C(1,2)+C(2,2)+C(8,2)=65 → chọn TP=65 + TN=64 (theo key)."
   },
   {
    "source": "exam_pdf",
@@ -8805,7 +9052,8 @@
    "drill": true,
    "drillNo": 193,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Bảng C1(9,2) C2(3,6), 20 điểm → TP=36+1+3+15=55 → chọn TP=55 + TN=60."
   },
   {
    "source": "exam_pdf",
@@ -8830,7 +9078,8 @@
    "drillNo": 194,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'support{a,b}=15%, support{b}=20%', hỏi {a}=>{b} → chọn 'cannot calculate without support of {a} alone' (confidence chia vế trái)."
   },
   {
    "source": "exam_pdf",
@@ -8855,7 +9104,8 @@
    "drillNo": 195,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy '18 adults age & %fat' → mean age 46.44 < median 51 → chọn 'age: mean 46.44, median 51, std 12.85; %fat: 28.78, 30.7, 8.99'."
   },
   {
    "source": "exam_pdf",
@@ -8878,7 +9128,8 @@
    "drill": true,
    "drillNo": 196,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'k-means, seeds A1,B1,C1' → điểm y-cao (A1,C2,B1) một cụm → chọn '(1){A1,C2,B1},(2){A3,B2,B3},(3){C1,A2}'."
   },
   {
    "source": "exam_pdf",
@@ -8902,7 +9153,8 @@
    "drill": true,
    "drillNo": 197,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'np.random.choice + cdist euclidean + mean of assigned points' → chọn K-means."
   },
   {
    "source": "exam_pdf",
@@ -8926,7 +9178,8 @@
    "drill": true,
    "drillNo": 198,
    "drillGroup": "Quizlet 213",
-   "calc": true
+   "calc": true,
+   "trick": "Thấy 'asd = |xi−median|', 8 salaries → median 69.5, tổng lệch 153/8 → chọn 19.125."
   },
   {
    "source": "exam_pdf",
@@ -8950,7 +9203,8 @@
    "drill": true,
    "drillNo": 200,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'sequence of patterns occurs frequently' → chọn Frequent sub-sequence."
   },
   {
    "source": "exam_pdf",
@@ -8976,7 +9230,8 @@
    "drillNo": 201,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'What is data mining' → chọn 'also known as knowledge discovery' + 'process that mines interesting patterns from large data'. Bẫy 'subject-oriented, non-volatile' = data warehouse."
   },
   {
    "source": "exam_pdf",
@@ -9000,7 +9255,8 @@
    "drill": true,
    "drillNo": 203,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy công thức '(x − mode)/s' → chọn Measure of skewness (Pearson)."
   },
   {
    "source": "exam_pdf",
@@ -9023,7 +9279,8 @@
    "drill": true,
    "drillNo": 205,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'X={Beer}, Y={Diaper}, X∪Y' → cần cả Beer lẫn Diaper → chọn {10, 20, 30} (T50 thiếu Beer)."
   },
   {
    "source": "exam_pdf",
@@ -9048,7 +9305,8 @@
    "drill": true,
    "drillNo": 206,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Câu 'closed but NOT max' → chọn {Beer,Nuts,Eggs,Milk} + {Beer,Nuts,Diaper} (đều nằm trong superset frequent 5-item)."
   },
   {
    "source": "exam_pdf",
@@ -9073,7 +9331,8 @@
    "drill": true,
    "drillNo": 207,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'Downward Closure, {iphone,ipad,macbook pro} frequent' → chọn subset {iphone,ipad} + {ipad}. Bỏ mọi itouch."
   },
   {
    "source": "exam_pdf",
@@ -9098,7 +9357,8 @@
    "drillNo": 210,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'A&B observed 50 (expected 57)' → observed<expected → chọn 'Lift < 1; chi-square > 0'."
   },
   {
    "source": "exam_pdf",
@@ -9121,7 +9381,8 @@
    "drill": true,
    "drillNo": 211,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'DBLP, neither ~2,700,000 papers' (nhiều null) → chọn Kulczynski (null-invariant)."
   },
   {
    "source": "exam_pdf",
@@ -9145,7 +9406,8 @@
    "drill": true,
    "drillNo": 212,
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'requires a merging approach' → chọn Hierarchical (agglomerative gộp dần)."
   },
   {
    "source": "exam_pdf",
@@ -9170,7 +9432,8 @@
    "drillNo": 213,
    "review": "Đề gốc thiếu lựa chọn/dữ liệu — phương án nhiễu do AI dựng, đáp án đúng lấy từ đáp án chính thức.",
    "drillGroup": "Quizlet 213",
-   "calc": false
+   "calc": false,
+   "trick": "Thấy 'data cube' → chọn 'Representing multidimensional data for analysis' (cube = đa chiều OLAP)."
   }
  ]
 }

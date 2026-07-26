@@ -367,21 +367,25 @@ function HintBox({ q, show, setShow }) {
   )
 }
 
-// Trick panel: mẹo nhìn-ra-đáp-án theo chủ đề của câu
+// Trick panel: trick riêng cho câu + mẹo chung theo chủ đề
 function TrickBox({ q, tricks }) {
   const [show, setShow] = useState(false)
-  if (!tricks) return null
-  const lines = [...(tricks[q.topic] || []), ...(tricks._general || [])]
-  if (!lines.length) return null
+  const topicLines = tricks ? [...(tricks[q.topic] || []), ...(tricks._general || [])] : []
+  if (!q.trick && !topicLines.length) return null
   return (
     <div className="trick-wrap" onClick={(e) => e.stopPropagation()}>
       <button className="btn btn-sm btn-trick" onClick={() => setShow((s) => !s)}>
-        {show ? '✕ Ẩn trick' : `🎯 Trick ${q.topic}`}
+        {show ? '✕ Ẩn trick' : '🎯 Trick câu này'}
       </button>
       {show && (
         <div className="trick-box">
-          <div className="trick-title">🎯 Nhìn ra đáp án — {q.topic}</div>
-          <ul>{lines.map((t, i) => <li key={i}>{t}</li>)}</ul>
+          {q.trick && <div className="trick-self">🎯 {q.trick}</div>}
+          {topicLines.length > 0 && (
+            <>
+              <div className="trick-title">Mẹo chung — {q.topic}</div>
+              <ul>{topicLines.map((t, i) => <li key={i}>{t}</li>)}</ul>
+            </>
+          )}
         </div>
       )}
     </div>
